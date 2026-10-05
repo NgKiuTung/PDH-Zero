@@ -1,0 +1,108 @@
+{
+  "label": "d000000386995",
+  "update": 19,
+  "learner_decisions": 386995,
+  "checkpoint_sha256": "c0fab122551c6f6df5eefb942f6c073def624523bfb9b0302494d1d23893591c",
+  "status": "evaluated",
+  "checkpoint": "checkpoints/candidates/d000000386995/model.pt",
+  "summary": {
+    "hands": 4096,
+    "mean_score": 0.008544921875,
+    "score_std": 11.062838767408895,
+    "median_score": 0.0,
+    "quantiles": {
+      "0.01": -24.0,
+      "0.05": -12.0,
+      "0.1": -9.0,
+      "0.5": 0.0,
+      "0.9": 4.0,
+      "0.95": 12.0,
+      "0.99": 39.150000000000546
+    },
+    "cvar_1": -33.53658536585366,
+    "cvar_5": -19.921951219512195,
+    "win": 0.102783203125,
+    "point_shoot": 0.05322265625,
+    "draw": 0.498046875,
+    "self_draw": 0.030517578125,
+    "discard_win": 0.072265625,
+    "minimum_score": -78,
+    "maximum_score": 234,
+    "losses_by_cause": {
+      "twelve_grounded_liability": {
+        "payments": 3,
+        "amount": 90,
+        "before_horses": 45,
+        "horse_uplift": 45
+      },
+      "ordinary_self_draw": {
+        "payments": 520,
+        "amount": 5849,
+        "before_horses": 2380,
+        "horse_uplift": 3469
+      },
+      "ordinary_discard": {
+        "payments": 216,
+        "amount": 2287,
+        "before_horses": 862,
+        "horse_uplift": 1425
+      },
+      "discard_multi": {
+        "payments": 4,
+        "amount": 75,
+        "before_horses": 22,
+        "horse_uplift": 53
+      }
+    },
+    "negative_score_hands": 741,
+    "conditional_mean_loss": 11.20242914979757,
+    "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+    "seconds": 980.1873835590668,
+    "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+    "seed": 95000731,
+    "initial_dealer": 0,
+    "initial_continuation": 0,
+    "results_sha256": "c3df2c81a394a9578ec8efc93048f0fdda00ca97432abebe72aa0b586f3e4bde"
+  },
+  "comparison": {
+    "wall_groups": 1024,
+    "hands": 4096,
+    "scope": "repeated_development_set_not_confirmatory",
+    "score": {
+      "delta": 0.38916015625,
+      "ci95": [
+        0.009222412109375003,
+        0.7714904785156249
+      ]
+    },
+    "point_shoot": {
+      "delta": -0.01416015625,
+      "ci95": [
+        -0.0224609375,
+        -0.005364990234375033
+      ]
+    },
+    "win": {
+      "delta": 0.018310546875,
+      "ci95": [
+        0.008544921875,
+        0.02734375
+      ]
+    },
+    "draw": {
+      "delta": -0.0087890625,
+      "ci95": [
+        -0.025390625,
+        0.00732421875
+      ]
+    },
+    "cvar_5": {
+      "delta": -0.9902439024390226,
+      "ci95": [
+        -2.8100000000000023,
+        0.7807317073170725
+      ]
+    }
+  },
+  "gate": "INCONCLUSIVE"
+}

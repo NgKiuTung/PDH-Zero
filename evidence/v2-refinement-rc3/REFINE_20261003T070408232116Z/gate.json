@@ -1,0 +1,50 @@
+{
+  "gate": "INCONCLUSIVE",
+  "decision": "INCONCLUSIVE",
+  "comparison": {
+    "wall_groups": 1024,
+    "hands": 4096,
+    "scope": "repeated_development_set_not_confirmatory",
+    "score": {
+      "delta": 0.32177734375,
+      "ci95": [
+        0.0160888671875,
+        0.6465759277343746
+      ]
+    },
+    "point_shoot": {
+      "delta": -0.00537109375,
+      "ci95": [
+        -0.01416015625,
+        0.00341796875
+      ]
+    },
+    "win": {
+      "delta": 0.01953125,
+      "ci95": [
+        0.010009765625,
+        0.028564453125
+      ]
+    },
+    "draw": {
+      "delta": -0.013671875,
+      "ci95": [
+        -0.02978515625,
+        0.00341796875
+      ]
+    },
+    "cvar_5": {
+      "delta": -0.33658536585365795,
+      "ci95": [
+        -2.0634146341463406,
+        1.2926829268292686
+      ]
+    }
+  },
+  "candidate": "d000000510070",
+  "selected_development": "d000000265095",
+  "qualified": null,
+  "stale_evaluations": 2,
+  "selection_is_confirmatory": false,
+  "long_training_allowed": false
+}
