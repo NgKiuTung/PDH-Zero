@@ -1,0 +1,2 @@
+{"timestamp": "2026-09-29T16:54:35.782323+00:00", "event": "campaign_started", "attempt": 1}
+{"timestamp": "2026-09-29T16:54:35.857817+00:00", "event": "campaign_failed", "error": "Shared GPU detected; foreign compute PIDs: [199626]"}

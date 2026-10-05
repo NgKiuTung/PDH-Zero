@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "backend": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5090",
+  "duration_seconds": 300.0004052799195,
+  "iterations": 122137,
+  "iterations_per_second": 407.1227833377038,
+  "initial_loss": 4.160475730895996,
+  "final_loss": 4.158769607543945,
+  "finite": true,
+  "peak_memory_bytes": 141872640
+}

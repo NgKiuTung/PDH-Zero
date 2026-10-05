@@ -1,0 +1,66 @@
+
+==================================================
+FILE=participants/plain_seed20260929/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4235141,
+    "elapsed_seconds": 26.135165956802666,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/plain_seed20260929/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}
+
+==================================================
+FILE=participants/plain_seed3407/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4235108,
+    "elapsed_seconds": 25.313059458043426,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/plain_seed3407/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}
+
+==================================================
+FILE=participants/plain_seed9102/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4238760,
+    "elapsed_seconds": 25.735540490131825,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/plain_seed9102/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}
+
+==================================================
+FILE=participants/privileged_seed20260929/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4232977,
+    "elapsed_seconds": 26.32013849215582,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/privileged_seed20260929/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}
+
+==================================================
+FILE=participants/privileged_seed3407/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4239554,
+    "elapsed_seconds": 26.1312126647681,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/privileged_seed3407/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}
+
+==================================================
+FILE=participants/privileged_seed9102/training/summary.json
+==================================================
+{
+    "completed_updates": 3540,
+    "total_environment_decisions": 4232376,
+    "elapsed_seconds": 26.113127755001187,
+    "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/privileged_seed9102/training/checkpoint_latest.pt",
+    "device_backend": "cuda"
+}

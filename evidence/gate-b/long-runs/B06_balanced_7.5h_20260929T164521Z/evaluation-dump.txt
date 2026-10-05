@@ -1,0 +1,158 @@
+
+==================================================
+FILE=plain_seed20260929.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": 0.0132,
+    "win_rate": 0.1786,
+    "draw_rate": 0.0322,
+    "outcomes": {
+        "DISCARD_WIN": 14933,
+        "DRAW": 644,
+        "SELF_DRAW": 4423
+    },
+    "seat_mean_scores": {
+        "0": 0.235,
+        "1": 0.0726,
+        "2": -0.0408,
+        "3": -0.214
+    }
+}
+
+==================================================
+FILE=plain_seed3407.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": -0.00435,
+    "win_rate": 0.17675,
+    "draw_rate": 0.0312,
+    "outcomes": {
+        "DISCARD_WIN": 14945,
+        "DRAW": 624,
+        "SELF_DRAW": 4431
+    },
+    "seat_mean_scores": {
+        "0": 0.1304,
+        "1": 0.0424,
+        "2": 0.04,
+        "3": -0.2302
+    }
+}
+
+==================================================
+FILE=plain_seed9102.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": 0.0186,
+    "win_rate": 0.1774,
+    "draw_rate": 0.03185,
+    "outcomes": {
+        "DISCARD_WIN": 14936,
+        "DRAW": 637,
+        "SELF_DRAW": 4427
+    },
+    "seat_mean_scores": {
+        "0": 0.1848,
+        "1": 0.063,
+        "2": 0.0524,
+        "3": -0.2258
+    }
+}
+
+==================================================
+FILE=privileged_seed20260929.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": 0.00915,
+    "win_rate": 0.17855,
+    "draw_rate": 0.03245,
+    "outcomes": {
+        "DISCARD_WIN": 14879,
+        "DRAW": 649,
+        "SELF_DRAW": 4472
+    },
+    "seat_mean_scores": {
+        "0": 0.147,
+        "1": 0.0612,
+        "2": 0.0018,
+        "3": -0.1734
+    }
+}
+
+==================================================
+FILE=privileged_seed3407.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": -0.00785,
+    "win_rate": 0.17715,
+    "draw_rate": 0.03155,
+    "outcomes": {
+        "DISCARD_WIN": 14877,
+        "DRAW": 631,
+        "SELF_DRAW": 4492
+    },
+    "seat_mean_scores": {
+        "0": 0.196,
+        "1": 0.0394,
+        "2": -0.018,
+        "3": -0.2488
+    }
+}
+
+==================================================
+FILE=privileged_seed9102.json
+==================================================
+{
+    "games": 20000,
+    "wall_seeds": 5000,
+    "opponent_kind": "heuristic",
+    "mean_score": 0.06285,
+    "win_rate": 0.1797,
+    "draw_rate": 0.03125,
+    "outcomes": {
+        "DISCARD_WIN": 14926,
+        "DRAW": 625,
+        "SELF_DRAW": 4449
+    },
+    "seat_mean_scores": {
+        "0": 0.1552,
+        "1": 0.148,
+        "2": 0.0764,
+        "3": -0.1282
+    }
+}
+
+==================================================
+FILE=rule_baselines.json
+==================================================
+{
+    "random_vs_opponent": {
+        "games": 20000,
+        "candidate_kind": "random",
+        "opponent_kind": "heuristic",
+        "mean_score": -2.5914,
+        "win_rate": 0.03525
+    },
+    "heuristic_vs_random": {
+        "games": 20000,
+        "candidate_kind": "heuristic",
+        "opponent_kind": "random",
+        "mean_score": 4.72305,
+        "win_rate": 0.58505
+    }
+}

@@ -1,0 +1,11 @@
+start_time_utc=2026-09-29T14:42:35+00:00
+host=jupyter-j7w74f9c698a9j5a
+mode=exclusive_solo
+sample_interval_seconds=10
+query=timestamp,name,temperature.gpu,power.draw,utilization.gpu,utilization.memory,memory.used,memory.total,clocks.sm,clocks.mem
+NVIDIA GeForce RTX 5090, 580.119.02, 32607 MiB
+end_time_utc=2026-09-29T15:47:00+00:00
+a06_exit=0
+telemetry_wrapper_exit_observed=124
+telemetry_wrapper_exit_interpretation=configured_3700_second_timeout_reached
+telemetry_acceptance_basis=timestamp_coverage_and_empty_stderr

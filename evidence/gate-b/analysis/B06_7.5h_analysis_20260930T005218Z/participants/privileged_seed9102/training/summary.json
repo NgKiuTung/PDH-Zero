@@ -1,0 +1,7 @@
+{
+  "completed_updates": 3540,
+  "total_environment_decisions": 4232376,
+  "elapsed_seconds": 26.113127755001187,
+  "checkpoint_path": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z/participants/privileged_seed9102/training/checkpoint_latest.pt",
+  "device_backend": "cuda"
+}

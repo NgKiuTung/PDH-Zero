@@ -1,0 +1,16 @@
+{
+  "random_vs_opponent": {
+    "games": 20000,
+    "candidate_kind": "random",
+    "opponent_kind": "heuristic",
+    "mean_score": -2.5914,
+    "win_rate": 0.03525
+  },
+  "heuristic_vs_random": {
+    "games": 20000,
+    "candidate_kind": "heuristic",
+    "opponent_kind": "random",
+    "mean_score": 4.72305,
+    "win_rate": 0.58505
+  }
+}

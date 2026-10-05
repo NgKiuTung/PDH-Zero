@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "job_id": "B06_balanced_7.5h_20260929T165433Z",
+  "package_version": "1.1.1",
+  "project_root": "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.1",
+  "job_dir": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T165433Z",
+  "pid": 210498,
+  "attempt": 1,
+  "status": "failed",
+  "started_at_utc": "2026-09-29T16:54:35.782090+00:00",
+  "settings": {
+    "training_seconds": 27000.0,
+    "chunk_updates": 20,
+    "evaluation_wall_seeds": 5000,
+    "evaluation_seed_start": 950000,
+    "opponent": "heuristic",
+    "device": "cuda",
+    "snapshot_seconds": 3600.0,
+    "telemetry_interval_seconds": 30,
+    "min_free_bytes": 5368709120
+  },
+  "participants": [
+    {
+      "method": "plain",
+      "seed": 20260929,
+      "config_path": "configs/ppo_phase1_plain_critic.yaml"
+    },
+    {
+      "method": "privileged",
+      "seed": 20260929,
+      "config_path": "configs/ppo_phase1.yaml"
+    },
+    {
+      "method": "plain",
+      "seed": 3407,
+      "config_path": "configs/ppo_phase1_plain_critic.yaml"
+    },
+    {
+      "method": "privileged",
+      "seed": 3407,
+      "config_path": "configs/ppo_phase1.yaml"
+    },
+    {
+      "method": "plain",
+      "seed": 9102,
+      "config_path": "configs/ppo_phase1_plain_critic.yaml"
+    },
+    {
+      "method": "privileged",
+      "seed": 9102,
+      "config_path": "configs/ppo_phase1.yaml"
+    }
+  ],
+  "device_backend": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5090",
+  "ended_at_utc": "2026-09-29T16:54:35.855897+00:00"
+}

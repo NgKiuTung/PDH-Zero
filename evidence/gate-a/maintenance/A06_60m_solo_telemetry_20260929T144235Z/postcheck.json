@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "a06": {
+    "manifest_status": "success",
+    "exit_code": 0,
+    "timed_out": false,
+    "duration_seconds": 3600.0005738949403,
+    "iterations": 1439047,
+    "iterations_per_second": 399.7352140538842,
+    "metric_samples": 120,
+    "initial_loss": 4.160475730895996,
+    "final_loss": 4.158981800079346,
+    "finite": true,
+    "peak_memory_mib": 135.30029296875
+  },
+  "memory": {
+    "allocated_first_mib": 76.30322265625,
+    "allocated_last_mib": 76.30322265625,
+    "allocated_delta_mib": 0.0,
+    "allocated_range_mib": 0.0,
+    "reserved_first_mib": 180.0,
+    "reserved_last_mib": 180.0,
+    "reserved_delta_mib": 0.0,
+    "reserved_range_mib": 0.0
+  },
+  "throughput": {
+    "interval_samples": 119,
+    "first_window_mean_iterations_per_second": 393.89780162717545,
+    "last_window_mean_iterations_per_second": 390.6085713021623,
+    "change_percent": -0.8350466317469829
+  },
+  "telemetry": {
+    "rows": 370,
+    "header": [
+      "timestamp",
+      " name",
+      " temperature.gpu",
+      " power.draw [W]",
+      " utilization.gpu [%]",
+      " utilization.memory [%]",
+      " memory.used [MiB]",
+      " memory.total [MiB]",
+      " clocks.current.sm [MHz]",
+      " clocks.current.memory [MHz]"
+    ],
+    "a06_start_utc": "2026-09-29T14:42:52.873985+00:00",
+    "a06_end_utc": "2026-09-29T15:42:57.712820+00:00",
+    "telemetry_start_utc": "2026-09-29T14:42:35.555000+00:00",
+    "telemetry_end_utc": "2026-09-29T15:44:06.016000+00:00",
+    "start_offset_seconds": -17.318985,
+    "end_offset_seconds": 68.30318,
+    "coverage_start_ok": true,
+    "coverage_end_ok": true,
+    "temperature_c": {
+      "min": 30.0,
+      "mean": 45.41891891891892,
+      "max": 49.0
+    },
+    "power_w": {
+      "min": 23.52,
+      "mean": 161.04986486486487,
+      "max": 227.44
+    },
+    "gpu_util_percent": {
+      "min": 0.0,
+      "mean": 18.627027027027026,
+      "max": 39.0
+    },
+    "memory_util_percent": {
+      "min": 0.0,
+      "mean": 5.151351351351352,
+      "max": 11.0
+    },
+    "memory_used_mib": {
+      "min": 0.0,
+      "mean": 767.1108108108108,
+      "max": 787.0
+    }
+  }
+}

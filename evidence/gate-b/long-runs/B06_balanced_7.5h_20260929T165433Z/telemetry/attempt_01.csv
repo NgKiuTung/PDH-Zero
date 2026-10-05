@@ -1,0 +1,1 @@
+timestamp, name, temperature.gpu, power.draw [W], utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.total [MiB], clocks.current.sm [MHz], clocks.current.memory [MHz]

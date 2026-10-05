@@ -1,0 +1,5 @@
+{
+  "type": "RuntimeError",
+  "message": "Shared GPU detected; foreign compute PIDs: [199626]",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.1/scripts/13_long_gate_b_campaign.py\", line 231, in main\n    raise RuntimeError(f\"Shared GPU detected; foreign compute PIDs: {sorted(other_pids)}\")\nRuntimeError: Shared GPU detected; foreign compute PIDs: [199626]\n"
+}

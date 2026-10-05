@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "backend": "cuda",
+  "first_loss": 1.6507385969161987,
+  "expected_continuation_loss": 1.5967824459075928,
+  "restored_continuation_loss": 1.5967824459075928,
+  "parameter_max_abs_error": 0.0,
+  "metadata": {
+    "step": 1,
+    "backend": "cuda"
+  },
+  "checkpoint": "/root/rivermind-data/pdh-zero/evidence/gate-a/runs/A04_checkpoint_20260929T124018Z/artifacts/checkpoint_test.pt"
+}

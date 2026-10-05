@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "experiment_id": "A01_system_info",
+  "gate": "A",
+  "run_directory": "/root/rivermind-data/pdh-zero/evidence/gate-a/runs/A01_system_info_20260929T122441Z",
+  "command": [
+    "bash",
+    "scripts/01_collect_system_info.sh"
+  ],
+  "cwd": "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.0",
+  "start_time_utc": "2026-09-29T12:24:41.877150+00:00",
+  "end_time_utc": "2026-09-29T12:24:44.836468+00:00",
+  "timeout_seconds": 300,
+  "python_version": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+  "package_version": "1.1.0",
+  "torch_version": "2.12.1+cu130",
+  "torch_cuda": "13.0",
+  "torch_hip": null,
+  "backend": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5090",
+  "device_capability": [
+    12,
+    0
+  ],
+  "git_commit": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "status": "success",
+  "elapsed_seconds": 2.959318
+}

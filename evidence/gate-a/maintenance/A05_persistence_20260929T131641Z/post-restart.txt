@@ -1,0 +1,18 @@
+===== UTC =====
+2026-09-29T13:16:14+00:00
+
+===== HOST =====
+jupyter-j7w74f9c698a9j5a
+
+===== DATA MOUNT =====
+SOURCE                                                            FSTYPE  SIZE  USED AVAIL TARGET
+/dev/mapper/lvmdata-pvc--b175f58e--eaf8--4cda--be16--ae7065c65b64 ext4   48.9G 92.8M 48.8G /root/rivermind-data
+
+===== SENTINEL AFTER RESTART =====
+created_at=2026-09-29T13:01:35.910108+00:00
+nonce=c4c5e93ff2b8096d0de7b8daad91461de9e944496873291b70fd344d696fcf95
+917dd08d2d0fd55a04552e59bd2d863ef3374db3a97ee962e41f9de3d86fa476  /root/rivermind-data/pdh-zero/state/persistence/cuda/storage-sentinel/sentinel.txt
+
+===== CHECKPOINT AFTER RESTART =====
+-rw-r--r-- 1 root root 24K Sep 29 12:40 /root/rivermind-data/pdh-zero/state/persistence/cuda/a04_checkpoint_test.pt
+301eb4ae80603ed7a1aefda8be4162111d8e3c547da3ce8811c4837a3497a153  /root/rivermind-data/pdh-zero/state/persistence/cuda/a04_checkpoint_test.pt

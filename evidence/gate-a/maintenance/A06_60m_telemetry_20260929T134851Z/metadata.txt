@@ -1,0 +1,5 @@
+start_time_utc=2026-09-29T13:49:07+00:00
+host=jupyter-j7w74f9c698a9j5a
+query=timestamp,name,temperature.gpu,power.draw,utilization.gpu,utilization.memory,memory.used,memory.total,clocks.sm,clocks.mem
+sample_interval_seconds=10
+NVIDIA GeForce RTX 5090, 580.119.02, 32607 MiB

@@ -1,0 +1,25 @@
+{
+  "pid": 199626,
+  "started_at_utc": "2026-09-29T16:45:21.910309+00:00",
+  "command": [
+    "/opt/conda/bin/python",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.1/scripts/13_long_gate_b_campaign.py",
+    "--job-dir",
+    "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z",
+    "--training-hours",
+    "7.5",
+    "--chunk-updates",
+    "20",
+    "--methods",
+    "plain,privileged",
+    "--seeds",
+    "20260929,3407,9102",
+    "--evaluation-wall-seeds",
+    "5000",
+    "--device",
+    "cuda"
+  ],
+  "project_root": "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.1",
+  "job_dir": "/root/rivermind-data/pdh-zero/evidence/gate-b/long-runs/B06_balanced_7.5h_20260929T164521Z",
+  "resume": false
+}

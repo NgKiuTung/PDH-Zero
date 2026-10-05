@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.0/scripts/06_stability_soak.py", line 99, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-phase1-v1.1.0/scripts/06_stability_soak.py", line 56, in main
+    optimizer.step()
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/optimizer.py", line 535, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/optimizer.py", line 80, in _use_grad
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/adam.py", line 248, in step
+    adam(
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/optimizer.py", line 148, in maybe_fallback
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/adam.py", line 970, in adam
+    func(
+  File "/opt/conda/lib/python3.12/site-packages/torch/optim/adam.py", line 683, in _multi_tensor_adam
+    device_state_steps, torch.tensor(1.0, device="cpu"), alpha=1.0
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

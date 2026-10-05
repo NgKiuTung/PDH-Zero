@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "backend": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5090",
+  "torch": "2.12.1+cu130",
+  "hip": null,
+  "cuda": "13.0",
+  "dtype": "bfloat16",
+  "steps": 30,
+  "batch_size": 4096,
+  "elapsed_seconds": 0.6434780978597701,
+  "steps_per_second": 46.621633432095074,
+  "samples_per_second": 190962.21053786142,
+  "initial_loss": 3.5290327072143555,
+  "final_loss": 3.5299062728881836,
+  "finite": true,
+  "peak_memory_bytes": 92106240
+}

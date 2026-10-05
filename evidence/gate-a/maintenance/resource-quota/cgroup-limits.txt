@@ -1,0 +1,51 @@
+===== UTC =====
+2026-09-29T12:51:35+00:00
+
+===== PLATFORM DECLARED CONFIG =====
+declared_gpu=NVIDIA GeForce RTX 5090 32GB
+declared_vcpu=14
+declared_memory_gb=60
+declared_system_disk_gb=30
+declared_data_disk_gb=50
+
+===== PROCESS VIEW =====
+nproc=128
+os.cpu_count=128
+sched_affinity_count=128
+sched_affinity=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi       172Gi       146Gi        10Gi       184Gi       316Gi
+Swap:             0B          0B          0B
+
+===== PROC SELF CGROUP =====
+0::/
+
+===== PROC SELF STATUS =====
+Cpus_allowed:	ffffffff,ffffffff,ffffffff,ffffffff
+Cpus_allowed_list:	0-127
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,0000000f
+Mems_allowed_list:	0-3
+
+===== CGROUP V2 =====
+cpu.max=1400000 100000
+cpu.weight=547
+cpuset.cpus=
+cpuset.cpus.effective=0-127
+memory.max=64424509440
+memory.high=max
+memory.current=444645376
+memory.swap.max=0
+pids.max=max
+
+===== CGROUP V1 FALLBACK =====
+/sys/fs/cgroup/cpu/cpu.cfs_quota_us=UNAVAILABLE
+/sys/fs/cgroup/cpu/cpu.cfs_period_us=UNAVAILABLE
+/sys/fs/cgroup/cpuset/cpuset.cpus=UNAVAILABLE
+/sys/fs/cgroup/memory/memory.limit_in_bytes=UNAVAILABLE
+/sys/fs/cgroup/memory/memory.usage_in_bytes=UNAVAILABLE
+
+===== TASK AFFINITY =====
+pid 285's current affinity list: 0-127
+
+===== GPU =====
+NVIDIA GeForce RTX 5090, 580.119.02, 32607, 32110, 0

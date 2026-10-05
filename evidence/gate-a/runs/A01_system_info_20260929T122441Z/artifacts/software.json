@@ -1,0 +1,42 @@
+{
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Mar 19 2026, 20:20:58) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-161-generic-x86_64-with-glibc2.35",
+  "torch": "2.12.1+cu130",
+  "torch_hip": null,
+  "torch_cuda": "13.0",
+  "cudnn": 92000,
+  "accelerator_available": true,
+  "accelerator_count": 1,
+  "accelerator": {
+    "name": "NVIDIA GeForce RTX 5090",
+    "total_memory_bytes": 33668857856,
+    "multiprocessor_count": 170,
+    "compute_capability": [
+      12,
+      0
+    ],
+    "arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "bf16_supported": true
+  },
+  "cpu_count": 128,
+  "storage": {
+    "root": {
+      "total_bytes": 31526391808,
+      "used_bytes": 7548928,
+      "free_bytes": 31502065664
+    },
+    "data_disk": {
+      "total_bytes": 52521566208,
+      "used_bytes": 7409664,
+      "free_bytes": 52497379328
+    },
+    "file_storage": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "games": 20000,
+  "wall_seeds": 5000,
+  "opponent_kind": "heuristic",
+  "mean_score": -0.00785,
+  "win_rate": 0.17715,
+  "draw_rate": 0.03155,
+  "outcomes": {
+    "DISCARD_WIN": 14877,
+    "DRAW": 631,
+    "SELF_DRAW": 4492
+  },
+  "seat_mean_scores": {
+    "0": 0.196,
+    "1": 0.0394,
+    "2": -0.018,
+    "3": -0.2488
+  }
+}
