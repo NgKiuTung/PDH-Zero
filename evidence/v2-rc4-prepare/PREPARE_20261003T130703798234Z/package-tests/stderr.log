@@ -1,0 +1,14 @@
+{
+  "refinement_candidate_check": "PASS",
+  "python": "3.12.13",
+  "tests_run": 378,
+  "tests_exit_code": 0,
+  "hash_errors": [],
+  "basic_static_exit_code": 0,
+  "refinement_entry_ready": true,
+  "formal_long_run_ready": false,
+  "target_cuda_verified": false,
+  "ruff": "NOT_RUN",
+  "mypy": "NOT_RUN",
+  "report_directory": "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/tmp/verify-refinement-20261003T130713444746Z"
+}

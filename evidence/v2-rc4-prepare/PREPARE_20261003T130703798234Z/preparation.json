@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "output": "/root/rivermind-data/pdh-zero/evidence/v2-rc4-prepare/PREPARE_20261003T130703798234Z",
+  "training_started": false,
+  "source_candidate": "d000000265095",
+  "resources": {
+    "logical_cpus_visible": 128,
+    "affinity_cpus": 128,
+    "quota_cpu_equivalents": 14.0,
+    "effective_cpu_equivalents": 14.0,
+    "memory_limit_bytes": 64424509440,
+    "declared_vcpus_fallback": 14,
+    "quota_known": true,
+    "evidence": [
+      {
+        "path": "/sys/fs/cgroup/cpu.max",
+        "value": "1400000 100000"
+      },
+      {
+        "path": "/sys/fs/cgroup/memory.max",
+        "value": "64424509440"
+      }
+    ],
+    "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+  },
+  "phase": "ready",
+  "native_build": {
+    "status": "PASS",
+    "source_sha256": "6c9b2e7d01dbfcba189821bd842b8dc8dd00a1a87925ba4f2c0cd5dd15416ecf",
+    "binary_sha256": "58ea002d9607ad362642c0cb49cae0ed89e39805a6db2777169b6c71062ef58b",
+    "soabi": "cpython-312-x86_64-linux-gnu",
+    "compiler": "/usr/bin/g++",
+    "command": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-O3",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-fvisibility=hidden",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/opt/conda/lib/python3.12/site-packages/torch/include",
+      "-I/opt/conda/include/python3.12",
+      "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/native/actions.cpp",
+      "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/native/binding.cpp",
+      "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/native/observation.cpp",
+      "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/native/route.cpp",
+      "-o",
+      "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/build/native/_pdh_native.tmp.cpython-312-x86_64-linux-gnu.so"
+    ],
+    "cpu_only": true,
+    "fast_math": false,
+    "threads": 1
+  },
+  "differential": {
+    "status": "PASS",
+    "hands": 16,
+    "decisions": 2862,
+    "candidate_actions": 11901,
+    "max_abs_error": 5.551115123125783e-17,
+    "observed_action_kinds": [
+      "ADDED_KONG",
+      "DISCARD",
+      "PASS",
+      "PONG",
+      "WIN"
+    ],
+    "atol": 2e-12,
+    "scope": "sampled_replays_not_all_possible_states"
+  },
+  "runtime_plan": "/root/rivermind-data/pdh-zero/evidence/v2-rc4-prepare/PREPARE_20261003T130703798234Z/benchmark/runtime-plan.json",
+  "recommendation": {
+    "workers": 8,
+    "feature_backend": "cpp",
+    "environments": 64,
+    "transport": "shared",
+    "torch_num_threads": 1,
+    "measured_rollout_speedup_vs_reference": 1.9051503307683435,
+    "selection_scope": "same_model_same_walls_rollout_only_not_PPO_or_learning_quality"
+  },
+  "long_training_allowed": false
+}

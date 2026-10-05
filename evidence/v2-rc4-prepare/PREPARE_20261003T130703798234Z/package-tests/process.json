@@ -1,0 +1,10 @@
+{
+  "pid": 317,
+  "pgid": 317,
+  "command": [
+    "/opt/conda/bin/python3",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/tools/verify_refinement.py"
+  ],
+  "status": "exited",
+  "exit_code": 0
+}

@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "backend": "cpp",
+  "workers": 4,
+  "tables": 64,
+  "startup_seconds": 1.9472384490072727,
+  "repeats": [
+    {
+      "seconds": 11.467216454911977,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 1844.2139017042155,
+      "learner_decisions_per_second": 460.9662703049217,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 23821145,
+        "cpu.stat.user_usec": 22996117,
+        "cpu.stat.system_usec": 825027,
+        "cpu.stat.nr_periods": 115,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 3074727936
+    },
+    {
+      "seconds": 10.707153191324323,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 1975.1281803958473,
+      "learner_decisions_per_second": 493.6886495920394,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 23049937,
+        "cpu.stat.user_usec": 22720604,
+        "cpu.stat.system_usec": 329333,
+        "cpu.stat.nr_periods": 107,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 3077332992
+    }
+  ],
+  "worker_pids_closed": [
+    406,
+    407,
+    408,
+    409
+  ],
+  "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+  "scope": "complete_rollout_inference_heuristic_step_audit_no_PPO_no_worker_startup"
+}

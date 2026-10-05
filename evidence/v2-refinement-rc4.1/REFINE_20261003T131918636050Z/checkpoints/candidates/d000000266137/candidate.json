@@ -1,0 +1,161 @@
+{
+  "label": "d000000266137",
+  "update": 13,
+  "learner_decisions": 266137,
+  "checkpoint_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "status": "evaluated",
+  "checkpoint": "checkpoints/candidates/d000000266137/model.pt",
+  "summary": {
+    "hands": 4096,
+    "mean_score": 0.183349609375,
+    "score_std": 10.924001764983702,
+    "median_score": 0.0,
+    "quantiles": {
+      "0.01": -24.0,
+      "0.05": -12.0,
+      "0.1": -8.0,
+      "0.5": 0.0,
+      "0.9": 4.0,
+      "0.95": 12.0,
+      "0.99": 39.150000000000546
+    },
+    "cvar_1": -30.536585365853657,
+    "cvar_5": -19.2,
+    "win": 0.106689453125,
+    "point_shoot": 0.053955078125,
+    "draw": 0.50634765625,
+    "self_draw": 0.02978515625,
+    "discard_win": 0.076904296875,
+    "minimum_score": -63,
+    "maximum_score": 204,
+    "losses_by_cause": {
+      "ordinary_self_draw": {
+        "payments": 486,
+        "amount": 5456,
+        "before_horses": 2197,
+        "horse_uplift": 3259
+      },
+      "ordinary_discard": {
+        "payments": 215,
+        "amount": 2263,
+        "before_horses": 870,
+        "horse_uplift": 1393
+      },
+      "discard_multi": {
+        "payments": 12,
+        "amount": 140,
+        "before_horses": 49,
+        "horse_uplift": 91
+      }
+    },
+    "negative_score_hands": 707,
+    "conditional_mean_loss": 11.115983026874115,
+    "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+    "responsibility": {
+      "schema_version": 1,
+      "candidate_seat_hands": 4096,
+      "direct_loss": 2403,
+      "direct_principal": 919,
+      "direct_horse_uplift": 1484,
+      "ordinary_self_draw_share": 5456,
+      "total_outgoing": 7859,
+      "total_income": 8610,
+      "direct_loss_hand": 221,
+      "defense_loss_per_100_seat_hands": 58.6669921875,
+      "direct_loss_hand_rate": 0.053955078125,
+      "direct_loss_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 4.0,
+        "p99": 16.0,
+        "maximum": 38,
+        "positive_hands": 221,
+        "mean_if_positive": 10.873303167420815
+      },
+      "ordinary_self_draw_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 12.0,
+        "p99": 20.050000000000182,
+        "maximum": 63,
+        "positive_hands": 486,
+        "mean_if_positive": 11.22633744855967
+      },
+      "net_score_tail_breakdown": {
+        "0.01": {
+          "hands": 41,
+          "losses_by_cause": {
+            "ordinary_self_draw": 956,
+            "discard_multi": 92,
+            "ordinary_discard": 204
+          },
+          "direct_loss": 296,
+          "ordinary_self_draw_share": 956,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        },
+        "0.05": {
+          "hands": 205,
+          "losses_by_cause": {
+            "ordinary_self_draw": 2797,
+            "discard_multi": 130,
+            "ordinary_discard": 1009
+          },
+          "direct_loss": 1139,
+          "ordinary_self_draw_share": 2797,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        }
+      },
+      "scope": "monitoring_only_not_reward_or_gate",
+      "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+    },
+    "seconds": 455.9371003638953,
+    "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+    "seed": 1705515459517268740,
+    "initial_dealer": 0,
+    "initial_continuation": 0,
+    "unit": "complete_natural_hand_not_isolated_decision",
+    "unique_starting_walls": 1024,
+    "seat_variants_per_wall": 4,
+    "action_events_total": 1301456,
+    "results_sha256": "4225e640ec18906c55780f022f3712c5e99fd83dc91e4abb816fc3403277617c"
+  },
+  "comparison": {
+    "wall_groups": 1024,
+    "hands": 4096,
+    "scope": "repeated_development_set_not_confirmatory",
+    "score": {
+      "delta": 0.336181640625,
+      "ci95": [
+        -0.005377197265625,
+        0.7043518066406249
+      ]
+    },
+    "point_shoot": {
+      "delta": -0.004638671875,
+      "ci95": [
+        -0.01318359375,
+        0.00341796875
+      ]
+    },
+    "win": {
+      "delta": 0.00830078125,
+      "ci95": [
+        -0.000732421875,
+        0.017578125
+      ]
+    },
+    "draw": {
+      "delta": 0.009765625,
+      "ci95": [
+        -0.00537109375,
+        0.025634765625
+      ]
+    },
+    "cvar_5": {
+      "delta": 0.5756097560975633,
+      "ci95": [
+        -0.8440243902439023,
+        1.951341463414635
+      ]
+    }
+  },
+  "gate": "INCONCLUSIVE"
+}

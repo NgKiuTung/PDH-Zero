@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "backend": "python",
+  "workers": 4,
+  "tables": 64,
+  "startup_seconds": 2.0877225561998785,
+  "repeats": [
+    {
+      "seconds": 19.74893797095865,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 1070.8423932010273,
+      "learner_decisions_per_second": 267.6599626660029,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 51832187,
+        "cpu.stat.user_usec": 50821760,
+        "cpu.stat.system_usec": 1010428,
+        "cpu.stat.nr_periods": 198,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 3075588096
+    },
+    {
+      "seconds": 19.503978033084422,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 1084.291623182042,
+      "learner_decisions_per_second": 271.02163420372017,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 52619889,
+        "cpu.stat.user_usec": 52134790,
+        "cpu.stat.system_usec": 485099,
+        "cpu.stat.nr_periods": 195,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 3079933952
+    }
+  ],
+  "worker_pids_closed": [
+    375,
+    376,
+    377,
+    378
+  ],
+  "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+  "scope": "complete_rollout_inference_heuristic_step_audit_no_PPO_no_worker_startup"
+}

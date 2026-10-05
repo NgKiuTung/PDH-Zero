@@ -1,0 +1,25 @@
+{
+  "pid": 368,
+  "pgid": 368,
+  "command": [
+    "/opt/conda/bin/python3",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.6.0-rc4.1/tools/benchmark_runtime.py",
+    "--trial",
+    "--selection",
+    "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+    "--output",
+    "/root/rivermind-data/pdh-zero/evidence/v2-rc4-prepare/PREPARE_20261003T130703798234Z/benchmark/python-w4.json",
+    "--device",
+    "cuda",
+    "--backend",
+    "python",
+    "--workers",
+    "4",
+    "--tables",
+    "64",
+    "--repeats",
+    "2"
+  ],
+  "status": "exited",
+  "exit_code": 0
+}

@@ -1,0 +1,20 @@
+{
+  "logical_cpus_visible": 128,
+  "affinity_cpus": 128,
+  "quota_cpu_equivalents": 14.0,
+  "effective_cpu_equivalents": 14.0,
+  "memory_limit_bytes": 64424509440,
+  "declared_vcpus_fallback": 14,
+  "quota_known": true,
+  "evidence": [
+    {
+      "path": "/sys/fs/cgroup/cpu.max",
+      "value": "1400000 100000"
+    },
+    {
+      "path": "/sys/fs/cgroup/memory.max",
+      "value": "64424509440"
+    }
+  ],
+  "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+}

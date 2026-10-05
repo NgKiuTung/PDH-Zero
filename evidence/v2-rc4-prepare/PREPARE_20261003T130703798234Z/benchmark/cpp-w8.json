@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "backend": "cpp",
+  "workers": 8,
+  "tables": 64,
+  "startup_seconds": 2.319029779173434,
+  "repeats": [
+    {
+      "seconds": 10.210843621287495,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 2071.131513160264,
+      "learner_decisions_per_second": 517.6849431891978,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 26307203,
+        "cpu.stat.user_usec": 24946416,
+        "cpu.stat.system_usec": 1360787,
+        "cpu.stat.nr_periods": 102,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 4253712384
+    },
+    {
+      "seconds": 10.393553510773927,
+      "hands": 65,
+      "learner_decisions": 5286,
+      "environment_decisions": 21148,
+      "environment_decisions_per_second": 2034.722771002049,
+      "learner_decisions_per_second": 508.5844792659746,
+      "digest": "e53d128818c4dfbfff9a0aad6f66ffdb54e2fd381b35abee3378d7bf8a7c71fe",
+      "cgroup_delta": {
+        "cpu.stat.usage_usec": 26879409,
+        "cpu.stat.user_usec": 25727862,
+        "cpu.stat.system_usec": 1151547,
+        "cpu.stat.nr_periods": 104,
+        "cpu.stat.nr_throttled": 0,
+        "cpu.stat.throttled_usec": 0,
+        "memory.events.low": 0,
+        "memory.events.high": 0,
+        "memory.events.max": 0,
+        "memory.events.oom": 0,
+        "memory.events.oom_kill": 0
+      },
+      "cgroup_memory_current_bytes": 4253839360
+    }
+  ],
+  "worker_pids_closed": [
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451
+  ],
+  "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+  "scope": "complete_rollout_inference_heuristic_step_audit_no_PPO_no_worker_startup"
+}

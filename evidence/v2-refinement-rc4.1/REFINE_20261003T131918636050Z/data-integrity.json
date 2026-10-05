@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "training_unit": "complete_hand_seat_sequence",
+  "recurrent_memory": "within_hand_reset_at_terminal",
+  "cross_hand_state": "dealer_continuation_scores_and_retained_reveals",
+  "cross_hand_return_optimization": false,
+  "run_seed": 4508322642890095909,
+  "seed_origin": "generated",
+  "development_seed": 1705515459517268740,
+  "development_policy": "fixed_within_run_repeated_not_confirmatory",
+  "evaluation_hands": 4096,
+  "unique_development_starting_walls": 1024,
+  "seat_variants_per_wall": 4,
+  "fresh_frozen_evaluation_required": true,
+  "generalization_verified": false,
+  "registry": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/.wall-exposures.sqlite3",
+  "lineage": {
+    "files": [
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz",
+        "sha256": "32c2d460865a55fe66d23d580c15402c6bff6dd99d2298d8549d804c7fadf2e0",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz",
+        "sha256": "7995b56de91bae7360f11a626413e6a9902be6e0f607b5b710d050e9c535489d",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz",
+        "sha256": "d5fc232c68ac21f0cb0ab6bc533dd08a7f1d886eeeb8a0525b5e7a9e298ea5d9",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz",
+        "sha256": "8caa13f76683de96f1896ac3f1ea3c0478f14f143eb1db216550b16695b86faf",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz",
+        "sha256": "2ac0add1b5a8738dfd63f82b1cbf18747db19346ead825dc1ad85bfeca429dd6",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz",
+        "sha256": "efbed0af6b1414731e830c285b699f7300792d0cc492fcc539e8ebc8ca2c981f",
+        "records": 6406
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/replays/hands.jsonl.gz",
+        "sha256": "2513b747f4114ff082a1d842b7d4323b434ae9e300a80fb0da45999fa1277c2b",
+        "records": 6151
+      }
+    ],
+    "missing_history": [
+      "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/UNRECORDED_LEGACY_EVALUATION_WALLS",
+      "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/UNRECORDED_LEGACY_TEACHER_WALLS"
+    ],
+    "historical_coverage": "partial",
+    "claim": "known_logged_wall_exclusion_not_proof_of_all_past_exposure"
+  },
+  "registered_unique_exposed_walls": {
+    "development": 2083,
+    "train": 6490
+  },
+  "completed_training_hands": 6410,
+  "completed_training_action_events": 2039136
+}

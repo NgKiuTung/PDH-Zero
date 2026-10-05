@@ -1,0 +1,372 @@
+{
+  "status": "completed",
+  "scope": "frozen_pair_new_wall_single_training_seed",
+  "hands": 16384,
+  "seed": 4997850476850085143,
+  "source_run": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z",
+  "long_training_allowed": false,
+  "max_cvar_drop": 2.0,
+  "data_lineage": {
+    "files": [
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/baseline/hands.jsonl.gz",
+        "sha256": "448f42883d59bc8c434b63a238825260f2484bd8b8f0b5353e50eb98b3877221",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000143298/hands.jsonl.gz",
+        "sha256": "403cf073a2d7cfa40fdde58a4d5e21d88760f12b1695b0e6206651857d5ffcd1",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000266137/hands.jsonl.gz",
+        "sha256": "b140ef0208ff1214b2c00dc5b926f1961807107e8211b726526162d29cf63af7",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000387598/hands.jsonl.gz",
+        "sha256": "76bbe4884b0dbbce5786b42312005cf38158eebdee51e53039614fcaba33437c",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000509656/hands.jsonl.gz",
+        "sha256": "15cf8ee9b49bad46b286d6e8209e1f15c7e23e48f2ab6acf0591bf8f018c2620",
+        "records": 4096
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/replays/hands.jsonl.gz",
+        "sha256": "a0e124ac5caaf9c02f58ea8d97031e9419cd0f05af2a43332a3982b87d24080f",
+        "records": 6410
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz",
+        "sha256": "32c2d460865a55fe66d23d580c15402c6bff6dd99d2298d8549d804c7fadf2e0",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz",
+        "sha256": "7995b56de91bae7360f11a626413e6a9902be6e0f607b5b710d050e9c535489d",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz",
+        "sha256": "d5fc232c68ac21f0cb0ab6bc533dd08a7f1d886eeeb8a0525b5e7a9e298ea5d9",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz",
+        "sha256": "8caa13f76683de96f1896ac3f1ea3c0478f14f143eb1db216550b16695b86faf",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz",
+        "sha256": "2ac0add1b5a8738dfd63f82b1cbf18747db19346ead825dc1ad85bfeca429dd6",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz",
+        "sha256": "efbed0af6b1414731e830c285b699f7300792d0cc492fcc539e8ebc8ca2c981f",
+        "cached": true
+      },
+      {
+        "path": "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/replays/hands.jsonl.gz",
+        "sha256": "2513b747f4114ff082a1d842b7d4323b434ae9e300a80fb0da45999fa1277c2b",
+        "cached": true
+      }
+    ],
+    "missing_history": [
+      "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/UNRECORDED_LEGACY_EVALUATION_WALLS",
+      "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/UNRECORDED_LEGACY_TEACHER_WALLS"
+    ],
+    "historical_coverage": "partial",
+    "claim": "known_logged_wall_exclusion_not_proof_of_all_past_exposure"
+  },
+  "baseline_sha256": "86f99c622589252ed98c3f4cfc01757221c0fe535f4e87678f26384391314387",
+  "baseline": {
+    "hands": 16384,
+    "mean_score": -0.08740234375,
+    "score_std": 10.842114316938233,
+    "median_score": 0.0,
+    "quantiles": {
+      "0.01": -24.0,
+      "0.05": -12.0,
+      "0.1": -9.0,
+      "0.5": 0.0,
+      "0.9": 0.0,
+      "0.95": 12.0,
+      "0.99": 42.0
+    },
+    "cvar_1": -33.853658536585364,
+    "cvar_5": -19.98048780487805,
+    "win": 0.095947265625,
+    "point_shoot": 0.05975341796875,
+    "draw": 0.507568359375,
+    "self_draw": 0.0289306640625,
+    "discard_win": 0.0670166015625,
+    "minimum_score": -112,
+    "maximum_score": 300,
+    "losses_by_cause": {
+      "ordinary_self_draw": {
+        "payments": 1982,
+        "amount": 22314,
+        "before_horses": 8938,
+        "horse_uplift": 13376
+      },
+      "ordinary_discard": {
+        "payments": 963,
+        "amount": 9852,
+        "before_horses": 3865,
+        "horse_uplift": 5987
+      },
+      "twelve_grounded_liability": {
+        "payments": 26,
+        "amount": 846,
+        "before_horses": 324,
+        "horse_uplift": 522
+      },
+      "discard_multi": {
+        "payments": 32,
+        "amount": 311,
+        "before_horses": 131,
+        "horse_uplift": 180
+      }
+    },
+    "negative_score_hands": 2987,
+    "conditional_mean_loss": 11.1560093739538,
+    "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+    "responsibility": {
+      "schema_version": 1,
+      "candidate_seat_hands": 16384,
+      "direct_loss": 11009,
+      "direct_principal": 4320,
+      "direct_horse_uplift": 6689,
+      "ordinary_self_draw_share": 22314,
+      "total_outgoing": 33323,
+      "total_income": 31891,
+      "direct_loss_hand": 1005,
+      "defense_loss_per_100_seat_hands": 67.193603515625,
+      "direct_loss_hand_rate": 0.06134033203125,
+      "direct_loss_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 6.0,
+        "p99": 16.0,
+        "maximum": 90,
+        "positive_hands": 1005,
+        "mean_if_positive": 10.954228855721393
+      },
+      "ordinary_self_draw_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 12.0,
+        "p99": 21.0,
+        "maximum": 112,
+        "positive_hands": 1982,
+        "mean_if_positive": 11.25832492431887
+      },
+      "net_score_tail_breakdown": {
+        "0.01": {
+          "hands": 164,
+          "losses_by_cause": {
+            "ordinary_self_draw": 3711,
+            "twelve_grounded_liability": 657,
+            "ordinary_discard": 1060,
+            "discard_multi": 124
+          },
+          "direct_loss": 1841,
+          "ordinary_self_draw_share": 3711,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        },
+        "0.05": {
+          "hands": 820,
+          "losses_by_cause": {
+            "ordinary_self_draw": 11360,
+            "twelve_grounded_liability": 801,
+            "ordinary_discard": 3957,
+            "discard_multi": 266
+          },
+          "direct_loss": 5024,
+          "ordinary_self_draw_share": 11360,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        }
+      },
+      "scope": "monitoring_only_not_reward_or_gate",
+      "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+    },
+    "seconds": 1654.823543919716,
+    "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+    "seed": 4997850476850085143,
+    "initial_dealer": 0,
+    "initial_continuation": 0,
+    "unit": "complete_natural_hand_not_isolated_decision",
+    "unique_starting_walls": 4096,
+    "seat_variants_per_wall": 4,
+    "action_events_total": 5228062,
+    "results_sha256": "46750d56aac51963e7bf8e900f8cc9d414988cc41adb1696b82c7e25cd048ca6"
+  },
+  "candidate_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "candidate": {
+    "hands": 16384,
+    "mean_score": 0.23211669921875,
+    "score_std": 10.510365803263584,
+    "median_score": 0.0,
+    "quantiles": {
+      "0.01": -24.0,
+      "0.05": -12.0,
+      "0.1": -8.0,
+      "0.5": 0.0,
+      "0.9": 4.0,
+      "0.95": 12.0,
+      "0.99": 48.0
+    },
+    "cvar_1": -31.390243902439025,
+    "cvar_5": -19.28048780487805,
+    "win": 0.110595703125,
+    "point_shoot": 0.05694580078125,
+    "draw": 0.503173828125,
+    "self_draw": 0.03125,
+    "discard_win": 0.079345703125,
+    "minimum_score": -90,
+    "maximum_score": 195,
+    "losses_by_cause": {
+      "ordinary_self_draw": {
+        "payments": 1869,
+        "amount": 20717,
+        "before_horses": 8379,
+        "horse_uplift": 12338
+      },
+      "ordinary_discard": {
+        "payments": 918,
+        "amount": 9783,
+        "before_horses": 3783,
+        "horse_uplift": 6000
+      },
+      "discard_multi": {
+        "payments": 30,
+        "amount": 325,
+        "before_horses": 128,
+        "horse_uplift": 197
+      },
+      "twelve_grounded_liability": {
+        "payments": 22,
+        "amount": 630,
+        "before_horses": 252,
+        "horse_uplift": 378
+      }
+    },
+    "negative_score_hands": 2824,
+    "conditional_mean_loss": 11.138456090651559,
+    "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+    "responsibility": {
+      "schema_version": 1,
+      "candidate_seat_hands": 16384,
+      "direct_loss": 10738,
+      "direct_principal": 4163,
+      "direct_horse_uplift": 6575,
+      "ordinary_self_draw_share": 20717,
+      "total_outgoing": 31455,
+      "total_income": 35258,
+      "direct_loss_hand": 955,
+      "defense_loss_per_100_seat_hands": 65.53955078125,
+      "direct_loss_hand_rate": 0.05828857421875,
+      "direct_loss_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 6.0,
+        "p99": 16.0,
+        "maximum": 90,
+        "positive_hands": 955,
+        "mean_if_positive": 11.243979057591623
+      },
+      "ordinary_self_draw_distribution": {
+        "denominator": "all_candidate_seat_hands",
+        "p95": 12.0,
+        "p99": 20.0,
+        "maximum": 72,
+        "positive_hands": 1869,
+        "mean_if_positive": 11.084537185660782
+      },
+      "net_score_tail_breakdown": {
+        "0.01": {
+          "hands": 164,
+          "losses_by_cause": {
+            "twelve_grounded_liability": 423,
+            "ordinary_self_draw": 3379,
+            "ordinary_discard": 1209,
+            "discard_multi": 137
+          },
+          "direct_loss": 1769,
+          "ordinary_self_draw_share": 3379,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        },
+        "0.05": {
+          "hands": 820,
+          "losses_by_cause": {
+            "twelve_grounded_liability": 621,
+            "ordinary_self_draw": 10402,
+            "ordinary_discard": 4474,
+            "discard_multi": 313
+          },
+          "direct_loss": 5408,
+          "ordinary_self_draw_share": 10402,
+          "scope": "lowest_net_score_hands_ties_by_wall_seat"
+        }
+      },
+      "scope": "monitoring_only_not_reward_or_gate",
+      "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+    },
+    "seconds": 1708.4045242378488,
+    "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+    "seed": 4997850476850085143,
+    "initial_dealer": 0,
+    "initial_continuation": 0,
+    "unit": "complete_natural_hand_not_isolated_decision",
+    "unique_starting_walls": 4096,
+    "seat_variants_per_wall": 4,
+    "action_events_total": 5201647,
+    "results_sha256": "0de5ed098495cc5ed22b641825d98201bd395364a217d8559f75da40b5c378e2"
+  },
+  "comparison": {
+    "wall_groups": 4096,
+    "hands": 16384,
+    "scope": "fresh_walls_frozen_pair_not_multiple_training_seeds",
+    "score": {
+      "delta": 0.31951904296875,
+      "ci95": [
+        0.15783233642578126,
+        0.48547821044921874
+      ]
+    },
+    "point_shoot": {
+      "delta": -0.0028076171875,
+      "ci95": [
+        -0.00701904296875,
+        0.00128173828125
+      ]
+    },
+    "win": {
+      "delta": 0.0146484375,
+      "ci95": [
+        0.0101318359375,
+        0.01922760009765624
+      ]
+    },
+    "draw": {
+      "delta": -0.00439453125,
+      "ci95": [
+        -0.0120849609375,
+        0.0031753540039062417
+      ]
+    },
+    "cvar_5": {
+      "delta": 0.6999999999999993,
+      "ci95": [
+        -0.15365853658536466,
+        1.552439024390246
+      ]
+    }
+  },
+  "gate": "PASS",
+  "known_wall_identity_check": "PASS",
+  "registered_unique_exposed_walls": {
+    "heldout": 8258
+  },
+  "elapsed_wall_seconds": 3383.9120026379824
+}
