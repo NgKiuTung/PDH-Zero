@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-03T02:22:03.253666+00:00",
+  "event": "evaluation_completed",
+  "learner_decisions": 0,
+  "hands": 1024,
+  "mean_score": -0.9462890625,
+  "score_std": 8.394918355629962,
+  "cvar_5": -21.28846153846154,
+  "win_rate": 0.0771484375,
+  "self_draw_rate": 0.01953125,
+  "discard_win_rate": 0.0576171875,
+  "point_shoot_rate": 0.056640625,
+  "draw_rate": 0.501953125,
+  "minimum_score": -45,
+  "maximum_score": 60
+}

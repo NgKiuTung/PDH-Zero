@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "created_at_utc": "2026-10-03T01:59:47.841425+00:00",
+  "status": "failed",
+  "scope": "curriculum_training_candidate",
+  "rule_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "config": {
+    "output": "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z",
+    "duration_seconds": 3600,
+    "environments": 192,
+    "hands_per_update": 384,
+    "hidden_size": 384,
+    "learning_rate": 0.0002,
+    "reward_scale": 32.0,
+    "ppo_epochs": 2,
+    "minibatch_decisions": 16384,
+    "warmup_hands": 2048,
+    "warmup_epochs": 3,
+    "warmup_validation_fraction": 0.1,
+    "teacher_review_hands": 128,
+    "teacher_review_epochs": 1,
+    "teacher_review_interval_updates": 10,
+    "evaluation_hands": 1024,
+    "evaluation_environments": 96,
+    "evaluation_interval_decisions": 500000,
+    "seed": 20261002,
+    "device": "cuda",
+    "allow_shared_gpu": false
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.12.1+cu130",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 5090"
+  },
+  "failed_at_utc": "2026-10-03T03:05:47.610330+00:00",
+  "error_type": "KeyboardInterrupt",
+  "error": ""
+}

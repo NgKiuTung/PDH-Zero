@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-09-30T13:43:48.315108+00:00",
+  "update": 16,
+  "long_updates": 6,
+  "long_hands": 1152,
+  "long_decisions": 410054,
+  "hands": 192,
+  "decisions": 68753,
+  "draw_rate": 1.0,
+  "win_rate_any": 0.0,
+  "point_shoot_end_rate": 0.0,
+  "raw_score_sum": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "collection_seconds": 28.30818863864988,
+  "update_seconds": 35.62016424071044,
+  "decisions_per_second": 2428.7318725200876,
+  "disk_free_bytes": 47932821504,
+  "replay": {
+    "path": "replays/000000/update-000000016.jsonl.gz",
+    "hands": 192,
+    "sha256": "f6f17b988daa9c912ff98989589425557b55f206971fb550c7e165158c4e7d60",
+    "size_bytes": 138767
+  },
+  "policy_loss": -0.002398101845756173,
+  "value_loss": 1.401052772794005e-05,
+  "entropy": 0.4866584329693406,
+  "approximate_kl": 0.001860823405279877,
+  "gradient_norm": 0.03819557713965575,
+  "minibatches": 27,
+  "cuda_peak_memory_bytes": 347259392
+}

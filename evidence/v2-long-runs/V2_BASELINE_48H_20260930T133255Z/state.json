@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "stopped",
+  "updated_at_utc": "2026-09-30T15:25:29.705117+00:00",
+  "pid": 39353,
+  "update": 100,
+  "long_updates": 90,
+  "long_hands": 17280,
+  "long_decisions": 6152009,
+  "consumed_training_seconds": 6749.425199062098,
+  "target_decisions": 50000000,
+  "max_wall_seconds": 172800,
+  "next_evaluation_decisions": 10000000,
+  "next_snapshot_decisions": 10000000,
+  "best_evaluation_mean_score": -1.79443359375,
+  "attempts": 1,
+  "stop_reason": "signal_15_requested"
+}

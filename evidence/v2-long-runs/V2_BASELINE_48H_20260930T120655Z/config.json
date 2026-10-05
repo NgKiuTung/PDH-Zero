@@ -1,0 +1,21 @@
+{
+  "output": "/root/rivermind-data/pdh-zero/evidence/v2-long-runs/V2_BASELINE_48H_20260930T120655Z",
+  "smoke_dir": "/root/rivermind-data/pdh-zero/evidence/v2-training-smoke/SMOKE_10M_20260930T103719Z",
+  "max_wall_seconds": 172800,
+  "target_decisions": 50000000,
+  "environments": 96,
+  "hands_per_update": 192,
+  "hidden_size": 256,
+  "learning_rate": 0.0003,
+  "reward_scale": 32.0,
+  "ppo_epochs": 3,
+  "minibatch_decisions": 8192,
+  "seed": 20261001,
+  "device": "cuda",
+  "allow_shared_gpu": false,
+  "evaluation_hands": 2048,
+  "evaluation_environments": 64,
+  "evaluation_interval_decisions": 5000000,
+  "snapshot_interval_decisions": 5000000,
+  "min_free_bytes": 8589934592
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "full_rules_long_baseline_candidate",
+  "status": "stopped",
+  "created_at_utc": "2026-09-30T13:33:00.083026+00:00",
+  "rule_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "config": {
+    "output": "/root/rivermind-data/pdh-zero/evidence/v2-long-runs/V2_BASELINE_48H_20260930T133255Z",
+    "smoke_dir": "/root/rivermind-data/pdh-zero/evidence/v2-training-smoke/SMOKE_10M_20260930T103719Z",
+    "max_wall_seconds": 172800,
+    "target_decisions": 50000000,
+    "environments": 96,
+    "hands_per_update": 192,
+    "hidden_size": 256,
+    "learning_rate": 0.0003,
+    "reward_scale": 32.0,
+    "ppo_epochs": 3,
+    "minibatch_decisions": 8192,
+    "seed": 20261001,
+    "device": "cuda",
+    "allow_shared_gpu": false,
+    "evaluation_hands": 2048,
+    "evaluation_environments": 64,
+    "evaluation_interval_decisions": 5000000,
+    "snapshot_interval_decisions": 5000000,
+    "min_free_bytes": 8589934592
+  },
+  "source_smoke": {
+    "path": "/root/rivermind-data/pdh-zero/evidence/v2-training-smoke/SMOKE_10M_20260930T103719Z",
+    "checkpoint": "/root/rivermind-data/pdh-zero/evidence/v2-training-smoke/SMOKE_10M_20260930T103719Z/checkpoints/checkpoint_latest.pt",
+    "update": 10,
+    "hands": 1920,
+    "decisions": 676386,
+    "elapsed_seconds": 655.1478142230771
+  },
+  "completed_at_utc": "2026-09-30T15:25:29.705650+00:00",
+  "stop_reason": "signal_15_requested",
+  "updates": 100,
+  "long_hands": 17280,
+  "long_decisions": 6152009,
+  "consumed_training_seconds": 6749.425199062098
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-30T13:37:08.364772+00:00",
+  "long_decisions": 0,
+  "hands": 2048,
+  "mean_score": -1.95654296875,
+  "score_std": 6.085777329576308,
+  "cvar_5": -20.446601941747574,
+  "win_rate": 0.0263671875,
+  "self_draw_rate": 0.0048828125,
+  "discard_win_rate": 0.021484375,
+  "point_shoot_rate": 0.11181640625,
+  "draw_rate": 0.50634765625,
+  "minimum_score": -54,
+  "maximum_score": 72
+}

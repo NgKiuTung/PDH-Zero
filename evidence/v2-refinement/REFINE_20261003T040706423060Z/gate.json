@@ -1,0 +1,37 @@
+{
+  "gate": "INCONCLUSIVE",
+  "comparison": {
+    "wall_groups": 256,
+    "hands": 1024,
+    "scope": "repeated_development_set_not_confirmatory",
+    "score": {
+      "delta": 0.08203125,
+      "ci95": [
+        -0.753076171875,
+        0.8811035156249987
+      ]
+    },
+    "point_shoot": {
+      "delta": -0.01953125,
+      "ci95": [
+        -0.037109375,
+        -0.001953125
+      ]
+    },
+    "win": {
+      "delta": 0.0166015625,
+      "ci95": [
+        -0.00390625,
+        0.037109375
+      ]
+    },
+    "draw": {
+      "delta": 0.005859375,
+      "ci95": [
+        -0.03125,
+        0.0439453125
+      ]
+    }
+  },
+  "long_training_allowed": false
+}

@@ -1,0 +1,19 @@
+{
+  "hands": 1024,
+  "mean_score": 0.248046875,
+  "score_std": 14.478128578058794,
+  "cvar_5": -20.48076923076923,
+  "win": 0.0986328125,
+  "point_shoot": 0.048828125,
+  "draw": 0.5107421875,
+  "self_draw": 0.0322265625,
+  "discard_win": 0.06640625,
+  "minimum_score": -63,
+  "maximum_score": 234,
+  "seconds": 288.986351612024,
+  "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+  "seed": 95000731,
+  "initial_dealer": 0,
+  "initial_continuation": 0,
+  "results_sha256": "5362b33ea4a4d6f9bcf86e49ab3fab2db3d0c19a160e51a0e67d641095b658ef"
+}

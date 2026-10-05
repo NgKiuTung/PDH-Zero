@@ -1,0 +1,66 @@
+{
+  "schema_version": 3,
+  "status": "completed",
+  "created_at_utc": "2026-10-03T04:07:06.735278+00:00",
+  "pid": 827,
+  "scope": "solo_stability_refinement_candidate",
+  "rule_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "config": {
+    "output": "/root/rivermind-data/pdh-zero/evidence/v2-refinement/REFINE_20261003T040706423060Z",
+    "warmup_checkpoint": "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/checkpoints/checkpoint_warmup.pt",
+    "workers": 4,
+    "environments": 64,
+    "hands_per_update": 256,
+    "max_seconds": 5400,
+    "target_decisions": 750000,
+    "evaluation_hands": 1024,
+    "evaluation_interval": 250000,
+    "evaluation_seed": 95000731,
+    "learning_rate": 5e-05,
+    "reward_scale": 32.0,
+    "minibatch_decisions": 8192,
+    "seed": 20261003,
+    "device": "cuda"
+  },
+  "runtime": {
+    "torch": "2.12.1+cu130",
+    "device": "cuda"
+  },
+  "long_training_allowed": false,
+  "initialization": {
+    "checkpoint_sha256": "88cfa597a27faa694d4c173201f5597340291d5ebc55d7e33a0f186e6e32b267",
+    "original_model_config": {
+      "hidden_size": 384,
+      "observation_size": 622,
+      "action_size": 74,
+      "risk_policy_weight": 0.5
+    },
+    "effective_model_config": {
+      "hidden_size": 384,
+      "observation_size": 622,
+      "action_size": 74,
+      "risk_policy_weight": 0.0
+    },
+    "optimizer_policy": "fresh_AdamW_no_BC_momentum",
+    "risk_policy": "diagnostic_only_rebaseline_required"
+  },
+  "ppo_config": {
+    "epochs": 2,
+    "minibatch_decisions": 8192,
+    "clip_ratio": 0.1,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.003,
+    "risk_coefficient": 0.05,
+    "anchor_coefficient": 0.05,
+    "target_kl": 0.01,
+    "max_gradient_norm": 0.5,
+    "behavior_tolerance": 0.0005
+  },
+  "updates": 37,
+  "accepted_updates": 37,
+  "total_learner_decisions": 754462,
+  "stop_reason": "target_decisions",
+  "development_gate": "INCONCLUSIVE",
+  "finished_at_utc": "2026-10-03T05:27:46.065286+00:00",
+  "elapsed_wall_seconds": 4839.33145515807
+}

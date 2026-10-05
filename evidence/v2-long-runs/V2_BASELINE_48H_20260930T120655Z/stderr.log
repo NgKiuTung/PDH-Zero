@@ -1,0 +1,25 @@
+{"level": "ERROR", "command": "_worker", "error_type": "TypeError", "error": "RNG state must be a torch.ByteTensor"}
+Traceback (most recent call last):
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.5.0-rc2/tools/long_job.py", line 111, in main
+    return run_long(config, resume=args.resume)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.5.0-rc2/src/pdh_v2/training/long_runner.py", line 164, in run_long
+    device, model, optimizer, environments, update, counters = _prepare_run(
+                                                               ^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.5.0-rc2/src/pdh_v2/training/long_runner.py", line 126, in _prepare_run
+    model, optimizer, environments, update, counters = _new_runtime(
+                                                       ^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.5.0-rc2/src/pdh_v2/training/long_runner.py", line 51, in _new_runtime
+    update, smoke_metadata = load_checkpoint(smoke.checkpoint, model, optimizer, device)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.5.0-rc2/src/pdh_v2/training/checkpoint.py", line 64, in load_checkpoint
+    torch.cuda.set_rng_state_all(cuda_rng)
+  File "/opt/conda/lib/python3.12/site-packages/torch/cuda/random.py", line 86, in set_rng_state_all
+    set_rng_state(state, i)
+  File "/opt/conda/lib/python3.12/site-packages/torch/cuda/random.py", line 76, in set_rng_state
+    _lazy_call(cb)
+  File "/opt/conda/lib/python3.12/site-packages/torch/cuda/__init__.py", line 422, in _lazy_call
+    callable()
+  File "/opt/conda/lib/python3.12/site-packages/torch/cuda/random.py", line 74, in cb
+    default_generator.set_state(new_state)
+TypeError: RNG state must be a torch.ByteTensor
