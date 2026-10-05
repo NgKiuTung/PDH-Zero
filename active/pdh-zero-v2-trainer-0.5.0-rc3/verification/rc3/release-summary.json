@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "package": "pdh-zero-v2-trainer-0.5.0-rc3",
+  "version": "0.5.0-rc3",
+  "tests": 226,
+  "rng_restore_regression_tests": 3,
+  "status": "PASS",
+  "target_cuda_gate": "requires one rc3 startup test on the target RTX 5090",
+  "known_fix": "normalize serialized CPU/CUDA RNG states to CPU uint8 before restore",
+  "smoke_checkpoint_compatibility": "rc1 smoke checkpoint remains compatible"
+}

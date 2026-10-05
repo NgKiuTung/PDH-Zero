@@ -1,0 +1,29 @@
+Name                               Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------
+src/pdh_v2/__init__.py                 1      0      0      0   100%
+src/pdh_v2/config.py                  16      0      0      0   100%
+src/pdh_v2/contracts.py               15      0      4      0   100%
+src/pdh_v2/dealer.py                  43      3     12      3    89%   14, 18, 34
+src/pdh_v2/game/__init__.py            4      0      0      0   100%
+src/pdh_v2/game/actions.py            32      3      8      3    85%   34, 46, 50
+src/pdh_v2/game/digest.py             10      1      2      0    92%   10
+src/pdh_v2/game/engine.py            275     19    102     19    90%   96, 117, 120, 141, 144, 157, 178, 196, 218, 230, 245, 272, 299, 311, 341-342, 354, 358->366, 390, 433
+src/pdh_v2/game/session.py           115      7     32      7    90%   105, 107, 113, 126, 155, 172, 193
+src/pdh_v2/game/state.py             110     17     38     10    78%   80, 100, 103, 105, 107, 115, 119-120, 122, 132-137, 140, 143
+src/pdh_v2/game/wall.py               54      3     20      3    92%   35, 44, 61
+src/pdh_v2/horses.py                 116      3     34      3    96%   39, 115, 183
+src/pdh_v2/journal.py                 91      2     34      3    96%   117, 120, 163->exit
+src/pdh_v2/ledger.py                 185     20     58     12    85%   63, 103, 106, 115-116, 129-130, 141, 169, 172, 199-201, 203, 225-227, 229, 303, 342
+src/pdh_v2/qualifications.py          40      3     10      3    88%   33, 56, 66
+src/pdh_v2/replay/__init__.py          2      0      0      0   100%
+src/pdh_v2/replay/transcript.py       68      5     16      3    90%   34-35, 54, 58, 97
+src/pdh_v2/resources/__init__.py       0      0      0      0   100%
+src/pdh_v2/responsibility.py          75      7     22      7    86%   14, 51, 58, 75, 92, 111, 116
+src/pdh_v2/scoring/__init__.py         3      0      0      0   100%
+src/pdh_v2/scoring/evaluator.py      202      8     84      9    94%   31, 33, 36, 97, 109, 111, 141->143, 184, 195
+src/pdh_v2/scoring/patterns.py        35      0      0      0   100%
+src/pdh_v2/settlement.py             143      8     38      8    91%   67, 111, 120, 134, 147, 176, 215, 217
+src/pdh_v2/shapes.py                  61      0     28      1    99%   57->56
+src/pdh_v2/tiles.py                   54      1     16      1    97%   71
+------------------------------------------------------------------------------
+TOTAL                               1750    110    558     95    91%

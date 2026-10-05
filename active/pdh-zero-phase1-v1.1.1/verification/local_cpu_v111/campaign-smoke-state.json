@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "job_id": "campaign-smoke",
+  "status": "completed",
+  "created_at_utc": "2026-09-29T16:08:26.421409+00:00",
+  "updated_at_utc": "2026-09-29T16:08:31.609287+00:00",
+  "stop_reason": "target_training_time_reached",
+  "settings": {
+    "training_seconds": 1.0799999999999998,
+    "chunk_updates": 1,
+    "evaluation_wall_seeds": 2,
+    "evaluation_seed_start": 950000,
+    "opponent": "heuristic",
+    "device": "cpu",
+    "snapshot_seconds": 3600.0,
+    "telemetry_interval_seconds": 1,
+    "min_free_bytes": 10737418
+  },
+  "consumed_training_seconds": 4.132646837999914,
+  "completed_chunks": 2,
+  "completed_rounds": 1,
+  "next_participant_index": 0,
+  "participants": {
+    "plain_seed123": {
+      "method": "plain",
+      "seed": 123,
+      "completed_updates": 1,
+      "total_environment_decisions": 1453,
+      "chunks": 1,
+      "last_chunk_seconds": 1.7347486039999467,
+      "checkpoint": "/mnt/data/pdh-zero-phase1-v1.1.1-work/verification/local_cpu_v111/campaign-smoke/participants/plain_seed123/training/checkpoint_latest.pt",
+      "last_metrics": {
+        "timestamp": "2026-09-29T16:08:29.068556+00:00",
+        "update": 1,
+        "episodes": 64,
+        "attempts": 67,
+        "environment_decisions": 1453,
+        "total_environment_decisions": 1453,
+        "mean_score": -0.890625,
+        "win_rate": 0.078125,
+        "draw_rate": 0.453125,
+        "collection_seconds": 1.4773768360000759,
+        "update_seconds": 1.7061167080000814,
+        "policy_loss": -0.012075635912497606,
+        "value_loss": 0.07093466445803642,
+        "entropy": 1.5181205570697784,
+        "approximate_kl": 0.000870012237267237,
+        "gradient_norm": 0.4098093956708908
+      }
+    },
+    "privileged_seed123": {
+      "method": "privileged",
+      "seed": 123,
+      "completed_updates": 1,
+      "total_environment_decisions": 1482,
+      "chunks": 1,
+      "last_chunk_seconds": 2.3978982339999675,
+      "checkpoint": "/mnt/data/pdh-zero-phase1-v1.1.1-work/verification/local_cpu_v111/campaign-smoke/participants/privileged_seed123/training/checkpoint_latest.pt",
+      "last_metrics": {
+        "timestamp": "2026-09-29T16:08:31.493357+00:00",
+        "update": 1,
+        "episodes": 64,
+        "attempts": 65,
+        "environment_decisions": 1482,
+        "total_environment_decisions": 1482,
+        "mean_score": -1.125,
+        "win_rate": 0.015625,
+        "draw_rate": 0.46875,
+        "collection_seconds": 2.227447075999976,
+        "update_seconds": 2.3889171089999763,
+        "policy_loss": -0.00894203400484428,
+        "value_loss": 0.05017303116619587,
+        "entropy": 1.541006475687027,
+        "approximate_kl": 0.0036733401951527106,
+        "gradient_norm": 0.34390393644571304
+      }
+    }
+  },
+  "attempts": 1
+}

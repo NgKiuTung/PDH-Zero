@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "files_checked": 26,
+  "checks": [
+    "line_length<=100",
+    "no_trailing_whitespace",
+    "no_tabs",
+    "simple_unused_import_scan",
+    "no_eval_exec",
+    "no_pickle_marshal_shelve"
+  ],
+  "violations": [],
+  "note": "ruff/mypy unavailable; this deterministic stdlib audit is supplementary and not a substitute."
+}

@@ -1,0 +1,21 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "torch": "2.10.0+cpu",
+  "torch_hip": null,
+  "torch_cuda": null,
+  "cudnn": null,
+  "accelerator_available": false,
+  "accelerator_count": 0,
+  "accelerator": null,
+  "cpu_count": 5,
+  "storage": {
+    "root": {
+      "total_bytes": 33770192896,
+      "used_bytes": 42180608,
+      "free_bytes": 31993249792
+    },
+    "data_disk": null,
+    "file_storage": null
+  }
+}

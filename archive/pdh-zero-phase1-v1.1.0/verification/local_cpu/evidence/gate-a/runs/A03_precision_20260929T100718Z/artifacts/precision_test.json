@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "backend": "cpu",
+  "device_name": "CPU",
+  "forward_max_abs_error": 0.0,
+  "gradient_max_abs_error": 0.0,
+  "forward_tolerance": 0.0001,
+  "gradient_tolerance": 0.0005
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "backend": "cpu",
+  "device_name": "CPU",
+  "torch": "2.10.0+cpu",
+  "hip": null,
+  "cuda": null,
+  "dtype": "float32",
+  "steps": 50,
+  "batch_size": 256,
+  "elapsed_seconds": 0.2666704949999712,
+  "steps_per_second": 187.4973082417888,
+  "samples_per_second": 47999.31090989793,
+  "initial_loss": 3.524071216583252,
+  "final_loss": 3.529196262359619,
+  "finite": true,
+  "peak_memory_bytes": 0
+}

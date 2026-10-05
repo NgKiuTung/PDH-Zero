@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-09-30T11:20:28.374420+00:00",
+  "python": "3.13.5",
+  "tests_exit_code": 0,
+  "long_job_candidate_check": "PASS",
+  "long_job_entry_ready": true,
+  "smoke_promotion_required": true,
+  "default_max_hours": 48,
+  "default_target_decisions": 50000000,
+  "formal_long_run_ready": false
+}

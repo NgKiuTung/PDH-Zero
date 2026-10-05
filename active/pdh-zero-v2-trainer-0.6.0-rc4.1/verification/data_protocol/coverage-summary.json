@@ -1,0 +1,25 @@
+{
+  "driver_pid": 2165,
+  "status": "completed",
+  "pid": 2177,
+  "pgid": 2177,
+  "exit_code": 0,
+  "seconds": 185.9728089319999,
+  "export_exit_code": 0,
+  "totals": {
+    "covered_lines": 5314,
+    "num_statements": 6205,
+    "percent_covered": 82.37279659957494,
+    "percent_covered_display": "82",
+    "missing_lines": 891,
+    "excluded_lines": 0,
+    "percent_statements_covered": 85.6406124093473,
+    "percent_statements_covered_display": "86",
+    "num_branches": 1794,
+    "num_partial_branches": 361,
+    "covered_branches": 1275,
+    "missing_branches": 519,
+    "percent_branches_covered": 71.07023411371237,
+    "percent_branches_covered_display": "71"
+  }
+}

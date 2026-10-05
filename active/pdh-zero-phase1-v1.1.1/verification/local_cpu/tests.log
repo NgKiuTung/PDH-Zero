@@ -1,0 +1,29 @@
+test_checkpoint_payload_is_staged_on_cpu_before_target_load (test_checkpoint.CheckpointTests.test_checkpoint_payload_is_staged_on_cpu_before_target_load)
+Keep CPU RNG tensors on CPU even when the target model is an accelerator. ... ok
+test_checkpoint_restores_rng_and_optimizer (test_checkpoint.CheckpointTests.test_checkpoint_restores_rng_and_optimizer) ... ok
+test_restore_rng_state_normalizes_byte_tensors_for_torch_apis (test_checkpoint.CheckpointTests.test_restore_rng_state_normalizes_byte_tensors_for_torch_apis)
+Normalize RNG tensors before passing them to CPU or accelerator generators. ... ok
+test_blackwell_accepts_cuda_12_8_and_sm_120 (test_cuda_compat.CudaCompatibilityTests.test_blackwell_accepts_cuda_12_8_and_sm_120) ... ok
+test_blackwell_rejects_cuda_12_1 (test_cuda_compat.CudaCompatibilityTests.test_blackwell_rejects_cuda_12_1) ... ok
+test_blackwell_rejects_missing_sm_120 (test_cuda_compat.CudaCompatibilityTests.test_blackwell_rejects_missing_sm_120) ... ok
+test_parse_cuda_version (test_cuda_compat.CudaCompatibilityTests.test_parse_cuda_version) ... ok
+test_illegal_action_raises (test_environment.EnvironmentTests.test_illegal_action_raises) ... ok
+test_random_games_preserve_tiles_and_zero_sum (test_environment.EnvironmentTests.test_random_games_preserve_tiles_and_zero_sum) ... ok
+test_same_seed_and_action_policy_is_deterministic (test_environment.EnvironmentTests.test_same_seed_and_action_policy_is_deterministic) ... ok
+test_masked_action_is_always_legal (test_model.ModelTests.test_masked_action_is_always_legal) ... ok
+test_sequence_shapes (test_model.ModelTests.test_sequence_shapes) ... ok
+test_hidden_permutation_changes_only_privileged_observation (test_observation.ObservationTests.test_hidden_permutation_changes_only_privileged_observation) ... ok
+test_pack_results_refuses_to_overwrite_existing_archive (test_pack_results.PackResultsTests.test_pack_results_refuses_to_overwrite_existing_archive) ... ok
+test_pack_results_works_when_system_zip_is_unavailable (test_pack_results.PackResultsTests.test_pack_results_works_when_system_zip_is_unavailable) ... ok
+test_exported_game_replays_exactly (test_replay.ReplayTests.test_exported_game_replays_exactly) ... ok
+test_four_identical_tiles_count_as_two_pairs (test_rules.RuleTests.test_four_identical_tiles_count_as_two_pairs) ... ok
+test_invalid_structure_cannot_win (test_rules.RuleTests.test_invalid_structure_cannot_win) ... ok
+test_open_sequence_hand_without_big_pattern_cannot_win (test_rules.RuleTests.test_open_sequence_hand_without_big_pattern_cannot_win) ... ok
+test_sequence_hand_detects_pure_numbers (test_rules.RuleTests.test_sequence_hand_detects_pure_numbers) ... ok
+test_triplet_hand_detects_pong_pong_and_closed (test_rules.RuleTests.test_triplet_hand_detects_pong_pong_and_closed) ... ok
+test_one_update_completes_and_resumes (test_training_smoke.TrainingSmokeTests.test_one_update_completes_and_resumes) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.044s
+
+OK

@@ -1,0 +1,91 @@
+{
+  "version": "0.6.0-rc4",
+  "local_program_gate": "PASS",
+  "tests": 338,
+  "test_failures": 0,
+  "test_errors": 0,
+  "warnings_as_errors": true,
+  "python310_syntax_files": 141,
+  "native_built_and_imported": true,
+  "native_flags": [
+    "c++20",
+    "O3",
+    "ffp-contract=off",
+    "no_fast_math"
+  ],
+  "source_rules_unchanged": true,
+  "real_input_archive_sha256": "0614b811c426fdbd9dca24513676b7082d4496fb7b75ebff3919c07f8a42eba4",
+  "actual_selected_checkpoint": "d000000265095",
+  "actual_selected_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+  "actual_selected_status": "INCONCLUSIVE_not_independently_qualified",
+  "native_real_replay": {
+    "status": "PASS",
+    "hands": 64,
+    "decisions": 18484,
+    "candidate_actions": 71239,
+    "max_abs_error": 2.220446049250313e-16,
+    "observed_action_kinds": [
+      "ADDED_KONG",
+      "CLOSED_KONG",
+      "DISCARD",
+      "PASS",
+      "PONG",
+      "WIN"
+    ],
+    "atol": 2e-12,
+    "scope": "sampled_replays_not_all_possible_states"
+  },
+  "responsibility_audit": {
+    "verified_player_hands": 20480,
+    "evaluations": 5,
+    "tail_replays_verified": 100,
+    "causal_contribution": "NOT_ESTIMATED",
+    "reward_modified": false
+  },
+  "cpu_benchmark": {
+    "tables": 64,
+    "workers": 2,
+    "repeats": 3,
+    "rollout_speedup": 1.680927446028352,
+    "scope": "complete_sampling_not_PPO_not_target_GPU",
+    "python_median_environment_dps": 3094.8669761811393,
+    "cpp_median_environment_dps": 5202.246842069651
+  },
+  "local_environment": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "effective_cpu_equivalents": 4,
+    "memory_limit_bytes": 4294967296,
+    "cuda": false
+  },
+  "user_resource_evidence": {
+    "cpu_max": "1400000 100000",
+    "cpu_equivalents": 14,
+    "affinity": "0-127",
+    "memory_limit_bytes": 64424509440
+  },
+  "coverage_python": {
+    "covered_lines": 5049,
+    "num_statements": 5932,
+    "percent_covered": 81.73833245936025,
+    "percent_covered_display": "82",
+    "missing_lines": 883,
+    "excluded_lines": 0,
+    "percent_statements_covered": 85.11463250168578,
+    "percent_statements_covered_display": "85",
+    "num_branches": 1696,
+    "num_partial_branches": 348,
+    "covered_branches": 1186,
+    "missing_branches": 510,
+    "percent_branches_covered": 69.92924528301887,
+    "percent_branches_covered_display": "70"
+  },
+  "native_line_coverage": "NOT_MEASURED",
+  "target_rtx5090": "NOT_RUN",
+  "target_14cpu_load_ranking": "NOT_RUN",
+  "ruff": "NOT_INSTALLED_NOT_RUN",
+  "mypy": "NOT_INSTALLED_NOT_RUN",
+  "full_resume_supported": false,
+  "formal_long_training_allowed": false,
+  "final_zip_clean_verification": "SEE_EXTERNAL_RELEASE_CHECK"
+}

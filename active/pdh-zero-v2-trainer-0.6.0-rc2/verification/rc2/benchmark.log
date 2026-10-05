@@ -1,0 +1,39 @@
+{
+  "scope": "CPU_rule_environment_and_IPC_not_GPU_training",
+  "semantic_equivalence": true,
+  "results": [
+    {
+      "workers": 0,
+      "tables": 32,
+      "hands": 32,
+      "decisions": 9433,
+      "startup_seconds": 0.003660271999933684,
+      "collection_seconds": 3.4176306199999544,
+      "total_seconds_including_shutdown": 3.4212920620000205,
+      "collection_decisions_per_second": 2760.0993345501233,
+      "terminal_digest": "24e3a933b65d942358fc14717eeef3d6ab20765f45b9a23669e72d0ad78a88db"
+    },
+    {
+      "workers": 2,
+      "tables": 32,
+      "hands": 32,
+      "decisions": 9433,
+      "startup_seconds": 1.753532205000056,
+      "collection_seconds": 2.7184449260000747,
+      "total_seconds_including_shutdown": 4.820518839999977,
+      "collection_decisions_per_second": 3469.998567850236,
+      "terminal_digest": "24e3a933b65d942358fc14717eeef3d6ab20765f45b9a23669e72d0ad78a88db"
+    },
+    {
+      "workers": 4,
+      "tables": 32,
+      "hands": 32,
+      "decisions": 9433,
+      "startup_seconds": 1.8856515639999998,
+      "collection_seconds": 2.2637013700000352,
+      "total_seconds_including_shutdown": 4.715351019000082,
+      "collection_decisions_per_second": 4167.069086502277,
+      "terminal_digest": "24e3a933b65d942358fc14717eeef3d6ab20765f45b9a23669e72d0ad78a88db"
+    }
+  ]
+}

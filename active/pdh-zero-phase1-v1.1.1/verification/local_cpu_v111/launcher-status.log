@@ -1,0 +1,84 @@
+JOB_DIR=/tmp/pdh-v111-launcher-final/evidence/gate-b/long-runs/launcher_smoke
+PID=1853
+PROCESS_ALIVE=True
+{
+  "schema_version": "1.0",
+  "job_id": "launcher_smoke",
+  "status": "completed",
+  "created_at_utc": "2026-09-29T16:08:36.184255+00:00",
+  "updated_at_utc": "2026-09-29T16:08:40.454868+00:00",
+  "stop_reason": "target_training_time_reached",
+  "settings": {
+    "training_seconds": 1.0799999999999998,
+    "chunk_updates": 1,
+    "evaluation_wall_seeds": 2,
+    "evaluation_seed_start": 950000,
+    "opponent": "heuristic",
+    "device": "cpu",
+    "snapshot_seconds": 3600.0,
+    "telemetry_interval_seconds": 30,
+    "min_free_bytes": 5368709120
+  },
+  "consumed_training_seconds": 3.0446514730000445,
+  "completed_chunks": 2,
+  "completed_rounds": 1,
+  "next_participant_index": 0,
+  "participants": {
+    "plain_seed123": {
+      "method": "plain",
+      "seed": 123,
+      "completed_updates": 1,
+      "total_environment_decisions": 1453,
+      "chunks": 1,
+      "last_chunk_seconds": 1.5216470110000273,
+      "checkpoint": "/tmp/pdh-v111-launcher-final/evidence/gate-b/long-runs/launcher_smoke/participants/plain_seed123/training/checkpoint_latest.pt",
+      "last_metrics": {
+        "timestamp": "2026-09-29T16:08:38.802077+00:00",
+        "update": 1,
+        "episodes": 64,
+        "attempts": 67,
+        "environment_decisions": 1453,
+        "total_environment_decisions": 1453,
+        "mean_score": -0.890625,
+        "win_rate": 0.078125,
+        "draw_rate": 0.453125,
+        "collection_seconds": 1.3327433140000267,
+        "update_seconds": 1.510358182999994,
+        "policy_loss": -0.012075635912497606,
+        "value_loss": 0.07093466445803642,
+        "entropy": 1.5181205570697784,
+        "approximate_kl": 0.000870012237267237,
+        "gradient_norm": 0.4098093956708908
+      }
+    },
+    "privileged_seed123": {
+      "method": "privileged",
+      "seed": 123,
+      "completed_updates": 1,
+      "total_environment_decisions": 1482,
+      "chunks": 1,
+      "last_chunk_seconds": 1.5230044620000172,
+      "checkpoint": "/tmp/pdh-v111-launcher-final/evidence/gate-b/long-runs/launcher_smoke/participants/privileged_seed123/training/checkpoint_latest.pt",
+      "last_metrics": {
+        "timestamp": "2026-09-29T16:08:40.336917+00:00",
+        "update": 1,
+        "episodes": 64,
+        "attempts": 65,
+        "environment_decisions": 1482,
+        "total_environment_decisions": 1482,
+        "mean_score": -1.125,
+        "win_rate": 0.015625,
+        "draw_rate": 0.46875,
+        "collection_seconds": 1.3152849780000224,
+        "update_seconds": 1.5136750469999924,
+        "policy_loss": -0.00894203400484428,
+        "value_loss": 0.05017303116619587,
+        "entropy": 1.541006475687027,
+        "approximate_kl": 0.0036733401951527106,
+        "gradient_norm": 0.34390393644571304
+      }
+    }
+  },
+  "attempts": 1
+}
+

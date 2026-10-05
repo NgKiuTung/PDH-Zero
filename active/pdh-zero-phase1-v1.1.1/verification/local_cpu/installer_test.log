@@ -1,0 +1,15 @@
+pdh-zero-phase1-v1.1.0.zip: OK
+{'data_root': '/mnt/data/pdh_v110_install_test', 'total_gib': 31.45, 'free_gib': 29.79}
+extracted=/mnt/data/pdh_v110_install_test/pdh-zero/tmp/install-v1.1.0-2101
+{'package_version': '1.1.0', 'torch': '2.10.0+cpu', 'backend': 'cpu', 'hip': None, 'cuda_runtime': None, 'accelerator_available': False}
+
+Bootstrap complete for backend=cpu. Activate with: source .venv/bin/activate
+----------------------------------------------------------------------
+Ran 22 tests in 1.032s
+
+OK
+
+Install: PASS
+PDH_HOME=/mnt/data/pdh_v110_install_test/pdh-zero
+PDH_PHASE1_ROOT=/mnt/data/pdh_v110_install_test/pdh-zero/active/pdh-zero-phase1-v1.1.0
+Next: source /mnt/data/pdh_v110_install_test/pdh-zero/env.sh

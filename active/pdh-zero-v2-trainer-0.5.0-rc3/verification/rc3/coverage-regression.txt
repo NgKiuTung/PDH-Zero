@@ -1,0 +1,56 @@
+Name                                     Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------------
+src/pdh_v2/__init__.py                       1      0      0      0   100%
+src/pdh_v2/config.py                        16      2      0      0    88%   16-17
+src/pdh_v2/contracts.py                     15      5      4      2    63%   10-12, 18, 25
+src/pdh_v2/dealer.py                        43     16     12      2    53%   12-19, 34, 36, 46-51, 59
+src/pdh_v2/game/__init__.py                  4      0      0      0   100%
+src/pdh_v2/game/actions.py                  32      3      8      3    85%   34, 46, 50
+src/pdh_v2/game/digest.py                   10      2      2      1    75%   10, 22
+src/pdh_v2/game/engine.py                  275     36    102     26    83%   96, 107, 117, 120, 141, 144, 150, 157, 178, 190, 196, 209-214, 218, 230, 233, 245, 272, 294-295, 299, 305-306, 311, 341-342, 354, 359-365, 390, 431, 433
+src/pdh_v2/game/session.py                 115     23     32      8    76%   66-81, 105, 107, 113, 125->127, 153, 172, 179-199, 203->205
+src/pdh_v2/game/state.py                   110     20     38     14    74%   80, 100, 103, 105, 107, 113, 115, 119-120, 122, 126, 130, 133, 135, 137, 139-143
+src/pdh_v2/game/wall.py                     54      5     20      3    86%   35, 44, 59-61
+src/pdh_v2/horses.py                       116     33     34      7    64%   39, 42, 47, 61, 64, 82-84, 115, 117-118, 144-150, 178-189, 193-194, 198, 207-208
+src/pdh_v2/journal.py                       91     91     34      0     0%   2-164
+src/pdh_v2/ledger.py                       185     85     58     11    47%   45-47, 62-64, 79, 84-89, 102-104, 106, 113-116, 122-123, 127-130, 137-139, 141, 156, 164-170, 172, 191-211, 219-234, 259-266, 284-307, 313, 315, 319, 338-357
+src/pdh_v2/observation/__init__.py           2      0      0      0   100%
+src/pdh_v2/observation/encoder.py           84      4     20      4    92%   47, 108, 124, 143
+src/pdh_v2/policy/__init__.py                3      0      0      0   100%
+src/pdh_v2/policy/heuristic.py              57      5     20      2    88%   66-70, 74
+src/pdh_v2/policy/model.py                  37      0      0      0   100%
+src/pdh_v2/qualifications.py                40     16     10      1    50%   31-37, 53-60, 66
+src/pdh_v2/replay/__init__.py                2      0      0      0   100%
+src/pdh_v2/replay/transcript.py             68     21     16      4    63%   26, 34-35, 54, 56, 58, 85-107, 112-118
+src/pdh_v2/resources/__init__.py             0      0      0      0   100%
+src/pdh_v2/responsibility.py                75     25     22      6    60%   14, 22-24, 29, 51, 58, 71-75, 90, 92, 95, 108-117
+src/pdh_v2/rollout/__init__.py               2      0      0      0   100%
+src/pdh_v2/rollout/snapshot.py              62     10     22     10    76%   19, 21, 23, 25, 27, 29, 58, 82, 94, 101
+src/pdh_v2/rollout/vector_env.py            63      4     14      2    92%   45, 81, 87-88
+src/pdh_v2/scoring/__init__.py               3      0      0      0   100%
+src/pdh_v2/scoring/evaluator.py            202     52     84     24    69%   31, 33, 36, 52, 74-83, 94, 96-98, 108-117, 140, 142, 184, 186, 189-190, 192, 195, 205-213, 234, 242-243, 245-246, 251, 253, 255, 260, 268, 297
+src/pdh_v2/scoring/patterns.py              35      0      0      0   100%
+src/pdh_v2/settlement.py                   143     48     38      9    60%   15, 58, 61, 65-67, 83-84, 100-114, 118-121, 134, 145-161, 176, 194, 204, 214-218, 225
+src/pdh_v2/shapes.py                        61     18     28      1    65%   57->56, 64-70, 75-86
+src/pdh_v2/tiles.py                         54      6     16      6    83%   30, 32, 53, 56, 71, 77
+src/pdh_v2/training/__init__.py              4      0      0      0   100%
+src/pdh_v2/training/buffer.py               46      2     10      3    91%   38, 60, 65->64
+src/pdh_v2/training/checkpoint.py           30      3      6      3    83%   54, 56, 58
+src/pdh_v2/training/collector.py           110      1     22      2    98%   103->110, 127
+src/pdh_v2/training/evaluation.py           99      3     24      3    95%   79, 130, 145
+src/pdh_v2/training/events.py               24      7      2      0    65%   30-31, 35-49
+src/pdh_v2/training/imitation.py           110    110     30      0     0%   2-165
+src/pdh_v2/training/job_control.py         172    121     42      5    26%   20, 25-33, 38-48, 56-60, 67, 79-80, 84-110, 114-124, 141-161, 174-217, 231->233, 235->237, 248-253, 258-289
+src/pdh_v2/training/long_artifacts.py       78     10     16      4    83%   27, 40, 49-55, 153
+src/pdh_v2/training/long_checkpoint.py      35      4      8      4    81%   62, 64, 66, 68
+src/pdh_v2/training/long_config.py          44      6      4      2    83%   50, 52, 65-68
+src/pdh_v2/training/long_loop.py           143     17     28     10    84%   73, 105, 107, 109, 147, 164-167, 179, 198, 203, 211, 297-308
+src/pdh_v2/training/long_runner.py          93     14     18      5    81%   48, 112, 114-116, 125, 179-191, 206, 237-239, 242
+src/pdh_v2/training/long_runtime.py         62     29      8      0    47%   37-53, 74-75, 82-85, 89-96, 111-121
+src/pdh_v2/training/ppo.py                 124      3     24      4    95%   59->61, 100, 129, 154
+src/pdh_v2/training/promotion.py            71     13     28     12    75%   36->35, 39, 46, 54, 56, 58, 62, 67, 73, 75, 79, 84-85, 87
+src/pdh_v2/training/replay_updates.py       43      4      8      2    88%   44, 76-77, 79
+src/pdh_v2/training/rng_state.py            21      3     10      3    81%   13, 16, 32
+src/pdh_v2/training/runner.py              119    119     20      0     0%   2-254
+------------------------------------------------------------------------------------
+TOTAL                                     3488    999    942    208    67%

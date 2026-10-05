@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "updates": 1,
+  "total_hands": 8,
+  "total_decisions": 660,
+  "total_environment_decisions": 2643,
+  "warmup_validation_before": {
+    "accuracy": 0.762565016746521,
+    "decisions": 577,
+    "entropy": 0.6370537281036377,
+    "episodes": 8,
+    "loss": 0.6368105411529541
+  },
+  "warmup_validation_after": {
+    "accuracy": 0.7677642703056335,
+    "decisions": 577,
+    "entropy": 0.6370529532432556,
+    "episodes": 8,
+    "loss": 0.6366840600967407
+  },
+  "first_metric": {
+    "action_counts": {
+      "ADDED_KONG": 0,
+      "CLOSED_KONG": 0,
+      "DISCARD": 161,
+      "OPEN_KONG": 0,
+      "PASS": 494,
+      "PONG": 5,
+      "WIN": 0
+    },
+    "approximate_kl": 1.9868215961338365e-09,
+    "collection_seconds": 2.143886614999701,
+    "curriculum_stage": "GUIDED_SOLO",
+    "decisions": 660,
+    "draw_rate": 0.5,
+    "elapsed_seconds": 2.4502116539997587,
+    "entropy": 0.6247082352638245,
+    "environment_decisions": 2643,
+    "environment_decisions_per_second": 1232.8077340976208,
+    "gradient_norm": 0.08273885399103165,
+    "hands": 8,
+    "heuristic_decisions": 1983,
+    "learner_decisions": 660,
+    "learner_decisions_per_second": 307.85210159077934,
+    "learner_mean_score": -3.5,
+    "learner_point_shoot_rate": 0.125,
+    "learner_seat_histogram": [
+      0,
+      8,
+      0,
+      0,
+      0
+    ],
+    "learner_win_rate": 0.0,
+    "minibatches": 1,
+    "missed_wins": 0,
+    "point_shoot_end_rate": 0.375,
+    "policy_loss": -5.779844158837477e-09,
+    "raw_score_sum": [
+      82,
+      -3,
+      -12,
+      -67
+    ],
+    "risk_loss": 0.7232840657234192,
+    "risk_positives": 1,
+    "risk_samples": 161,
+    "timestamp": "2026-09-30T16:19:23.516993+00:00",
+    "total_decisions": 660,
+    "total_environment_decisions": 2643,
+    "total_hands": 8,
+    "update": 1,
+    "update_seconds": 0.2972740530003648,
+    "value_loss": 0.003859259421005845,
+    "win_capture_rate": 0.0,
+    "win_opportunities": 0,
+    "win_rate_any": 0.5,
+    "wins_taken": 0
+  },
+  "note": "CPU integration smoke only; curriculum gate is intentionally not applied to this two-second run."
+}

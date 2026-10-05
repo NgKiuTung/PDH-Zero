@@ -1,0 +1,6 @@
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A01_system_info_20260929T100705Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A02_fp32_smoke_20260929T100709Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A02_bf16_smoke_20260929T100714Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A03_precision_20260929T100718Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A04_checkpoint_20260929T100723Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-a/runs/A05_storage_create_20260929T100728Z

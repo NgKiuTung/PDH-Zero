@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "manifest_status": "stopped",
+  "stop_reason": "signal_2",
+  "child_pids": [
+    "1264",
+    "1265",
+    "1266"
+  ],
+  "live_children_after_exit": [],
+  "output": "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tmp/refinement-20261003/cli-interrupt/runs/REFINE_20261003T033158741404Z",
+  "status": "PASS"
+}

@@ -1,0 +1,16 @@
+======================================================================
+FAIL: test_tiny_long_run_warm_starts_from_smoke (tests.test_long_training.LongTrainingTests.test_tiny_long_run_warm_starts_from_smoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_long_training.py", line 276, in test_tiny_long_run_warm_starts_from_smoke
+    self.assertEqual(manifest["status"], "completed")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'stopped' != 'completed'
+- stopped
++ completed
+
+
+----------------------------------------------------------------------
+Ran 264 tests in 78.548s
+
+FAILED (failures=1)

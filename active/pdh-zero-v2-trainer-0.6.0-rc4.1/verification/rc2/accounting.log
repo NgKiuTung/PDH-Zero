@@ -1,0 +1,9 @@
+test_hidden_reveal_initial_state_can_be_replayed (tests.test_refinement_accounting.AccountingTests.test_hidden_reveal_initial_state_can_be_replayed) ... ok
+test_point_shoot_denominator_is_learner_seat_hands (tests.test_refinement_accounting.AccountingTests.test_point_shoot_denominator_is_learner_seat_hands) ... ok
+test_rob_kong_does_not_label_previous_discard_as_positive (tests.test_refinement_accounting.AccountingTests.test_rob_kong_does_not_label_previous_discard_as_positive) ... ok
+test_terminal_replay_verifies_settlement_receipt (tests.test_refinement_accounting.AccountingTests.test_terminal_replay_verifies_settlement_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.979s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "hands": 64,
+  "decisions": 18484,
+  "candidate_actions": 71239,
+  "max_abs_error": 2.220446049250313e-16,
+  "observed_action_kinds": [
+    "ADDED_KONG",
+    "CLOSED_KONG",
+    "DISCARD",
+    "PASS",
+    "PONG",
+    "WIN"
+  ],
+  "atol": 2e-12,
+  "scope": "sampled_replays_not_all_possible_states"
+}

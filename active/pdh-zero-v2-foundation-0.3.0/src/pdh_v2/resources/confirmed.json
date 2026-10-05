@@ -1,0 +1,60 @@
+{
+  "source_version": "v0.8",
+  "source_sha256": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444",
+  "tile_types": 34,
+  "copies_per_type": 4,
+  "players": 4,
+  "horse": {
+    "initial_count": 6,
+    "per_continuation": 2,
+    "next_dealer_hand_size": 14,
+    "rank_owners": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3,
+      0
+    ],
+    "honor_owners": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "bonuses": {
+    "closed": 3,
+    "sea_bottom": 3,
+    "kong_draw": 3,
+    "straight": 3
+  },
+  "sea_max_before_draw": 4,
+  "four_concealed": {
+    "double_pair": 10,
+    "single_wait": 13
+  },
+  "seven_pairs_multipliers": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "score_cap": null,
+  "multi_discard_win": true,
+  "draw_payments": false,
+  "grounded_group_units": 3,
+  "multiwin_shortfall_source": "SEPARATE_DECK",
+  "twelve_grounded_liability": {
+    "trigger": "FOURTH_PONG",
+    "responsibility": "SELF_DRAW_THREE_SHARES",
+    "duration": "CURRENT_HAND_ONLY",
+    "discard_win": "ORDINARY_DISCARDER_ONE_SHARE"
+  }
+}

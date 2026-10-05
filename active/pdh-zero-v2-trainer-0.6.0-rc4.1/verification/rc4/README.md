@@ -1,0 +1,5 @@
+# rc4本地验证证据
+
+verification.json区分程序通过、真实源权重兼容、真实牌谱验证与尚未执行的目标GPU训练。local-cpu-benchmark-evidence.json是本地CPU测量原始记录，不是给目标实例使用的runtime-plan；它绑定本地ABI、配额和源代码哈希。目标机必须执行prepare_rc4生成自己的计划。
+
+338项全回归在Python3.13/Torch2.10CPU运行；用户数据源的Torch2.12CUDA权重仅作为CPU载入兼容性与采样输入。C++真实64手差分和账本全量回算覆盖明确列出的样本，不声称遍历所有游戏状态或证明因果关系。准备用实际候选完整通过，真实权重PPO短流程与Ctrl+C清理验证通过。最终源码ZIP干净解压检查写在外部release-check.json，避免包内自引用。

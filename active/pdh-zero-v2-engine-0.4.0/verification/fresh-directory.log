@@ -1,0 +1,215 @@
+===== VERIFY =====
+{
+  "checked_at_utc": "2026-09-30T08:31:44.014335+00:00",
+  "python": "3.13.5",
+  "scope": "frozen_rules_reference_engine",
+  "source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "source_matches": true,
+  "tests_run": 204,
+  "test_exit_code": 0,
+  "engine_check": "PASS",
+  "foundation_check": "PASS",
+  "tracked_source_cases": 130,
+  "engine_ready": true,
+  "training_ready": false,
+  "full_rules_frozen": true,
+  "remaining_rule_ids": [],
+  "strict_static_checks": "NOT_RUN_BY_THIS_COMMAND"
+}
+本批CPU参考引擎验收通过；房规已冻结，但模型训练入口仍未交付。
+===== STATIC =====
+{
+  "schema_version": 1,
+  "files": 44,
+  "errors": [],
+  "warnings": [
+    {
+      "file": "src/pdh_v2/game/digest.py",
+      "line": 18,
+      "code": "DEF_OVER_30",
+      "name": "hand_state_digest",
+      "lines": 94
+    },
+    {
+      "file": "src/pdh_v2/game/engine.py",
+      "code": "FILE_OVER_200",
+      "lines": 437
+    },
+    {
+      "file": "src/pdh_v2/game/session.py",
+      "code": "FILE_OVER_200",
+      "lines": 205
+    },
+    {
+      "file": "src/pdh_v2/game/session.py",
+      "line": 109,
+      "code": "DEF_OVER_30",
+      "name": "resolve",
+      "lines": 97
+    },
+    {
+      "file": "src/pdh_v2/game/state.py",
+      "line": 97,
+      "code": "DEF_OVER_30",
+      "name": "__post_init__",
+      "lines": 47
+    },
+    {
+      "file": "src/pdh_v2/horses.py",
+      "code": "FILE_OVER_200",
+      "lines": 208
+    },
+    {
+      "file": "src/pdh_v2/journal.py",
+      "line": 47,
+      "code": "DEF_OVER_30",
+      "name": "_apply_event",
+      "lines": 63
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "code": "FILE_OVER_200",
+      "lines": 375
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 148,
+      "code": "DEF_OVER_30",
+      "name": "begin_twelve_grounded",
+      "lines": 35
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 236,
+      "code": "DEF_OVER_30",
+      "name": "bind",
+      "lines": 40
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 277,
+      "code": "DEF_OVER_30",
+      "name": "bind_multi",
+      "lines": 31
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "code": "FILE_OVER_200",
+      "lines": 321
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "line": 120,
+      "code": "DEF_OVER_30",
+      "name": "_seven_pairs",
+      "lines": 31
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "line": 222,
+      "code": "DEF_OVER_30",
+      "name": "_standard_result",
+      "lines": 68
+    },
+    {
+      "file": "src/pdh_v2/settlement.py",
+      "code": "FILE_OVER_200",
+      "lines": 225
+    },
+    {
+      "file": "tests/test_game.py",
+      "code": "FILE_OVER_200",
+      "lines": 371
+    },
+    {
+      "file": "tests/test_game.py",
+      "line": 146,
+      "code": "DEF_OVER_30",
+      "name": "test_passed_win_is_locked_until_own_draw",
+      "lines": 41
+    },
+    {
+      "file": "tests/test_game.py",
+      "line": 325,
+      "code": "DEF_OVER_30",
+      "name": "test_random_legal_hands_preserve_all_tile_entities",
+      "lines": 42
+    },
+    {
+      "file": "tests/test_responsibility.py",
+      "code": "FILE_OVER_200",
+      "lines": 204
+    },
+    {
+      "file": "tests/test_scoring.py",
+      "code": "FILE_OVER_200",
+      "lines": 236
+    },
+    {
+      "file": "tests/test_scoring.py",
+      "line": 158,
+      "code": "DEF_OVER_30",
+      "name": "test_terminal_family_is_mutually_classified",
+      "lines": 35
+    },
+    {
+      "file": "tests/test_session.py",
+      "line": 41,
+      "code": "DEF_OVER_30",
+      "name": "test_next_hand_reveal_marks_only_selected_hit_entities",
+      "lines": 33
+    },
+    {
+      "file": "tests/test_settlement.py",
+      "code": "FILE_OVER_200",
+      "lines": 204
+    },
+    {
+      "file": "tools/static_audit.py",
+      "line": 33,
+      "code": "DEF_OVER_30",
+      "name": "_audit_file",
+      "lines": 73
+    },
+    {
+      "file": "tools/verify.py",
+      "line": 25,
+      "code": "DEF_OVER_30",
+      "name": "_run_checks",
+      "lines": 41
+    },
+    {
+      "file": "tools/verify.py",
+      "line": 68,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 45
+    }
+  ],
+  "status": "PASS",
+  "ruff": "NOT_INSTALLED",
+  "mypy": "NOT_INSTALLED"
+}
+===== RANDOM 20 =====
+{
+  "schema_version": 1,
+  "hands": 20,
+  "seed": 4040,
+  "max_steps": 1000,
+  "decisions": 6800,
+  "outcomes": {
+    "DRAW": 20
+  },
+  "status": "PASS"
+}
+{
+  "schema_version": 1,
+  "hands": 20,
+  "seed": 4040,
+  "max_steps": 1000,
+  "decisions": 6800,
+  "outcomes": {
+    "DRAW": 20
+  },
+  "status": "PASS"
+}

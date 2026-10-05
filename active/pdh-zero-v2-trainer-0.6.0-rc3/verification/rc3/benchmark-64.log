@@ -1,0 +1,53 @@
+{
+  "scope": "CPU_rule_environment_and_IPC_not_GPU_training",
+  "semantic_equivalence": true,
+  "results": [
+    {
+      "workers": 0,
+      "transport": "serial",
+      "rpc_seconds_including_compute": {},
+      "tables": 64,
+      "hands": 64,
+      "decisions": 19139,
+      "startup_seconds": 0.007628533999991305,
+      "collection_seconds": 6.097877235999931,
+      "total_seconds_including_shutdown": 6.105507111999941,
+      "collection_decisions_per_second": 3138.633209440397,
+      "terminal_digest": "2a5b0dea17c42859bf7c4b507f145d905c93b2bbe670a6bcaa2c31f249589868"
+    },
+    {
+      "workers": 4,
+      "transport": "pipe",
+      "rpc_seconds_including_compute": {
+        "requests": 1.682681004001438,
+        "heuristic": 0.7854709359988874,
+        "step": 0.45789098900092995
+      },
+      "tables": 64,
+      "hands": 64,
+      "decisions": 19139,
+      "startup_seconds": 1.462167982999972,
+      "collection_seconds": 3.0910927229999743,
+      "total_seconds_including_shutdown": 5.203685556999972,
+      "collection_decisions_per_second": 6191.661562783913,
+      "terminal_digest": "2a5b0dea17c42859bf7c4b507f145d905c93b2bbe670a6bcaa2c31f249589868"
+    },
+    {
+      "workers": 4,
+      "transport": "shared",
+      "rpc_seconds_including_compute": {
+        "requests": 1.3379550479984346,
+        "heuristic": 0.7568782789996931,
+        "step": 0.4474878759991725
+      },
+      "tables": 64,
+      "hands": 64,
+      "decisions": 19139,
+      "startup_seconds": 1.301013649999959,
+      "collection_seconds": 2.726892416000055,
+      "total_seconds_including_shutdown": 4.6335188179999705,
+      "collection_decisions_per_second": 7018.612061004615,
+      "terminal_digest": "2a5b0dea17c42859bf7c4b507f145d905c93b2bbe670a6bcaa2c31f249589868"
+    }
+  ]
+}

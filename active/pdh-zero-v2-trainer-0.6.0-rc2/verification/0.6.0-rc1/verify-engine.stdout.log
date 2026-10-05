@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-09-30T16:16:29.045770+00:00",
+  "python": "3.13.5",
+  "scope": "frozen_rules_reference_engine",
+  "source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "source_matches": true,
+  "tests_run": 233,
+  "test_exit_code": 0,
+  "engine_check": "PASS",
+  "foundation_check": "PASS",
+  "tracked_source_cases": 130,
+  "engine_ready": true,
+  "training_ready": false,
+  "full_rules_frozen": true,
+  "remaining_rule_ids": [],
+  "strict_static_checks": "NOT_RUN_BY_THIS_COMMAND"
+}
+本批CPU参考引擎验收通过；训练与长任务入口请继续运行对应专项门禁。

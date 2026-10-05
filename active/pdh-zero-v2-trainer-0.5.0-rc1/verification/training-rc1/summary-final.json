@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "tests_run": 212,
+  "warnings_as_errors": true,
+  "python_310_syntax": "PASS",
+  "static_audit": "PASS",
+  "training_module_line_percent": 93.63525091799265,
+  "training_module_branch_percent": 77.6470588235294,
+  "engine_check": "PASS",
+  "training_candidate_check": "PASS",
+  "training_entry_ready": true,
+  "formal_long_run_ready": false,
+  "required_next_gate": "10-minute CUDA smoke on target RTX 5090",
+  "limitations": [
+    "single-process Python environments",
+    "update-boundary checkpoint only",
+    "no target CUDA run performed in build environment",
+    "ruff and mypy not installed in offline build environment"
+  ]
+}

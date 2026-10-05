@@ -1,0 +1,38 @@
+test_collected_policy_recomputes_same_history (tests.test_refinement.PPOGuardTests.test_collected_policy_recomputes_same_history) ... ok
+test_excessive_step_rolls_back_weights_and_optimizer (tests.test_refinement.PPOGuardTests.test_excessive_step_rolls_back_weights_and_optimizer) ... ok
+test_stale_policy_rejected_before_update (tests.test_refinement.PPOGuardTests.test_stale_policy_rejected_before_update) ... FAIL
+test_AP_ordered_perfect (tests.test_refinement.RefinementTests.test_AP_ordered_perfect) ... ok
+test_AP_ties_not_artificially_perfect (tests.test_refinement.RefinementTests.test_AP_ties_not_artificially_perfect) ... ok
+test_AP_without_positives_is_unknown (tests.test_refinement.RefinementTests.test_AP_without_positives_is_unknown) ... ok
+test_controlled_cpu_pipeline (tests.test_refinement.RefinementTests.test_controlled_cpu_pipeline) ... ok
+test_duplicate_paired_seat_refused (tests.test_refinement.RefinementTests.test_duplicate_paired_seat_refused) ... ok
+test_existing_run_not_overwritten (tests.test_refinement.RefinementTests.test_existing_run_not_overwritten) ... ok
+test_latest_checkpoint_is_not_warmup (tests.test_refinement.RefinementTests.test_latest_checkpoint_is_not_warmup) ... ok
+test_manual_stop_is_not_failed (tests.test_refinement.RefinementTests.test_manual_stop_is_not_failed) ... ok
+test_missing_paired_seat_refused (tests.test_refinement.RefinementTests.test_missing_paired_seat_refused) ... ok
+test_paired_gain_and_gate (tests.test_refinement.RefinementTests.test_paired_gain_and_gate) ... ok
+test_paired_regression (tests.test_refinement.RefinementTests.test_paired_regression) ... ok
+test_probability_bounds (tests.test_refinement.RefinementTests.test_probability_bounds) ... ok
+test_risk_supervision_does_not_modify_actor_encoder_or_logits (tests.test_refinement.RefinementTests.test_risk_supervision_does_not_modify_actor_encoder_or_logits) ... ok
+test_warmup_load_and_freeze_anchor (tests.test_refinement.RefinementTests.test_warmup_load_and_freeze_anchor) ... ok
+test_zero_difference_is_inconclusive (tests.test_refinement.RefinementTests.test_zero_difference_is_inconclusive) ... ok
+test_cached_view_not_computed_again_for_step (tests.test_parallel_refinement.ParallelRefinementTests.test_cached_view_not_computed_again_for_step) ... ok
+test_dead_worker_fails_bounded_not_hang (tests.test_parallel_refinement.ParallelRefinementTests.test_dead_worker_fails_bounded_not_hang) ... ok
+test_heuristic_actions_match (tests.test_parallel_refinement.ParallelRefinementTests.test_heuristic_actions_match) ... ok
+test_negative_action_index_rejected (tests.test_parallel_refinement.ParallelRefinementTests.test_negative_action_index_rejected) ... ok
+test_serial_parallel_paired_evaluation_same_records (tests.test_parallel_refinement.ParallelRefinementTests.test_serial_parallel_paired_evaluation_same_records) ... ok
+test_worker_and_serial_fixed_actions_match (tests.test_parallel_refinement.ParallelRefinementTests.test_worker_and_serial_fixed_actions_match) ... ok
+
+======================================================================
+FAIL: test_stale_policy_rejected_before_update (tests.test_refinement.PPOGuardTests.test_stale_policy_rejected_before_update)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 179, in test_stale_policy_rejected_before_update
+    with self.assertRaises(RuntimeError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: RuntimeError not raised
+
+----------------------------------------------------------------------
+Ran 24 tests in 21.870s
+
+FAILED (failures=1)

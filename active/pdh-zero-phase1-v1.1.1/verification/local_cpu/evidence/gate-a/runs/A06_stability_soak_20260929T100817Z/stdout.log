@@ -1,0 +1,1 @@
+{'status': 'PASS', 'backend': 'cpu', 'device_name': 'CPU', 'duration_seconds': 5.002560434999964, 'iterations': 976, 'iterations_per_second': 195.10009177930243, 'initial_loss': 4.164255142211914, 'final_loss': 4.14903450012207, 'finite': True, 'peak_memory_bytes': 0}

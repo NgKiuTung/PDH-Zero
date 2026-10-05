@@ -1,0 +1,8 @@
+===== compileall =====
+compileall_exit=0
+===== warnings-as-errors unittest =====
+----------------------------------------------------------------------
+Ran 161 tests in 0.009s
+
+OK
+warnings_test_exit=0

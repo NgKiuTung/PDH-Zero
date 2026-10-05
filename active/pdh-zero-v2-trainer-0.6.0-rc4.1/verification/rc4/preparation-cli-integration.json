@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "output": "/mnt/data/pdh-rc4-work/logs/prepare-complete/PREPARE_20261003T095618232987Z",
+  "training_started": false,
+  "source_candidate": "d000000265095",
+  "resources": {
+    "logical_cpus_visible": 5,
+    "affinity_cpus": 5,
+    "quota_cpu_equivalents": 4.0,
+    "effective_cpu_equivalents": 4.0,
+    "memory_limit_bytes": 4294967296,
+    "declared_vcpus_fallback": 14,
+    "quota_known": true,
+    "evidence": [
+      {
+        "path": "/sys/fs/cgroup/cpu.max",
+        "value": "400000 100000"
+      },
+      {
+        "path": "/sys/fs/cgroup/memory.max",
+        "value": "4294967296"
+      }
+    ],
+    "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+  },
+  "phase": "ready",
+  "native_build": {
+    "status": "PASS",
+    "source_sha256": "6c9b2e7d01dbfcba189821bd842b8dc8dd00a1a87925ba4f2c0cd5dd15416ecf",
+    "binary_sha256": "974b8c26690bd900b58bf521bcf9cd04cbcf69784d3a0a08937b8d758e75ecd7",
+    "soabi": "cpython-313-x86_64-linux-gnu",
+    "compiler": "/usr/bin/g++",
+    "command": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-O3",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-fvisibility=hidden",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I/opt/pyvenv/lib/python3.13/site-packages/torch/include",
+      "-I/usr/include/python3.13",
+      "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/native/actions.cpp",
+      "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/native/binding.cpp",
+      "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/native/observation.cpp",
+      "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/native/route.cpp",
+      "-o",
+      "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/build/native/_pdh_native.tmp.cpython-313-x86_64-linux-gnu.so"
+    ],
+    "cpu_only": true,
+    "fast_math": false,
+    "threads": 1
+  },
+  "differential": {
+    "status": "PASS",
+    "hands": 16,
+    "decisions": 2862,
+    "candidate_actions": 11901,
+    "max_abs_error": 5.551115123125783e-17,
+    "observed_action_kinds": [
+      "ADDED_KONG",
+      "DISCARD",
+      "PASS",
+      "PONG",
+      "WIN"
+    ],
+    "atol": 2e-12,
+    "scope": "sampled_replays_not_all_possible_states"
+  },
+  "runtime_plan": "/mnt/data/pdh-rc4-work/logs/prepare-complete/PREPARE_20261003T095618232987Z/benchmark/runtime-plan.json",
+  "recommendation": {
+    "workers": 2,
+    "feature_backend": "cpp",
+    "environments": 16,
+    "transport": "shared",
+    "torch_num_threads": 1,
+    "measured_rollout_speedup_vs_reference": 1.365238062357278,
+    "selection_scope": "same_model_same_walls_rollout_only_not_PPO_or_learning_quality"
+  },
+  "long_training_allowed": false
+}

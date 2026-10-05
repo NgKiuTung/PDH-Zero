@@ -1,0 +1,13 @@
+{
+  "profile_id": "phase1_amd",
+  "device": "auto",
+  "expected_cpu_cores": 8,
+  "expected_host_resource_gib": 200,
+  "expected_gpu_memory_gib": 192,
+  "gpu_hour_budget": 12,
+  "preferred_dtype": "bfloat16",
+  "inference_batches": [256, 512, 1024, 2048, 4096, 8192, 16384],
+  "soak_minutes_smoke": 5,
+  "soak_minutes_full": 60,
+  "notes": "ROCm primary training and throughput validation. Exact GPU model must be measured."
+}

@@ -1,0 +1,134 @@
+Exception ignored in: <function Popen.__del__ at 0x7f97e752c0e0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/subprocess.py", line 1140, in __del__
+    _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: subprocess 2626 is still running
+Exception ignored in: <function Popen.__del__ at 0x7f97e752c0e0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/subprocess.py", line 1140, in __del__
+    _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: subprocess 2642 is still running
+{
+  "started": {
+    "status": "started",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "pid": 2626
+  }
+}
+{
+  "duplicate": {
+    "status": "already_running",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "pid": 2626
+  }
+}
+{
+  "running": {
+    "schema_version": 1,
+    "status": "running",
+    "updated_at_utc": "2026-09-30T11:20:57.948721+00:00",
+    "pid": 2626,
+    "update": 4,
+    "long_updates": 1,
+    "long_hands": 2,
+    "long_decisions": 684,
+    "consumed_training_seconds": 1.909701178999967,
+    "target_decisions": 100000000,
+    "max_wall_seconds": 120,
+    "next_evaluation_decisions": 1000000,
+    "next_snapshot_decisions": 1000000,
+    "best_evaluation_mean_score": -0.6,
+    "attempts": 1,
+    "stop_reason": null,
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "process_alive": true
+  }
+}
+{
+  "stop": {
+    "status": "stop_requested",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "pid": 2626
+  }
+}
+{
+  "stopped": {
+    "schema_version": 1,
+    "status": "stopped",
+    "updated_at_utc": "2026-09-30T11:20:59.227508+00:00",
+    "pid": 2626,
+    "update": 5,
+    "long_updates": 2,
+    "long_hands": 4,
+    "long_decisions": 1388,
+    "consumed_training_seconds": 3.193442500000401,
+    "target_decisions": 100000000,
+    "max_wall_seconds": 120,
+    "next_evaluation_decisions": 1000000,
+    "next_snapshot_decisions": 1000000,
+    "best_evaluation_mean_score": -0.6,
+    "attempts": 1,
+    "stop_reason": "signal_15_requested",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "process_alive": false
+  }
+}
+{
+  "resumed": {
+    "status": "resumed",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "pid": 2642
+  }
+}
+{
+  "running_again": {
+    "schema_version": 1,
+    "status": "running",
+    "updated_at_utc": "2026-09-30T11:21:02.467195+00:00",
+    "pid": 2642,
+    "update": 5,
+    "long_updates": 2,
+    "long_hands": 4,
+    "long_decisions": 1388,
+    "consumed_training_seconds": 3.193442500000401,
+    "target_decisions": 100000000,
+    "max_wall_seconds": 120,
+    "next_evaluation_decisions": 1000000,
+    "next_snapshot_decisions": 1000000,
+    "best_evaluation_mean_score": -0.6,
+    "attempts": 2,
+    "stop_reason": null,
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "process_alive": true
+  }
+}
+{
+  "stop_again": {
+    "status": "stop_requested",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "pid": 2642
+  }
+}
+{
+  "stopped_again": {
+    "schema_version": 1,
+    "status": "stopped",
+    "updated_at_utc": "2026-09-30T11:21:03.713658+00:00",
+    "pid": 2642,
+    "update": 6,
+    "long_updates": 3,
+    "long_hands": 6,
+    "long_decisions": 2076,
+    "consumed_training_seconds": 4.436221570000271,
+    "target_decisions": 100000000,
+    "max_wall_seconds": 120,
+    "next_evaluation_decisions": 1000000,
+    "next_snapshot_decisions": 1000000,
+    "best_evaluation_mean_score": -0.6,
+    "attempts": 2,
+    "stop_reason": "signal_15_requested",
+    "job_dir": "/tmp/pdh-rc2-job-integration/pdh-home/evidence/v2-long-runs/V2_BASELINE_48H_20260930T112053Z",
+    "process_alive": false
+  }
+}
+JOB_CONTROL_INTEGRATION=PASS

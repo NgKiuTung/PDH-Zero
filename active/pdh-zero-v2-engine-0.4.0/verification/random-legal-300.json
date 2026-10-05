@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "hands": 300,
+  "seed": 20260930,
+  "max_steps": 1000,
+  "decisions": 102220,
+  "outcomes": {
+    "DRAW": 300
+  },
+  "status": "PASS"
+}

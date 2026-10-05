@@ -1,0 +1,99 @@
+{
+  "source_version": "v0.9",
+  "source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "tile_types": 34,
+  "copies_per_type": 4,
+  "players": 4,
+  "horse": {
+    "initial_count": 6,
+    "per_continuation": 2,
+    "next_dealer_hand_size": 14,
+    "rank_owners": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3,
+      0
+    ],
+    "honor_owners": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2
+    ]
+  },
+  "bonuses": {
+    "closed": 3,
+    "sea_bottom": 3,
+    "kong_draw": 3,
+    "straight": 3
+  },
+  "sea_max_before_draw": 4,
+  "four_concealed": {
+    "double_pair": 10,
+    "single_wait": 13
+  },
+  "seven_pairs_multipliers": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "score_cap": null,
+  "multi_discard_win": true,
+  "draw_payments": false,
+  "grounded_group_units": 3,
+  "multiwin_shortfall_source": "SEPARATE_DECK",
+  "twelve_grounded_liability": {
+    "trigger": "FOURTH_PONG",
+    "responsibility": "SELF_DRAW_THREE_SHARES",
+    "duration": "CURRENT_HAND_ONLY",
+    "discard_win": "ORDINARY_DISCARDER_ONE_SHARE"
+  },
+  "full_rules_frozen": true,
+  "training_ready": false,
+  "patterns": {
+    "MIXED_ONE_SUIT": 3,
+    "PURE_ONE_SUIT": 6,
+    "PONG_PONG": 3,
+    "SEVEN_PAIRS": 4,
+    "LUXURY_SEVEN_PAIRS": 8,
+    "DOUBLE_LUXURY_SEVEN_PAIRS": 16,
+    "TRIPLE_LUXURY_SEVEN_PAIRS": 32,
+    "TERMINALS_HONORS": 9,
+    "MIXED_ONE_SUIT_TERMINALS": 12,
+    "PURE_TERMINALS": 20,
+    "SMALL_DRAGONS": 9,
+    "BIG_DRAGONS": 16,
+    "SMALL_WINDS": 16,
+    "BIG_WINDS": 24,
+    "ALL_HONORS": 20,
+    "EIGHTEEN_ARHATS": 32,
+    "THIRTEEN_ORPHANS": 13,
+    "THIRTEEN_SIDED": 16,
+    "FOUR_CONCEALED": 10,
+    "FOUR_CONCEALED_SINGLE": 13,
+    "CLOSED_BONUS": 3,
+    "ONE_STRAIGHT": 3,
+    "SEA_BOTTOM": 3,
+    "KONG_DRAW": 3
+  },
+  "response_priority": [
+    "WIN",
+    "PONG",
+    "OPEN_KONG"
+  ],
+  "rob_kong_kinds": [
+    "ADDED_KONG"
+  ],
+  "pass_win_lock_until_next_draw": true,
+  "horse_capacity_mode": "RESHUFFLE_CYCLES",
+  "final_settlement_mode": "VIRTUAL_NEXT_HAND"
+}

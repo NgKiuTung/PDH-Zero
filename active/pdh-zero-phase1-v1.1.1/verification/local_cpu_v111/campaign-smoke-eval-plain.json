@@ -1,0 +1,18 @@
+{
+  "games": 8,
+  "wall_seeds": 2,
+  "opponent_kind": "heuristic",
+  "mean_score": -1.0,
+  "win_rate": 0.125,
+  "draw_rate": 0.0,
+  "outcomes": {
+    "DISCARD_WIN": 7,
+    "SELF_DRAW": 1
+  },
+  "seat_mean_scores": {
+    "0": 3.0,
+    "1": -6.0,
+    "2": 0.0,
+    "3": -1.0
+  }
+}

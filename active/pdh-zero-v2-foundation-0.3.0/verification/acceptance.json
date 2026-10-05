@@ -1,0 +1,104 @@
+{
+  "artifact": "PDH-Zero v2 confirmed-rule foundation 0.3.0",
+  "release_status": "CANDIDATE_NOT_TRAINABLE",
+  "foundation_test_status": "PASS",
+  "full_rules_frozen": false,
+  "model_implemented": false,
+  "training_ready": false,
+  "tests_run": 161,
+  "test_failures": 0,
+  "test_errors": 0,
+  "warnings_as_errors_test_status": "PASS",
+  "coverage_scope": "src/pdh_v2; tools and tests excluded",
+  "line_coverage_percent": 95.4780361757106,
+  "line_and_branch_coverage_percent": 93.158953722334,
+  "coverage_totals": {
+    "covered_lines": 739,
+    "num_statements": 774,
+    "percent_covered": 93.158953722334,
+    "percent_covered_display": "93",
+    "missing_lines": 35,
+    "excluded_lines": 0,
+    "percent_statements_covered": 95.4780361757106,
+    "percent_statements_covered_display": "95",
+    "num_branches": 220,
+    "num_partial_branches": 31,
+    "covered_branches": 187,
+    "missing_branches": 33,
+    "percent_branches_covered": 85.0,
+    "percent_branches_covered_display": "85"
+  },
+  "syntax": {
+    "status": "PASS",
+    "check": "AST_PARSE_PYTHON_3_10_GRAMMAR",
+    "files_checked": 26,
+    "failures": [],
+    "runtime_actually_tested": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "stdlib_static_audit": {
+    "status": "PASS",
+    "files_checked": 26,
+    "checks": [
+      "line_length<=100",
+      "no_trailing_whitespace",
+      "no_tabs",
+      "simple_unused_import_scan",
+      "no_eval_exec",
+      "no_pickle_marshal_shelve"
+    ],
+    "violations": [],
+    "note": "ruff/mypy unavailable; this deterministic stdlib audit is supplementary and not a substitute."
+  },
+  "ruff_lint_format": {
+    "status": "NOT_RUN",
+    "reason": "tool unavailable in execution environment; offline no-index lookup found no package"
+  },
+  "mypy_strict": {
+    "status": "NOT_RUN",
+    "reason": "tool unavailable in execution environment; offline no-index lookup found no package"
+  },
+  "case_trace_counts": {
+    "AWAITING_RULE": 3,
+    "KERNEL_COVERED": 50,
+    "NOT_IMPLEMENTED": 30,
+    "PARTIAL_KERNEL": 32
+  },
+  "case_trace_total": 115,
+  "case_trace_note": "kernel coverage does not mean complete gameplay/score-rule acceptance",
+  "source_hashes": {
+    "rules_v0_8": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444"
+  },
+  "remaining_rule_ids": [
+    "Q1",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q10c",
+    "Q10d_capacity",
+    "Q12",
+    "Q13"
+  ],
+  "cloud_changes": false,
+  "gpu_jobs_started": 0,
+  "manual_review": {
+    "status": "PASS_WITH_OPEN_RULE_GATES",
+    "checks": [
+      "multi-win uses one shared horse batch with per-winner seat mapping",
+      "multi-win old-wall shortfall uses a full separate deck and reshuffle metadata",
+      "dealer continuation/selection after multi-win",
+      "fourth-pong-only twelve-grounded liability",
+      "same-hand self-draw cover-three and ordinary discard-win payer",
+      "uncapped arithmetic and draw zero movement",
+      "ordinary/multi/liability journal round-trip and exactly-once payment",
+      "post-payment liability begin idempotence"
+    ],
+    "known_not_integrated": [
+      "automatic game-event wiring for fourth-pong liability",
+      "actual reshuffle/new-hand state transition after multi-win separate-deck horses",
+      "kong-explosion/rob-kong responsibility rules",
+      "full game state machine and scoring engine",
+      "training stack"
+    ]
+  }
+}

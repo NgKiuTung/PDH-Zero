@@ -1,0 +1,69 @@
+{
+  "source_sha256": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444",
+  "training_ready": false,
+  "items": [
+    {
+      "id": "Q1",
+      "title": "幺九与字一色分类边界",
+      "question": "幺九是否必须含序数幺九与字；是否需1和9皆有；全字牌如何去重。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q3",
+      "title": "三元四喜定义与交叉",
+      "question": "四喜精确定义及三元、四喜、暗刻与花色的专项叠加。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q4",
+      "title": "七对与其余花色交叉",
+      "question": "除已明确幺九系列外的七对/豪七与花色叠加。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q5",
+      "title": "十三幺及过胡",
+      "question": "普通十三幺精确胡前结构、十三面接炮、独立例外及过胡限制。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q6",
+      "title": "多解释选择",
+      "question": "同手多完整合法结构是否取最高单个解释。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q10c",
+      "title": "物理取牌顺序",
+      "question": "普通摸牌、杠补牌墙端、取马有效后继和原始发牌顺序的生成规则。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q10d_capacity",
+      "title": "单副牌容量以上开马",
+      "question": "N超过136时的操作；不自行放回、重洗补数或封顶。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q12",
+      "title": "杠爆与抢杠专项责任",
+      "question": "十二张落地责任已冻结；仍需确认点杠后连续杠、加杠、抢杠及多响交叉时的杠爆责任锁定与解除。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    },
+    {
+      "id": "Q13",
+      "title": "最后一局待结算",
+      "question": "不再开下一局且需下局手牌开马时如何结清。",
+      "status": "AWAITING_OWNER_RULE",
+      "source_section": "9"
+    }
+  ]
+}

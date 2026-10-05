@@ -1,0 +1,15 @@
+{
+  "profile_id": "phase1_nvidia_rtx5090",
+  "device": "cuda",
+  "expected_cpu_cores": 14,
+  "expected_host_memory_gib": 60,
+  "expected_gpu_memory_gib": 32,
+  "expected_compute_capability": "12.0",
+  "minimum_cuda_runtime": "12.8",
+  "gpu_hour_budget": 6,
+  "preferred_dtype": "benchmark_before_selecting",
+  "inference_batches": [256, 512, 1024, 2048, 4096, 8192, 16384],
+  "soak_minutes_smoke": 5,
+  "soak_minutes_full": 60,
+  "notes": "Primary RTX 5090 profile for the RiverMind instance."
+}

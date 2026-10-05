@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "version": "0.6.0-rc1",
+  "release_scope": "curriculum_tuning_candidate",
+  "unit_tests": {
+    "count": 233,
+    "exit_code": 0,
+    "status": "PASS"
+  },
+  "targeted_new_training_coverage_percent": 87.56326825741142,
+  "static_audit": "PASS",
+  "python310_ast": "PASS",
+  "engine_ready": true,
+  "full_rules_frozen": true,
+  "training_entry_ready": true,
+  "curriculum_entry_ready": true,
+  "long_job_entry_ready": false,
+  "formal_long_run_ready": false,
+  "heuristic_density_check": {
+    "schema_version": 1,
+    "seed": 20261003,
+    "hands": 65,
+    "draws": 31,
+    "draw_rate": 0.47692307692307695,
+    "non_draw_rate": 0.523076923076923,
+    "zero_sum": true
+  },
+  "cpu_curriculum_smoke": {
+    "status": "completed",
+    "updates": 1,
+    "total_hands": 8,
+    "total_decisions": 660
+  },
+  "target_gpu_gate": "60-minute curriculum tune plus curriculum_gate.py",
+  "ruff": "NOT_INSTALLED",
+  "mypy": "NOT_INSTALLED"
+}

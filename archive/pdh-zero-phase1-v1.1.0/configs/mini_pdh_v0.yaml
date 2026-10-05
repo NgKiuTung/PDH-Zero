@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "ruleset_id": "mini_pdh_v0",
+  "players": 4,
+  "tile_types": 13,
+  "copies_per_tile": 4,
+  "dealer_seat": 0,
+  "initial_concealed_tiles": 7,
+  "dealer_initial_tiles": 8,
+  "melds_to_win": 2,
+  "max_decisions": 256,
+  "single_winner_only": true,
+  "turn_order": "seat_plus_one_mod_four",
+  "patterns": {
+    "PONG_PONG": 3,
+    "CLOSED": 2,
+    "FOUR_PAIRS": 4,
+    "PURE_NUMBERS": 3,
+    "ALL_HONORS": 5,
+    "TERMINALS_HONORS": 4
+  },
+  "scoring": {
+    "combination": "maximum_pattern_multiplier",
+    "self_draw_winner_units": 3,
+    "self_draw_loser_units": -1,
+    "discard_win_winner_units": 3,
+    "discarder_units": -3,
+    "draw_units": 0
+  },
+  "phase1_simplifications": [
+    "no_kong",
+    "no_robbing_kong",
+    "no_horse_tiles",
+    "no_multi_winner",
+    "no_liability",
+    "nearest_response_priority"
+  ]
+}

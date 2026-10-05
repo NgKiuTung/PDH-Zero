@@ -1,0 +1,17 @@
+.venv/
+.venv-*/
+.pdh-env-*/
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+tmp/
+results/*
+!results/.gitkeep
+.DS_Store

@@ -1,0 +1,1 @@
+TrainingSummary(completed_updates=3, total_environment_decisions=1152, elapsed_seconds=0.6627032059999465, checkpoint_path='/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B04_privileged_smoke_seed20260929_20260929T100840Z/artifacts/training/checkpoint_latest.pt', device_backend='cpu')

@@ -1,0 +1,17 @@
+Name                               Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------------------------
+src/pdh_v2/__init__.py                 1      0      0      0   100%
+src/pdh_v2/config.py                  16      0      0      0   100%
+src/pdh_v2/contracts.py               15      0      4      0   100%
+src/pdh_v2/dealer.py                  43      3     12      3    89%   14, 18, 34
+src/pdh_v2/horses.py                  98      1     20      1    98%   39
+src/pdh_v2/journal.py                 86      2     32      3    96%   105, 108, 151->exit
+src/pdh_v2/ledger.py                 170     16     50     10    87%   60, 100, 103, 111-112, 123-124, 135, 163, 166, 190-192, 194, 266, 303
+src/pdh_v2/qualifications.py          40      3     10      3    88%   33, 56, 66
+src/pdh_v2/resources/__init__.py       0      0      0      0   100%
+src/pdh_v2/responsibility.py          53      4     14      4    88%   14, 51, 58, 80
+src/pdh_v2/settlement.py             137      5     34      5    94%   111, 120, 134, 147, 176
+src/pdh_v2/shapes.py                  61      0     28      1    99%   57->56
+src/pdh_v2/tiles.py                   54      1     16      1    97%   71
+------------------------------------------------------------------------------
+TOTAL                                774     35    220     31    93%

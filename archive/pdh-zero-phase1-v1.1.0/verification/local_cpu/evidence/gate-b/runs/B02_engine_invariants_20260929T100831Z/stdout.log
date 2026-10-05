@@ -1,0 +1,1 @@
+{'status': 'PASS', 'ruleset_id': 'mini_pdh_v0', 'bot': 'random', 'games': 500, 'decisions': 13106, 'elapsed_seconds': 0.4025035309999794, 'games_per_second': 1242.2251272126744, 'decisions_per_second': 32561.20503449862, 'mean_decisions_per_game': 26.212, 'win_rate': 0.312, 'draw_rate': 0.688, 'invariant_failures': 0}

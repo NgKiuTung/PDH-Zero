@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "package": "pdh-zero-v2-trainer-0.5.0-rc2",
+  "version": "0.5.0-rc2",
+  "engine_check": "PASS",
+  "training_candidate_check": "PASS",
+  "long_job_candidate_check": "PASS",
+  "tests_run": 222,
+  "long_tests_run": 10,
+  "static_audit": "PASS",
+  "static_errors": 0,
+  "static_warnings": 62,
+  "python_310_syntax": "PASS",
+  "job_control_integration": "PASS",
+  "ruff": "NOT_INSTALLED",
+  "mypy": "NOT_INSTALLED",
+  "target_gpu_smoke": "NOT_RUN_IN_BUILD_ENVIRONMENT",
+  "smoke_promotion_required": true,
+  "default_max_hours": 48,
+  "default_target_decisions": 50000000,
+  "formal_long_run_ready": false
+}

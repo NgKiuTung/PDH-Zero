@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "backend": "cpu",
+  "device_name": "CPU",
+  "hidden_size": 128,
+  "results": [
+    {
+      "batch_size": 16,
+      "iterations": 2,
+      "elapsed_seconds": 0.00037668900006337935,
+      "observations_per_second": 84950.71529727674,
+      "latency_ms_per_batch": 0.18834450003168968,
+      "memory_allocated_bytes": 0
+    },
+    {
+      "batch_size": 64,
+      "iterations": 2,
+      "elapsed_seconds": 0.0005956989999731377,
+      "observations_per_second": 214873.61906897946,
+      "latency_ms_per_batch": 0.29784949998656884,
+      "memory_allocated_bytes": 0
+    }
+  ],
+  "best": {
+    "batch_size": 64,
+    "iterations": 2,
+    "elapsed_seconds": 0.0005956989999731377,
+    "observations_per_second": 214873.61906897946,
+    "latency_ms_per_batch": 0.29784949998656884,
+    "memory_allocated_bytes": 0
+  }
+}

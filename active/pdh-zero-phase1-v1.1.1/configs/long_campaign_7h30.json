@@ -1,0 +1,15 @@
+{
+  "campaign_id": "gate_b_balanced_7h30",
+  "training_hours": 7.5,
+  "chunk_updates": 20,
+  "methods": ["plain", "privileged"],
+  "seeds": [20260929, 3407, 9102],
+  "evaluation_wall_seeds": 5000,
+  "evaluation_seed_start": 950000,
+  "opponent": "heuristic",
+  "device": "cuda",
+  "snapshot_minutes": 60,
+  "telemetry_interval_seconds": 30,
+  "minimum_free_gib": 5,
+  "expected_total_wall_time": "training target plus final fixed-wall evaluation"
+}

@@ -1,0 +1,6 @@
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B01_unit_tests_20260929T100826Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B02_engine_invariants_20260929T100831Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B03_hidden_info_isolation_20260929T100835Z
+/mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B05_eval_privileged_smoke_seed20260929_20260929T100845Z
+Completed privileged_smoke seed=20260929: /mnt/data/pdh_v110_work/pdh-zero-phase1-v1.1.0/verification/local_cpu/evidence/gate-b/runs/B04_privileged_smoke_seed20260929_20260929T100840Z
+Gate B finished. Preserve every failed and successful run directory.

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pdh-zero.local/schemas/experiment_manifest.schema.json",
+  "title": "PDH-Zero Phase 1 Experiment Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "gate",
+    "status",
+    "start_time_utc",
+    "command",
+    "run_directory",
+    "backend"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "experiment_id": {"type": "string", "minLength": 1},
+    "gate": {"enum": ["A", "B", "C", "LOCAL"]},
+    "status": {"enum": ["running", "success", "failed", "timeout"]},
+    "start_time_utc": {"type": "string"},
+    "end_time_utc": {"type": ["string", "null"]},
+    "command": {"type": "array", "items": {"type": "string"}},
+    "exit_code": {"type": ["integer", "null"]},
+    "git_commit": {"type": ["string", "null"]},
+    "python_version": {"type": "string"},
+    "torch_version": {"type": ["string", "null"]},
+    "backend": {"enum": ["cpu", "cuda", "rocm"]},
+    "run_directory": {"type": "string"},
+    "timed_out": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,111 @@
+===== ZIP TEST =====
+members= 79
+integrity= PASS
+===== FILE HASHES =====
+.gitignore: OK
+AGENTS.md: OK
+CHANGELOG.md: OK
+README.md: OK
+TODO.md: OK
+docs/approved-blueprint-v0.1.md: OK
+docs/decisions-request.md: OK
+docs/implementation-scope.md: OK
+pyproject.toml: OK
+rules/cases.json: OK
+rules/open_decisions.json: OK
+rules/source-v0.6.md: OK
+rules/source-v0.7.md: OK
+rules/source-v0.8.md: OK
+src/pdh_v2/__init__.py: OK
+src/pdh_v2/__pycache__/__init__.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/config.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/contracts.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/dealer.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/horses.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/journal.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/ledger.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/qualifications.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/responsibility.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/settlement.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/shapes.cpython-313.pyc: OK
+src/pdh_v2/__pycache__/tiles.cpython-313.pyc: OK
+src/pdh_v2/config.py: OK
+src/pdh_v2/contracts.py: OK
+src/pdh_v2/dealer.py: OK
+src/pdh_v2/horses.py: OK
+src/pdh_v2/journal.py: OK
+src/pdh_v2/ledger.py: OK
+src/pdh_v2/qualifications.py: OK
+src/pdh_v2/resources/__init__.py: OK
+src/pdh_v2/resources/__pycache__/__init__.cpython-313.pyc: OK
+src/pdh_v2/resources/confirmed.json: OK
+src/pdh_v2/resources/messages.json: OK
+src/pdh_v2/responsibility.py: OK
+src/pdh_v2/settlement.py: OK
+src/pdh_v2/shapes.py: OK
+src/pdh_v2/tiles.py: OK
+tests/__init__.py: OK
+tests/__pycache__/__init__.cpython-313.pyc: OK
+tests/__pycache__/helpers.cpython-313.pyc: OK
+tests/__pycache__/test_dealer.cpython-313.pyc: OK
+tests/__pycache__/test_horses.cpython-313.pyc: OK
+tests/__pycache__/test_journal.cpython-313.pyc: OK
+tests/__pycache__/test_multiwin.cpython-313.pyc: OK
+tests/__pycache__/test_qualifications.cpython-313.pyc: OK
+tests/__pycache__/test_responsibility.cpython-313.pyc: OK
+tests/__pycache__/test_rule_trace.cpython-313.pyc: OK
+tests/__pycache__/test_settlement.cpython-313.pyc: OK
+tests/__pycache__/test_shapes.cpython-313.pyc: OK
+tests/__pycache__/test_tiles.cpython-313.pyc: OK
+tests/helpers.py: OK
+tests/test_dealer.py: OK
+tests/test_horses.py: OK
+tests/test_journal.py: OK
+tests/test_multiwin.py: OK
+tests/test_qualifications.py: OK
+tests/test_responsibility.py: OK
+tests/test_rule_trace.py: OK
+tests/test_settlement.py: OK
+tests/test_shapes.py: OK
+tests/test_tiles.py: OK
+tools/verify.py: OK
+verification/README.md: OK
+verification/acceptance.json: OK
+verification/compile.log: OK
+verification/coverage.json: OK
+verification/coverage.txt: OK
+verification/report-no-overwrite.log: OK
+verification/review.md: OK
+verification/static-audit.json: OK
+verification/syntax.json: OK
+verification/unit-tests.log: OK
+verification/verify-command.log: OK
+===== VERIFY =====
+{
+  "checked_at_utc": "2026-09-30T06:46:58.356124+00:00",
+  "python": "3.13.5",
+  "scope": "confirmed_rules_foundation",
+  "source_sha256": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444",
+  "source_matches": true,
+  "tests_run": 161,
+  "test_exit_code": 0,
+  "foundation_check": "PASS",
+  "tracked_source_cases": 115,
+  "training_ready": false,
+  "full_rules_frozen": false,
+  "remaining_rule_ids": [
+    "Q1",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q10c",
+    "Q10d_capacity",
+    "Q12",
+    "Q13"
+  ],
+  "strict_static_checks": "NOT_RUN_BY_THIS_COMMAND"
+}
+本批CPU基础测试通过；完整规则未冻结，禁止启动正式训练。
+===== COMPILE =====
+fresh_directory=PASS

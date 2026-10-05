@@ -1,0 +1,1105 @@
+{
+  "source_version": "v0.8",
+  "source_sha256": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444",
+  "cases": [
+    {
+      "id": "T01",
+      "condition": "普通结构无基础大胡，无碰杠",
+      "expectation": "不可胡",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T02",
+      "condition": "单纯混一色，无碰杠",
+      "expectation": "6",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_plain_mixed_suit_has_bonus"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T03",
+      "condition": "单纯清一色，无碰杠",
+      "expectation": "9",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_plain_pure_suit_has_bonus"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T04",
+      "condition": "T03同时一条龙",
+      "expectation": "12",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T05",
+      "condition": "T02同时合法海底",
+      "expectation": "9",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T06",
+      "condition": "混一色碰过牌",
+      "expectation": "无门清",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_pong_cancels_bonus"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T07",
+      "condition": "清一色暗杠后杠上开花",
+      "expectation": "所列小计9，无门清",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_closed_kong_cancels_bonus"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T08",
+      "condition": "未副露混碰／清碰",
+      "expectation": "6／9，无额外门清",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_additional_big_pattern_excludes_bonus"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T09",
+      "condition": "普通四暗刻对倒自摸",
+      "expectation": "10",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_double_pair_ten"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T10",
+      "condition": "普通四暗刻接炮补刻",
+      "expectation": "10",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_double_pair_ten"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T11",
+      "condition": "单骑自摸与接炮补将",
+      "expectation": "各13",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_single_wait_thirteen"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T12",
+      "condition": "四暗刻中有暗杠",
+      "expectation": "不因暗杠直接排除",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_accepts_closed_kong"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T13",
+      "condition": "对倒一种候选牌已耗尽",
+      "expectation": "不升级单骑",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_double_pair_ten"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T14",
+      "condition": "四暗刻与碰碰胡标签同时成立",
+      "expectation": "不再加3",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T15",
+      "condition": "普通四暗刻+混／清／字",
+      "expectation": "所列13／16／30",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T16",
+      "condition": "单骑+混／清／字",
+      "expectation": "所列16／19／33",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T17",
+      "condition": "普通四暗刻+清一色+清碰标签",
+      "expectation": "仍16",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T18",
+      "condition": "普通四暗刻+海底；单骑+杠上开花",
+      "expectation": "所列13／16",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T19",
+      "condition": "豪七／双豪七／三豪七",
+      "expectation": "对应8／16／32不累计",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_seven_pairs_one_quad",
+        "tests.test_shapes.ShapesTests.test_seven_pairs_two_quads",
+        "tests.test_shapes.ShapesTests.test_seven_pairs_three_quads"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T20",
+      "condition": "四同牌留手且七对成立",
+      "expectation": "计两对，不自动杠",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_seven_pairs_one_quad"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T21",
+      "condition": "T20后声明暗杠",
+      "expectation": "七对结构不再保留",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_seven_pairs_rejects_declared_kong"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T22",
+      "condition": "全字误分类清一色／混一色",
+      "expectation": "拒绝重复花色计分",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T23",
+      "condition": "跨不兼容拆解拼接",
+      "expectation": "拒绝",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T24",
+      "condition": "命中未决关系",
+      "expectation": "不默认为已通过",
+      "status": "AWAITING_RULE",
+      "test_refs": [],
+      "note": "原文含未决Q项，不设默认值。"
+    },
+    {
+      "id": "T25",
+      "condition": "幺九标准面子形",
+      "expectation": "9，不加碰碰胡3",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T26",
+      "condition": "混一色幺九",
+      "expectation": "12，不再另加组合名或碰碰胡",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T27",
+      "condition": "清幺九",
+      "expectation": "20，不另加幺九9或碰碰胡3",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T28",
+      "condition": "幺九+普通四暗刻",
+      "expectation": "所列19",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T29",
+      "condition": "混一色幺九+单骑",
+      "expectation": "所列25",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T30",
+      "condition": "混一色幺九+普通七对",
+      "expectation": "所列16，允许对子结构分支",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T31",
+      "condition": "清幺九豪七／双豪七／三豪七",
+      "expectation": "所列28／36／52",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_seven_pairs_one_quad",
+        "tests.test_shapes.ShapesTests.test_seven_pairs_two_quads",
+        "tests.test_shapes.ShapesTests.test_seven_pairs_three_quads"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T32",
+      "condition": "清幺九“普通七对4倍”或“清一色”伪造牌例",
+      "expectation": "在牌种数和每种4张上限下拒绝",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T33",
+      "condition": "四暗杠单吊，十八罗汉+单骑",
+      "expectation": "所列45",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_closed_kongs_single_wait_structure"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T34",
+      "condition": "T33再加合法杠上开花／海底之一",
+      "expectation": "所列48",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T35",
+      "condition": "T33且最后杠后补牌摸前≤4张并合法自摸",
+      "expectation": "海底与杠上开花均成立，所列小计51；先验补牌合法性",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T36",
+      "condition": "有明杠的十八罗汉",
+      "expectation": "不额外计四暗刻单骑",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_shapes.ShapesTests.test_four_concealed_rejects_pong"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T37",
+      "condition": "十三面胡前13种各一张",
+      "expectation": "对13种分别构造来牌，逐个验证16档",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T38",
+      "condition": "十三面已计16",
+      "expectation": "不再加普通十三幺13",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T39",
+      "condition": "两种十三幺终局相同、胡前结构不同",
+      "expectation": "按胡前证据分档，不只看终局",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T40",
+      "condition": "b=1、F=6、m=3，普通点炮",
+      "expectation": "赢家+24，点炮者−24，两家0",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.PaymentsTests.test_discard_one_payment"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T41",
+      "condition": "同数值，普通自摸",
+      "expectation": "赢家+72，其他各−24",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.PaymentsTests.test_self_draw_three_payments"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T42",
+      "condition": "m=0",
+      "expectation": "一家付款bF，不为0",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.PaymentsTests.test_zero_horses_still_pays"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T43",
+      "condition": "n=0／1／2／3",
+      "expectation": "N=6／8／10／12",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_first_four_horse_requirements"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T44",
+      "condition": "34种马牌分类",
+      "expectation": "不重不漏，位置牌种计数11／8／8／7",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_mapping_covers_all_34_types"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T45",
+      "condition": "庄位轮换",
+      "expectation": "玩家ID不变，相对编号随庄家变化",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_relative_position_uses_current_dealer"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T46",
+      "condition": "初始庄家首次胡",
+      "expectation": "不错误直接按连庄1翻8张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_initial_dealer_first_win_is_zero"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T47",
+      "condition": "赢家连续胡且无流局",
+      "expectation": "翻马依次6、8、10……",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_new_dealer_then_wins_increments"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T48",
+      "condition": "流局",
+      "expectation": "下局庄家不变，已有n保留，增量为0，不归零；不创建一次胡牌抓马",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_repeated_draws_do_not_reset"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T49",
+      "condition": "本局1号胡，随后成为下局庄0",
+      "expectation": "本局始终按二／六、南／发算马；跨局借手牌也不改映射，下局自己的结算才用下局位置",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_next_hand_binds_using_previous_position"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T50",
+      "condition": "活墙6≤R<N且N≤14，例如n=2、N=10、R=7",
+      "expectation": "下一把赢家原始前10张，K=10；不取旧墙7张、不混补3张、不固定取6张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_ten_needed_seven_left_goes_next_hand",
+        "tests.test_horses.HorsesTests.test_next_hand_selects_raw_prefix_not_sorted"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T51",
+      "condition": "普通点炮与承包事件",
+      "expectation": "责任分支分开；不能全局点炮三份",
+      "status": "AWAITING_RULE",
+      "test_refs": [],
+      "note": "原文含未决Q项，不设默认值。"
+    },
+    {
+      "id": "T52",
+      "condition": "一炮多响",
+      "expectation": "允许多响；共用一批马，各赢家按本局位置算m；按已确认庄位规则选择下一庄家",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_shared_horses_count_each_winner_by_own_position",
+        "tests.test_multiwin.MultiWinTests.test_lowest_relative_winner_becomes_new_dealer"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T53",
+      "condition": "1号首次自摸，马为二万、六筒、南、四条、东、九万，b=1、F=6",
+      "expectation": "m=3，S=24，赢家+72，其他各−24；不因换庄改数东与九万",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_next_hand_binds_using_previous_position"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T54",
+      "condition": "同一种命中牌在马序列中出现2张",
+      "expectation": "两张分别计入m，不按牌种去重",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_selection_counts_repeated_matching_entities"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T55",
+      "condition": "旧庄连庄2次，闲家胡",
+      "expectation": "本次n=0，翻6张，不沿用旧庄10张；按闲家本局相对位置算马",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_new_winner_resets_old_continuation",
+        "tests.test_settlement.PaymentsTests.test_idle_winner_cannot_inherit_continuation"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T56",
+      "condition": "首次普通自摸，赢牌为W",
+      "expectation": "马为按摸牌顺序位于W之后6张，W本身不得再计马",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T57",
+      "condition": "闲家胡后下局再次胡，中间无流局",
+      "expectation": "下局已为0号；再次胡按其连庄1翻8张，本次身份不回写上一局",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_new_dealer_then_wins_increments"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T58",
+      "condition": "N=6且胡后不足6张",
+      "expectation": "使用下一把赢家原始发牌到手的前6张，仍按上局位置",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_first_six_example_uses_old_seat"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T59",
+      "condition": "甲胡、甲胡、流局、甲胡",
+      "expectation": "累计n依次0、1、1、2；最后正常N=10，流局不是重置",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_win_win_draw_win_two_continuations"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T60",
+      "condition": "甲首次胡后连续多次流局再胡",
+      "expectation": "流局不递增且不清零，最后按n=1，正常N=8",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_repeated_draws_do_not_reset"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T61",
+      "condition": "庄家n=2但闲家接炮胡",
+      "expectation": "赢家本次n=0、N=6，按本局闲家位置算马",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_dealer.DealerTests.test_new_winner_resets_old_continuation"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T62",
+      "condition": "连续碰牌后点炮胡，期间无人新摸",
+      "expectation": "锚点保持最近一次实际摸牌，不改成最后弃牌张或碰牌者",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T63",
+      "condition": "抢杠胡发生在补牌之前",
+      "expectation": "使用已经发生的最后摸牌锚点，不读取尚未发生的补牌",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T64",
+      "condition": "杠后补牌并自摸",
+      "expectation": "取马锚点为真实补牌，补牌张本身不作马",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T65",
+      "condition": "R=5且正常N=6",
+      "expectation": "整体改用下一把前6张，不用旧墙5张再补新局1张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_source_must_be_full_next_dealer_hand"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T66",
+      "condition": "R=6且N=6",
+      "expectation": "旧墙足够，按正常锚点取6张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_old_wall_exactly_six"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T67",
+      "condition": "R=3且n=2、N=10",
+      "expectation": "转下一把赢家原始前10张，K=10；即使R<6也不将K缩为6",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_ten_needed_three_left_still_ten",
+        "tests.test_horses.HorsesTests.test_next_hand_selects_raw_prefix_not_sorted"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T68",
+      "condition": "本局1号，跨局前6张为二万、六筒、南、四条、东、九万",
+      "expectation": "按本局1号得m=3，不因新局为0号而改数东／九万",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_first_six_example_uses_old_seat"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T69",
+      "condition": "无下一局，存在待结算马牌",
+      "expectation": "标记Q13未决，不将m或奖励设为0，不伪造一次已发生发牌",
+      "status": "AWAITING_RULE",
+      "test_refs": [],
+      "note": "原文含未决Q项，不设默认值。"
+    },
+    {
+      "id": "T70",
+      "condition": "自摸，摸前4张／摸后3张，基础大胡成立",
+      "expectation": "海底+3；余牌不足N，按适用回退来源抓马",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_sea_at_four"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T71",
+      "condition": "点炮，牌山≤4",
+      "expectation": "不计海底，普通点炮一份S的规则不变",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_no_sea_on_discard"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T72",
+      "condition": "自摸，摸前5张／摸后4张",
+      "expectation": "明确不算海底，S8指定的边界反例",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_sea_uses_before_not_after"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T73",
+      "condition": "自摸，摸前6张／摸后5张",
+      "expectation": "无海底；仍因胡后不足6而触发跨局抓马",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_sea_uses_before_not_after"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T74",
+      "condition": "自摸，尚无合法基础大胡，但达到海底阈值",
+      "expectation": "不能凭海底创造胡牌资格",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T75",
+      "condition": "上局待结算后下局发牌，程序中断并恢复",
+      "expectation": "复用同一来源牌序列，不重洗；恢复后上局仅付款一次",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_journal.JournalTests.test_restore_after_bind_does_not_redraw",
+        "tests.test_journal.JournalTests.test_restore_after_paid_does_not_pay_twice"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T76",
+      "condition": "检查海底时先翻马导致剩余≤4",
+      "expectation": "拒绝该顺序；海底在胡牌事件处判定，不由结算翻马反推",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T77",
+      "condition": "正式牌谱的公开观察与跨局马牌",
+      "expectation": "只公开命中马牌；未命中牌身份不外泄，所有来源牌仍留在持有人实际下把手牌",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_public_projection_only_contains_hits"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T78",
+      "condition": "摸前3／2／1张分别合法自摸",
+      "expectation": "均满足海底摸前≤4，不能误写为只认恰好4张",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_qualifications.QualificationsTests.test_sea_at_three",
+        "tests.test_qualifications.QualificationsTests.test_sea_at_one"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T79",
+      "condition": "R<N、N=6，起手牌排序与原始发牌顺序不同",
+      "expectation": "只取原始到手前6张，不读取排序后的前6张",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_next_hand_selects_raw_prefix_not_sorted"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T80",
+      "condition": "上局1号，前6张为二万、六筒、南、四条、东、九万",
+      "expectation": "m=3，只需亮前三张；六张均仍为下一把手牌",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_public_projection_only_contains_hits",
+        "tests.test_settlement.LedgerTests.test_reveal_does_not_declare_meld_or_remove_cards"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T81",
+      "condition": "同一命中牌种有两张实体",
+      "expectation": "按两只马计并分别保留实体，禁止去重为一张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_selection_counts_repeated_matching_entities"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T82",
+      "condition": "跨局亮马但未碰杠",
+      "expectation": "仅亮马不破坏门清或未副露牌型资格，不新增副露面子",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_reveal_does_not_declare_meld_or_remove_cards"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T83",
+      "condition": "亮牌后的牌数守恒",
+      "expectation": "公开手牌标签不额外创建一张牌；不能同时计入牌河",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_reveal_does_not_declare_meld_or_remove_cards"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T84",
+      "condition": "n=4、N=14且R=13",
+      "expectation": "旧墙不足，取下一把赢家原始前14张；14本身不触发专门开马",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_fourteen_is_not_over_hand_limit"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T85",
+      "condition": "n=5得到N=16、旧墙不足，执行专门开马",
+      "expectation": "必须开够16张；之后重新洗牌实际开打，不以14张截断",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_special_deck_not_next_hand_known_tiles"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T86",
+      "condition": "T85专门开马再洗牌",
+      "expectation": "n保持本次已计算值5，不变6；不计一次额外胡／流局／庄位轮换",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_special_deck_not_next_hand_known_tiles"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T87",
+      "condition": "专门开马后重洗生成新牌序",
+      "expectation": "旧结算牌序不直接复用为新局起手牌，不把旧公开位置当作新局确知手牌",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T88",
+      "condition": "专门开马完成后程序中断重启",
+      "expectation": "复用同一已结算结果，不重复取马或重复支付",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_journal.JournalTests.test_restore_after_paid_does_not_pay_twice"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T89",
+      "condition": "N=16且R=20",
+      "expectation": "直接从旧墙按正确锚点取16张，K=16；不触发专门开马",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_sixteen_wall_twenty_prefers_old_wall"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T90",
+      "condition": "N=10且R=7，原始前10张与理牌后前10张不同",
+      "expectation": "固定选择原始前10张，不允许排序、挑牌或少取；旧墙7张不作数",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_next_hand_selects_raw_prefix_not_sorted"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T91",
+      "condition": "对手观察下一把亮马后的状态",
+      "expectation": "已公开命中牌身份可用，未命中牌的完整身份不可用；身份/历史与暗牌区分开",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_settlement.LedgerTests.test_hidden_nonhit_change_does_not_change_public_projection"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T92",
+      "condition": "海底判定被重新洗牌或马牌采样影响",
+      "expectation": "拒绝：阈值锁定原胡牌摸张前，不读后续结算或下局状态",
+      "status": "NOT_IMPLEMENTED",
+      "test_refs": [],
+      "note": ""
+    },
+    {
+      "id": "T93",
+      "condition": "N=14且R=14",
+      "expectation": "旧墙恰够，直接取旧墙14张，不借下把手牌",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_fourteen_wall_exactly_enough"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T94",
+      "condition": "N=16且R=16",
+      "expectation": "旧墙恰够，直接取旧墙16张；超过14本身不触发专门分支",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_sixteen_wall_exactly_enough"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T95",
+      "condition": "N=16且R=15",
+      "expectation": "专门开够16张后重新洗牌；不拼旧墙15张、不等待下把摸到第16张",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_sixteen_wall_fifteen_separate_deck"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T96",
+      "condition": "三种正常可完成牌源分别计马",
+      "expectation": "实际K均等于N；同种命中逐张计m，不把N当命中数",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_mapping_covers_all_34_types"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T97",
+      "condition": "R≥N分支被“先判断N>14”覆盖",
+      "expectation": "拒绝错误优先级，先判断旧墙是否足够",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_horses.HorsesTests.test_sixteen_wall_twenty_prefers_old_wall"
+      ],
+      "note": "对应基础契约有测试；不代表完整规则引擎已验收。"
+    },
+    {
+      "id": "T98",
+      "condition": "R不足且N≤14，来源选择后程序中断",
+      "expectation": "恢复同一下一局牌序及前N张；不重抽、不混补、上局账单只支付一次",
+      "status": "PARTIAL_KERNEL",
+      "test_refs": [
+        "tests.test_journal.JournalTests.test_restore_after_bind_does_not_redraw"
+      ],
+      "note": "只覆盖结构/条件/结算子过程，完整计分、行牌或完整会话集成仍未实现。"
+    },
+    {
+      "id": "T99",
+      "condition": "一炮双响，共用同一批马",
+      "expectation": "两个赢家读取同一批马牌，分别按各自在本局的相对位置得到m；不得重抽第二批马",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_shared_horses_count_each_winner_by_own_position"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T100",
+      "condition": "一炮多响包含当前庄家",
+      "expectation": "下一局仍由当前庄家坐庄；已有首次胡资格按同一庄再次胡规则更新连庄",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_dealer_winner_keeps_dealer_and_continues"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T101",
+      "condition": "一炮多响不含庄家，赢家相对位置为1和3",
+      "expectation": "位置1赢家成为下一局庄家，n=0；位置3赢家不获得下一局连庄资格",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_lowest_relative_winner_becomes_new_dealer"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T102",
+      "condition": "T101后下一局由原位置3同响赢家胡",
+      "expectation": "其作为闲家新赢家成为新庄，本次n=0，不因上一把也胡牌记连庄",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_larger_co_winner_does_not_get_continuation_next_hand"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T103",
+      "condition": "三碰落地后把其中一碰加杠",
+      "expectation": "仍为9张落地，不按物理10张或“13张落地”计",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_three_pongs_then_added_kong_stays_nine_grounded"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T104",
+      "condition": "三碰落地后第四组为明杠",
+      "expectation": "四组公开刻/杠按3×4=12张落地，不按13张计",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_fourth_open_kong_is_twelve_display_but_not_fourth_pong_trigger"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T105",
+      "condition": "极高合法倍数组合",
+      "expectation": "不因20倍或其他房间上限截断F或S；仅受实际规则与整数运算约束",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.UncappedAndDrawTests.test_multiplier_is_not_capped_at_twenty"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T106",
+      "condition": "流局",
+      "expectation": "四家点数变化全0，庄家/连庄状态按流局规则保留，但流局事件必须记录",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_settlement.UncappedAndDrawTests.test_draw_is_recorded_without_balance_change"
+      ],
+      "note": ""
+    },
+    {
+      "id": "T107",
+      "condition": "一炮多响旧墙不足N",
+      "expectation": "新开一副牌供全部赢家共用，不借任一赢家下局手牌；抓马后重新洗牌",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_short_old_wall_uses_separate_deck_not_next_hand",
+        "tests.test_horses.MultiHorsePlanningTests.test_multi_short_wall_uses_separate_deck_even_for_six"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T108",
+      "condition": "T107完成专门开马并重新洗牌",
+      "expectation": "不额外增加连庄，不伪造一次胡牌、流局或庄位轮换",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_multiwin.MultiWinTests.test_short_old_wall_uses_separate_deck_not_next_hand",
+        "tests.test_multiwin.MultiWinTests.test_dealer_winner_keeps_dealer_and_continues"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T109",
+      "condition": "三碰后暗杠",
+      "expectation": "不触发十二张落地承包；不存在责任者",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_closed_kong_is_not_grounded_or_responsibility_trigger"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T110",
+      "condition": "三碰后把既有碰加杠",
+      "expectation": "本次加杠不触发第四碰责任；仍只有三次碰来源",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_added_kong_action_does_not_trigger_responsibility"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T111",
+      "condition": "三碰后从玩家2弃牌完成第四碰",
+      "expectation": "玩家2锁定为本手十二张落地自摸责任者",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_fourth_pong_locks_provider_for_current_hand"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T112",
+      "condition": "T111的碰牌者随后自摸",
+      "expectation": "责任者独付三家份额，其余两家不付款",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_self_draw_is_covered_three_shares",
+        "tests.test_responsibility.ResponsibilityLedgerTests.test_self_draw_liability_is_paid_by_provider"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T113",
+      "condition": "T111的碰牌者随后点炮胡",
+      "expectation": "第四碰责任不生效；由实际点炮者支付普通一家费用",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_discard_win_ignores_grounded_cover",
+        "tests.test_responsibility.ResponsibilityLedgerTests.test_discard_win_stays_single_payer_in_ledger"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T114",
+      "condition": "T111后本手结束或流局进入下一把",
+      "expectation": "十二张落地责任清除，不跨手继续承包",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_liability_does_not_cross_hand"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    },
+    {
+      "id": "T115",
+      "condition": "三碰后第四组为直接明杠",
+      "expectation": "展示层可达十二张，但不属于第四碰，不触发十二张落地自摸承包",
+      "status": "KERNEL_COVERED",
+      "test_refs": [
+        "tests.test_responsibility.ResponsibilityTests.test_fourth_open_kong_is_twelve_display_but_not_fourth_pong_trigger"
+      ],
+      "note": "对应已确认基础契约有测试；不代表完整行牌引擎已验收。"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+===== first run =====
+{
+  "checked_at_utc": "2026-09-30T06:45:27.599133+00:00",
+  "python": "3.13.5",
+  "scope": "confirmed_rules_foundation",
+  "source_sha256": "875f297cee43496b64b9e3ec6a9fc7df25296d2c12682188be90cc8209e50444",
+  "source_matches": true,
+  "tests_run": 161,
+  "test_exit_code": 0,
+  "foundation_check": "PASS",
+  "tracked_source_cases": 115,
+  "training_ready": false,
+  "full_rules_frozen": false,
+  "remaining_rule_ids": [
+    "Q1",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q10c",
+    "Q10d_capacity",
+    "Q12",
+    "Q13"
+  ],
+  "strict_static_checks": "NOT_RUN_BY_THIS_COMMAND"
+}
+本批CPU基础测试通过；完整规则未冻结，禁止启动正式训练。
+first_exit=0
+===== second run (must refuse overwrite) =====
+{"level": "ERROR", "message": "报告目录已存在；请保留原证据并换用新的目录。"}
+second_exit=2

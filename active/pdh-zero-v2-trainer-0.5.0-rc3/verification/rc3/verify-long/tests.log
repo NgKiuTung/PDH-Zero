@@ -1,0 +1,16 @@
+test_batched_snapshot_round_trip (tests.test_long_training.LongTrainingTests.test_batched_snapshot_round_trip) ... ok
+test_dead_initializing_job_is_reported_as_failed_startup (tests.test_long_training.LongTrainingTests.test_dead_initializing_job_is_reported_as_failed_startup) ... ok
+test_duplicate_start_returns_existing_job_before_smoke_validation (tests.test_long_training.LongTrainingTests.test_duplicate_start_returns_existing_job_before_smoke_validation) ... ok
+test_fixed_evaluation_returns_finite_metrics (tests.test_long_training.LongTrainingTests.test_fixed_evaluation_returns_finite_metrics) ... ok
+test_live_metrics_are_rebuilt_only_from_committed_updates (tests.test_long_training.LongTrainingTests.test_live_metrics_are_rebuilt_only_from_committed_updates) ... ok
+test_long_checkpoint_restores_environment_and_model (tests.test_long_training.LongTrainingTests.test_long_checkpoint_restores_environment_and_model) ... ok
+test_replay_updates_are_atomic_and_orphans_are_quarantined (tests.test_long_training.LongTrainingTests.test_replay_updates_are_atomic_and_orphans_are_quarantined) ... ok
+test_reserved_lock_is_treated_as_active_startup (tests.test_long_training.LongTrainingTests.test_reserved_lock_is_treated_as_active_startup) ... ok
+test_resume_path_uses_complete_update_boundary_checkpoint (tests.test_long_training.LongTrainingTests.test_resume_path_uses_complete_update_boundary_checkpoint) ... ok
+test_smoke_gate_accepts_complete_zero_sum_run (tests.test_long_training.LongTrainingTests.test_smoke_gate_accepts_complete_zero_sum_run) ... ok
+test_tiny_long_run_warm_starts_from_smoke (tests.test_long_training.LongTrainingTests.test_tiny_long_run_warm_starts_from_smoke) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 5.218s
+
+OK

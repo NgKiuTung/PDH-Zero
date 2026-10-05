@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-09-30T12:21:31.573898+00:00",
+  "python": "3.13.5",
+  "torch": "2.10.0+cpu",
+  "tests_exit_code": 0,
+  "training_candidate_check": "PASS",
+  "engine_ready": true,
+  "full_rules_frozen": true,
+  "training_entry_ready": true,
+  "long_job_entry_ready": true,
+  "formal_long_run_ready": false,
+  "required_next_gate": "10-minute CUDA smoke on target RTX 5090",
+  "post_smoke_action": "tools/long_job.py start"
+}

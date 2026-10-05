@@ -1,0 +1,48 @@
+{
+  "gate": "INCONCLUSIVE",
+  "comparison": {
+    "wall_groups": 2,
+    "hands": 8,
+    "scope": "repeated_development_set_not_confirmatory",
+    "score": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "point_shoot": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "win": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "draw": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "cvar_5": {
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "selection": "baseline",
+  "checkpoint": "/workspace/develop-project/pdh-zero-rc3/pdh-zero-v2-trainer-0.6.0-rc3/tmp/rc3-build/cli-work-3/complete/REFINE_20261003T061048427769Z/checkpoints/candidates/baseline/model.pt",
+  "latest_gate": "INCONCLUSIVE",
+  "protocol": "repeated_development_set_not_confirmatory_test",
+  "long_training_allowed": false
+}

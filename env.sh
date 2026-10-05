@@ -1,0 +1,7 @@
+export PDH_HOME="/root/rivermind-data/pdh-zero"
+export PDH_PHASE1_ROOT="$PDH_HOME/active/pdh-zero-phase1-v1.1.1"
+export PDH_RESULTS_ROOT="$PDH_HOME/evidence"
+export PDH_PERSIST_ROOT="$PDH_HOME/state/persistence"
+export PDH_CACHE_ROOT="$PDH_HOME/cache"
+export PDH_TMP_ROOT="$PDH_HOME/tmp/runtime"
+export PDH_BACKUP_ROOT=""

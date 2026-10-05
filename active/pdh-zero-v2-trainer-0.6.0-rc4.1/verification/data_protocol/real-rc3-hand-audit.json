@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "this_run_logged_starting_walls_not_all_model_history",
+  "replays": {
+    "replays/hands.jsonl.gz": {
+      "complete_hand_records": 6406,
+      "unique_starting_type_walls": 6406,
+      "wall_multiplicity": {
+        "1": 6406
+      },
+      "action_events_min": 48,
+      "action_events_max": 392,
+      "action_events_mean": 318.5899157040275,
+      "action_events_median": 345.0,
+      "sampled_full_rule_replays_verified": 8
+    },
+    "evaluations/baseline/hands.jsonl.gz": {
+      "complete_hand_records": 4096,
+      "unique_starting_type_walls": 1024,
+      "wall_multiplicity": {
+        "4": 1024
+      },
+      "action_events_min": 68,
+      "action_events_max": 396,
+      "action_events_mean": 319.742919921875,
+      "action_events_median": 348.0,
+      "sampled_full_rule_replays_verified": 8
+    },
+    "evaluations/d000000143008/hands.jsonl.gz": {
+      "complete_hand_records": 4096,
+      "unique_starting_type_walls": 1024,
+      "wall_multiplicity": {
+        "4": 1024
+      },
+      "action_events_min": 68,
+      "action_events_max": 392,
+      "action_events_mean": 319.862548828125,
+      "action_events_median": 348.0,
+      "sampled_full_rule_replays_verified": 8
+    },
+    "evaluations/d000000265095/hands.jsonl.gz": {
+      "complete_hand_records": 4096,
+      "unique_starting_type_walls": 1024,
+      "wall_multiplicity": {
+        "4": 1024
+      },
+      "action_events_min": 68,
+      "action_events_max": 396,
+      "action_events_mean": 318.017822265625,
+      "action_events_median": 344.0,
+      "sampled_full_rule_replays_verified": 8
+    },
+    "evaluations/d000000386995/hands.jsonl.gz": {
+      "complete_hand_records": 4096,
+      "unique_starting_type_walls": 1024,
+      "wall_multiplicity": {
+        "4": 1024
+      },
+      "action_events_min": 68,
+      "action_events_max": 392,
+      "action_events_mean": 318.28125,
+      "action_events_median": 344.0,
+      "sampled_full_rule_replays_verified": 8
+    },
+    "evaluations/d000000510070/hands.jsonl.gz": {
+      "complete_hand_records": 4096,
+      "unique_starting_type_walls": 1024,
+      "wall_multiplicity": {
+        "4": 1024
+      },
+      "action_events_min": 56,
+      "action_events_max": 396,
+      "action_events_mean": 317.27685546875,
+      "action_events_median": 344.0,
+      "sampled_full_rule_replays_verified": 8
+    }
+  },
+  "training_development_starting_wall_overlap": {
+    "evaluations/baseline/hands.jsonl.gz": 0,
+    "evaluations/d000000143008/hands.jsonl.gz": 0,
+    "evaluations/d000000265095/hands.jsonl.gz": 0,
+    "evaluations/d000000386995/hands.jsonl.gz": 0,
+    "evaluations/d000000510070/hands.jsonl.gz": 0
+  },
+  "fixed_development_reuse_is_intentional": true,
+  "generalization_verified": false
+}

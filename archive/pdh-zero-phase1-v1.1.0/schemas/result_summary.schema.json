@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pdh-zero.local/schemas/result_summary.schema.json",
+  "title": "PDH-Zero Phase 1 Result Summary",
+  "type": "object",
+  "required": ["status"],
+  "properties": {
+    "status": {"enum": ["PASS", "FAIL", "UNVERIFIED", "PASS_WITH_RISKS"]},
+    "backend": {"enum": ["cpu", "cuda", "rocm"]},
+    "metrics": {"type": "object"},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 5,
+  "status": "completed",
+  "created_at_utc": "2026-10-03T09:58:22.144942+00:00",
+  "pid": 3016,
+  "scope": "solo_stability_refinement_candidate",
+  "rule_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "config": {
+    "output": "/mnt/data/pdh-rc4-work/logs/real-plan-smoke/REFINE_20261003T095822117603Z",
+    "warmup_checkpoint": null,
+    "workers": 2,
+    "environments": 16,
+    "hands_per_update": 16,
+    "max_seconds": 240,
+    "target_decisions": 1,
+    "evaluation_hands": 16,
+    "evaluation_interval": 1,
+    "evaluation_seed": 95000731,
+    "learning_rate": 5e-05,
+    "reward_scale": 32.0,
+    "minibatch_decisions": 8192,
+    "seed": 20261003,
+    "device": "cpu",
+    "transport": "shared",
+    "max_anchor_kl": 0.12,
+    "max_cvar_drop": 2.0,
+    "selection_patience": 2,
+    "initial_selection": "/mnt/data/pdh-rc4-work/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+    "feature_backend": "cpp"
+  },
+  "runtime": {
+    "torch": "2.10.0+cpu",
+    "device": "cpu",
+    "feature_backend": "cpp",
+    "resources": {
+      "logical_cpus_visible": 5,
+      "affinity_cpus": 5,
+      "quota_cpu_equivalents": 4.0,
+      "effective_cpu_equivalents": 4.0,
+      "memory_limit_bytes": 4294967296,
+      "declared_vcpus_fallback": 14,
+      "quota_known": true,
+      "evidence": [
+        {
+          "path": "/sys/fs/cgroup/cpu.max",
+          "value": "400000 100000"
+        },
+        {
+          "path": "/sys/fs/cgroup/memory.max",
+          "value": "4294967296"
+        }
+      ],
+      "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+    }
+  },
+  "long_training_allowed": false,
+  "initialization": {
+    "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+    "selection_sha256": "d239474d2e27200cd6dc1c48172057f2a2a47995af47064bbdd83aab70ccbdff",
+    "source_candidate": "d000000265095",
+    "source_update": 13,
+    "source_gate": "INCONCLUSIVE",
+    "source_is_confirmatory": false,
+    "effective_model_config": {
+      "hidden_size": 384,
+      "observation_size": 622,
+      "action_size": 74,
+      "risk_policy_weight": 0.0
+    },
+    "optimizer_policy": "fresh_AdamW_no_prior_momentum",
+    "risk_policy": "diagnostic_only_unchanged",
+    "anchor_scope": "frozen_rc4_input_candidate"
+  },
+  "ppo_config": {
+    "epochs": 2,
+    "minibatch_decisions": 8192,
+    "clip_ratio": 0.1,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.003,
+    "risk_coefficient": 0.05,
+    "anchor_coefficient": 0.05,
+    "target_kl": 0.01,
+    "max_gradient_norm": 0.5,
+    "behavior_tolerance": 0.0005,
+    "max_anchor_kl": 0.12
+  },
+  "updates": 1,
+  "accepted_updates": 1,
+  "total_learner_decisions": 1322,
+  "stop_reason": "target_decisions",
+  "development_gate": "INCONCLUSIVE",
+  "selected_development": "d000000001322",
+  "qualified_candidate": null,
+  "selection_is_confirmatory": false,
+  "finished_at_utc": "2026-10-03T09:58:34.969937+00:00",
+  "elapsed_wall_seconds": 12.825647862000096
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdh-zero-phase1"
+version = "1.1.1"
+description = "PDH-Zero Phase 1 portable CUDA, ROCm, and CPU feasibility experiments"
+requires-python = ">=3.12"
+authors = [{name = "PDH-Zero Research"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pdh_phase1 = ["py.typed"]

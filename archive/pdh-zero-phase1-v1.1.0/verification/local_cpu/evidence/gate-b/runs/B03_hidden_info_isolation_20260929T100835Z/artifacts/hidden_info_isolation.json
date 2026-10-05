@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "backend": "cpu",
+  "actor_observation_equal": true,
+  "critic_observation_changed": true,
+  "legal_mask_equal": true,
+  "actor_logit_max_abs_error": 0.0,
+  "action_count": 16
+}
