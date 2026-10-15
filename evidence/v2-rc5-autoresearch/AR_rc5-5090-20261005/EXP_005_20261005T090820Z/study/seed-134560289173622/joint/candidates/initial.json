@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "6de80db54f2e94c63885a797575e49d47300cc176f9085a3e2baaf1099c1a841",
+  "tensor_sha256": "d3ef0372e65f9d7f062c21f4f71ae459f4e842e525a918923cc35ba5f4eca568",
+  "mode": "joint",
+  "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "metadata": {
+    "seed": 134560289173622,
+    "arm": "joint",
+    "update": 0,
+    "role": "initial_reproducibility_not_promoted"
+  },
+  "exact_resume_supported": false
+}

@@ -1,0 +1,75 @@
+{
+  "risk_only_optimizer_steps": 3,
+  "shared_actor_encoder_max_change": 0.0016026627272367477,
+  "risk_is_not_gradient_isolated_in_rc1": true,
+  "log_sha256": "3d09b06f348563d84b94ec6de03262c5d779e7281070e1a2bf7eae787cef3105",
+  "observed_updates": 16,
+  "limitations": [
+    "No uploaded warmup tensor or individual evaluation games; no causal DUO proof."
+  ],
+  "update_9": {
+    "learner_seat_hands": 385,
+    "learner_count_histogram": [
+      0,
+      385,
+      0,
+      0,
+      0
+    ],
+    "point_shoot_per_table": 0.046753246753246755,
+    "point_shoot_per_learner_seat": 0.046753247,
+    "PONG_per_DISCARD": 0.025187
+  },
+  "update_10": {
+    "learner_seat_hands": 547,
+    "learner_count_histogram": [
+      0,
+      221,
+      163,
+      0,
+      0
+    ],
+    "point_shoot_per_table": 0.08333333333333333,
+    "point_shoot_per_learner_seat": 0.058500914,
+    "PONG_per_DISCARD": 0.021169
+  },
+  "update_11": {
+    "learner_seat_hands": 566,
+    "learner_count_histogram": [
+      0,
+      204,
+      181,
+      0,
+      0
+    ],
+    "point_shoot_per_table": 0.1038961038961039,
+    "point_shoot_per_learner_seat": 0.070671378,
+    "PONG_per_DISCARD": 0.066392
+  },
+  "update_14": {
+    "learner_seat_hands": 562,
+    "learner_count_histogram": [
+      0,
+      206,
+      178,
+      0,
+      0
+    ],
+    "point_shoot_per_table": 0.10677083333333333,
+    "point_shoot_per_learner_seat": 0.072953737,
+    "PONG_per_DISCARD": 0.080515
+  },
+  "update_16": {
+    "learner_seat_hands": 554,
+    "learner_count_histogram": [
+      0,
+      216,
+      169,
+      0,
+      0
+    ],
+    "point_shoot_per_table": 0.10909090909090909,
+    "point_shoot_per_learner_seat": 0.075812274,
+    "PONG_per_DISCARD": 0.080454
+  }
+}

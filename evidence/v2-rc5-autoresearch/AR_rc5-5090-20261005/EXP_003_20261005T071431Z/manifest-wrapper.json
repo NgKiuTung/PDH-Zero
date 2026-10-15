@@ -1,0 +1,17 @@
+{
+  "experiment_id": "EXP_003_20261005T071431Z",
+  "created_at_utc": "2026-10-05T07:14:34.345931+00:00",
+  "stage": "RTX5090_CONTROLLED_CUDA_SMOKE",
+  "parent_probe": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_002_20261005T065316Z",
+  "baseline": "d000000266137",
+  "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "dataset_sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0",
+  "registry_sha256_before": "f90db52877278cbd1a0fcb277e5df3e6e74bbf7f85f134fce8235070245f3e77",
+  "workers_basis": {
+    "workers": 0,
+    "source": "EXP_002 measured recommendation",
+    "scope": "workers 0 vs 4 only"
+  },
+  "scientific_claim_allowed": "engineering_smoke_only",
+  "promotion_allowed": false
+}

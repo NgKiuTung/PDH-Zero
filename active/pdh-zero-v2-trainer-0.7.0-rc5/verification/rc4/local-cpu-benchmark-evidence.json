@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-10-03T10:03:12.578048+00:00",
+  "selection_path": "/mnt/data/pdh-rc4-work/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+  "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+  "code_sha256": "ed5e595fb3b5fb6c8c814f92d53e18abc957e9579057709bc3b89ce3ad286d23",
+  "soabi": "cpython-313-x86_64-linux-gnu",
+  "torch": "2.10.0+cpu",
+  "device": "cpu",
+  "gpu_name": null,
+  "resources": {
+    "logical_cpus_visible": 5,
+    "affinity_cpus": 5,
+    "quota_cpu_equivalents": 4.0,
+    "effective_cpu_equivalents": 4.0,
+    "memory_limit_bytes": 4294967296,
+    "declared_vcpus_fallback": 14,
+    "quota_known": true,
+    "evidence": [
+      {
+        "path": "/sys/fs/cgroup/cpu.max",
+        "value": "400000 100000"
+      },
+      {
+        "path": "/sys/fs/cgroup/memory.max",
+        "value": "4294967296"
+      }
+    ],
+    "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+  },
+  "tested_profiles": [
+    [
+      "python",
+      2
+    ],
+    [
+      "cpp",
+      2
+    ]
+  ],
+  "trials": [
+    {
+      "status": "PASS",
+      "backend": "python",
+      "workers": 2,
+      "tables": 64,
+      "startup_seconds": 1.3010211499999969,
+      "repeats": [
+        {
+          "seconds": 6.609654036000393,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 3094.8669761811393,
+          "learner_decisions_per_second": 773.1115686490821,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 10602483,
+            "cpu.stat.user_usec": 10471146,
+            "cpu.stat.system_usec": 131336,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 66,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3569577984
+        },
+        {
+          "seconds": 6.643136933999813,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 3079.268153469103,
+          "learner_decisions_per_second": 769.2149131906099,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 11446976,
+            "cpu.stat.user_usec": 11241769,
+            "cpu.stat.system_usec": 205207,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 67,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3648544768
+        },
+        {
+          "seconds": 5.991767658999834,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 3414.0175594549983,
+          "learner_decisions_per_second": 852.8368072357763,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 9634372,
+            "cpu.stat.user_usec": 9530939,
+            "cpu.stat.system_usec": 103434,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 60,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3572129792
+        }
+      ],
+      "worker_pids_closed": [
+        3405,
+        3406
+      ],
+      "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+      "scope": "complete_rollout_inference_heuristic_step_audit_no_PPO_no_worker_startup",
+      "median_rollout_dps": 3094.8669761811393
+    },
+    {
+      "status": "PASS",
+      "backend": "cpp",
+      "workers": 2,
+      "tables": 64,
+      "startup_seconds": 1.2605486339998606,
+      "repeats": [
+        {
+          "seconds": 3.769848726999953,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 5426.2124242526015,
+          "learner_decisions_per_second": 1355.4920555304454,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 5405031,
+            "cpu.stat.user_usec": 5324886,
+            "cpu.stat.system_usec": 80146,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 38,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3567693824
+        },
+        {
+          "seconds": 3.95717076200026,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 5169.34982852748,
+          "learner_decisions_per_second": 1291.3266339350519,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 5684284,
+            "cpu.stat.user_usec": 5585476,
+            "cpu.stat.system_usec": 98807,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 40,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3570094080
+        },
+        {
+          "seconds": 3.9321471319999546,
+          "hands": 65,
+          "learner_decisions": 5110,
+          "environment_decisions": 20456,
+          "environment_decisions_per_second": 5202.246842069651,
+          "learner_decisions_per_second": 1299.5444545842745,
+          "digest": "7ca4e81339f25ab1e1e511f5c68d26453a48734f43e840ad1c75c7be0591be9f",
+          "cgroup_delta": {
+            "cpu.stat.usage_usec": 5505422,
+            "cpu.stat.user_usec": 5378093,
+            "cpu.stat.system_usec": 127330,
+            "cpu.stat.nice_usec": 0,
+            "cpu.stat.nr_periods": 39,
+            "cpu.stat.nr_throttled": 0,
+            "cpu.stat.throttled_usec": 0,
+            "cpu.stat.nr_bursts": 0,
+            "cpu.stat.burst_usec": 0,
+            "memory.events.low": 0,
+            "memory.events.high": 0,
+            "memory.events.max": 0,
+            "memory.events.oom": 0,
+            "memory.events.oom_kill": 0,
+            "memory.events.oom_group_kill": 0
+          },
+          "cgroup_memory_current_bytes": 3570352128
+        }
+      ],
+      "worker_pids_closed": [
+        3429,
+        3430
+      ],
+      "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+      "scope": "complete_rollout_inference_heuristic_step_audit_no_PPO_no_worker_startup",
+      "median_rollout_dps": 5202.246842069651
+    }
+  ],
+  "recommendation": {
+    "workers": 2,
+    "feature_backend": "cpp",
+    "environments": 64,
+    "transport": "shared",
+    "torch_num_threads": 1,
+    "measured_rollout_speedup_vs_reference": 1.680927446028352,
+    "selection_scope": "same_model_same_walls_rollout_only_not_PPO_or_learning_quality"
+  },
+  "training_started": false,
+  "long_training_allowed": false
+}

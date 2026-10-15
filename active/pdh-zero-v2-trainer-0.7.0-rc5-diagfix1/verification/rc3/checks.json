@@ -1,0 +1,23 @@
+{
+  "harness_pid": 2153,
+  "started_utc": "2026-10-03T06:06:34Z",
+  "status": "PASS",
+  "steps": [
+    {
+      "name": "cpu-tests",
+      "returncode": 0,
+      "wall_seconds": 102.3478559350001
+    },
+    {
+      "name": "coverage",
+      "returncode": 0,
+      "wall_seconds": 1.317390198999874
+    },
+    {
+      "name": "static",
+      "returncode": 0,
+      "wall_seconds": 0.7159122519999528
+    }
+  ],
+  "python310_ast_files": 118
+}

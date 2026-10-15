@@ -1,0 +1,1 @@
+{"pid": 937, "pgid": 937, "command": ["python", "tools/rc5.py", "prepare", "--train-run", "../inputs/v2-refinement-rc4.1/REFINE_20261003T131918636050Z", "--heldout-run", "../inputs/v2-heldout-rc4.1/HELDOUT_20261003T151645353474Z", "--registry", "tmp/rc5-local-evidence/exposure.sqlite3", "--output", "verification/rc5/exposure-import.json"], "max_seconds": 300}

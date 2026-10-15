@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_sha256": "6c9b2e7d01dbfcba189821bd842b8dc8dd00a1a87925ba4f2c0cd5dd15416ecf",
+  "binary_sha256": "974b8c26690bd900b58bf521bcf9cd04cbcf69784d3a0a08937b8d758e75ecd7",
+  "soabi": "cpython-313-x86_64-linux-gnu",
+  "compiler": "/usr/bin/g++",
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-O3",
+    "-ffp-contract=off",
+    "-shared",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I/opt/pyvenv/lib/python3.13/site-packages/torch/include",
+    "-I/usr/include/python3.13",
+    "/workspace/develop-project/pdh-zero-rc5-20261005/pdh-zero-v2-trainer-0.6.0-rc5/native/actions.cpp",
+    "/workspace/develop-project/pdh-zero-rc5-20261005/pdh-zero-v2-trainer-0.6.0-rc5/native/binding.cpp",
+    "/workspace/develop-project/pdh-zero-rc5-20261005/pdh-zero-v2-trainer-0.6.0-rc5/native/observation.cpp",
+    "/workspace/develop-project/pdh-zero-rc5-20261005/pdh-zero-v2-trainer-0.6.0-rc5/native/route.cpp",
+    "-o",
+    "/workspace/develop-project/pdh-zero-rc5-20261005/pdh-zero-v2-trainer-0.6.0-rc5/build/native/_pdh_native.tmp.cpython-313-x86_64-linux-gnu.so"
+  ],
+  "cpu_only": true,
+  "fast_math": false,
+  "threads": 1
+}

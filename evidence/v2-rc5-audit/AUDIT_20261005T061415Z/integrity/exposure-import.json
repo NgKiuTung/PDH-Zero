@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/replays/hands.jsonl.gz",
+      "sha256": "a0e124ac5caaf9c02f58ea8d97031e9419cd0f05af2a43332a3982b87d24080f",
+      "role": "train",
+      "records": 6410,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/baseline/hands.jsonl.gz",
+      "sha256": "448f42883d59bc8c434b63a238825260f2484bd8b8f0b5353e50eb98b3877221",
+      "role": "development",
+      "records": 4096,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000143298/hands.jsonl.gz",
+      "sha256": "403cf073a2d7cfa40fdde58a4d5e21d88760f12b1695b0e6206651857d5ffcd1",
+      "role": "development",
+      "records": 4096,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000266137/hands.jsonl.gz",
+      "sha256": "b140ef0208ff1214b2c00dc5b926f1961807107e8211b726526162d29cf63af7",
+      "role": "development",
+      "records": 4096,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000387598/hands.jsonl.gz",
+      "sha256": "76bbe4884b0dbbce5786b42312005cf38158eebdee51e53039614fcaba33437c",
+      "role": "development",
+      "records": 4096,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/evaluations/d000000509656/hands.jsonl.gz",
+      "sha256": "15cf8ee9b49bad46b286d6e8209e1f15c7e23e48f2ab6acf0591bf8f018c2620",
+      "role": "development",
+      "records": 4096,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-heldout-rc4.1/HELDOUT_20261003T151645353474Z/baseline/hands.jsonl.gz",
+      "sha256": "aae0cbc12b9460acf23757a653779023ddc677b0ba62d1cc89e268cbb184981a",
+      "role": "heldout_used",
+      "records": 16384,
+      "cached": false
+    },
+    {
+      "path": "/root/rivermind-data/pdh-zero/evidence/v2-heldout-rc4.1/HELDOUT_20261003T151645353474Z/candidate/hands.jsonl.gz",
+      "sha256": "1696cd9761b9ed6c253a505806229896878d9926789039079b424b3414d58fb3",
+      "role": "heldout_used",
+      "records": 16384,
+      "cached": false
+    }
+  ],
+  "historical_coverage": "partial",
+  "original_registry_in_source_archives": false,
+  "known_role_wall_counts": {
+    "development": 2083,
+    "heldout_used": 8258,
+    "train": 6490
+  },
+  "cross_role_fingerprints": 0,
+  "claim": "known_archived_exposure_only_not_complete_ancestry",
+  "used_heldout": "historical_evidence_and_diagnostics_never_auxiliary_training"
+}

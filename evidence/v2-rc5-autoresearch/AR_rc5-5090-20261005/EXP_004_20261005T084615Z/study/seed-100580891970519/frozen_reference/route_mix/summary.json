@@ -1,0 +1,103 @@
+{
+  "hands": 64,
+  "mean_score": 1.109375,
+  "score_std": 14.698126142790278,
+  "median_score": 0.0,
+  "quantiles": {
+    "0.01": -27.33,
+    "0.05": -17.099999999999998,
+    "0.1": -4.199999999999996,
+    "0.5": 0.0,
+    "0.9": 0.0,
+    "0.95": 15.399999999999977,
+    "0.99": 63.53999999999989
+  },
+  "cvar_1": -33.0,
+  "cvar_5": -23.25,
+  "win": 0.09375,
+  "point_shoot": 0.046875,
+  "draw": 0.65625,
+  "self_draw": 0.03125,
+  "discard_win": 0.0625,
+  "minimum_score": -33,
+  "maximum_score": 90,
+  "losses_by_cause": {
+    "ordinary_self_draw": {
+      "payments": 4,
+      "amount": 75,
+      "before_horses": 29,
+      "horse_uplift": 46
+    },
+    "ordinary_discard": {
+      "payments": 3,
+      "amount": 48,
+      "before_horses": 17,
+      "horse_uplift": 31
+    }
+  },
+  "negative_score_hands": 7,
+  "conditional_mean_loss": 17.571428571428573,
+  "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+  "responsibility": {
+    "schema_version": 1,
+    "candidate_seat_hands": 64,
+    "direct_loss": 48,
+    "direct_principal": 17,
+    "direct_horse_uplift": 31,
+    "ordinary_self_draw_share": 75,
+    "total_outgoing": 123,
+    "total_income": 194,
+    "direct_loss_hand": 3,
+    "defense_loss_per_100_seat_hands": 75.0,
+    "direct_loss_hand_rate": 0.046875,
+    "direct_loss_distribution": {
+      "denominator": "all_candidate_seat_hands",
+      "p95": 0.0,
+      "p99": 20.219999999999985,
+      "maximum": 24,
+      "positive_hands": 3,
+      "mean_if_positive": 16.0
+    },
+    "ordinary_self_draw_distribution": {
+      "denominator": "all_candidate_seat_hands",
+      "p95": 10.199999999999932,
+      "p99": 23.54999999999996,
+      "maximum": 33,
+      "positive_hands": 4,
+      "mean_if_positive": 18.75
+    },
+    "net_score_tail_breakdown": {
+      "0.01": {
+        "hands": 1,
+        "losses_by_cause": {
+          "ordinary_self_draw": 33
+        },
+        "direct_loss": 0,
+        "ordinary_self_draw_share": 33,
+        "scope": "lowest_net_score_hands_ties_by_wall_seat"
+      },
+      "0.05": {
+        "hands": 4,
+        "losses_by_cause": {
+          "ordinary_self_draw": 51,
+          "ordinary_discard": 42
+        },
+        "direct_loss": 42,
+        "ordinary_self_draw_share": 51,
+        "scope": "lowest_net_score_hands_ties_by_wall_seat"
+      }
+    },
+    "scope": "monitoring_only_not_reward_or_gate",
+    "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+  },
+  "seconds": 6.811890522018075,
+  "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+  "seed": 55144536430624,
+  "initial_dealer": 0,
+  "initial_continuation": 0,
+  "unit": "complete_natural_hand_not_isolated_decision",
+  "unique_starting_walls": 16,
+  "seat_variants_per_wall": 4,
+  "action_events_total": 20342,
+  "results_sha256": "9481489abcad4ef47914fc3899a162b2e5a27fdde2cb472ea769e7c3b6c31f84"
+}

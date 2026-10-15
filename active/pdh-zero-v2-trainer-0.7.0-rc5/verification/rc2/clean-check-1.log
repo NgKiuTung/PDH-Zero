@@ -1,0 +1,14 @@
+{
+  "refinement_candidate_check": "PASS",
+  "python": "3.13.5",
+  "tests_run": 264,
+  "tests_exit_code": 0,
+  "hash_errors": [],
+  "basic_static_exit_code": 0,
+  "refinement_entry_ready": true,
+  "formal_long_run_ready": false,
+  "target_cuda_verified": false,
+  "ruff": "NOT_RUN",
+  "mypy": "NOT_RUN",
+  "report_directory": "/mnt/data/pdh-rc2-release-check-1/pdh-zero-v2-trainer-0.6.0-rc2/tmp/verify-refinement-20261003T034542410223Z"
+}

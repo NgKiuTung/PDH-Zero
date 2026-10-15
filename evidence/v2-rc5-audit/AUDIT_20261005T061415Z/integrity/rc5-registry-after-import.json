@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-05T06:28:34.050888+00:00",
+  "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc5/.wall-exposures.sqlite3",
+  "sha256_after_historical_import": "e2207e2a0a536195e9209718f43772d79fd63066712eff031d8ac0bbfd4c01d4",
+  "quick_check": "ok",
+  "source_counts": {
+    "development": 5,
+    "heldout_used": 2,
+    "train": 1
+  },
+  "wall_counts": {
+    "development": 2083,
+    "heldout_used": 8258,
+    "train": 6490
+  },
+  "historical_coverage": "partial"
+}

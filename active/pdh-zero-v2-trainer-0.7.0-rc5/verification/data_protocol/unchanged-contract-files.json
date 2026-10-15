@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "files": [
+    "native/actions.cpp",
+    "native/binding.cpp",
+    "native/features.hpp",
+    "native/observation.cpp",
+    "native/route.cpp",
+    "rules/cases.json",
+    "rules/open_decisions.json",
+    "rules/source-v0.6.md",
+    "rules/source-v0.7.md",
+    "rules/source-v0.8.md",
+    "rules/source-v0.9.md",
+    "src/pdh_v2/game/__init__.py",
+    "src/pdh_v2/game/actions.py",
+    "src/pdh_v2/game/digest.py",
+    "src/pdh_v2/game/engine.py",
+    "src/pdh_v2/game/session.py",
+    "src/pdh_v2/game/state.py",
+    "src/pdh_v2/game/wall.py",
+    "src/pdh_v2/policy/model.py",
+    "src/pdh_v2/scoring/__init__.py",
+    "src/pdh_v2/scoring/evaluator.py",
+    "src/pdh_v2/scoring/patterns.py",
+    "src/pdh_v2/strategy.py",
+    "src/pdh_v2/training/buffer.py",
+    "src/pdh_v2/training/collector.py",
+    "src/pdh_v2/training/sequence_batch.py",
+    "src/pdh_v2/training/stable_ppo.py"
+  ]
+}

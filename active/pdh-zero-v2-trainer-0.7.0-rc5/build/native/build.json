@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "source_sha256": "6c9b2e7d01dbfcba189821bd842b8dc8dd00a1a87925ba4f2c0cd5dd15416ecf",
+  "binary_sha256": "58ea002d9607ad362642c0cb49cae0ed89e39805a6db2777169b6c71062ef58b",
+  "soabi": "cpython-312-x86_64-linux-gnu",
+  "compiler": "/usr/bin/g++",
+  "command": [
+    "/usr/bin/g++",
+    "-std=c++20",
+    "-O3",
+    "-ffp-contract=off",
+    "-shared",
+    "-fPIC",
+    "-fvisibility=hidden",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I/opt/conda/lib/python3.12/site-packages/torch/include",
+    "-I/opt/conda/include/python3.12",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/native/actions.cpp",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/native/binding.cpp",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/native/observation.cpp",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/native/route.cpp",
+    "-o",
+    "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/build/native/_pdh_native.tmp.cpython-312-x86_64-linux-gnu.so"
+  ],
+  "cpu_only": true,
+  "fast_math": false,
+  "threads": 1
+}

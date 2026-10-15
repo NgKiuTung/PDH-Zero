@@ -1,0 +1,305 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index cb70339..866d833 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -22,7 +22,7 @@
+ 
+ 新代码在 src/pdh_v2/table，仍使用旧完整轨迹/结算/PPO。仅两个旧运行接口加默认关闭钩子：paired_evaluation 对手工厂、stable_ppo 回退前保存提案。
+ 
+-诊断必须不改Actor张量和评估轨迹。辅助梯度不能进原Actor；PPO不反传辅助头。标签不能倒填意图，当前能力与未来非强制行为分开。资格门禁按任务/座位和训练先验比较，不看旧held-out；失败头仅回退为先验。
++诊断必须不改Actor张量和评估轨迹。诊断负对照不独立重跑PPO：保持同完整手局/更新预算，采样后精确镜像同seed baseline Actor有效更新；逐更新和最终Actor仍需bit-exact。辅助梯度不能进原Actor；PPO不反传辅助头。标签不能倒填意图，当前能力与未来非强制行为分开。资格门禁按任务/座位和训练先验比较，不看旧held-out；失败头仅回退为先验。
+ 
+ 受保护源码包括 src、native、tools、rules。试验后再改源码就属于新版本，不能继续旧冻结确认。模型/优化器实际回退，但所有提案留下；不会自动部署、长训或精确resume。
+ 
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 1213338..e52abf7 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -1,3 +1,9 @@
++# rc5 diagnostic-control hotfix1 — 2026-10-05 (development)
++
++- 5090 smoke 暴露：baseline/diagnostic 独立 CUDA PPO 的 Actor 可出现微小数值漂移，即使训练轨迹与三类对手评估轨迹完全一致；旧 bit-exact 门禁因此 fail-closed。
++- diagnostic 改为负对照：保持相同完整自然手/更新预算，但每次采样后精确继承同 seed baseline arm 的已生成 Actor 更新；belief 仅诊断，不独立 PPO，不修改 Actor。
++- 门禁继续要求逐更新/最终 Actor 张量、训练完整手轨迹和三类对手评估轨迹精确一致；没有放宽容差。EXP_003 失败证据保留，修复后必须使用新实验与新 development 牌墙。
++
+ # 0.6.0-rc5 — 2026-10-05
+ 
+ - 基于唯一授权 rc4.1 d000000266137；冻结规则、旧网络、特征维度及计分核不改。
+diff --git a/docs/rc5-design.md b/docs/rc5-design.md
+index afdf70e..6db6d3f 100644
+--- a/docs/rc5-design.md
++++ b/docs/rc5-design.md
+@@ -65,3 +65,12 @@ H2结果中结构、听牌、碰能力较稳；接炮与行动逐seed/座位不
+ 59,658历史完整记录已按TRAIN/开发/已用held-out登记，已知跨角色指纹交叉0。但原登记库/不可达祖先/内存教师墙缺失，历史始终partial。已用held-out不训练、不再称未见。新墙相对于已知登记未见，不代表证明对未知祖先绝对独立。
+ 
+ 尚未实测：目标5090、CUDA/shared下rc5真实候选速度与长期稳定性、足量净收益优势、完全从零多seed、最终一次性未见墙确认、跨手GRU/长期回报。ruff/mypy未安装，NOT_RUN；不能把基本AST审计伪称两工具运行成功。
++## 5090 diagnostic negative-control correction
++
++`diagnostic` is an instrumentation control, not an independent policy optimization arm.
++After the baseline arm has produced each same-seed PPO update, the diagnostic arm collects
++the same declared natural-hand budget and then mirrors only the legacy Actor tensors from
++that baseline effective checkpoint. Its fitted belief head remains read-only to policy.
++The final gate still requires bit-exact Actor tensors and exact trajectories for all three
++opponent conditions; no numeric tolerance is used to hide CUDA drift.
++
+diff --git a/src/pdh_v2/table/study.py b/src/pdh_v2/table/study.py
+index 94bd8d1..193ed4d 100644
+--- a/src/pdh_v2/table/study.py
++++ b/src/pdh_v2/table/study.py
+@@ -1,6 +1,7 @@
+ """Finite autoresearch-style three-arm study; all outcomes and candidates are retained."""
+ from __future__ import annotations
+ 
++import gzip
+ import json
+ import logging
+ from pathlib import Path
+@@ -20,12 +21,18 @@ from pdh_v2.table.process_control import RunSignals, validate_device
+ from pdh_v2.table.study_contract import check_identity, derived_seed, source_identity
+ from pdh_v2.table.study_evaluation import (compare_conditions, decision_record,
+                                            diagnostic_control, evaluate_conditions)
+-from pdh_v2.table.study_training import train_arm
++from pdh_v2.table.study_training import mirror_diagnostic_arm, train_arm
+ from pdh_v2.training.candidate_store import file_digest
+ from pdh_v2.training.events import JsonlWriter
+ from pdh_v2.training.refinement_control import StopRequested, atomic_json, utc
+ 
+ 
++def _gzip_payload_exact(left: Path, right: Path) -> bool:
++    """Compare replay content rather than gzip container metadata."""
++    with gzip.open(left, 'rb') as a, gzip.open(right, 'rb') as b:
++        return a.read() == b.read()
++
++
+ def _write_trial(output, record, events):
+     events.write(record)
+     with (output / 'results.tsv').open('a') as stream:
+@@ -56,12 +63,18 @@ def _seed_study(root, baseline, dataset, config, seed, output, store, manifest,
+                             config.fit_steps, config.fit_batch, next(baseline.parameters()).device)
+     belief = run/'auxiliary/belief.pt'
+     baseline_rows, baseline_tensor = None, None
++    baseline_training = None
+     trials = []
+     for mode in ('baseline', 'diagnostic', 'joint'):
+         check_identity(root, manifest['protected_source'])
+         arm_dir = run / mode
+-        model, candidate, training = train_arm(baseline, belief, config, seed, mode,
+-                                               arm_dir, store, owner)
++        if mode == 'diagnostic':
++            model, candidate, training = mirror_diagnostic_arm(
++                baseline, belief, config, seed, arm_dir, store, owner,
++                run/'baseline', baseline_training)
++        else:
++            model, candidate, training = train_arm(baseline, belief, config, seed, mode,
++                                                   arm_dir, store, owner)
+         expected_tensor = tensor_digest(model.state_dict())
+         model, _ = load_candidate(candidate, next(baseline.parameters()).device)
+         if tensor_digest(model.state_dict()) != expected_tensor:
+@@ -73,9 +86,14 @@ def _seed_study(root, baseline, dataset, config, seed, output, store, manifest,
+         legacy_digest = tensor_digest({k: model.state_dict()[k] for k in original_keys})
+         if mode == 'baseline':
+             baseline_rows, baseline_tensor = rows, legacy_digest
++            baseline_training = training
+         control = None
+         if mode == 'diagnostic':
+             control = dict(actor_tensor_exact=(legacy_digest == baseline_tensor),
++                mirrored_actor_updates_exact=all(r['actor_tensor_exact']
++                                                 for r in training['updates']),
++                training_trajectories_exact=_gzip_payload_exact(
++                    run/'baseline/hands.jsonl.gz', arm_dir/'hands.jsonl.gz'),
+                 all_opponent_trajectories_exact=all(diagnostic_control(baseline_rows[o], rows[o])
+                                                     for o in config.opponents))
+             if not all(control.values()):
+diff --git a/src/pdh_v2/table/study_training.py b/src/pdh_v2/table/study_training.py
+index 7d63720..c456d11 100644
+--- a/src/pdh_v2/table/study_training.py
++++ b/src/pdh_v2/table/study_training.py
+@@ -8,11 +8,12 @@ import torch
+ 
+ from pdh_v2.rollout import BatchedSessions
+ from pdh_v2.rollout.parallel_env import ParallelSessions
+-from pdh_v2.table.checkpoints import save_candidate
++from pdh_v2.table.checkpoints import load_candidate, save_candidate, tensor_digest
+ from pdh_v2.table.fit import load_belief
+ from pdh_v2.table.model import TableActorCritic
+ from pdh_v2.table.study_contract import BudgetClock, derived_seed
+ from pdh_v2.training.collector import CollectionConfig, RolloutCollector
++from pdh_v2.training.candidate_store import file_digest
+ from pdh_v2.training.events import JsonlWriter, ReplayWriter
+ from pdh_v2.training.refinement_control import atomic_json
+ from pdh_v2.training.stable_ppo import StablePPOConfig, guarded_update
+@@ -139,4 +140,90 @@ def train_arm(baseline, belief: Path, config, seed: int, mode: str,
+                    training_start='fresh_seed_per_update_dealer_0_no_continuation',
+                    recurrent_scope='within_natural_hand_not_cross_hand_return')
+     atomic_json(output / 'report.json', report)
+-    return model.eval(), current, report
+\ No newline at end of file
++    return model.eval(), current, report
++
++
++def _legacy_digest(model, keys) -> str:
++    """Hash only the frozen rc4.1 Actor tensors used by the control gate."""
++    state = model.state_dict()
++    return tensor_digest({key: state[key] for key in keys})
++
++
++def _mirror_actor(target, source, keys) -> None:
++    """Copy only legacy Actor tensors; fitted belief state remains diagnostic-only."""
++    target_state, source_state = target.state_dict(), source.state_dict()
++    for key in keys:
++        target_state[key] = source_state[key]
++    target.load_state_dict(target_state, strict=True)
++    if _legacy_digest(target, keys) != _legacy_digest(source, keys):
++        raise RuntimeError('rc5.diagnostic_actor_mirror_not_exact')
++
++
++def _mirror_update(model, baseline, config, seed, update, source_row, source_arm,
++                   output, store, owner, clock, replay) -> tuple[Path, dict]:
++    """Collect the declared hands, then inherit that baseline update exactly."""
++    started = time.monotonic()
++    batch = _collect(model, config, seed, update, store, owner,
++                     f'{owner}:{seed}:diagnostic', clock, replay)
++    collection_seconds = time.monotonic()-started
++    source_path = source_arm / source_row['effective_checkpoint']
++    source_model, _ = load_candidate(source_path, next(model.parameters()).device)
++    keys = tuple(baseline.state_dict())
++    _mirror_actor(model, source_model, keys)
++    proposal = output / f'candidates/update-{update:04d}-mirrored.pt'
++    source_sha = file_digest(source_path)
++    save_candidate(model, proposal, dict(seed=seed, arm='diagnostic', update=update,
++        role='exact_baseline_actor_mirror_not_promoted', source_checkpoint_sha256=source_sha))
++    row = dict(update=update, hands=batch.hands, learner_decisions=batch.decisions,
++               environment_decisions=batch.environment_decisions,
++               raw_learner_net_score=batch.learner_score_sum,
++               raw_all_seat_sum=sum(batch.raw_score_sum),
++               collection_seconds=collection_seconds, update_seconds=0.0,
++               optimizer_steps_attempted=0, independent_ppo=False, actor_tensor_exact=True,
++               source_update_accepted=source_row['update_accepted'],
++               source_effective_checkpoint=str(source_path.relative_to(source_arm)),
++               source_checkpoint_sha256=source_sha,
++               effective_checkpoint=str(proposal.relative_to(output)),
++               proposal=str(proposal.relative_to(output)))
++    del source_model
++    return proposal, row
++
++
++def mirror_diagnostic_arm(baseline, belief: Path, config, seed: int, output: Path,
++                          store, owner: str, source_arm: Path, source_training: dict):
++    """Run the negative control with exact baseline Actor updates and equal hand budgets.
++
++    NOTE: Independent CUDA PPO runs need not be bit-exact. Diagnostic instrumentation
++    therefore mirrors each already-produced baseline Actor update instead of treating
++    numerical reproducibility as evidence that the belief head is non-intervening.
++    """
++    output.mkdir(parents=True, exist_ok=False)
++    torch.manual_seed(derived_seed(seed, 'model-initialization'))
++    model = TableActorCritic.from_baseline(baseline, 'diagnostic')
++    load_belief(belief, model)
++    current = output / 'candidates/initial.pt'
++    save_candidate(model, current, dict(seed=seed, arm='diagnostic', update=0,
++                   role='initial_reproducibility_not_promoted'))
++    events, replay = JsonlWriter(output/'updates.jsonl'), ReplayWriter(output/'hands.jsonl.gz')
++    torch.manual_seed(derived_seed(seed, 'actor-sampling'))
++    clock, updates = BudgetClock(config.max_training_seconds), []
++    source_updates = source_training['updates']
++    if len(source_updates) != config.updates:
++        raise RuntimeError('rc5.diagnostic_source_budget_mismatch')
++    for update, source_row in enumerate(source_updates, 1):
++        clock.check()
++        current, row = _mirror_update(model, baseline, config, seed, update, source_row,
++            source_arm, output, store, owner, clock, replay)
++        events.write(row)
++        updates.append(row)
++    report = dict(status='PASS', seed=seed, mode='diagnostic', updates=updates,
++        elapsed_training_seconds=time.monotonic()-clock.started,
++        complete_hands=sum(r['hands'] for r in updates),
++        learner_decisions=sum(r['learner_decisions'] for r in updates),
++        effective_checkpoint=str(current.relative_to(output)),
++        reward='true_net_settlement_divided_by_32_gamma_1',
++        training_start='fresh_seed_per_update_dealer_0_no_continuation',
++        recurrent_scope='within_natural_hand_not_cross_hand_return',
++        control='exact_same_seed_baseline_actor_mirror', independent_ppo=False)
++    atomic_json(output / 'report.json', report)
++    return model.eval(), current, report
+diff --git a/tests/test_rc5_diagnostic_mirror.py b/tests/test_rc5_diagnostic_mirror.py
+new file mode 100644
+index 0000000..6027c87
+--- /dev/null
++++ b/tests/test_rc5_diagnostic_mirror.py
+@@ -0,0 +1,76 @@
++"""Diagnostic control mirrors baseline Actor updates without independent PPO drift."""
++from pathlib import Path
++from types import SimpleNamespace
++import tempfile
++import unittest
++from unittest.mock import patch
++
++import torch
++
++from pdh_v2.policy import CandidateActorCritic, ModelConfig
++from pdh_v2.table.checkpoints import load_candidate, save_candidate, tensor_digest
++from pdh_v2.table.data import contract
++from pdh_v2.table.model import SeatBelief, TableActorCritic
++from pdh_v2.table.study_training import mirror_diagnostic_arm
++from pdh_v2.training.candidate_store import file_digest
++
++
++class _Batch:
++    hands = 1
++    decisions = 2
++    environment_decisions = 3
++    learner_score_sum = 4
++    raw_score_sum = (0, 0, 0, 0)
++
++
++def _belief(path: Path) -> None:
++    model = SeatBelief(384)
++    payload = dict(schema='rc5-belief-v2', state=model.state_dict(), seed=1,
++                   steps=1, batch=1, dataset_sha256='fixture',
++                   source_sha256=contract()['training_replay_sha256'],
++                   baseline_sha256=contract()['baseline']['sha256'],
++                   train_prior=torch.zeros(3, 153))
++    torch.save(payload, path)
++    path.with_suffix('.pt.sha256').write_text(f'{file_digest(path)}  belief.pt\n')
++
++
++class Rc5DiagnosticMirrorTests(unittest.TestCase):
++    def test_each_diagnostic_update_exactly_inherits_baseline_actor(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            root = Path(tmp)
++            torch.manual_seed(7)
++            baseline = CandidateActorCritic(
++                ModelConfig(risk_policy_weight=0.)).requires_grad_(False)
++            source = root/'baseline'
++            source.mkdir()
++            actor = TableActorCritic.from_baseline(baseline, 'baseline')
++            initial = source/'candidates/initial.pt'
++            save_candidate(actor, initial, {})
++            updates = []
++            for update in (1, 2):
++                with torch.no_grad():
++                    next(actor.parameters()).add_(update / 1000)
++                candidate = source/f'candidates/update-{update:04d}-proposal.pt'
++                save_candidate(actor, candidate, {})
++                updates.append(dict(update_accepted=True,
++                                    effective_checkpoint=str(candidate.relative_to(source))))
++            belief = root/'belief.pt'
++            _belief(belief)
++            output = root/'diagnostic'
++            config = SimpleNamespace(updates=2, max_training_seconds=60)
++            with patch('pdh_v2.table.study_training._collect', return_value=_Batch()):
++                model, candidate, report = mirror_diagnostic_arm(
++                    baseline, belief, config, 99, output, object(), 'owner', source,
++                    {'updates': updates})
++            source_model, _ = load_candidate(
++                source/'candidates/update-0002-proposal.pt', torch.device('cpu'))
++            keys = tuple(baseline.state_dict())
++            expected = tensor_digest({k: source_model.state_dict()[k] for k in keys})
++            actual = tensor_digest({k: model.state_dict()[k] for k in keys})
++            self.assertEqual(actual, expected)
++            self.assertFalse(report['independent_ppo'])
++            self.assertEqual(report['complete_hands'], 2)
++            self.assertTrue(all(row['actor_tensor_exact'] for row in report['updates']))
++            loaded, _ = load_candidate(candidate, torch.device('cpu'))
++            roundtrip = tensor_digest({k: loaded.state_dict()[k] for k in keys})
++            self.assertEqual(roundtrip, expected)

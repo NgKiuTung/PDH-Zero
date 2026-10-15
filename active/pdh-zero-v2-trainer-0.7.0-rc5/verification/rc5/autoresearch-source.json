@@ -1,0 +1,23 @@
+{
+  "README.md": {
+    "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  "program.md": {
+    "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  "successful_connector_reads": {
+    "provider": "GitHub.fetch_file",
+    "date": "2026-10-05",
+    "repository": "karpathy/autoresearch",
+    "branch": "master",
+    "README.md": {
+      "blob_sha": "953ea55d5599c45c1be7dad93ec03e47dfa7df9d",
+      "content_read": true
+    },
+    "program.md": {
+      "blob_sha": "dea9bcc0174f1502d0ba64000b94b81ba605855b",
+      "content_read": true
+    },
+    "adaptation": "baseline_first;fixed_natural_hand_and_update_budgets;protected_evaluator;results_tsv;keep_discard_crash;no_infinite_loop;no_val_bpb_transfer"
+  }
+}

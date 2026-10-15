@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "seed": 100580891970519,
+  "mode": "diagnostic",
+  "updates": [
+    {
+      "update": 1,
+      "hands": 64,
+      "learner_decisions": 5136,
+      "environment_decisions": 20540,
+      "raw_learner_net_score": 181,
+      "raw_all_seat_sum": 0,
+      "collection_seconds": 8.28836119407788,
+      "update_seconds": 0.0,
+      "optimizer_steps_attempted": 0,
+      "independent_ppo": false,
+      "actor_tensor_exact": true,
+      "source_update_accepted": true,
+      "source_effective_checkpoint": "candidates/update-0001-proposal.pt",
+      "source_checkpoint_sha256": "347372ed04ec48d9711010bf6183f39346fa4634273c44f1559a6149d78fa57b",
+      "effective_checkpoint": "candidates/update-0001-mirrored.pt",
+      "proposal": "candidates/update-0001-mirrored.pt"
+    },
+    {
+      "update": 2,
+      "hands": 64,
+      "learner_decisions": 4933,
+      "environment_decisions": 19740,
+      "raw_learner_net_score": -154,
+      "raw_all_seat_sum": 0,
+      "collection_seconds": 7.7063857186585665,
+      "update_seconds": 0.0,
+      "optimizer_steps_attempted": 0,
+      "independent_ppo": false,
+      "actor_tensor_exact": true,
+      "source_update_accepted": true,
+      "source_effective_checkpoint": "candidates/update-0002-proposal.pt",
+      "source_checkpoint_sha256": "8a8a9c09707182287e9f22e1c22d83ee64d380c1154006177ac7404b58590fc4",
+      "effective_checkpoint": "candidates/update-0002-mirrored.pt",
+      "proposal": "candidates/update-0002-mirrored.pt"
+    }
+  ],
+  "elapsed_training_seconds": 16.344135055784136,
+  "complete_hands": 128,
+  "learner_decisions": 10069,
+  "effective_checkpoint": "candidates/update-0002-mirrored.pt",
+  "reward": "true_net_settlement_divided_by_32_gamma_1",
+  "training_start": "fresh_seed_per_update_dealer_0_no_continuation",
+  "recurrent_scope": "within_natural_hand_not_cross_hand_return",
+  "control": "exact_same_seed_baseline_actor_mirror",
+  "independent_ppo": false
+}

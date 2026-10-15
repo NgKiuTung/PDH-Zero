@@ -1,0 +1,36 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 65441075539302,
+      "candidate_seat": 1,
+      "score": -12,
+      "state_sha256": "93d85ac289160d88d5d50a23ec4dee3fff6d9e7571a3158d1060e69b594d86ef"
+    },
+    {
+      "wall_seed": 65441078539311,
+      "candidate_seat": 0,
+      "score": -12,
+      "state_sha256": "686916fbd5cbff0e187916b30570c012ab465b3b78c99df94baa69fc7909c842"
+    },
+    {
+      "wall_seed": 65441083539326,
+      "candidate_seat": 1,
+      "score": -12,
+      "state_sha256": "0e840dee3aa53ae6b99f19c6ef2c7b1bf4b15ca6999f8a8df23b086f2b8bfb10"
+    },
+    {
+      "wall_seed": 65441075539302,
+      "candidate_seat": 0,
+      "score": -6,
+      "state_sha256": "03ee3f1e60a325f12158ad09d28854f30b03c8821d3f747482edd74e0a1ef425"
+    },
+    {
+      "wall_seed": 65441085539332,
+      "candidate_seat": 0,
+      "score": -6,
+      "state_sha256": "062487daceaa08db6c116babee18fad1fb1f210caf55eba100871b7108db0268"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

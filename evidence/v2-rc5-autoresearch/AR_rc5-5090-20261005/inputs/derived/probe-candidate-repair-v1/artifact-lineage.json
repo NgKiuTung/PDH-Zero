@@ -1,0 +1,14 @@
+{
+  "schema": "pdh-zero-derived-candidate-v1",
+  "created_at_utc": "2026-10-05T06:51:51.890680+00:00",
+  "operation": "copy_model_bytes_and_restore_required_digest_sidecar",
+  "model_bytes_modified": false,
+  "source_candidate": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/rc5-gpu-bootstrap/probe-candidate-seed-132846611674848.pt",
+  "source_candidate_sha256": "a4ff8094892bb257e1a72173b0040a7a5d21069067a8921f07428288740b789e",
+  "derived_candidate": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/derived/probe-candidate-repair-v1/probe-candidate-seed-132846611674848.pt",
+  "derived_candidate_sha256": "a4ff8094892bb257e1a72173b0040a7a5d21069067a8921f07428288740b789e",
+  "companion_digest": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/derived/probe-candidate-repair-v1/probe-candidate-seed-132846611674848.pt.sha256",
+  "reason": "gpu bootstrap archive omitted the .pt.sha256 companion required by load_candidate",
+  "source_provenance": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/rc5-gpu-bootstrap/probe-candidate-trial.json",
+  "promotion_status": "not_promoted_integration_probe_only"
+}

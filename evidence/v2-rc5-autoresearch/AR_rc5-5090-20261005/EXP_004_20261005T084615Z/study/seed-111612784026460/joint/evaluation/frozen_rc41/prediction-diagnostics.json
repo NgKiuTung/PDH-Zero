@@ -1,0 +1,629 @@
+{
+  "status": "PASS",
+  "complete_hands": 4,
+  "action_events": 648,
+  "snapshots": 43,
+  "per_relative_seat": {
+    "1": {
+      "model": {
+        "route_mae": 0.18093271553516388,
+        "nominal_value_mae": 0.006209269165992737,
+        "nominal_value_count": 9,
+        "ready": {
+          "count": 43,
+          "positives": 9,
+          "brier": 0.2061363309621811,
+          "log_loss": 1.026321291923523,
+          "ece": 0.2044752687215805,
+          "prevalence": 0.20930232107639313,
+          "predicted_mean": 0.004827053751796484
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 9,
+          "brier": 0.006143155507743359,
+          "log_loss": 0.04072824493050575,
+          "ece": 0.0040781074203550816,
+          "prevalence": 0.006155950948596001,
+          "predicted_mean": 0.002077843528240919
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 162,
+          "brier": 0.10130870342254639,
+          "log_loss": 0.3726588785648346,
+          "ece": 0.055840250570327044,
+          "prevalence": 0.11080711334943771,
+          "predicted_mean": 0.06327332556247711
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 2,
+          "brier": 0.001382616232149303,
+          "log_loss": 0.010908459313213825,
+          "ece": 0.0017684603808447719,
+          "prevalence": 0.001367989112623036,
+          "predicted_mean": 0.0031364494934678078
+        },
+        "next_action": {
+          "count": 43,
+          "log_loss": 0.549244225025177,
+          "accuracy": 0.930232584476471
+        },
+        "next_discard": {
+          "count": 40,
+          "log_loss": 3.517367124557495,
+          "accuracy": 0.0
+        }
+      },
+      "train_prior": {
+        "route_mae": 0.2862098515033722,
+        "nominal_value_mae": 0.0008267909288406372,
+        "nominal_value_count": 9,
+        "ready": {
+          "count": 43,
+          "positives": 9,
+          "brier": 0.1912710964679718,
+          "log_loss": 0.6718217730522156,
+          "ece": 0.16054977476596832,
+          "prevalence": 0.20930232107639313,
+          "predicted_mean": 0.048752542585134506
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 9,
+          "brier": 0.006126020103693008,
+          "log_loss": 0.03811106085777283,
+          "ece": 0.004250137135386467,
+          "prevalence": 0.006155950948596001,
+          "predicted_mean": 0.0019058139296248555
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 162,
+          "brier": 0.10091399401426315,
+          "log_loss": 0.36488646268844604,
+          "ece": 0.04105950891971588,
+          "prevalence": 0.11080711334943771,
+          "predicted_mean": 0.06974760442972183
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 2,
+          "brier": 0.0013703670119866729,
+          "log_loss": 0.011042523197829723,
+          "ece": 0.0020780335180461407,
+          "prevalence": 0.001367989112623036,
+          "predicted_mean": 0.0034460225142538548
+        },
+        "next_action": {
+          "count": 43,
+          "log_loss": 0.43793508410453796,
+          "accuracy": 0.930232584476471
+        },
+        "next_discard": {
+          "count": 40,
+          "log_loss": 3.4896693229675293,
+          "accuracy": 0.02500000037252903
+        }
+      },
+      "closed_model": {
+        "route_mae": 0.18093271553516388,
+        "nominal_value_mae": 0.006209269165992737,
+        "nominal_value_count": 9,
+        "ready": {
+          "count": 43,
+          "positives": 9,
+          "brier": 0.2061363309621811,
+          "log_loss": 1.026321291923523,
+          "ece": 0.2044752687215805,
+          "prevalence": 0.20930232107639313,
+          "predicted_mean": 0.004827053751796484
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 9,
+          "brier": 0.006143155507743359,
+          "log_loss": 0.04072824493050575,
+          "ece": 0.0040781074203550816,
+          "prevalence": 0.006155950948596001,
+          "predicted_mean": 0.002077843528240919
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 162,
+          "brier": 0.10130870342254639,
+          "log_loss": 0.3726588785648346,
+          "ece": 0.055840250570327044,
+          "prevalence": 0.11080711334943771,
+          "predicted_mean": 0.06327332556247711
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 2,
+          "brier": 0.001382616232149303,
+          "log_loss": 0.010908459313213825,
+          "ece": 0.0017684603808447719,
+          "prevalence": 0.001367989112623036,
+          "predicted_mean": 0.0031364494934678078
+        },
+        "next_action": {
+          "count": 43,
+          "log_loss": 0.549244225025177,
+          "accuracy": 0.930232584476471
+        },
+        "next_discard": {
+          "count": 40,
+          "log_loss": 3.517367124557495,
+          "accuracy": 0.0
+        }
+      },
+      "closed_train_prior": {
+        "route_mae": 0.2862098515033722,
+        "nominal_value_mae": 0.0008267909288406372,
+        "nominal_value_count": 9,
+        "ready": {
+          "count": 43,
+          "positives": 9,
+          "brier": 0.1912710964679718,
+          "log_loss": 0.6718217730522156,
+          "ece": 0.16054977476596832,
+          "prevalence": 0.20930232107639313,
+          "predicted_mean": 0.048752542585134506
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 9,
+          "brier": 0.006126020103693008,
+          "log_loss": 0.03811106085777283,
+          "ece": 0.004250137135386467,
+          "prevalence": 0.006155950948596001,
+          "predicted_mean": 0.0019058139296248555
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 162,
+          "brier": 0.10091399401426315,
+          "log_loss": 0.36488646268844604,
+          "ece": 0.04105950891971588,
+          "prevalence": 0.11080711334943771,
+          "predicted_mean": 0.06974760442972183
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 2,
+          "brier": 0.0013703670119866729,
+          "log_loss": 0.011042523197829723,
+          "ece": 0.0020780335180461407,
+          "prevalence": 0.001367989112623036,
+          "predicted_mean": 0.0034460225142538548
+        },
+        "next_action": {
+          "count": 43,
+          "log_loss": 0.43793508410453796,
+          "accuracy": 0.930232584476471
+        },
+        "next_discard": {
+          "count": 40,
+          "log_loss": 3.4896693229675293,
+          "accuracy": 0.02500000037252903
+        }
+      }
+    },
+    "2": {
+      "model": {
+        "route_mae": 0.17400890588760376,
+        "nominal_value_mae": 0.02086760103702545,
+        "nominal_value_count": 4,
+        "ready": {
+          "count": 43,
+          "positives": 4,
+          "brier": 0.08903694897890091,
+          "log_loss": 0.3639220893383026,
+          "ece": 0.08799275755882263,
+          "prevalence": 0.09302325546741486,
+          "predicted_mean": 0.005030494183301926
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 4,
+          "brier": 0.0027405102737247944,
+          "log_loss": 0.019788896664977074,
+          "ece": 0.0005390867590904236,
+          "prevalence": 0.002735978225246072,
+          "predicted_mean": 0.0021968914661556482
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 141,
+          "brier": 0.08776240050792694,
+          "log_loss": 0.32132333517074585,
+          "ece": 0.030800946697127074,
+          "prevalence": 0.09644322842359543,
+          "predicted_mean": 0.06564227491617203
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 2.6201936634606682e-05,
+          "log_loss": 0.0032913009636104107,
+          "ece": 0.003278064774349332,
+          "prevalence": 0.0,
+          "predicted_mean": 0.003278064774349332
+        },
+        "next_action": {
+          "count": 40,
+          "log_loss": 0.44846829771995544,
+          "accuracy": 0.8999999761581421
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.3285460472106934,
+          "accuracy": 0.07692307978868484
+        }
+      },
+      "train_prior": {
+        "route_mae": 0.35232025384902954,
+        "nominal_value_mae": 0.0017733573913574219,
+        "nominal_value_count": 4,
+        "ready": {
+          "count": 43,
+          "positives": 4,
+          "brier": 0.08615477383136749,
+          "log_loss": 0.32450342178344727,
+          "ece": 0.04224751144647598,
+          "prevalence": 0.09302325546741486,
+          "predicted_mean": 0.05077574402093887
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 4,
+          "brier": 0.002726531121879816,
+          "log_loss": 0.01824333332479,
+          "ece": 0.0007266236934810877,
+          "prevalence": 0.002735978225246072,
+          "predicted_mean": 0.002009354531764984
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 141,
+          "brier": 0.08773218095302582,
+          "log_loss": 0.3226219713687897,
+          "ece": 0.02631286531686783,
+          "prevalence": 0.09644322842359543,
+          "predicted_mean": 0.0701303631067276
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 1.332263582298765e-05,
+          "log_loss": 0.0034731412306427956,
+          "ece": 0.003466460620984435,
+          "prevalence": 0.0,
+          "predicted_mean": 0.003466460620984435
+        },
+        "next_action": {
+          "count": 40,
+          "log_loss": 0.4678037762641907,
+          "accuracy": 0.8999999761581421
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.4689087867736816,
+          "accuracy": 0.07692307978868484
+        }
+      },
+      "closed_model": {
+        "route_mae": 0.17400890588760376,
+        "nominal_value_mae": 0.02086760103702545,
+        "nominal_value_count": 4,
+        "ready": {
+          "count": 43,
+          "positives": 4,
+          "brier": 0.08903694897890091,
+          "log_loss": 0.3639220893383026,
+          "ece": 0.08799275755882263,
+          "prevalence": 0.09302325546741486,
+          "predicted_mean": 0.005030494183301926
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 4,
+          "brier": 0.0027405102737247944,
+          "log_loss": 0.019788896664977074,
+          "ece": 0.0005390867590904236,
+          "prevalence": 0.002735978225246072,
+          "predicted_mean": 0.0021968914661556482
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 141,
+          "brier": 0.08776240050792694,
+          "log_loss": 0.32132333517074585,
+          "ece": 0.030800946697127074,
+          "prevalence": 0.09644322842359543,
+          "predicted_mean": 0.06564227491617203
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 2.6201936634606682e-05,
+          "log_loss": 0.0032913009636104107,
+          "ece": 0.003278064774349332,
+          "prevalence": 0.0,
+          "predicted_mean": 0.003278064774349332
+        },
+        "next_action": {
+          "count": 40,
+          "log_loss": 0.44846829771995544,
+          "accuracy": 0.8999999761581421
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.3285460472106934,
+          "accuracy": 0.07692307978868484
+        }
+      },
+      "closed_train_prior": {
+        "route_mae": 0.35232025384902954,
+        "nominal_value_mae": 0.0017733573913574219,
+        "nominal_value_count": 4,
+        "ready": {
+          "count": 43,
+          "positives": 4,
+          "brier": 0.08615477383136749,
+          "log_loss": 0.32450342178344727,
+          "ece": 0.04224751144647598,
+          "prevalence": 0.09302325546741486,
+          "predicted_mean": 0.05077574402093887
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 4,
+          "brier": 0.002726531121879816,
+          "log_loss": 0.01824333332479,
+          "ece": 0.0007266236934810877,
+          "prevalence": 0.002735978225246072,
+          "predicted_mean": 0.002009354531764984
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 141,
+          "brier": 0.08773218095302582,
+          "log_loss": 0.3226219713687897,
+          "ece": 0.02631286531686783,
+          "prevalence": 0.09644322842359543,
+          "predicted_mean": 0.0701303631067276
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 1.332263582298765e-05,
+          "log_loss": 0.0034731412306427956,
+          "ece": 0.003466460620984435,
+          "prevalence": 0.0,
+          "predicted_mean": 0.003466460620984435
+        },
+        "next_action": {
+          "count": 40,
+          "log_loss": 0.4678037762641907,
+          "accuracy": 0.8999999761581421
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.4689087867736816,
+          "accuracy": 0.07692307978868484
+        }
+      }
+    },
+    "3": {
+      "model": {
+        "route_mae": 0.20968374609947205,
+        "nominal_value_mae": 0.0,
+        "nominal_value_count": 0,
+        "ready": {
+          "count": 43,
+          "positives": 0,
+          "brier": 6.813108484493569e-05,
+          "log_loss": 0.005056443624198437,
+          "ece": 0.005021904595196247,
+          "prevalence": 0.0,
+          "predicted_mean": 0.005021904595196247
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 1.5104678823263384e-05,
+          "log_loss": 0.002349978545680642,
+          "ece": 0.002342366613447666,
+          "prevalence": 0.0,
+          "predicted_mean": 0.002342366613447666
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 154,
+          "brier": 0.09643033146858215,
+          "log_loss": 0.353829562664032,
+          "ece": 0.041369508020579815,
+          "prevalence": 0.10533515363931656,
+          "predicted_mean": 0.06860155612230301
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 1,
+          "brier": 0.0006945007480680943,
+          "log_loss": 0.006415646523237228,
+          "ece": 0.0028002650942653418,
+          "prevalence": 0.000683994556311518,
+          "predicted_mean": 0.003484259592369199
+        },
+        "next_action": {
+          "count": 39,
+          "log_loss": 0.5829071402549744,
+          "accuracy": 0.8461538553237915
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.646153450012207,
+          "accuracy": 0.025641025975346565
+        }
+      },
+      "train_prior": {
+        "route_mae": 0.3443319499492645,
+        "nominal_value_mae": 0.0,
+        "nominal_value_count": 0,
+        "ready": {
+          "count": 43,
+          "positives": 0,
+          "brier": 0.0026593732181936502,
+          "log_loss": 0.05294635519385338,
+          "ece": 0.05156910791993141,
+          "prevalence": 0.0,
+          "predicted_mean": 0.05156910791993141
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 5.101094757264946e-06,
+          "log_loss": 0.00204820791259408,
+          "ece": 0.0020456525962799788,
+          "prevalence": 0.0,
+          "predicted_mean": 0.0020456525962799788
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 154,
+          "brier": 0.09683951735496521,
+          "log_loss": 0.35491758584976196,
+          "ece": 0.03485995531082153,
+          "prevalence": 0.10533515363931656,
+          "predicted_mean": 0.07047519832849503
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 1,
+          "brier": 0.0006935815908946097,
+          "log_loss": 0.007503290195018053,
+          "ece": 0.002860247390344739,
+          "prevalence": 0.000683994556311518,
+          "predicted_mean": 0.003544241888448596
+        },
+        "next_action": {
+          "count": 39,
+          "log_loss": 0.5760660171508789,
+          "accuracy": 0.8461538553237915
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.552284002304077,
+          "accuracy": 0.025641025975346565
+        }
+      },
+      "closed_model": {
+        "route_mae": 0.20968374609947205,
+        "nominal_value_mae": 0.0,
+        "nominal_value_count": 0,
+        "ready": {
+          "count": 43,
+          "positives": 0,
+          "brier": 6.813108484493569e-05,
+          "log_loss": 0.005056443624198437,
+          "ece": 0.005021904595196247,
+          "prevalence": 0.0,
+          "predicted_mean": 0.005021904595196247
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 1.5104678823263384e-05,
+          "log_loss": 0.002349978545680642,
+          "ece": 0.002342366613447666,
+          "prevalence": 0.0,
+          "predicted_mean": 0.002342366613447666
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 154,
+          "brier": 0.09643033146858215,
+          "log_loss": 0.353829562664032,
+          "ece": 0.041369508020579815,
+          "prevalence": 0.10533515363931656,
+          "predicted_mean": 0.06860155612230301
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 1,
+          "brier": 0.0006945007480680943,
+          "log_loss": 0.006415646523237228,
+          "ece": 0.0028002650942653418,
+          "prevalence": 0.000683994556311518,
+          "predicted_mean": 0.003484259592369199
+        },
+        "next_action": {
+          "count": 39,
+          "log_loss": 0.5829071402549744,
+          "accuracy": 0.8461538553237915
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.646153450012207,
+          "accuracy": 0.025641025975346565
+        }
+      },
+      "closed_train_prior": {
+        "route_mae": 0.3443319499492645,
+        "nominal_value_mae": 0.0,
+        "nominal_value_count": 0,
+        "ready": {
+          "count": 43,
+          "positives": 0,
+          "brier": 0.0026593732181936502,
+          "log_loss": 0.05294635519385338,
+          "ece": 0.05156910791993141,
+          "prevalence": 0.0,
+          "predicted_mean": 0.05156910791993141
+        },
+        "win_on_discard": {
+          "count": 1462,
+          "positives": 0,
+          "brier": 5.101094757264946e-06,
+          "log_loss": 0.00204820791259408,
+          "ece": 0.0020456525962799788,
+          "prevalence": 0.0,
+          "predicted_mean": 0.0020456525962799788
+        },
+        "pong_capability": {
+          "count": 1462,
+          "positives": 154,
+          "brier": 0.09683951735496521,
+          "log_loss": 0.35491758584976196,
+          "ece": 0.03485995531082153,
+          "prevalence": 0.10533515363931656,
+          "predicted_mean": 0.07047519832849503
+        },
+        "kong_capability": {
+          "count": 1462,
+          "positives": 1,
+          "brier": 0.0006935815908946097,
+          "log_loss": 0.007503290195018053,
+          "ece": 0.002860247390344739,
+          "prevalence": 0.000683994556311518,
+          "predicted_mean": 0.003544241888448596
+        },
+        "next_action": {
+          "count": 39,
+          "log_loss": 0.5760660171508789,
+          "accuracy": 0.8461538553237915
+        },
+        "next_discard": {
+          "count": 39,
+          "log_loss": 3.552284002304077,
+          "accuracy": 0.025641025975346565
+        }
+      }
+    }
+  },
+  "role": "exposed_development_diagnostics_no_training_no_selection",
+  "actor_before_sha256": "6b0bb3111524e708af5561ab3e18e85f0a75a9a595edbf4cff7538533af25065",
+  "actor_after_sha256": "6b0bb3111524e708af5561ab3e18e85f0a75a9a595edbf4cff7538533af25065"
+}

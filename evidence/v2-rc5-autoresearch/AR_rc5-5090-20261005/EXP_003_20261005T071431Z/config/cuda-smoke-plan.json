@@ -1,0 +1,27 @@
+{
+  "seeds": [
+    26965088483608,
+    108092877785358,
+    48566393741345
+  ],
+  "updates": 2,
+  "hands_per_update": 64,
+  "evaluation_hands": 64,
+  "workers": 0,
+  "evaluation_environments": 64,
+  "fit_steps": 400,
+  "fit_batch": 64,
+  "learning_rate": 5e-05,
+  "minibatch_decisions": 2048,
+  "max_training_seconds": 600,
+  "max_evaluation_seconds": 600,
+  "device": "cuda",
+  "backend": "cpp",
+  "transport": "shared",
+  "opponents": [
+    "heuristic",
+    "route_mix",
+    "frozen_rc41"
+  ],
+  "smoke_only": true
+}

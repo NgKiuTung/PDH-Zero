@@ -1,0 +1,20 @@
+{
+  "scope": "rc5-through-exp005",
+  "parent_commit": "4d070ff4d2d2bc3e60ad9ebcd5cbfe67d8460e8b",
+  "authoritative_files": 2428,
+  "total_copied_files": 2434,
+  "total_copied_bytes": 3135898167,
+  "source_copy_sha256": "PASS",
+  "source_manifests": "PASS",
+  "sqlite_quick_check": "PASS",
+  "exp005_engineering": "PASS",
+  "exp005_scientific_status": "DEVELOPMENT_ONLY",
+  "joint_decisions": [
+    "inconclusive",
+    "inconclusive",
+    "inconclusive"
+  ],
+  "freeze_eligible": false,
+  "deployment_promoted": false,
+  "historical_wall_coverage": "partial"
+}

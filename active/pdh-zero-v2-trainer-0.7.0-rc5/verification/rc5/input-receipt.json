@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "source_files_verified": 265,
+  "baseline_commit": "35ee67827763114b9e5fd1efdad9581401875b9c",
+  "baseline_label": "d000000266137",
+  "model_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "heldout_candidate_matches": true,
+  "source_archive_sha256": "38f0b4777cc904f80cacc71b7dcfd0cc9211da54cd5e830691617eef7aa3921a",
+  "rules_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+  "historical_coverage": "partial",
+  "missing": [
+    "original .wall-exposures.sqlite3",
+    "unavailable ancestor trajectories / in-memory teacher walls"
+  ],
+  "input_paths": {
+    "refinement": "/workspace/develop-project/pdh-zero-rc5-20261005/inputs/v2-refinement-rc4.1/REFINE_20261003T131918636050Z",
+    "historical_heldout_diagnostic_only": "/workspace/develop-project/pdh-zero-rc5-20261005/inputs/v2-heldout-rc4.1/HELDOUT_20261003T151645353474Z",
+    "frozen_baseline": "/workspace/develop-project/pdh-zero-rc5-20261005/inputs/v2-refinement-rc4.1/REFINE_20261003T131918636050Z/checkpoints/candidates/d000000266137/model.pt"
+  },
+  "read_rules": [
+    "handoff/HANDOFF.md",
+    "handoff/INPUTS.json",
+    "coding-rule/SKILL.md",
+    "source/AGENTS.md"
+  ],
+  "paid_gpu_started": false
+}

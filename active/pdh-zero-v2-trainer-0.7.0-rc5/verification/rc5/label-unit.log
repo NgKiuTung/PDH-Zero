@@ -1,0 +1,9 @@
+test_future_event_is_relative_seat_and_strictly_after_snapshot (test_rc5_labels.Rc5LabelTests.test_future_event_is_relative_seat_and_strictly_after_snapshot) ... ok
+test_missing_future_event_is_censored_not_pass (test_rc5_labels.Rc5LabelTests.test_missing_future_event_is_censored_not_pass) ... ok
+test_nonwaiting_size_is_censored (test_rc5_labels.Rc5LabelTests.test_nonwaiting_size_is_censored) ... ok
+test_state_targets_have_separate_masks (test_rc5_labels.Rc5LabelTests.test_state_targets_have_separate_masks) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.006s
+
+OK

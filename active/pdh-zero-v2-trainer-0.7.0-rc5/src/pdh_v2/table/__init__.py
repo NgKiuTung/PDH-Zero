@@ -1,0 +1,1 @@
+"""PDH research code: opt-in rc5 table awareness; legacy policy remains independent."""

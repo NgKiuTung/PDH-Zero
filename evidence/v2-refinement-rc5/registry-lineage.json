@@ -1,0 +1,13 @@
+{
+  "schema": "pdh-zero-wall-registry-lineage-v1",
+  "created_at_utc": "2026-10-05T06:23:44.553294+00:00",
+  "operation": "sqlite_backup_from_rc4.1",
+  "source": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc4.1/.wall-exposures.sqlite3",
+  "source_sha256": "48340bd5e5fa85a05cca87df64d275ea528faa7c85edaec6b304d4b0f9608378",
+  "destination": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc5/.wall-exposures.sqlite3",
+  "destination_initial_sha256": "fa0286e82258f4f857d6bcc4a015fb8f266963691efb83dd9acc92ec89d2fe9a",
+  "historical_coverage": "partial",
+  "source_preserved": true,
+  "source_role": "frozen_rc4.1_history",
+  "destination_role": "rc5_exposure_registry"
+}

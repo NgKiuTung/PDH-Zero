@@ -1,0 +1,24 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 65441074539299,
+      "candidate_seat": 0,
+      "score": -28,
+      "state_sha256": "34f9142cc0590d43b221db9919c71fb55b1adb26fb719d2ea4858580f8f4f4d6"
+    },
+    {
+      "wall_seed": 65441074539299,
+      "candidate_seat": 1,
+      "score": -20,
+      "state_sha256": "847b572ebeabf03f970ab3b29757be6bc991373f383991b6122a7a6bc6f79365"
+    },
+    {
+      "wall_seed": 65441085539332,
+      "candidate_seat": 0,
+      "score": -12,
+      "state_sha256": "449a477287fe46c3d520ad203ec1a6c381ac8bc3596a589b089ab17a6b3bee20"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

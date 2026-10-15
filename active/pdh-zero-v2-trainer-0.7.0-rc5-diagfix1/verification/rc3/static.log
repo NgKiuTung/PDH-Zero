@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "files": 118,
+  "errors": [],
+  "warnings": [
+    {
+      "file": "src/pdh_v2/game/digest.py",
+      "line": 18,
+      "code": "DEF_OVER_30",
+      "name": "hand_state_digest",
+      "lines": 94
+    },
+    {
+      "file": "src/pdh_v2/game/engine.py",
+      "code": "FILE_OVER_200",
+      "lines": 437
+    },
+    {
+      "file": "src/pdh_v2/game/session.py",
+      "code": "FILE_OVER_200",
+      "lines": 205
+    },
+    {
+      "file": "src/pdh_v2/game/session.py",
+      "line": 109,
+      "code": "DEF_OVER_30",
+      "name": "resolve",
+      "lines": 97
+    },
+    {
+      "file": "src/pdh_v2/game/state.py",
+      "line": 97,
+      "code": "DEF_OVER_30",
+      "name": "__post_init__",
+      "lines": 47
+    },
+    {
+      "file": "src/pdh_v2/horses.py",
+      "code": "FILE_OVER_200",
+      "lines": 208
+    },
+    {
+      "file": "src/pdh_v2/journal.py",
+      "line": 47,
+      "code": "DEF_OVER_30",
+      "name": "_apply_event",
+      "lines": 63
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "code": "FILE_OVER_200",
+      "lines": 386
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 159,
+      "code": "DEF_OVER_30",
+      "name": "begin_twelve_grounded",
+      "lines": 35
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 247,
+      "code": "DEF_OVER_30",
+      "name": "bind",
+      "lines": 40
+    },
+    {
+      "file": "src/pdh_v2/ledger.py",
+      "line": 288,
+      "code": "DEF_OVER_30",
+      "name": "bind_multi",
+      "lines": 31
+    },
+    {
+      "file": "src/pdh_v2/observation/encoder.py",
+      "line": 61,
+      "code": "DEF_OVER_30",
+      "name": "encode_observation",
+      "lines": 64
+    },
+    {
+      "file": "src/pdh_v2/policy/heuristic.py",
+      "line": 46,
+      "code": "DEF_OVER_30",
+      "name": "score_action",
+      "lines": 53
+    },
+    {
+      "file": "src/pdh_v2/policy/model.py",
+      "line": 31,
+      "code": "DEF_OVER_30",
+      "name": "__init__",
+      "lines": 47
+    },
+    {
+      "file": "src/pdh_v2/policy/model.py",
+      "line": 83,
+      "code": "DEF_OVER_30",
+      "name": "forward_step",
+      "lines": 36
+    },
+    {
+      "file": "src/pdh_v2/rollout/parallel_env.py",
+      "code": "FILE_OVER_200",
+      "lines": 210
+    },
+    {
+      "file": "src/pdh_v2/rollout/parallel_env.py",
+      "line": 15,
+      "code": "DEF_OVER_30",
+      "name": "_worker",
+      "lines": 41
+    },
+    {
+      "file": "src/pdh_v2/rollout/parallel_env.py",
+      "line": 61,
+      "code": "DEF_OVER_30",
+      "name": "__init__",
+      "lines": 45
+    },
+    {
+      "file": "src/pdh_v2/rollout/snapshot.py",
+      "line": 55,
+      "code": "DEF_OVER_30",
+      "name": "restore_session",
+      "lines": 34
+    },
+    {
+      "file": "src/pdh_v2/rollout/vector_env.py",
+      "line": 77,
+      "code": "DEF_OVER_30",
+      "name": "step",
+      "lines": 58
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "code": "FILE_OVER_200",
+      "lines": 321
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "line": 120,
+      "code": "DEF_OVER_30",
+      "name": "_seven_pairs",
+      "lines": 31
+    },
+    {
+      "file": "src/pdh_v2/scoring/evaluator.py",
+      "line": 222,
+      "code": "DEF_OVER_30",
+      "name": "_standard_result",
+      "lines": 68
+    },
+    {
+      "file": "src/pdh_v2/settlement.py",
+      "code": "FILE_OVER_200",
+      "lines": 225
+    },
+    {
+      "file": "src/pdh_v2/strategy.py",
+      "code": "FILE_OVER_200",
+      "lines": 358
+    },
+    {
+      "file": "src/pdh_v2/strategy.py",
+      "line": 104,
+      "code": "DEF_OVER_30",
+      "name": "route_potentials",
+      "lines": 44
+    },
+    {
+      "file": "src/pdh_v2/strategy.py",
+      "line": 271,
+      "code": "DEF_OVER_30",
+      "name": "simulate_action_state",
+      "lines": 32
+    },
+    {
+      "file": "src/pdh_v2/strategy.py",
+      "line": 305,
+      "code": "DEF_OVER_30",
+      "name": "action_strategy_features",
+      "lines": 34
+    },
+    {
+      "file": "src/pdh_v2/training/collector.py",
+      "code": "FILE_OVER_200",
+      "lines": 342
+    },
+    {
+      "file": "src/pdh_v2/training/collector.py",
+      "line": 144,
+      "code": "DEF_OVER_30",
+      "name": "_finalize_hand",
+      "lines": 37
+    },
+    {
+      "file": "src/pdh_v2/training/collector.py",
+      "line": 183,
+      "code": "DEF_OVER_30",
+      "name": "collect",
+      "lines": 160
+    },
+    {
+      "file": "src/pdh_v2/training/evaluation.py",
+      "line": 72,
+      "code": "DEF_OVER_30",
+      "name": "evaluate_vs_heuristic",
+      "lines": 89
+    },
+    {
+      "file": "src/pdh_v2/training/heldout_evaluation.py",
+      "line": 98,
+      "code": "DEF_OVER_30",
+      "name": "evaluate_frozen_pair",
+      "lines": 64
+    },
+    {
+      "file": "src/pdh_v2/training/imitation.py",
+      "code": "FILE_OVER_200",
+      "lines": 242
+    },
+    {
+      "file": "src/pdh_v2/training/imitation.py",
+      "line": 30,
+      "code": "DEF_OVER_30",
+      "name": "collect_teacher_episodes",
+      "lines": 42
+    },
+    {
+      "file": "src/pdh_v2/training/imitation.py",
+      "line": 117,
+      "code": "DEF_OVER_30",
+      "name": "_sequence_loss",
+      "lines": 60
+    },
+    {
+      "file": "src/pdh_v2/training/imitation.py",
+      "line": 207,
+      "code": "DEF_OVER_30",
+      "name": "behavior_clone",
+      "lines": 36
+    },
+    {
+      "file": "src/pdh_v2/training/job_control.py",
+      "code": "FILE_OVER_200",
+      "lines": 289
+    },
+    {
+      "file": "src/pdh_v2/training/job_control.py",
+      "line": 164,
+      "code": "DEF_OVER_30",
+      "name": "launch_new",
+      "lines": 58
+    },
+    {
+      "file": "src/pdh_v2/training/job_control.py",
+      "line": 256,
+      "code": "DEF_OVER_30",
+      "name": "resume_job",
+      "lines": 34
+    },
+    {
+      "file": "src/pdh_v2/training/long_loop.py",
+      "code": "FILE_OVER_200",
+      "lines": 314
+    },
+    {
+      "file": "src/pdh_v2/training/long_loop.py",
+      "line": 128,
+      "code": "DEF_OVER_30",
+      "name": "_commit_update",
+      "lines": 46
+    },
+    {
+      "file": "src/pdh_v2/training/long_loop.py",
+      "line": 248,
+      "code": "DEF_OVER_30",
+      "name": "finish",
+      "lines": 46
+    },
+    {
+      "file": "src/pdh_v2/training/long_runner.py",
+      "code": "FILE_OVER_200",
+      "lines": 242
+    },
+    {
+      "file": "src/pdh_v2/training/long_runner.py",
+      "line": 36,
+      "code": "DEF_OVER_30",
+      "name": "_new_runtime",
+      "lines": 32
+    },
+    {
+      "file": "src/pdh_v2/training/long_runner.py",
+      "line": 97,
+      "code": "DEF_OVER_30",
+      "name": "_prepare_run",
+      "lines": 37
+    },
+    {
+      "file": "src/pdh_v2/training/long_runner.py",
+      "line": 162,
+      "code": "DEF_OVER_30",
+      "name": "run_long",
+      "lines": 81
+    },
+    {
+      "file": "src/pdh_v2/training/loss_attribution.py",
+      "line": 22,
+      "code": "DEF_OVER_30",
+      "name": "payment_attribution",
+      "lines": 47
+    },
+    {
+      "file": "src/pdh_v2/training/paired_evaluation.py",
+      "line": 22,
+      "code": "DEF_OVER_30",
+      "name": "paired_evaluate",
+      "lines": 90
+    },
+    {
+      "file": "src/pdh_v2/training/paired_metrics.py",
+      "line": 45,
+      "code": "DEF_OVER_30",
+      "name": "paired_comparison",
+      "lines": 36
+    },
+    {
+      "file": "src/pdh_v2/training/ppo.py",
+      "code": "FILE_OVER_200",
+      "lines": 279
+    },
+    {
+      "file": "src/pdh_v2/training/ppo.py",
+      "line": 96,
+      "code": "DEF_OVER_30",
+      "name": "_evaluate_sequences",
+      "lines": 75
+    },
+    {
+      "file": "src/pdh_v2/training/ppo.py",
+      "line": 173,
+      "code": "DEF_OVER_30",
+      "name": "update_ppo",
+      "lines": 107
+    },
+    {
+      "file": "src/pdh_v2/training/promotion.py",
+      "line": 49,
+      "code": "DEF_OVER_30",
+      "name": "validate_smoke",
+      "lines": 51
+    },
+    {
+      "file": "src/pdh_v2/training/refinement_gate.py",
+      "line": 28,
+      "code": "DEF_OVER_30",
+      "name": "review_run",
+      "lines": 45
+    },
+    {
+      "file": "src/pdh_v2/training/refinement_runner.py",
+      "code": "FILE_OVER_200",
+      "lines": 246
+    },
+    {
+      "file": "src/pdh_v2/training/refinement_runner.py",
+      "line": 67,
+      "code": "DEF_OVER_30",
+      "name": "_run",
+      "lines": 134
+    },
+    {
+      "file": "src/pdh_v2/training/refinement_runner.py",
+      "line": 203,
+      "code": "DEF_OVER_30",
+      "name": "run_refinement",
+      "lines": 44
+    },
+    {
+      "file": "src/pdh_v2/training/replay_updates.py",
+      "line": 35,
+      "code": "DEF_OVER_30",
+      "name": "write_replay_update",
+      "lines": 32
+    },
+    {
+      "file": "src/pdh_v2/training/risk_diagnostics.py",
+      "line": 10,
+      "code": "DEF_OVER_30",
+      "name": "probability_metrics",
+      "lines": 32
+    },
+    {
+      "file": "src/pdh_v2/training/runner.py",
+      "code": "FILE_OVER_200",
+      "lines": 461
+    },
+    {
+      "file": "src/pdh_v2/training/runner.py",
+      "line": 165,
+      "code": "DEF_OVER_30",
+      "name": "_warmup",
+      "lines": 62
+    },
+    {
+      "file": "src/pdh_v2/training/runner.py",
+      "line": 229,
+      "code": "DEF_OVER_30",
+      "name": "_teacher_review",
+      "lines": 40
+    },
+    {
+      "file": "src/pdh_v2/training/runner.py",
+      "line": 271,
+      "code": "DEF_OVER_30",
+      "name": "run",
+      "lines": 191
+    },
+    {
+      "file": "src/pdh_v2/training/sequence_batch.py",
+      "line": 53,
+      "code": "DEF_OVER_30",
+      "name": "sequence_values",
+      "lines": 46
+    },
+    {
+      "file": "src/pdh_v2/training/stable_ppo.py",
+      "line": 51,
+      "code": "DEF_OVER_30",
+      "name": "guarded_update",
+      "lines": 117
+    },
+    {
+      "file": "tests/test_game.py",
+      "code": "FILE_OVER_200",
+      "lines": 371
+    },
+    {
+      "file": "tests/test_game.py",
+      "line": 146,
+      "code": "DEF_OVER_30",
+      "name": "test_passed_win_is_locked_until_own_draw",
+      "lines": 41
+    },
+    {
+      "file": "tests/test_game.py",
+      "line": 325,
+      "code": "DEF_OVER_30",
+      "name": "test_random_legal_hands_preserve_all_tile_entities",
+      "lines": 42
+    },
+    {
+      "file": "tests/test_long_training.py",
+      "code": "FILE_OVER_200",
+      "lines": 352
+    },
+    {
+      "file": "tests/test_long_training.py",
+      "line": 30,
+      "code": "DEF_OVER_30",
+      "name": "_fake_smoke",
+      "lines": 40
+    },
+    {
+      "file": "tests/test_long_training.py",
+      "line": 90,
+      "code": "DEF_OVER_30",
+      "name": "test_long_checkpoint_restores_environment_and_model",
+      "lines": 35
+    },
+    {
+      "file": "tests/test_long_training.py",
+      "line": 281,
+      "code": "DEF_OVER_30",
+      "name": "test_resume_path_uses_complete_update_boundary_checkpoint",
+      "lines": 68
+    },
+    {
+      "file": "tests/test_responsibility.py",
+      "code": "FILE_OVER_200",
+      "lines": 204
+    },
+    {
+      "file": "tests/test_scoring.py",
+      "code": "FILE_OVER_200",
+      "lines": 236
+    },
+    {
+      "file": "tests/test_scoring.py",
+      "line": 158,
+      "code": "DEF_OVER_30",
+      "name": "test_terminal_family_is_mutually_classified",
+      "lines": 35
+    },
+    {
+      "file": "tests/test_session.py",
+      "line": 41,
+      "code": "DEF_OVER_30",
+      "name": "test_next_hand_reveal_marks_only_selected_hit_entities",
+      "lines": 33
+    },
+    {
+      "file": "tests/test_settlement.py",
+      "code": "FILE_OVER_200",
+      "lines": 204
+    },
+    {
+      "file": "tests/test_training_candidate.py",
+      "line": 19,
+      "code": "DEF_OVER_30",
+      "name": "test_collect_update_and_checkpoint",
+      "lines": 47
+    },
+    {
+      "file": "tests/test_training_runner.py",
+      "line": 35,
+      "code": "DEF_OVER_30",
+      "name": "test_teacher_clone_and_replay_writers",
+      "lines": 36
+    },
+    {
+      "file": "tools/curriculum_gate.py",
+      "line": 28,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 107
+    },
+    {
+      "file": "tools/long_job.py",
+      "line": 74,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 38
+    },
+    {
+      "file": "tools/static_audit.py",
+      "line": 33,
+      "code": "DEF_OVER_30",
+      "name": "_audit_file",
+      "lines": 73
+    },
+    {
+      "file": "tools/train_curriculum.py",
+      "line": 23,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 72
+    },
+    {
+      "file": "tools/train_refinement.py",
+      "line": 17,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 39
+    },
+    {
+      "file": "tools/train_smoke.py",
+      "line": 23,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 62
+    },
+    {
+      "file": "tools/verify.py",
+      "line": 25,
+      "code": "DEF_OVER_30",
+      "name": "_run_checks",
+      "lines": 41
+    },
+    {
+      "file": "tools/verify.py",
+      "line": 68,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 45
+    },
+    {
+      "file": "tools/verify_long.py",
+      "line": 15,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 40
+    },
+    {
+      "file": "tools/verify_training.py",
+      "line": 15,
+      "code": "DEF_OVER_30",
+      "name": "main",
+      "lines": 52
+    }
+  ],
+  "status": "PASS",
+  "ruff": "NOT_INSTALLED",
+  "mypy": "NOT_INSTALLED"
+}

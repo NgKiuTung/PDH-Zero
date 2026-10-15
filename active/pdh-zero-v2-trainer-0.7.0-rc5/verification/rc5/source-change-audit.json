@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "compared_to": "rc4.1 original archive",
+  "unchanged_original_files": 260,
+  "changed_original_files": [
+    {
+      "path": "AGENTS.md",
+      "status": "modified",
+      "before_sha256": "35df6da0be283eb5aa42976905eaacc7b7d2e887fa9fb65bad9dc742126bb402",
+      "after_sha256": "4044ab745ca32442e9bbb4549e296f963b616cb34554c8547a49d17d30e9d685"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "before_sha256": "07a80e9fd90105bf014446565f12ec61bab1cf7f249fcbb2628a0fdc7cb6e87c",
+      "after_sha256": "76265d936aeefc55ef7bcc3f62437936306e3d6f32d3c106f13298b6046bf78c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "modified",
+      "before_sha256": "580d0efec34e97dcc224d62fdbda8c91485e71aae0a4fd8cc6197c89547e259c",
+      "after_sha256": "c14fec8c03ebdbf7c97bbfcdf88214b691516046fb6432b96082678aaf855597"
+    },
+    {
+      "path": "src/pdh_v2/__init__.py",
+      "status": "modified",
+      "before_sha256": "a72a3a10bb93b838f68cae27c53abd62c0fb87294751c80a759a887fff9d15f1",
+      "after_sha256": "8eec796f1bfad0e693c9380ef798ffd7b3f3c56828e1bcc8c72fe1133439d724"
+    },
+    {
+      "path": "src/pdh_v2/training/stable_ppo.py",
+      "status": "modified",
+      "before_sha256": "2f13a02c67697f5d4ba847e0cd0e4d04aea0d2c9db58eaf8924231f5bd27aa58",
+      "after_sha256": "cd74924907dc36282cd82036236d54073df43b91bcd8ea6e5fb1e883ebc2e932"
+    },
+    {
+      "path": "src/pdh_v2/training/paired_evaluation.py",
+      "status": "modified",
+      "before_sha256": "0b7d68495e1f14d90f6ee08f7cf69e2f0a26234b5b58b419af4a1be319710074",
+      "after_sha256": "45d58b9fad3e49e58e579f3defa3e83092e33354d146651357b2a383333e83b6"
+    }
+  ],
+  "frozen_rules_engine_scoring_observation_actor_and_native_unchanged": true,
+  "original_files_deleted": false,
+  "old_functional_changes": [
+    "policy version string",
+    "paired_evaluation optional opponent factory (default unchanged)",
+    "stable_ppo optional pre-rollback candidate callback (default unchanged)"
+  ],
+  "note": "FILES.sha256 regenerated for current release after this audit; documentation versions retained"
+}

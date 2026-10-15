@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/tools/probe_rc5.py", line 109, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/tools/probe_rc5.py", line 55, in main
+    model, _ = load_candidate(args.candidate, device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/src/pdh_v2/table/checkpoints.py", line 54, in load_candidate
+    if file_digest(path) != path.with_suffix('.pt.sha256').read_text().split()[0]:
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/rc5-gpu-bootstrap/probe-candidate-seed-132846611674848.pt.sha256'

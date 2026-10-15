@@ -1,0 +1,77 @@
+{
+  "scope": "candidate_only_posthoc_not_causal_attribution_or_reward",
+  "hands": 4096,
+  "candidate_wins": 468,
+  "table_draws": 2682,
+  "winning_combinations": {
+    "SEVEN_PAIRS": 353,
+    "LUXURY_SEVEN_PAIRS": 18,
+    "SEA_BOTTOM+SEVEN_PAIRS": 13,
+    "CLOSED_BONUS+MIXED_ONE_SUIT": 6,
+    "MIXED_ONE_SUIT": 5,
+    "THIRTEEN_ORPHANS": 1,
+    "MIXED_ONE_SUIT+PONG_PONG": 3,
+    "MIXED_ONE_SUIT+SEVEN_PAIRS": 32,
+    "SEVEN_PAIRS+TERMINALS_HONORS": 10,
+    "DOUBLE_LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT": 1,
+    "DOUBLE_LUXURY_SEVEN_PAIRS": 1,
+    "CLOSED_BONUS+MIXED_ONE_SUIT+ONE_STRAIGHT": 1,
+    "PONG_PONG": 2,
+    "LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT": 13,
+    "MIXED_ONE_SUIT_TERMINALS+SEVEN_PAIRS": 2,
+    "PONG_PONG+PURE_ONE_SUIT": 3,
+    "LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT_TERMINALS": 1,
+    "PURE_ONE_SUIT": 1,
+    "MIXED_ONE_SUIT+PONG_PONG+SMALL_DRAGONS": 1,
+    "FOUR_CONCEALED+MIXED_ONE_SUIT_TERMINALS": 1
+  },
+  "winning_multipliers": {
+    "4": 353,
+    "8": 18,
+    "7": 45,
+    "6": 10,
+    "3": 7,
+    "13": 11,
+    "19": 1,
+    "16": 3,
+    "9": 4,
+    "11": 13,
+    "20": 1,
+    "15": 1,
+    "22": 1
+  },
+  "candidate_income_by_method": {
+    "DISCARD_WIN": 4240,
+    "SELF_DRAW": 4512
+  },
+  "candidate_actions": {
+    "PASS": 241910,
+    "DISCARD": 80495,
+    "WIN": 468,
+    "PONG": 1244,
+    "CLOSED_KONG": 14,
+    "ADDED_KONG": 9
+  },
+  "candidate_win_horse_hits": {
+    "1": 165,
+    "4": 15,
+    "3": 61,
+    "0": 103,
+    "2": 121,
+    "5": 3
+  },
+  "initial_route_mean": {
+    "SEVEN_PAIRS": 0.23005719866071941,
+    "PONG_PONG": 0.15294799804686568,
+    "MIXED_ONE_SUIT": -0.3226655834298303,
+    "PURE_ONE_SUIT": -0.855811214123368,
+    "TERMINALS_HONORS": -0.8067163182538591,
+    "THIRTEEN_ORPHANS": 0.35636080228365347,
+    "DRAGONS": 0.13259548611110675,
+    "WINDS": 0.12823486328124936
+  },
+  "replay_sha256": "b9167cf15c4d8459d4bedf1d603a9ca33ff64ba6401a57f71deb805b77c31e72",
+  "results_sha256": "1cdb5564ab483076a1818dda42a82af1dfd7bcd8eda8713426f1d2c5257ad6bb",
+  "tail_replay_index": "worst_hands.json",
+  "modifies_training_or_gate": false
+}

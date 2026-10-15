@@ -1,0 +1,51 @@
+test_private_intervention_preserves_actor_input (test_rc5_audit.Rc5AuditTests.test_private_intervention_preserves_actor_input) ... ok
+test_public_pair_preserves_own_hand_but_changes_public_history (test_rc5_audit.Rc5AuditTests.test_public_pair_preserves_own_hand_but_changes_public_history) ... ok
+test_explicit_paired_reuse_is_allowed_but_split_change_is_not (test_rc5_exposure.Rc5ExposureTests.test_explicit_paired_reuse_is_allowed_but_split_change_is_not) ... ok
+test_historical_wall_cannot_enter_fresh_training (test_rc5_exposure.Rc5ExposureTests.test_historical_wall_cannot_enter_fresh_training) ... ok
+test_partial_gzip_does_not_mark_file_imported (test_rc5_exposure.Rc5ExposureTests.test_partial_gzip_does_not_mark_file_imported) ... ok
+test_renaming_heldout_cannot_change_its_role (test_rc5_exposure.Rc5ExposureTests.test_renaming_heldout_cannot_change_its_role) ... ok
+test_empty_state_rejected (test_rc5_guards.Rc5TensorGuardTests.test_empty_state_rejected) ... ok
+test_float_validation_rejected (test_rc5_guards.Rc5TensorGuardTests.test_float_validation_rejected) ... ok
+test_hash_rejected_before_deserialization (test_rc5_guards.Rc5TensorGuardTests.test_hash_rejected_before_deserialization) ... ok
+test_load_roundtrip (test_rc5_guards.Rc5TensorGuardTests.test_load_roundtrip) ... ok
+test_mask_rejected (test_rc5_guards.Rc5TensorGuardTests.test_mask_rejected) ... ok
+test_nonfinite_features_rejected (test_rc5_guards.Rc5TensorGuardTests.test_nonfinite_features_rejected) ... ok
+test_old_semantics_rejected (test_rc5_guards.Rc5TensorGuardTests.test_old_semantics_rejected) ... ok
+test_private_feature_namespace_rejected (test_rc5_guards.Rc5TensorGuardTests.test_private_feature_namespace_rejected) ... ok
+test_shape_rejected (test_rc5_guards.Rc5TensorGuardTests.test_shape_rejected) ... ok
+test_valid_namespaces_and_shapes (test_rc5_guards.Rc5TensorGuardTests.test_valid_namespaces_and_shapes) ... ok
+test_whole_session_overlap_rejected (test_rc5_guards.Rc5TensorGuardTests.test_whole_session_overlap_rejected) ... ok
+test_forced_pass_is_not_a_voluntary_action_target (test_rc5_labels.Rc5LabelTests.test_forced_pass_is_not_a_voluntary_action_target) ... ok
+test_future_event_is_relative_seat_and_strictly_after_snapshot (test_rc5_labels.Rc5LabelTests.test_future_event_is_relative_seat_and_strictly_after_snapshot) ... ok
+test_missing_future_event_is_censored_not_pass (test_rc5_labels.Rc5LabelTests.test_missing_future_event_is_censored_not_pass) ... ok
+test_nonwaiting_size_is_censored (test_rc5_labels.Rc5LabelTests.test_nonwaiting_size_is_censored) ... ok
+test_state_targets_have_separate_masks (test_rc5_labels.Rc5LabelTests.test_state_targets_have_separate_masks) ... ok
+test_auxiliary_gradient_cannot_reach_actor (test_rc5_model.Rc5ModelTests.test_auxiliary_gradient_cannot_reach_actor) ... ok
+test_diagnostic_logits_and_hidden_are_exact (test_rc5_model.Rc5ModelTests.test_diagnostic_logits_and_hidden_are_exact) ... ok
+test_initial_joint_is_exact_and_zero_residual_is_trainable (test_rc5_model.Rc5ModelTests.test_initial_joint_is_exact_and_zero_residual_is_trainable) ... ok
+test_modes_reject_unknown_value (test_rc5_model.Rc5ModelTests.test_modes_reject_unknown_value) ... ok
+test_roundtrip_state_is_exact (test_rc5_model.Rc5ModelTests.test_roundtrip_state_is_exact) ... ok
+test_censored_loss_has_zero_gradient (test_rc5_prediction.Rc5PredictionTests.test_censored_loss_has_zero_gradient) ... ok
+test_censored_metrics_do_not_invent_events (test_rc5_prediction.Rc5PredictionTests.test_censored_metrics_do_not_invent_events) ... ok
+test_empty_categorical_prior_remains_normalized (test_rc5_prediction.Rc5PredictionTests.test_empty_categorical_prior_remains_normalized) ... ok
+test_failed_heads_return_training_prior_exactly (test_rc5_prediction.Rc5PredictionTests.test_failed_heads_return_training_prior_exactly) ... ok
+test_one_seat_does_not_suppress_other_seats (test_rc5_prediction.Rc5PredictionTests.test_one_seat_does_not_suppress_other_seats) ... ok
+test_perfectly_qualified_all_seats (test_rc5_prediction.Rc5PredictionTests.test_perfectly_qualified_all_seats) ... ok
+test_rare_positive_head_is_not_qualified (test_rc5_prediction.Rc5PredictionTests.test_rare_positive_head_is_not_qualified) ... ok
+test_cpp_mutation_invalidates_protected_source (test_rc5_protocol.Rc5ProtocolTests.test_cpp_mutation_invalidates_protected_source) ... ok
+test_cuda_unavailable_is_explicit_failure (test_rc5_protocol.Rc5ProtocolTests.test_cuda_unavailable_is_explicit_failure) ... ok
+test_deadline_raises_instead_of_shortening_a_hand (test_rc5_protocol.Rc5ProtocolTests.test_deadline_raises_instead_of_shortening_a_hand) ... ok
+test_development_regression_discards_but_keeps_artifact (test_rc5_protocol.Rc5ProtocolTests.test_development_regression_discards_but_keeps_artifact) ... ok
+test_duplicate_seeds_rejected (test_rc5_protocol.Rc5ProtocolTests.test_duplicate_seeds_rejected) ... ok
+test_empty_registry_cannot_hide_historical_exposure (test_rc5_protocol.Rc5ProtocolTests.test_empty_registry_cannot_hide_historical_exposure) ... ok
+test_incomplete_wall_groups_rejected (test_rc5_protocol.Rc5ProtocolTests.test_incomplete_wall_groups_rejected) ... ok
+test_no_negative_worker_budget (test_rc5_protocol.Rc5ProtocolTests.test_no_negative_worker_budget) ... ok
+test_one_use_confirmation_consumed_before_any_model_call (test_rc5_protocol.Rc5ProtocolTests.test_one_use_confirmation_consumed_before_any_model_call) ... ok
+test_signal_handlers_restore (test_rc5_protocol.Rc5ProtocolTests.test_signal_handlers_restore) ... ok
+test_smoke_cannot_claim_confirmatory_scale (test_rc5_protocol.Rc5ProtocolTests.test_smoke_cannot_claim_confirmatory_scale) ... ok
+test_smoke_never_promotes_even_with_positive_gate (test_rc5_protocol.Rc5ProtocolTests.test_smoke_never_promotes_even_with_positive_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.170s
+
+OK

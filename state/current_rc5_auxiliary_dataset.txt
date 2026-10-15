@@ -1,0 +1,1 @@
+/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/derived/auxiliary-v2-repair-v1/auxiliary-v2.pt

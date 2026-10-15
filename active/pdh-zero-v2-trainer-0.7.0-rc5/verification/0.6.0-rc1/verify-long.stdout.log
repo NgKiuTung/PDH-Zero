@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-30T16:18:05.722977+00:00",
+  "python": "3.13.5",
+  "tests_exit_code": 0,
+  "long_job_candidate_check": "PASS",
+  "long_job_entry_ready": false,
+  "curriculum_gate_required": true,
+  "blocked_reason": "0.6.0-rc1 is a curriculum-tuning candidate",
+  "formal_long_run_ready": false
+}

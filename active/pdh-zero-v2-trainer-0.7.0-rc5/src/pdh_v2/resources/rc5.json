@@ -1,0 +1,48 @@
+{
+  "version": "0.6.0-rc5",
+  "training_replay_sha256": "a0e124ac5caaf9c02f58ea8d97031e9419cd0f05af2a43332a3982b87d24080f",
+  "historical_replay_sha256": {
+    "train": [
+      "a0e124ac5caaf9c02f58ea8d97031e9419cd0f05af2a43332a3982b87d24080f"
+    ],
+    "development": [
+      "448f42883d59bc8c434b63a238825260f2484bd8b8f0b5353e50eb98b3877221",
+      "403cf073a2d7cfa40fdde58a4d5e21d88760f12b1695b0e6206651857d5ffcd1",
+      "b140ef0208ff1214b2c00dc5b926f1961807107e8211b726526162d29cf63af7",
+      "76bbe4884b0dbbce5786b42312005cf38158eebdee51e53039614fcaba33437c",
+      "15cf8ee9b49bad46b286d6e8209e1f15c7e23e48f2ab6acf0591bf8f018c2620"
+    ],
+    "heldout_used": [
+      "aae0cbc12b9460acf23757a653779023ddc677b0ba62d1cc89e268cbb184981a",
+      "1696cd9761b9ed6c253a505806229896878d9926789039079b424b3414d58fb3"
+    ]
+  },
+  "baseline": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+    "relative_path": "checkpoints/candidates/d000000266137/model.pt"
+  },
+  "messages": {
+    "cli_description": "PDH-Zero rc5：固定基线、公开信息审计与受控研究。",
+    "audit_help": "真实权重、完整牌谱、隐藏信息不干扰与合法公开历史对照。",
+    "prepare_help": "导入训练、开发和已经使用的 held-out 暴露指纹；不启动 GPU。",
+    "dataset_help": "仅从已冻结训练牌谱构建因果输入和独立标签，按完整会话分组。",
+    "fit_help": "固定步数拟合逐家预测头，不修改 Actor，不读取 held-out 标签。",
+    "study_help": "执行冻结预算的多 seed、三组策略、三类对手对照；保留全部候选。",
+    "plan_help": "生成新的三 seed CPU/GPU短流程计划，不启动训练或付费实例。",
+    "baseline_mismatch": "rc5 基线不匹配；只接受已冻结 rc4.1 d000000266137 的已知 SHA256。",
+    "rule_mismatch": "冻结房规身份不匹配。",
+    "positive_sizes": "手局数、抽样步长、样本数与预算必须为正整数。",
+    "incomplete_record": "缺少完整自然手局、合法公开起始信息或真实结算证据。",
+    "replay_mismatch": "完整牌谱重放与原始终局摘要不一致。",
+    "audit_bound": "合法对照推进超出预设步数，审计失败。",
+    "audit_pair_insufficient": "该合法对照没有两种不同牌种的可选弃牌。",
+    "private_input_leak": "改变暗牌或未来墙后合法观察/动作发生变化，信息隔离失败。",
+    "private_actor_leak": "相同合法观察历史产生不同 Actor 输出，信息隔离失败。",
+    "public_pair_invalid": "公开历史对照的自身手牌或合法候选集合不一致。",
+    "output_exists": "输出已存在；请使用新目录，禁止覆盖历史证据。",
+    "freeze_help": "冻结全部已通过开发门禁的训练种子，烟雾实验禁止晋级",
+    "confirm_help": "只用冻结后生成的新牌墙执行一次性确认，不训练、不自动部署",
+    "probe_help": "真实rc5权重：串行与并行逐局一致性、有限预算吞吐实测；不启动训练"
+  }
+}

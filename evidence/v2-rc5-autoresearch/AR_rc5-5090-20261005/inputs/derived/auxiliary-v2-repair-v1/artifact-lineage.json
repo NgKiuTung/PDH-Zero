@@ -1,0 +1,8 @@
+{
+  "operation": "restore_original_dataset_receipt_without_modifying_dataset_bytes",
+  "dataset_sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0",
+  "source_dataset": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/rc5-gpu-bootstrap/auxiliary-v2.pt",
+  "receipt_source": "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/verification/rc5/dataset-v2.json",
+  "role": "train_side_auxiliary_only",
+  "old_heldout_used": false
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "handoff_name": "PDH-rc5-handoff-20261005.zip",
+  "purpose": "Resume authorized PDH rc5 implementation from verified rc4.1 artifacts",
+  "context_is_full_verbatim_chat": false,
+  "rc5_implemented": false,
+  "upload_to_new_chat": [
+    "PDH-rc5-handoff-20261005.zip",
+    "rc4.1-refinement-evidence-20261003.tar.gz",
+    "rc4.1-heldout-20261003.tar.gz"
+  ],
+  "source_embedded_in_handoff": true,
+  "source_inputs": [
+    {
+      "canonical_name": "pdh-zero-v2-trainer-0.6.0-rc4.1.zip",
+      "bytes": 610285,
+      "sha256": "38f0b4777cc904f80cacc71b7dcfd0cc9211da54cd5e830691617eef7aa3921a",
+      "hash_rechecked_this_handoff": true,
+      "location": "source/pdh-zero-v2-trainer-0.6.0-rc4.1.zip",
+      "role": "source_code"
+    },
+    {
+      "canonical_name": "rc4.1-refinement-evidence-20261003.tar.gz",
+      "bytes": 233235413,
+      "sha256": "0cefecf2d98be39e5cbfb4a11108d36fb91290bc1dc916bfc528541d0e57db62",
+      "hash_rechecked_this_handoff": true,
+      "location": "separate_upload",
+      "role": "training_and_development_evidence"
+    },
+    {
+      "canonical_name": "rc4.1-heldout-20261003.tar.gz",
+      "bytes": 96241010,
+      "sha256": "45848174ce960df83c90e2ce5d70a4825b770af5140f1daab42639619ef05e3f",
+      "hash_rechecked_this_handoff": true,
+      "location": "separate_upload",
+      "role": "heldout_frozen_pair_evidence"
+    }
+  ],
+  "selected_candidate": {
+    "label": "d000000266137",
+    "refinement_member": "v2-refinement-rc4.1/REFINE_20261003T131918636050Z/checkpoints/candidates/d000000266137/model.pt",
+    "heldout_member": "v2-heldout-rc4.1/HELDOUT_20261003T151645353474Z/candidate.pt",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+    "status": "frozen_candidate_passed_one_fresh_wall_fixed_opponent_single_seed_evaluation"
+  },
+  "missing_from_data_archives": {
+    "wall_registry": ".wall-exposures.sqlite3",
+    "blocks_local_code_development": false,
+    "required_handling_before_new_experiments": "Preserve original instance registry or explicitly rebuild known exposure from accessible original replays, including heldout. Mark missing history partial."
+  },
+  "original_sidecar_note": "Some original checksum files use absolute /root/rivermind-data paths.",
+  "renamed_download_note": "Duplicate download suffix (1) is acceptable only if SHA256 matches."
+}

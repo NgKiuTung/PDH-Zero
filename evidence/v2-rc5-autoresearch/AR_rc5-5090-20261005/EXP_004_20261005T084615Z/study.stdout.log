@@ -1,0 +1,10 @@
+{"event": "trial_finished", "seed": 100580891970519, "mode": "baseline", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 100580891970519, "mode": "diagnostic", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 100580891970519, "mode": "joint", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 111612784026460, "mode": "baseline", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 111612784026460, "mode": "diagnostic", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 111612784026460, "mode": "joint", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 103601119235238, "mode": "baseline", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 103601119235238, "mode": "diagnostic", "status": "inconclusive"}
+{"event": "trial_finished", "seed": 103601119235238, "mode": "joint", "status": "inconclusive"}
+{"status": "PASS", "scientific_status": "INCONCLUSIVE", "completed_seeds": 3, "completed_arms": 9, "opponent_conditions": ["heuristic", "route_mix", "frozen_rc41"], "elapsed_seconds": 518.2779765627347, "deployment_promoted": false, "target_5090_tested": false, "rollback": {"baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd", "label": "d000000266137", "action": "use_unchanged_original_checkpoint"}, "diagnostic_controls": [{"actor_tensor_exact": true, "mirrored_actor_updates_exact": true, "training_trajectories_exact": true, "all_opponent_trajectories_exact": true}, {"actor_tensor_exact": true, "mirrored_actor_updates_exact": true, "training_trajectories_exact": true, "all_opponent_trajectories_exact": true}, {"actor_tensor_exact": true, "mirrored_actor_updates_exact": true, "training_trajectories_exact": true, "all_opponent_trajectories_exact": true}], "dataset_sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0", "registry_sha256": "8758487ca12cd867198864b0724f5dc4865b0ea00dd6b17ed148dd5af4ea5ed8"}

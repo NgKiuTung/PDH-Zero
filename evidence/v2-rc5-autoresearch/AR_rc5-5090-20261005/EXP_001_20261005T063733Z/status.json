@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "stage": "RTX5090_EXP_001_PROBE",
+  "completed_at_utc": "2026-10-05T06:51:12.636243+00:00",
+  "failure_class": "input_artifact_companion_missing",
+  "failure_phase": "candidate_load_before_probe_output_initialization",
+  "missing_file": "probe-candidate-seed-132846611674848.pt.sha256",
+  "candidate_loaded": false,
+  "paired_evaluation_started": false,
+  "training_performed": false,
+  "tool_report_created": false,
+  "registry_unchanged": true,
+  "retry_policy": "preserve_exp001_and_create_new_experiment_after_artifact_repair"
+}

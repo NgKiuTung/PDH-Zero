@@ -1,0 +1,14 @@
+{
+  "pdh-zero-v2-trainer-0.6.0-rc3.zip": {
+    "sha256": "0ec625f48a9e4fbb70e163f52de4aa16c8dadfde418209141a05ec46700297f1",
+    "size_bytes": 504340
+  },
+  "rc3-refinement-evidence-20261003.tar.gz": {
+    "sha256": "0614b811c426fdbd9dca24513676b7082d4496fb7b75ebff3919c07f8a42eba4",
+    "size_bytes": 219764351
+  },
+  "rc3-cgroup-limits-20261003.txt": {
+    "sha256": "8c38c792121cb0572323773e02873ed2d160a8f50b83d1750f7fdf0b10f8c4a6",
+    "size_bytes": 263
+  }
+}

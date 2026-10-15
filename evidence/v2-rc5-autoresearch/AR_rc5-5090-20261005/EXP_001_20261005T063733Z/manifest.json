@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP_001_20261005T063733Z",
+  "created_at_utc": "2026-10-05T06:37:58.365999+00:00",
+  "stage": "RTX5090_CUDA_INTEGRATION_PROBE",
+  "hypothesis": "CUDA execution and shared-transport parallel rollout preserve exact completed trajectories relative to serial execution.",
+  "training_permitted": false,
+  "baseline": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd"
+  },
+  "candidate": {
+    "sha256": "a4ff8094892bb257e1a72173b0040a7a5d21069067a8921f07428288740b789e",
+    "role": "integration_probe_only"
+  },
+  "fixed_budget": {
+    "workers_parallel": 4,
+    "serial_workers": 0,
+    "environments": 64,
+    "hands_per_opponent_per_profile": 64,
+    "opponent_families": 3,
+    "transport": "shared",
+    "max_seconds": 600
+  },
+  "registry_sha256_before": "e2207e2a0a536195e9209718f43772d79fd63066712eff031d8ac0bbfd4c01d4"
+}

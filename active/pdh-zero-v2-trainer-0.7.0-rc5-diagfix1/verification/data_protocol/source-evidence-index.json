@@ -1,0 +1,108 @@
+{
+  "archive_sha256": "0614b811c426fdbd9dca24513676b7082d4496fb7b75ebff3919c07f8a42eba4",
+  "replays": {
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz": {
+      "hands": 4096,
+      "valid_136_entity_walls": 4096,
+      "action_lengths": {
+        "min": 68,
+        "max": 392,
+        "mean": 319.862548828125,
+        "median": 348.0
+      },
+      "unique_type_wall_fingerprints": 1024,
+      "occurrence_histogram": {
+        "4": 1024
+      },
+      "distinct_hand_ids": 1,
+      "first_hand_id": "H00000000"
+    },
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz": {
+      "hands": 4096,
+      "valid_136_entity_walls": 4096,
+      "action_lengths": {
+        "min": 68,
+        "max": 392,
+        "mean": 318.28125,
+        "median": 344.0
+      },
+      "unique_type_wall_fingerprints": 1024,
+      "occurrence_histogram": {
+        "4": 1024
+      },
+      "distinct_hand_ids": 1,
+      "first_hand_id": "H00000000"
+    },
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz": {
+      "hands": 4096,
+      "valid_136_entity_walls": 4096,
+      "action_lengths": {
+        "min": 56,
+        "max": 396,
+        "mean": 317.27685546875,
+        "median": 344.0
+      },
+      "unique_type_wall_fingerprints": 1024,
+      "occurrence_histogram": {
+        "4": 1024
+      },
+      "distinct_hand_ids": 1,
+      "first_hand_id": "H00000000"
+    },
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz": {
+      "hands": 4096,
+      "valid_136_entity_walls": 4096,
+      "action_lengths": {
+        "min": 68,
+        "max": 396,
+        "mean": 319.742919921875,
+        "median": 348.0
+      },
+      "unique_type_wall_fingerprints": 1024,
+      "occurrence_histogram": {
+        "4": 1024
+      },
+      "distinct_hand_ids": 1,
+      "first_hand_id": "H00000000"
+    },
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz": {
+      "hands": 4096,
+      "valid_136_entity_walls": 4096,
+      "action_lengths": {
+        "min": 68,
+        "max": 396,
+        "mean": 318.017822265625,
+        "median": 344.0
+      },
+      "unique_type_wall_fingerprints": 1024,
+      "occurrence_histogram": {
+        "4": 1024
+      },
+      "distinct_hand_ids": 1,
+      "first_hand_id": "H00000000"
+    },
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz": {
+      "hands": 6406,
+      "valid_136_entity_walls": 6406,
+      "action_lengths": {
+        "min": 48,
+        "max": 392,
+        "mean": 318.5899157040275,
+        "median": 345.0
+      },
+      "unique_type_wall_fingerprints": 6406,
+      "occurrence_histogram": {
+        "1": 6406
+      },
+      "distinct_hand_ids": 104,
+      "first_hand_id": "H00000000"
+    }
+  },
+  "training_eval_type_wall_overlaps": {
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz": 0,
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz": 0,
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz": 0,
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz": 0,
+    "v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz": 0
+  }
+}

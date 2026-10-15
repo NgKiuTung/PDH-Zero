@@ -1,0 +1,602 @@
+{
+  "driver_pid": 2005,
+  "status": "PASS",
+  "steps": [
+    {
+      "name": "all-tests",
+      "pid": 2016,
+      "pgid": 2016,
+      "arguments": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "status": "completed",
+      "timeout": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 58.8342312499999
+    },
+    {
+      "name": "static",
+      "pid": 2046,
+      "pgid": 2046,
+      "arguments": [
+        "tools/static_audit.py",
+        "--output",
+        "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/static.json"
+      ],
+      "status": "completed",
+      "timeout": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 0.9669236129998353
+    },
+    {
+      "name": "real-selected-cpu",
+      "pid": 2047,
+      "pgid": 2047,
+      "arguments": [
+        "tools/train_refinement.py",
+        "--initial-selection",
+        "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+        "--output-root",
+        "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs",
+        "--workers",
+        "2",
+        "--environments",
+        "2",
+        "--hands-per-update",
+        "2",
+        "--target-decisions",
+        "1",
+        "--evaluation-hands",
+        "4",
+        "--max-seconds",
+        "180",
+        "--device",
+        "cpu",
+        "--feature-backend",
+        "cpp"
+      ],
+      "status": "completed",
+      "timeout": 300,
+      "exit_code": 0,
+      "elapsed_seconds": 23.64633750600001
+    },
+    {
+      "name": "real-heldout-cpu",
+      "pid": 2089,
+      "pgid": 2089,
+      "arguments": [
+        "tools/evaluate_candidates.py",
+        "--run-dir",
+        "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z",
+        "--candidate-checkpoint",
+        "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z/checkpoints/checkpoint_latest.pt",
+        "--output-root",
+        "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/heldout-runs",
+        "--hands",
+        "4",
+        "--workers",
+        "2",
+        "--device",
+        "cpu",
+        "--max-seconds",
+        "180"
+      ],
+      "status": "completed",
+      "timeout": 300,
+      "exit_code": 3,
+      "elapsed_seconds": 8.247997576999978
+    }
+  ],
+  "real_run_manifest": {
+    "schema_version": 5,
+    "status": "completed",
+    "created_at_utc": "2026-10-03T12:35:03.599805+00:00",
+    "pid": 2047,
+    "scope": "solo_stability_refinement_candidate",
+    "rule_source_sha256": "141126f0485fa34d9d91dca72e7b3d45a8c38c3d19ef461cab7760fae43c04bc",
+    "config": {
+      "output": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z",
+      "warmup_checkpoint": null,
+      "workers": 2,
+      "environments": 2,
+      "hands_per_update": 2,
+      "max_seconds": 180,
+      "target_decisions": 1,
+      "evaluation_hands": 4,
+      "evaluation_interval": 125000,
+      "evaluation_seed": 428052150861938124,
+      "learning_rate": 5e-05,
+      "reward_scale": 32.0,
+      "minibatch_decisions": 8192,
+      "seed": 7304309430493113389,
+      "seed_origin": "generated",
+      "device": "cpu",
+      "transport": "shared",
+      "max_anchor_kl": 0.12,
+      "max_cvar_drop": 2.0,
+      "selection_patience": 2,
+      "initial_selection": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+      "feature_backend": "cpp"
+    },
+    "runtime": {
+      "torch": "2.10.0+cpu",
+      "device": "cpu",
+      "feature_backend": "cpp",
+      "resources": {
+        "logical_cpus_visible": 5,
+        "affinity_cpus": 5,
+        "quota_cpu_equivalents": 4.0,
+        "effective_cpu_equivalents": 4.0,
+        "memory_limit_bytes": 4294967296,
+        "declared_vcpus_fallback": 14,
+        "quota_known": true,
+        "evidence": [
+          {
+            "path": "/sys/fs/cgroup/cpu.max",
+            "value": "400000 100000"
+          },
+          {
+            "path": "/sys/fs/cgroup/memory.max",
+            "value": "4294967296"
+          }
+        ],
+        "scope": "visible_cgroups_and_affinity_not_dedicated_cores"
+      }
+    },
+    "long_training_allowed": false,
+    "generalization_verified": false,
+    "fresh_frozen_evaluation_required": true,
+    "data_protocol": {
+      "schema_version": 1,
+      "training_unit": "complete_hand_seat_sequence",
+      "recurrent_memory": "within_hand_reset_at_terminal",
+      "cross_hand_state": "dealer_continuation_scores_and_retained_reveals",
+      "cross_hand_return_optimization": false,
+      "run_seed": 7304309430493113389,
+      "seed_origin": "generated",
+      "development_seed": 428052150861938124,
+      "development_policy": "fixed_within_run_repeated_not_confirmatory",
+      "evaluation_hands": 4,
+      "unique_development_starting_walls": 1,
+      "seat_variants_per_wall": 4,
+      "fresh_frozen_evaluation_required": true,
+      "generalization_verified": false,
+      "registry": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/.wall-exposures.sqlite3",
+      "lineage": {
+        "files": [
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz",
+            "sha256": "32c2d460865a55fe66d23d580c15402c6bff6dd99d2298d8549d804c7fadf2e0",
+            "records": 4096
+          },
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz",
+            "sha256": "7995b56de91bae7360f11a626413e6a9902be6e0f607b5b710d050e9c535489d",
+            "records": 4096
+          },
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz",
+            "sha256": "d5fc232c68ac21f0cb0ab6bc533dd08a7f1d886eeeb8a0525b5e7a9e298ea5d9",
+            "records": 4096
+          },
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz",
+            "sha256": "8caa13f76683de96f1896ac3f1ea3c0478f14f143eb1db216550b16695b86faf",
+            "records": 4096
+          },
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz",
+            "sha256": "2ac0add1b5a8738dfd63f82b1cbf18747db19346ead825dc1ad85bfeca429dd6",
+            "records": 4096
+          },
+          {
+            "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz",
+            "sha256": "efbed0af6b1414731e830c285b699f7300792d0cc492fcc539e8ebc8ca2c981f",
+            "records": 6406
+          }
+        ],
+        "missing_history": [
+          "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/manifest.json"
+        ],
+        "historical_coverage": "partial",
+        "claim": "known_logged_wall_exclusion_not_proof_of_all_past_exposure"
+      },
+      "registered_unique_exposed_walls": {
+        "development": 2,
+        "train": 5
+      },
+      "completed_training_hands": 3,
+      "completed_training_action_events": 1088
+    },
+    "initialization": {
+      "checkpoint_sha256": "2688e2d6427e97179d69c80126d0dac216ce1d2d5827e82ef357274da358b948",
+      "selection_sha256": "d239474d2e27200cd6dc1c48172057f2a2a47995af47064bbdd83aab70ccbdff",
+      "source_candidate": "d000000265095",
+      "source_update": 13,
+      "source_gate": "INCONCLUSIVE",
+      "source_is_confirmatory": false,
+      "effective_model_config": {
+        "hidden_size": 384,
+        "observation_size": 622,
+        "action_size": 74,
+        "risk_policy_weight": 0.0
+      },
+      "optimizer_policy": "fresh_AdamW_no_prior_momentum",
+      "risk_policy": "diagnostic_only_unchanged",
+      "anchor_scope": "frozen_rc4_input_candidate"
+    },
+    "ppo_config": {
+      "epochs": 2,
+      "minibatch_decisions": 8192,
+      "clip_ratio": 0.1,
+      "value_coefficient": 0.5,
+      "entropy_coefficient": 0.003,
+      "risk_coefficient": 0.05,
+      "anchor_coefficient": 0.05,
+      "target_kl": 0.01,
+      "max_gradient_norm": 0.5,
+      "behavior_tolerance": 0.0005,
+      "max_anchor_kl": 0.12
+    },
+    "updates": 1,
+    "accepted_updates": 0,
+    "total_learner_decisions": 272,
+    "stop_reason": "target_decisions",
+    "development_gate": "INCONCLUSIVE",
+    "selected_development": "baseline",
+    "qualified_candidate": null,
+    "selection_is_confirmatory": false,
+    "finished_at_utc": "2026-10-03T12:35:24.815989+00:00",
+    "elapsed_wall_seconds": 21.216837887999873
+  },
+  "data_integrity": {
+    "schema_version": 1,
+    "training_unit": "complete_hand_seat_sequence",
+    "recurrent_memory": "within_hand_reset_at_terminal",
+    "cross_hand_state": "dealer_continuation_scores_and_retained_reveals",
+    "cross_hand_return_optimization": false,
+    "run_seed": 7304309430493113389,
+    "seed_origin": "generated",
+    "development_seed": 428052150861938124,
+    "development_policy": "fixed_within_run_repeated_not_confirmatory",
+    "evaluation_hands": 4,
+    "unique_development_starting_walls": 1,
+    "seat_variants_per_wall": 4,
+    "fresh_frozen_evaluation_required": true,
+    "generalization_verified": false,
+    "registry": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/.wall-exposures.sqlite3",
+    "lineage": {
+      "files": [
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz",
+          "sha256": "32c2d460865a55fe66d23d580c15402c6bff6dd99d2298d8549d804c7fadf2e0",
+          "records": 4096
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz",
+          "sha256": "7995b56de91bae7360f11a626413e6a9902be6e0f607b5b710d050e9c535489d",
+          "records": 4096
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz",
+          "sha256": "d5fc232c68ac21f0cb0ab6bc533dd08a7f1d886eeeb8a0525b5e7a9e298ea5d9",
+          "records": 4096
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz",
+          "sha256": "8caa13f76683de96f1896ac3f1ea3c0478f14f143eb1db216550b16695b86faf",
+          "records": 4096
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz",
+          "sha256": "2ac0add1b5a8738dfd63f82b1cbf18747db19346ead825dc1ad85bfeca429dd6",
+          "records": 4096
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz",
+          "sha256": "efbed0af6b1414731e830c285b699f7300792d0cc492fcc539e8ebc8ca2c981f",
+          "records": 6406
+        }
+      ],
+      "missing_history": [
+        "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/manifest.json"
+      ],
+      "historical_coverage": "partial",
+      "claim": "known_logged_wall_exclusion_not_proof_of_all_past_exposure"
+    },
+    "registered_unique_exposed_walls": {
+      "development": 2,
+      "train": 5
+    },
+    "completed_training_hands": 3,
+    "completed_training_action_events": 1088
+  },
+  "heldout": {
+    "status": "completed",
+    "scope": "frozen_pair_new_wall_single_training_seed",
+    "hands": 4,
+    "seed": 5779161732678967853,
+    "source_run": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z",
+    "long_training_allowed": false,
+    "max_cvar_drop": 2.0,
+    "data_lineage": {
+      "files": [
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z/evaluations/baseline/hands.jsonl.gz",
+          "sha256": "b03115ce54bbfc2ba8d5f9557d92b016658ad13304c89c4282e745d852576fd0",
+          "records": 4
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z/evaluations/final-d000000000272/hands.jsonl.gz",
+          "sha256": "ae9181756e3d36d27570988bec1ebbe2979cb955f15feeea6e6b129036a47251",
+          "records": 4
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/tmp/audit/validation/real-runs/REFINE_20261003T123503597053Z/replays/hands.jsonl.gz",
+          "sha256": "326f6dcc28fc8674ffa791cc53ac73689484f20c44164528329bf5dcd551b494",
+          "records": 3
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/baseline/hands.jsonl.gz",
+          "sha256": "32c2d460865a55fe66d23d580c15402c6bff6dd99d2298d8549d804c7fadf2e0",
+          "cached": true
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000143008/hands.jsonl.gz",
+          "sha256": "7995b56de91bae7360f11a626413e6a9902be6e0f607b5b710d050e9c535489d",
+          "cached": true
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000265095/hands.jsonl.gz",
+          "sha256": "d5fc232c68ac21f0cb0ab6bc533dd08a7f1d886eeeb8a0525b5e7a9e298ea5d9",
+          "cached": true
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000386995/hands.jsonl.gz",
+          "sha256": "8caa13f76683de96f1896ac3f1ea3c0478f14f143eb1db216550b16695b86faf",
+          "cached": true
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/evaluations/d000000510070/hands.jsonl.gz",
+          "sha256": "2ac0add1b5a8738dfd63f82b1cbf18747db19346ead825dc1ad85bfeca429dd6",
+          "cached": true
+        },
+        {
+          "path": "/workspace/develop-project/pdh-rc4-audit/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/replays/hands.jsonl.gz",
+          "sha256": "efbed0af6b1414731e830c285b699f7300792d0cc492fcc539e8ebc8ca2c981f",
+          "cached": true
+        }
+      ],
+      "missing_history": [
+        "/root/rivermind-data/pdh-zero/evidence/v2-curriculum/CURRICULUM_60M_20261003T015945Z/manifest.json"
+      ],
+      "historical_coverage": "partial",
+      "claim": "known_logged_wall_exclusion_not_proof_of_all_past_exposure"
+    },
+    "baseline_sha256": "8fb0ce553cb3867a81d654c342a55dbc477b408c134a8f766390aee2f74613e9",
+    "baseline": {
+      "hands": 4,
+      "mean_score": 1.0,
+      "score_std": 1.7320508075688772,
+      "median_score": 0.0,
+      "quantiles": {
+        "0.01": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 2.8000000000000007,
+        "0.95": 3.3999999999999986,
+        "0.99": 3.879999999999999
+      },
+      "cvar_1": 0.0,
+      "cvar_5": 0.0,
+      "win": 0.25,
+      "point_shoot": 0.0,
+      "draw": 0.25,
+      "self_draw": 0.0,
+      "discard_win": 0.25,
+      "minimum_score": 0,
+      "maximum_score": 4,
+      "losses_by_cause": {},
+      "negative_score_hands": 0,
+      "conditional_mean_loss": 0.0,
+      "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+      "responsibility": {
+        "schema_version": 1,
+        "candidate_seat_hands": 4,
+        "direct_loss": 0,
+        "direct_principal": 0,
+        "direct_horse_uplift": 0,
+        "ordinary_self_draw_share": 0,
+        "total_outgoing": 0,
+        "total_income": 4,
+        "direct_loss_hand": 0,
+        "defense_loss_per_100_seat_hands": 0.0,
+        "direct_loss_hand_rate": 0.0,
+        "direct_loss_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 0.0,
+          "p99": 0.0,
+          "maximum": 0,
+          "positive_hands": 0,
+          "mean_if_positive": null
+        },
+        "ordinary_self_draw_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 0.0,
+          "p99": 0.0,
+          "maximum": 0,
+          "positive_hands": 0,
+          "mean_if_positive": null
+        },
+        "net_score_tail_breakdown": {
+          "0.01": {
+            "hands": 1,
+            "losses_by_cause": {},
+            "direct_loss": 0,
+            "ordinary_self_draw_share": 0,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          },
+          "0.05": {
+            "hands": 1,
+            "losses_by_cause": {},
+            "direct_loss": 0,
+            "ordinary_self_draw_share": 0,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          }
+        },
+        "scope": "monitoring_only_not_reward_or_gate",
+        "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+      },
+      "seconds": 3.0696455260001585,
+      "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+      "seed": 5779161732678967853,
+      "initial_dealer": 0,
+      "initial_continuation": 0,
+      "unit": "complete_natural_hand_not_isolated_decision",
+      "unique_starting_walls": 1,
+      "seat_variants_per_wall": 4,
+      "action_events_total": 1084,
+      "results_sha256": "7530c69539f0bc1fcde638798d7882abea6d12ed4c6c94b0e6847159a5114a2e"
+    },
+    "candidate_sha256": "8c3b7551596e63db7c28a24574c02768aa54223814cbe2c4845f842e855408ab",
+    "candidate": {
+      "hands": 4,
+      "mean_score": 1.0,
+      "score_std": 1.7320508075688772,
+      "median_score": 0.0,
+      "quantiles": {
+        "0.01": 0.0,
+        "0.05": 0.0,
+        "0.1": 0.0,
+        "0.5": 0.0,
+        "0.9": 2.8000000000000007,
+        "0.95": 3.3999999999999986,
+        "0.99": 3.879999999999999
+      },
+      "cvar_1": 0.0,
+      "cvar_5": 0.0,
+      "win": 0.25,
+      "point_shoot": 0.0,
+      "draw": 0.25,
+      "self_draw": 0.0,
+      "discard_win": 0.25,
+      "minimum_score": 0,
+      "maximum_score": 4,
+      "losses_by_cause": {},
+      "negative_score_hands": 0,
+      "conditional_mean_loss": 0.0,
+      "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+      "responsibility": {
+        "schema_version": 1,
+        "candidate_seat_hands": 4,
+        "direct_loss": 0,
+        "direct_principal": 0,
+        "direct_horse_uplift": 0,
+        "ordinary_self_draw_share": 0,
+        "total_outgoing": 0,
+        "total_income": 4,
+        "direct_loss_hand": 0,
+        "defense_loss_per_100_seat_hands": 0.0,
+        "direct_loss_hand_rate": 0.0,
+        "direct_loss_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 0.0,
+          "p99": 0.0,
+          "maximum": 0,
+          "positive_hands": 0,
+          "mean_if_positive": null
+        },
+        "ordinary_self_draw_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 0.0,
+          "p99": 0.0,
+          "maximum": 0,
+          "positive_hands": 0,
+          "mean_if_positive": null
+        },
+        "net_score_tail_breakdown": {
+          "0.01": {
+            "hands": 1,
+            "losses_by_cause": {},
+            "direct_loss": 0,
+            "ordinary_self_draw_share": 0,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          },
+          "0.05": {
+            "hands": 1,
+            "losses_by_cause": {},
+            "direct_loss": 0,
+            "ordinary_self_draw_share": 0,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          }
+        },
+        "scope": "monitoring_only_not_reward_or_gate",
+        "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+      },
+      "seconds": 2.8969238949998726,
+      "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+      "seed": 5779161732678967853,
+      "initial_dealer": 0,
+      "initial_continuation": 0,
+      "unit": "complete_natural_hand_not_isolated_decision",
+      "unique_starting_walls": 1,
+      "seat_variants_per_wall": 4,
+      "action_events_total": 1084,
+      "results_sha256": "7530c69539f0bc1fcde638798d7882abea6d12ed4c6c94b0e6847159a5114a2e"
+    },
+    "comparison": {
+      "wall_groups": 1,
+      "hands": 4,
+      "scope": "fresh_walls_frozen_pair_not_multiple_training_seeds",
+      "score": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "point_shoot": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "win": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "draw": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "cvar_5": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "gate": "INCONCLUSIVE",
+    "known_wall_identity_check": "PASS",
+    "registered_unique_exposed_walls": {
+      "heldout": 2
+    },
+    "elapsed_wall_seconds": 6.1108075799998005
+  }
+}

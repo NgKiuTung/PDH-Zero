@@ -1,0 +1,7 @@
+test_private_intervention_preserves_actor_input (test_rc5_audit.Rc5AuditTests.test_private_intervention_preserves_actor_input) ... ok
+test_public_pair_preserves_own_hand_but_changes_public_history (test_rc5_audit.Rc5AuditTests.test_public_pair_preserves_own_hand_but_changes_public_history) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.018s
+
+OK

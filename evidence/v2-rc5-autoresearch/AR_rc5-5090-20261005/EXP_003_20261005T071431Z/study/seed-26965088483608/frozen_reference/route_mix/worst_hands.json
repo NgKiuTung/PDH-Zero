@@ -1,0 +1,18 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 81681757630690,
+      "candidate_seat": 0,
+      "score": -8,
+      "state_sha256": "9df5e2aa10649bdc5f04e7383b923f6ed3a7998912f09f412d852feef0bf7039"
+    },
+    {
+      "wall_seed": 81681754630681,
+      "candidate_seat": 0,
+      "score": -6,
+      "state_sha256": "051d763249dfe33d227540564d85de2891fbf461aea765b71b86ab7973de23d0"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

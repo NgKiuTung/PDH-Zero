@@ -1,0 +1,44 @@
+{
+  "experiment_id": "EXP_004_20261005T084615Z",
+  "created_at_utc": "2026-10-05T08:46:18.450306+00:00",
+  "stage": "RTX5090_CONTROLLED_CUDA_SMOKE_DIAGFIX1",
+  "purpose": "validate diagnostic negative control after exact Actor mirroring hotfix",
+  "source": "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5-diagfix1",
+  "source_manifest_sha256": "ebdc5498477dc616188f1249f0737fe9efb8ee0c0732c2c94547e476218fea92",
+  "patch_evidence": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/patches/PATCH_001_20261005T083650Z",
+  "parent_failed_experiment": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_003_20261005T071431Z",
+  "parent_failure": "rc5.diagnostic_control_changed_policy",
+  "baseline": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd"
+  },
+  "dataset": {
+    "path": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/derived/auxiliary-v2-repair-v1/auxiliary-v2.pt",
+    "sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0",
+    "role": "train_side_auxiliary_only"
+  },
+  "registry": {
+    "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc5/.wall-exposures.sqlite3",
+    "sha256_before": "85fd3c2597b253d13153b59f7fcb7913612a366600633a462a2ff2b1630fb6c3",
+    "historical_coverage": "partial"
+  },
+  "workers_basis": {
+    "workers": 0,
+    "source_experiment": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_002_20261005T065316Z",
+    "scope": "measured_workers_0_vs_4"
+  },
+  "seeds": [
+    100580891970519,
+    111612784026460,
+    103601119235238
+  ],
+  "new_seeds_vs_exp003": true,
+  "promotion_allowed": false,
+  "scientific_claim_allowed": "engineering_smoke_only",
+  "diagnostic_required_controls": [
+    "actor_tensor_exact",
+    "mirrored_actor_updates_exact",
+    "training_trajectories_exact",
+    "all_opponent_trajectories_exact"
+  ]
+}

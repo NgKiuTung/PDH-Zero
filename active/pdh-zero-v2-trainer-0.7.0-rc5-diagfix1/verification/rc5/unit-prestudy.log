@@ -1,0 +1,21 @@
+test_private_intervention_preserves_actor_input (test_rc5_audit.Rc5AuditTests.test_private_intervention_preserves_actor_input) ... ok
+test_public_pair_preserves_own_hand_but_changes_public_history (test_rc5_audit.Rc5AuditTests.test_public_pair_preserves_own_hand_but_changes_public_history) ... ok
+test_explicit_paired_reuse_is_allowed_but_split_change_is_not (test_rc5_exposure.Rc5ExposureTests.test_explicit_paired_reuse_is_allowed_but_split_change_is_not) ... ok
+test_historical_wall_cannot_enter_fresh_training (test_rc5_exposure.Rc5ExposureTests.test_historical_wall_cannot_enter_fresh_training) ... ok
+test_partial_gzip_does_not_mark_file_imported (test_rc5_exposure.Rc5ExposureTests.test_partial_gzip_does_not_mark_file_imported) ... ok
+test_renaming_heldout_cannot_change_its_role (test_rc5_exposure.Rc5ExposureTests.test_renaming_heldout_cannot_change_its_role) ... ok
+test_forced_pass_is_not_a_voluntary_action_target (test_rc5_labels.Rc5LabelTests.test_forced_pass_is_not_a_voluntary_action_target) ... ok
+test_future_event_is_relative_seat_and_strictly_after_snapshot (test_rc5_labels.Rc5LabelTests.test_future_event_is_relative_seat_and_strictly_after_snapshot) ... ok
+test_missing_future_event_is_censored_not_pass (test_rc5_labels.Rc5LabelTests.test_missing_future_event_is_censored_not_pass) ... ok
+test_nonwaiting_size_is_censored (test_rc5_labels.Rc5LabelTests.test_nonwaiting_size_is_censored) ... ok
+test_state_targets_have_separate_masks (test_rc5_labels.Rc5LabelTests.test_state_targets_have_separate_masks) ... ok
+test_auxiliary_gradient_cannot_reach_actor (test_rc5_model.Rc5ModelTests.test_auxiliary_gradient_cannot_reach_actor) ... ok
+test_diagnostic_logits_and_hidden_are_exact (test_rc5_model.Rc5ModelTests.test_diagnostic_logits_and_hidden_are_exact) ... ok
+test_initial_joint_is_exact_and_zero_residual_is_trainable (test_rc5_model.Rc5ModelTests.test_initial_joint_is_exact_and_zero_residual_is_trainable) ... ok
+test_modes_reject_unknown_value (test_rc5_model.Rc5ModelTests.test_modes_reject_unknown_value) ... ok
+test_roundtrip_state_is_exact (test_rc5_model.Rc5ModelTests.test_roundtrip_state_is_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.091s
+
+OK

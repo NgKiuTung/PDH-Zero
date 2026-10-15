@@ -1,0 +1,76 @@
+{
+  "scope": "candidate_only_posthoc_not_causal_attribution_or_reward",
+  "hands": 4096,
+  "candidate_wins": 535,
+  "table_draws": 2648,
+  "winning_combinations": {
+    "MIXED_ONE_SUIT+SEVEN_PAIRS": 49,
+    "SEVEN_PAIRS": 397,
+    "CLOSED_BONUS+MIXED_ONE_SUIT": 9,
+    "MIXED_ONE_SUIT_TERMINALS+SEVEN_PAIRS": 2,
+    "SEA_BOTTOM+SEVEN_PAIRS": 19,
+    "LUXURY_SEVEN_PAIRS": 16,
+    "MIXED_ONE_SUIT+PONG_PONG": 8,
+    "PONG_PONG": 5,
+    "LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT": 7,
+    "SEVEN_PAIRS+TERMINALS_HONORS": 9,
+    "MIXED_ONE_SUIT+SEA_BOTTOM+SEVEN_PAIRS": 2,
+    "FOUR_CONCEALED+MIXED_ONE_SUIT": 1,
+    "FOUR_CONCEALED": 3,
+    "LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT+SEA_BOTTOM": 2,
+    "LUXURY_SEVEN_PAIRS+TERMINALS_HONORS": 1,
+    "FOUR_CONCEALED_SINGLE+MIXED_ONE_SUIT_TERMINALS": 1,
+    "TERMINALS_HONORS": 1,
+    "MIXED_ONE_SUIT": 2,
+    "DOUBLE_LUXURY_SEVEN_PAIRS": 1
+  },
+  "winning_multipliers": {
+    "7": 68,
+    "4": 397,
+    "6": 17,
+    "16": 3,
+    "8": 16,
+    "3": 7,
+    "11": 7,
+    "13": 10,
+    "10": 5,
+    "14": 2,
+    "17": 1,
+    "25": 1,
+    "9": 1
+  },
+  "candidate_income_by_method": {
+    "SELF_DRAW": 6057,
+    "DISCARD_WIN": 4631
+  },
+  "candidate_actions": {
+    "PASS": 242340,
+    "DISCARD": 80532,
+    "WIN": 535,
+    "PONG": 1204,
+    "ADDED_KONG": 71,
+    "CLOSED_KONG": 22
+  },
+  "candidate_win_horse_hits": {
+    "2": 158,
+    "1": 181,
+    "4": 25,
+    "0": 108,
+    "3": 62,
+    "5": 1
+  },
+  "initial_route_mean": {
+    "SEVEN_PAIRS": 0.22901785714286244,
+    "PONG_PONG": 0.15145263671874087,
+    "MIXED_ONE_SUIT": -0.33284893154339773,
+    "PURE_ONE_SUIT": -0.8565657553781035,
+    "TERMINALS_HONORS": -0.8093558271731642,
+    "THIRTEEN_ORPHANS": 0.35376164362980667,
+    "DRAGONS": 0.1341145833333288,
+    "WINDS": 0.12540690104166624
+  },
+  "replay_sha256": "75e06ff7c2a0ddfbd48960ec4d3cdbd0601b56d82ee8999d4322991db1a236d9",
+  "results_sha256": "8c39bd4a258d4849d451399a4ff9a0774b095380fcdb48785fc9bdeb92b9c6e8",
+  "tail_replay_index": "worst_hands.json",
+  "modifies_training_or_gate": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "unchanged_files": [
+    "rules/cases.json",
+    "rules/source-v0.8.md",
+    "rules/source-v0.7.md",
+    "rules/source-v0.6.md",
+    "rules/source-v0.9.md",
+    "rules/open_decisions.json",
+    "src/pdh_v2/game/wall.py",
+    "src/pdh_v2/game/session.py",
+    "src/pdh_v2/game/actions.py",
+    "src/pdh_v2/game/digest.py",
+    "src/pdh_v2/game/state.py",
+    "src/pdh_v2/game/__init__.py",
+    "src/pdh_v2/game/engine.py",
+    "src/pdh_v2/scoring/patterns.py",
+    "src/pdh_v2/scoring/__init__.py",
+    "src/pdh_v2/scoring/evaluator.py",
+    "src/pdh_v2/ledger.py",
+    "src/pdh_v2/horses.py",
+    "src/pdh_v2/dealer.py",
+    "src/pdh_v2/qualifications.py",
+    "src/pdh_v2/settlement.py",
+    "src/pdh_v2/tiles.py",
+    "src/pdh_v2/config.py"
+  ],
+  "count": 23
+}

@@ -1,0 +1,41 @@
+{
+  "modification_type": "compatible_additive_opt_in",
+  "steps": [
+    {
+      "id": "P0",
+      "status": "completed",
+      "WHERE": "new work tree + immutable input archives",
+      "HOW": "safe extraction, hashes, rules read, git recovery point",
+      "EXPECTED_RESULT": "rc4.1 d266137 identity established"
+    },
+    {
+      "id": "P1",
+      "status": "completed",
+      "WHERE": "observation / strategy / model + actual-weight audits",
+      "HOW": "replay legal states; hidden intervention; public-history sensitivity",
+      "EXPECTED_RESULT": "measured use and no-leak boundary with raw logs"
+    },
+    {
+      "id": "P2",
+      "status": "completed",
+      "WHERE": "small rc5 prediction / joint-decision modules",
+      "HOW": "train-only labels; diagnostic isolation; opt-in residual joint policy",
+      "EXPECTED_RESULT": "calibratable per-opponent outputs + actor migration + sequence integration"
+    },
+    {
+      "id": "P3",
+      "status": "completed",
+      "WHERE": "bounded experiment controller",
+      "HOW": "frozen evaluation; fixed budget; baseline/diagnostic/joint; multiple seeds and opponents",
+      "EXPECTED_RESULT": "actual CPU results, keep/discard/crash/inconclusive and rollback"
+    },
+    {
+      "id": "P4",
+      "status": "in_progress",
+      "WHERE": "clean ZIP + release report",
+      "HOW": "fresh extraction, build, regression, real-weight short flow, hash",
+      "EXPECTED_RESULT": "downloadable verified package and exact target commands; 5090 NOT_RUN"
+    }
+  ],
+  "qualification": "P0-P3 local engineering complete; final clean-source acceptance pending; no strength promotion"
+}

@@ -1,0 +1,72 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 81681757630690,
+      "candidate_seat": 2,
+      "score": -21,
+      "state_sha256": "ae85658d3038133eba348900b898a1a94a70025c3ebdf90658da2383a308def3"
+    },
+    {
+      "wall_seed": 81681765630714,
+      "candidate_seat": 2,
+      "score": -20,
+      "state_sha256": "609cc3d186a574b8d5c28d1db17767b2c8e26ab709a870a70973cd02c08b08f8"
+    },
+    {
+      "wall_seed": 81681760630699,
+      "candidate_seat": 1,
+      "score": -14,
+      "state_sha256": "69298db2d2fa14730a97fd2dcc475d3753a8c5caa9b849e8b8e700a6ffeead75"
+    },
+    {
+      "wall_seed": 81681766630717,
+      "candidate_seat": 2,
+      "score": -12,
+      "state_sha256": "1e42c2b14f867589cf0972ea9522095f58696aaa39cffba4225566938c73637c"
+    },
+    {
+      "wall_seed": 81681751630672,
+      "candidate_seat": 3,
+      "score": -9,
+      "state_sha256": "b168076c185b79d61c7de1f1dc8df7232f5c4e72006b2516a679caa259d6d174"
+    },
+    {
+      "wall_seed": 81681761630702,
+      "candidate_seat": 0,
+      "score": -9,
+      "state_sha256": "d93fd9b9a5fd4768911510e71c5262aafad982552a9ec09efc604078f22bde88"
+    },
+    {
+      "wall_seed": 81681762630705,
+      "candidate_seat": 0,
+      "score": -9,
+      "state_sha256": "46cc38fa1379b6b17b543ac52b5b00f8392dcd6e8bc5a4c7accf1239557f3168"
+    },
+    {
+      "wall_seed": 81681766630717,
+      "candidate_seat": 1,
+      "score": -9,
+      "state_sha256": "e871d73f1fdb0d245489908df4921b46a06cbc07b9f36ff73a8cde4bbf36c1ab"
+    },
+    {
+      "wall_seed": 81681763630708,
+      "candidate_seat": 0,
+      "score": -6,
+      "state_sha256": "26bd7105e1c46317d98cecaef449aa1878eb5ddee74fa64655a5df160dc6b30c"
+    },
+    {
+      "wall_seed": 81681764630711,
+      "candidate_seat": 1,
+      "score": -6,
+      "state_sha256": "3e7818395be18667c9ecc29c241eef27db6f63e42d812d31be3d1efa515cddd5"
+    },
+    {
+      "wall_seed": 81681757630690,
+      "candidate_seat": 0,
+      "score": -4,
+      "state_sha256": "019766fad47a3fd507aab62752cab5b4b7bc844b4ccd247a1f5819f39bc1d183"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

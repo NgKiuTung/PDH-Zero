@@ -1,0 +1,36 @@
+{
+  "harness_pid": 2396,
+  "scope": "CPU_width16_fixture_not_user_weights",
+  "status": "PASS",
+  "commands": [
+    {
+      "name": "cli-complete",
+      "returncode": 0
+    },
+    {
+      "name": "cli-gate",
+      "returncode": 3
+    },
+    {
+      "name": "cli-heldout",
+      "returncode": 2
+    }
+  ],
+  "training_manifest": {
+    "status": "completed",
+    "updates": 1,
+    "accepted_updates": 1,
+    "total_learner_decisions": 432,
+    "selected_development": "baseline"
+  },
+  "interrupt": {
+    "returncode": 0,
+    "status": "stopped",
+    "parent_pid": 2428,
+    "worker_pids": [
+      2432,
+      2433
+    ],
+    "survivors": []
+  }
+}

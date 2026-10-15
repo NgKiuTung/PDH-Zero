@@ -1,0 +1,36 @@
+{
+  "pid": 3281,
+  "pgid": 3281,
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/pdh-rc4-work/pdh-zero-v2-trainer-0.6.0-rc4/tools/train_refinement.py",
+    "--initial-selection",
+    "/mnt/data/pdh-rc4-work/evidence/v2-refinement-rc3/REFINE_20261003T070408232116Z/selected_development.json",
+    "--output-root",
+    "/mnt/data/pdh-rc4-work/logs/interrupt-real/runs",
+    "--workers",
+    "2",
+    "--environments",
+    "8",
+    "--hands-per-update",
+    "256",
+    "--evaluation-hands",
+    "16",
+    "--device",
+    "cpu",
+    "--feature-backend",
+    "cpp",
+    "--max-seconds",
+    "120"
+  ],
+  "status": "PASS",
+  "exit_code": 0,
+  "stopped_phase": "collecting",
+  "run": "/mnt/data/pdh-rc4-work/logs/interrupt-real/runs/REFINE_20261003T100151197193Z",
+  "worker_pids": [
+    3321,
+    3322
+  ],
+  "residual_worker_pids": [],
+  "stop_reason": "signal_2"
+}

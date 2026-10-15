@@ -1,0 +1,1022 @@
+{
+  "seed": 81256587527302,
+  "mode": "diagnostic",
+  "checkpoint": "seed-81256587527302/diagnostic/candidates/update-0020-mirrored.pt",
+  "checkpoint_sha256": "7071de233adc936128a4bea691fefa807393e8544b12f7daaecd46ed3bb8b3c5",
+  "training": {
+    "status": "PASS",
+    "seed": 81256587527302,
+    "mode": "diagnostic",
+    "updates": [
+      {
+        "update": 1,
+        "hands": 64,
+        "learner_decisions": 5206,
+        "environment_decisions": 20831,
+        "raw_learner_net_score": -24,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.193133314140141,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0001-proposal.pt",
+        "source_checkpoint_sha256": "3bc185a9ee7b3fcc56b174e41ec19cedf012427f31e693af5f67c215355433a4",
+        "effective_checkpoint": "candidates/update-0001-mirrored.pt",
+        "proposal": "candidates/update-0001-mirrored.pt"
+      },
+      {
+        "update": 2,
+        "hands": 64,
+        "learner_decisions": 4976,
+        "environment_decisions": 19920,
+        "raw_learner_net_score": -140,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.263731101062149,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0002-proposal.pt",
+        "source_checkpoint_sha256": "37012392461d66364bf6327064c1c6e21ceccfba40243adadeeb32157cc76903",
+        "effective_checkpoint": "candidates/update-0002-mirrored.pt",
+        "proposal": "candidates/update-0002-mirrored.pt"
+      },
+      {
+        "update": 3,
+        "hands": 64,
+        "learner_decisions": 5033,
+        "environment_decisions": 20130,
+        "raw_learner_net_score": 97,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.67501804465428,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0003-proposal.pt",
+        "source_checkpoint_sha256": "90f7877d1daec8f1a4ea31f6a55e4b63819fbd46ea1194ad1a4a3fd5665111da",
+        "effective_checkpoint": "candidates/update-0003-mirrored.pt",
+        "proposal": "candidates/update-0003-mirrored.pt"
+      },
+      {
+        "update": 4,
+        "hands": 64,
+        "learner_decisions": 5078,
+        "environment_decisions": 20313,
+        "raw_learner_net_score": 40,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.650191147811711,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0004-proposal.pt",
+        "source_checkpoint_sha256": "2b482b358924c5d625e2460bb940846d05db3608c3866556459291cb692ef39f",
+        "effective_checkpoint": "candidates/update-0004-mirrored.pt",
+        "proposal": "candidates/update-0004-mirrored.pt"
+      },
+      {
+        "update": 5,
+        "hands": 64,
+        "learner_decisions": 5021,
+        "environment_decisions": 20084,
+        "raw_learner_net_score": 23,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.851465856190771,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0005-proposal.pt",
+        "source_checkpoint_sha256": "940b5811a1ccfe66a0b16befa526a5b3366a6a1b99a36baf8cd7b19b1aeab44f",
+        "effective_checkpoint": "candidates/update-0005-mirrored.pt",
+        "proposal": "candidates/update-0005-mirrored.pt"
+      },
+      {
+        "update": 6,
+        "hands": 64,
+        "learner_decisions": 5074,
+        "environment_decisions": 20298,
+        "raw_learner_net_score": 39,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.598482071887702,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0006-proposal.pt",
+        "source_checkpoint_sha256": "ea560812e1272b294316db803446d78b086c353e072b9429d57a44947efe327c",
+        "effective_checkpoint": "candidates/update-0006-mirrored.pt",
+        "proposal": "candidates/update-0006-mirrored.pt"
+      },
+      {
+        "update": 7,
+        "hands": 64,
+        "learner_decisions": 5216,
+        "environment_decisions": 20869,
+        "raw_learner_net_score": -1,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.614747345913202,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0007-proposal.pt",
+        "source_checkpoint_sha256": "129c34c37c2f678f166790ccdb3d53ae0d6be28b5b0ae619284d090b75e1dcd6",
+        "effective_checkpoint": "candidates/update-0007-mirrored.pt",
+        "proposal": "candidates/update-0007-mirrored.pt"
+      },
+      {
+        "update": 8,
+        "hands": 64,
+        "learner_decisions": 4905,
+        "environment_decisions": 19627,
+        "raw_learner_net_score": -40,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 5.962643762119114,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0008-proposal.pt",
+        "source_checkpoint_sha256": "fc3cf9ec922561a7d6ce583e56f8f845a1132203f1bc317a7bbe24b309feeeae",
+        "effective_checkpoint": "candidates/update-0008-mirrored.pt",
+        "proposal": "candidates/update-0008-mirrored.pt"
+      },
+      {
+        "update": 9,
+        "hands": 64,
+        "learner_decisions": 5142,
+        "environment_decisions": 20577,
+        "raw_learner_net_score": -103,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.200560925994068,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0009-proposal.pt",
+        "source_checkpoint_sha256": "c65452c12b78ed79aebc9f3755889b2e0ca63dac55e6606d8e240befd483c98b",
+        "effective_checkpoint": "candidates/update-0009-mirrored.pt",
+        "proposal": "candidates/update-0009-mirrored.pt"
+      },
+      {
+        "update": 10,
+        "hands": 64,
+        "learner_decisions": 5134,
+        "environment_decisions": 20539,
+        "raw_learner_net_score": -40,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.946967259049416,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0010-proposal.pt",
+        "source_checkpoint_sha256": "9ceb371ecc6503bb7bd6fd6c1a36cb26c943386d461fc8e2e58c35dea03cb2d5",
+        "effective_checkpoint": "candidates/update-0010-mirrored.pt",
+        "proposal": "candidates/update-0010-mirrored.pt"
+      },
+      {
+        "update": 11,
+        "hands": 64,
+        "learner_decisions": 5037,
+        "environment_decisions": 20153,
+        "raw_learner_net_score": 12,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.541609700769186,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0011-proposal.pt",
+        "source_checkpoint_sha256": "7908e0109c6e5e685ecb30172701ac651322990572ee8c5f7a14f6daf554e62d",
+        "effective_checkpoint": "candidates/update-0011-mirrored.pt",
+        "proposal": "candidates/update-0011-mirrored.pt"
+      },
+      {
+        "update": 12,
+        "hands": 64,
+        "learner_decisions": 4959,
+        "environment_decisions": 19846,
+        "raw_learner_net_score": -5,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.120026824995875,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0012-proposal.pt",
+        "source_checkpoint_sha256": "1bbd4976834a5981f092ceb991f002536f7a6d9c081b0d28edaac703daaf66d7",
+        "effective_checkpoint": "candidates/update-0012-mirrored.pt",
+        "proposal": "candidates/update-0012-mirrored.pt"
+      },
+      {
+        "update": 13,
+        "hands": 64,
+        "learner_decisions": 5260,
+        "environment_decisions": 21046,
+        "raw_learner_net_score": 0,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.298896472901106,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0013-proposal.pt",
+        "source_checkpoint_sha256": "f4cad1b4ecc4ad1747726ba8e51ec60137b4c9e0726db893398dfb45583b2cc1",
+        "effective_checkpoint": "candidates/update-0013-mirrored.pt",
+        "proposal": "candidates/update-0013-mirrored.pt"
+      },
+      {
+        "update": 14,
+        "hands": 64,
+        "learner_decisions": 5100,
+        "environment_decisions": 20413,
+        "raw_learner_net_score": -21,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.360018902923912,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0014-proposal.pt",
+        "source_checkpoint_sha256": "9b50a69997f83a56a1325d7f3d6fd0172fcc93b02481c67315e050fe98e1dcef",
+        "effective_checkpoint": "candidates/update-0014-mirrored.pt",
+        "proposal": "candidates/update-0014-mirrored.pt"
+      },
+      {
+        "update": 15,
+        "hands": 64,
+        "learner_decisions": 5197,
+        "environment_decisions": 20799,
+        "raw_learner_net_score": 29,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.974553808104247,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0015-proposal.pt",
+        "source_checkpoint_sha256": "c406effd7f75234a328e5e6fb177619a80272b719938d3f5f7bd1755713632bc",
+        "effective_checkpoint": "candidates/update-0015-mirrored.pt",
+        "proposal": "candidates/update-0015-mirrored.pt"
+      },
+      {
+        "update": 16,
+        "hands": 64,
+        "learner_decisions": 5026,
+        "environment_decisions": 20114,
+        "raw_learner_net_score": 53,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.977017380762845,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0016-proposal.pt",
+        "source_checkpoint_sha256": "6c4e8e79bb02b01682e8a6ec7098141355277895b1b209325cb106002819e4f6",
+        "effective_checkpoint": "candidates/update-0016-mirrored.pt",
+        "proposal": "candidates/update-0016-mirrored.pt"
+      },
+      {
+        "update": 17,
+        "hands": 64,
+        "learner_decisions": 5093,
+        "environment_decisions": 20383,
+        "raw_learner_net_score": -45,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.806845403276384,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0017-proposal.pt",
+        "source_checkpoint_sha256": "80cec8c3e92a20b718e44aa6884490f8dd1439c7e3c4b85aa86281a8a8d17f64",
+        "effective_checkpoint": "candidates/update-0017-mirrored.pt",
+        "proposal": "candidates/update-0017-mirrored.pt"
+      },
+      {
+        "update": 18,
+        "hands": 64,
+        "learner_decisions": 4995,
+        "environment_decisions": 19989,
+        "raw_learner_net_score": -22,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.646348915994167,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0018-proposal.pt",
+        "source_checkpoint_sha256": "d3a4e3505ff8466b83014a9a9cf6590c20b5018b69f75bbf16c289ff28c871b8",
+        "effective_checkpoint": "candidates/update-0018-mirrored.pt",
+        "proposal": "candidates/update-0018-mirrored.pt"
+      },
+      {
+        "update": 19,
+        "hands": 64,
+        "learner_decisions": 4969,
+        "environment_decisions": 19880,
+        "raw_learner_net_score": 25,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 7.67029415210709,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0019-proposal.pt",
+        "source_checkpoint_sha256": "77b481bc6086750fb491b37a43b7559acb255fef8766f2a8d0c0219b6303d6b5",
+        "effective_checkpoint": "candidates/update-0019-mirrored.pt",
+        "proposal": "candidates/update-0019-mirrored.pt"
+      },
+      {
+        "update": 20,
+        "hands": 64,
+        "learner_decisions": 5186,
+        "environment_decisions": 20752,
+        "raw_learner_net_score": -96,
+        "raw_all_seat_sum": 0,
+        "collection_seconds": 6.054082257207483,
+        "update_seconds": 0.0,
+        "optimizer_steps_attempted": 0,
+        "independent_ppo": false,
+        "actor_tensor_exact": true,
+        "source_update_accepted": true,
+        "source_effective_checkpoint": "candidates/update-0020-proposal.pt",
+        "source_checkpoint_sha256": "1cf985dfd75602dea99f713e8219cf8954314e2764aa14ee151f97d51ed17b6d",
+        "effective_checkpoint": "candidates/update-0020-mirrored.pt",
+        "proposal": "candidates/update-0020-mirrored.pt"
+      }
+    ],
+    "elapsed_training_seconds": 142.41224687872455,
+    "complete_hands": 1280,
+    "learner_decisions": 101607,
+    "effective_checkpoint": "candidates/update-0020-mirrored.pt",
+    "reward": "true_net_settlement_divided_by_32_gamma_1",
+    "training_start": "fresh_seed_per_update_dealer_0_no_continuation",
+    "recurrent_scope": "within_natural_hand_not_cross_hand_return",
+    "control": "exact_same_seed_baseline_actor_mirror",
+    "independent_ppo": false
+  },
+  "summaries": {
+    "heuristic": {
+      "hands": 4096,
+      "mean_score": 0.454345703125,
+      "score_std": 11.329660053822305,
+      "median_score": 0.0,
+      "quantiles": {
+        "0.01": -24.0,
+        "0.05": -12.0,
+        "0.1": -9.0,
+        "0.5": 0.0,
+        "0.9": 8.0,
+        "0.95": 16.0,
+        "0.99": 48.0
+      },
+      "cvar_1": -33.53658536585366,
+      "cvar_5": -20.28780487804878,
+      "win": 0.125732421875,
+      "point_shoot": 0.059326171875,
+      "draw": 0.494384765625,
+      "self_draw": 0.037353515625,
+      "discard_win": 0.08837890625,
+      "minimum_score": -108,
+      "maximum_score": 192,
+      "losses_by_cause": {
+        "ordinary_discard": {
+          "payments": 239,
+          "amount": 2509,
+          "before_horses": 1000,
+          "horse_uplift": 1509
+        },
+        "ordinary_self_draw": {
+          "payments": 492,
+          "amount": 5521,
+          "before_horses": 2245,
+          "horse_uplift": 3276
+        },
+        "discard_multi": {
+          "payments": 8,
+          "amount": 89,
+          "before_horses": 31,
+          "horse_uplift": 58
+        },
+        "twelve_grounded_liability": {
+          "payments": 4,
+          "amount": 234,
+          "before_horses": 108,
+          "horse_uplift": 126
+        }
+      },
+      "negative_score_hands": 739,
+      "conditional_mean_loss": 11.303112313937755,
+      "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+      "responsibility": {
+        "schema_version": 1,
+        "candidate_seat_hands": 4096,
+        "direct_loss": 2832,
+        "direct_principal": 1139,
+        "direct_horse_uplift": 1693,
+        "ordinary_self_draw_share": 5521,
+        "total_outgoing": 8353,
+        "total_income": 10214,
+        "direct_loss_hand": 247,
+        "defense_loss_per_100_seat_hands": 69.140625,
+        "direct_loss_hand_rate": 0.060302734375,
+        "direct_loss_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 4.0,
+          "p99": 16.0,
+          "maximum": 108,
+          "positive_hands": 247,
+          "mean_if_positive": 11.465587044534413
+        },
+        "ordinary_self_draw_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 12.0,
+          "p99": 20.0,
+          "maximum": 54,
+          "positive_hands": 492,
+          "mean_if_positive": 11.221544715447154
+        },
+        "net_score_tail_breakdown": {
+          "0.01": {
+            "hands": 41,
+            "losses_by_cause": {
+              "twelve_grounded_liability": 234,
+              "ordinary_self_draw": 728,
+              "ordinary_discard": 385,
+              "discard_multi": 28
+            },
+            "direct_loss": 647,
+            "ordinary_self_draw_share": 728,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          },
+          "0.05": {
+            "hands": 205,
+            "losses_by_cause": {
+              "twelve_grounded_liability": 234,
+              "ordinary_self_draw": 2687,
+              "ordinary_discard": 1149,
+              "discard_multi": 89
+            },
+            "direct_loss": 1472,
+            "ordinary_self_draw_share": 2687,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          }
+        },
+        "scope": "monitoring_only_not_reward_or_gate",
+        "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+      },
+      "seconds": 381.0226309536956,
+      "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+      "seed": 41459351015630,
+      "initial_dealer": 0,
+      "initial_continuation": 0,
+      "unit": "complete_natural_hand_not_isolated_decision",
+      "unique_starting_walls": 1024,
+      "seat_variants_per_wall": 4,
+      "action_events_total": 1298978,
+      "results_sha256": "a12fddf88159040a12034034e23013574abb8e1fd42c72bc7dc2b7ee3b58f879"
+    },
+    "route_mix": {
+      "hands": 4096,
+      "mean_score": 0.80419921875,
+      "score_std": 11.978078200052039,
+      "median_score": 0.0,
+      "quantiles": {
+        "0.01": -30.0,
+        "0.05": -14.0,
+        "0.1": -6.0,
+        "0.5": 0.0,
+        "0.9": 8.0,
+        "0.95": 16.0,
+        "0.99": 48.0
+      },
+      "cvar_1": -44.853658536585364,
+      "cvar_5": -25.51219512195122,
+      "win": 0.1357421875,
+      "point_shoot": 0.0478515625,
+      "draw": 0.63330078125,
+      "self_draw": 0.037841796875,
+      "discard_win": 0.097900390625,
+      "minimum_score": -95,
+      "maximum_score": 144,
+      "losses_by_cause": {
+        "ordinary_self_draw": {
+          "payments": 268,
+          "amount": 4325,
+          "before_horses": 1796,
+          "horse_uplift": 2529
+        },
+        "ordinary_discard": {
+          "payments": 193,
+          "amount": 3026,
+          "before_horses": 1200,
+          "horse_uplift": 1826
+        },
+        "discard_multi": {
+          "payments": 6,
+          "amount": 112,
+          "before_horses": 41,
+          "horse_uplift": 71
+        },
+        "twelve_grounded_liability": {
+          "payments": 1,
+          "amount": 54,
+          "before_horses": 18,
+          "horse_uplift": 36
+        }
+      },
+      "negative_score_hands": 465,
+      "conditional_mean_loss": 16.16559139784946,
+      "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+      "responsibility": {
+        "schema_version": 1,
+        "candidate_seat_hands": 4096,
+        "direct_loss": 3192,
+        "direct_principal": 1259,
+        "direct_horse_uplift": 1933,
+        "ordinary_self_draw_share": 4325,
+        "total_outgoing": 7517,
+        "total_income": 10811,
+        "direct_loss_hand": 197,
+        "defense_loss_per_100_seat_hands": 77.9296875,
+        "direct_loss_hand_rate": 0.048095703125,
+        "direct_loss_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 0.0,
+          "p99": 22.100000000000364,
+          "maximum": 95,
+          "positive_hands": 197,
+          "mean_if_positive": 16.20304568527919
+        },
+        "ordinary_self_draw_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 8.0,
+          "p99": 24.0,
+          "maximum": 95,
+          "positive_hands": 268,
+          "mean_if_positive": 16.138059701492537
+        },
+        "net_score_tail_breakdown": {
+          "0.01": {
+            "hands": 41,
+            "losses_by_cause": {
+              "ordinary_discard": 678,
+              "ordinary_self_draw": 995,
+              "twelve_grounded_liability": 54,
+              "discard_multi": 112
+            },
+            "direct_loss": 844,
+            "ordinary_self_draw_share": 995,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          },
+          "0.05": {
+            "hands": 205,
+            "losses_by_cause": {
+              "ordinary_discard": 2109,
+              "ordinary_self_draw": 2955,
+              "twelve_grounded_liability": 54,
+              "discard_multi": 112
+            },
+            "direct_loss": 2275,
+            "ordinary_self_draw_share": 2955,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          }
+        },
+        "scope": "monitoring_only_not_reward_or_gate",
+        "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+      },
+      "seconds": 381.17739135213196,
+      "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+      "seed": 41459351015630,
+      "initial_dealer": 0,
+      "initial_continuation": 0,
+      "unit": "complete_natural_hand_not_isolated_decision",
+      "unique_starting_walls": 1024,
+      "seat_variants_per_wall": 4,
+      "action_events_total": 1297076,
+      "results_sha256": "0bf58ebfdbfd4c29bb8a044a6e9faf98a35ecf4aba757e982ed7108b1c6c9bfe"
+    },
+    "frozen_rc41": {
+      "hands": 4096,
+      "mean_score": 0.264892578125,
+      "score_std": 10.851217614578067,
+      "median_score": 0.0,
+      "quantiles": {
+        "0.01": -24.099999999999994,
+        "0.05": -14.0,
+        "0.1": -8.0,
+        "0.5": 0.0,
+        "0.9": 4.0,
+        "0.95": 12.25,
+        "0.99": 42.30000000000109
+      },
+      "cvar_1": -35.48780487804878,
+      "cvar_5": -21.517073170731706,
+      "win": 0.10498046875,
+      "point_shoot": 0.0546875,
+      "draw": 0.639404296875,
+      "self_draw": 0.03759765625,
+      "discard_win": 0.0673828125,
+      "minimum_score": -68,
+      "maximum_score": 126,
+      "losses_by_cause": {
+        "ordinary_self_draw": {
+          "payments": 376,
+          "amount": 5081,
+          "before_horses": 2022,
+          "horse_uplift": 3059
+        },
+        "ordinary_discard": {
+          "payments": 222,
+          "amount": 2685,
+          "before_horses": 1032,
+          "horse_uplift": 1653
+        },
+        "discard_multi": {
+          "payments": 4,
+          "amount": 40,
+          "before_horses": 16,
+          "horse_uplift": 24
+        }
+      },
+      "negative_score_hands": 600,
+      "conditional_mean_loss": 13.01,
+      "loss_audit_scope": "recorded_settlement_not_inferred_from_score",
+      "responsibility": {
+        "schema_version": 1,
+        "candidate_seat_hands": 4096,
+        "direct_loss": 2725,
+        "direct_principal": 1048,
+        "direct_horse_uplift": 1677,
+        "ordinary_self_draw_share": 5081,
+        "total_outgoing": 7806,
+        "total_income": 8891,
+        "direct_loss_hand": 224,
+        "defense_loss_per_100_seat_hands": 66.5283203125,
+        "direct_loss_hand_rate": 0.0546875,
+        "direct_loss_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 4.0,
+          "p99": 16.0,
+          "maximum": 55,
+          "positive_hands": 224,
+          "mean_if_positive": 12.165178571428571
+        },
+        "ordinary_self_draw_distribution": {
+          "denominator": "all_candidate_seat_hands",
+          "p95": 12.0,
+          "p99": 21.050000000000182,
+          "maximum": 68,
+          "positive_hands": 376,
+          "mean_if_positive": 13.513297872340425
+        },
+        "net_score_tail_breakdown": {
+          "0.01": {
+            "hands": 41,
+            "losses_by_cause": {
+              "ordinary_self_draw": 1162,
+              "ordinary_discard": 293
+            },
+            "direct_loss": 293,
+            "ordinary_self_draw_share": 1162,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          },
+          "0.05": {
+            "hands": 205,
+            "losses_by_cause": {
+              "ordinary_self_draw": 3032,
+              "ordinary_discard": 1339,
+              "discard_multi": 40
+            },
+            "direct_loss": 1379,
+            "ordinary_self_draw_share": 3032,
+            "scope": "lowest_net_score_hands_ties_by_wall_seat"
+          }
+        },
+        "scope": "monitoring_only_not_reward_or_gate",
+        "ordinary_self_draw_is_not_proven_luck_or_zero_contribution": true
+      },
+      "seconds": 402.7331791459583,
+      "protocol": "controlled_single_hand_same_wall_four_seats_v1",
+      "seed": 41459351015630,
+      "initial_dealer": 0,
+      "initial_continuation": 0,
+      "unit": "complete_natural_hand_not_isolated_decision",
+      "unique_starting_walls": 1024,
+      "seat_variants_per_wall": 4,
+      "action_events_total": 1294348,
+      "results_sha256": "bfd68d172cbe8e8c0f8ba8ff0f692169273b1070c2f2b805899c0324ba539771"
+    }
+  },
+  "comparisons": {
+    "heuristic": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.05126953125,
+          "ci95": [
+            -0.334503173828125,
+            0.44727172851562497
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.005126953125,
+          "ci95": [
+            -0.0034240722656249997,
+            0.013671875
+          ]
+        },
+        "win": {
+          "delta": 0.013916015625,
+          "ci95": [
+            0.00244140625,
+            0.025390625
+          ]
+        },
+        "draw": {
+          "delta": -0.000732421875,
+          "ci95": [
+            -0.017584228515625,
+            0.016357421875
+          ]
+        },
+        "cvar_5": {
+          "delta": -1.5951219512195145,
+          "ci95": [
+            -3.463414634146339,
+            0.3123170731707313
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    },
+    "route_mix": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.517578125,
+          "ci95": [
+            0.149884033203125,
+            0.8779357910156249
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.00048828125,
+          "ci95": [
+            -0.0068359375,
+            0.0078125
+          ]
+        },
+        "win": {
+          "delta": 0.027587890625,
+          "ci95": [
+            0.016845703125,
+            0.0380859375
+          ]
+        },
+        "draw": {
+          "delta": -0.029541015625,
+          "ci95": [
+            -0.043951416015625,
+            -0.014404296875
+          ]
+        },
+        "cvar_5": {
+          "delta": -0.8341463414634127,
+          "ci95": [
+            -2.824390243902439,
+            1.1659756097560952
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    },
+    "frozen_rc41": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.264892578125,
+          "ci95": [
+            -0.0398193359375,
+            0.5920532226562499
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.0,
+          "ci95": [
+            -0.008306884765625,
+            0.008056640625
+          ]
+        },
+        "win": {
+          "delta": 0.018310546875,
+          "ci95": [
+            0.00830078125,
+            0.028076171875
+          ]
+        },
+        "draw": {
+          "delta": -0.015869140625,
+          "ci95": [
+            -0.039306640625,
+            0.007336425781249933
+          ]
+        },
+        "cvar_5": {
+          "delta": -0.5609756097560954,
+          "ci95": [
+            -2.941829268292683,
+            1.7858536585365825
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    }
+  },
+  "versus_same_budget_original": {
+    "heuristic": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "win": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "draw": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "cvar_5": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    },
+    "route_mix": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "win": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "draw": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "cvar_5": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    },
+    "frozen_rc41": {
+      "comparison": {
+        "wall_groups": 1024,
+        "hands": 4096,
+        "scope": "repeated_development_set_not_confirmatory",
+        "score": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "point_shoot": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "win": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "draw": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "cvar_5": {
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "raw_development_gate": "INCONCLUSIVE",
+      "gate": "INCONCLUSIVE"
+    }
+  },
+  "decision": {
+    "status": "inconclusive",
+    "candidate": "seed-81256587527302/diagnostic/candidates/update-0020-mirrored.pt",
+    "deployment_promoted": false,
+    "rollback": {
+      "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+      "label": "d000000266137",
+      "action": "use_unchanged_original_checkpoint"
+    },
+    "reason": "frozen_development_gate_all_opponent_conditions",
+    "final_unseen_confirmation_run": false
+  },
+  "diagnostic_control": {
+    "actor_tensor_exact": true,
+    "mirrored_actor_updates_exact": true,
+    "training_trajectories_exact": true,
+    "all_opponent_trajectories_exact": true
+  },
+  "fit_report_sha256": "d29bca16ebe9c946ff4b91c84641a0ff8999ea30c32ebdf98e4ce86f5ffae5d8"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "crash",
+  "error_type": "RuntimeError",
+  "error": "rc5.diagnostic_control_changed_policy",
+  "elapsed_seconds": 133.7343089748174,
+  "partial_evidence_retained": true,
+  "deployment_promoted": false,
+  "rollback": {
+    "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+    "label": "d000000266137",
+    "action": "use_unchanged_original_checkpoint"
+  }
+}

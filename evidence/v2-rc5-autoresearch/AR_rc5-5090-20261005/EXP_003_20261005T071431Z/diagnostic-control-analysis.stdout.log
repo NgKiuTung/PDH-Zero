@@ -1,0 +1,923 @@
+{
+  "experiment": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_003_20261005T071431Z",
+  "failure": {
+    "status": "crash",
+    "error_type": "RuntimeError",
+    "error": "rc5.diagnostic_control_changed_policy",
+    "elapsed_seconds": 133.7343089748174,
+    "partial_evidence_retained": true,
+    "deployment_promoted": false,
+    "rollback": {
+      "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+      "label": "d000000266137",
+      "action": "use_unchanged_original_checkpoint"
+    }
+  },
+  "seeds": [
+    {
+      "seed": "26965088483608",
+      "checkpoints": {
+        "candidates/initial.pt": {
+          "baseline_tensor_digest": "bc78523f853df262ad64e97aa25dacff0e1cb1c35092fabc97bf6f7964565049",
+          "diagnostic_tensor_digest": "bc78523f853df262ad64e97aa25dacff0e1cb1c35092fabc97bf6f7964565049",
+          "exact": true,
+          "different_tensor_count": 0,
+          "differences": []
+        },
+        "candidates/update-0001-proposal.pt": {
+          "baseline_tensor_digest": "fe7a53d42e6be9c90b392ef216b1f7ab1c89696562ca51e78a15425206348cc6",
+          "diagnostic_tensor_digest": "ebb8397fbf738bc1267548088bebe789123ee4010c0f8c868e8a6e8ca40e731b",
+          "exact": false,
+          "different_tensor_count": 29,
+          "differences": [
+            {
+              "tensor": "kind_bias",
+              "shape": [
+                7
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 1.862645149230957e-09,
+              "mean_abs_difference": 2.66092164175851e-10
+            },
+            {
+              "tensor": "observation_encoder.0.weight",
+              "shape": [
+                384,
+                622
+              ],
+              "different_elements": 38628,
+              "max_abs_difference": 6.323680281639099e-07,
+              "mean_abs_difference": 2.4639417784049397e-10
+            },
+            {
+              "tensor": "observation_encoder.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 115,
+              "max_abs_difference": 5.587935447692871e-09,
+              "mean_abs_difference": 3.890837281990874e-10
+            },
+            {
+              "tensor": "observation_encoder.1.weight",
+              "shape": [
+                384
+              ],
+              "different_elements": 5,
+              "max_abs_difference": 1.1920928955078125e-07,
+              "mean_abs_difference": 9.313225746154785e-10
+            },
+            {
+              "tensor": "observation_encoder.1.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 294,
+              "max_abs_difference": 5.122274160385132e-09,
+              "mean_abs_difference": 3.2811087180562026e-10
+            },
+            {
+              "tensor": "observation_encoder.3.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 39050,
+              "max_abs_difference": 1.0576331987977028e-07,
+              "mean_abs_difference": 4.196132379642263e-10
+            },
+            {
+              "tensor": "observation_encoder.3.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 71,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 2.7042309132715065e-10
+            },
+            {
+              "tensor": "observation_encoder.4.weight",
+              "shape": [
+                384
+              ],
+              "different_elements": 3,
+              "max_abs_difference": 1.1920928955078125e-07,
+              "mean_abs_difference": 9.313225746154785e-10
+            },
+            {
+              "tensor": "observation_encoder.4.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 216,
+              "max_abs_difference": 1.862645149230957e-09,
+              "mean_abs_difference": 3.3369929042237345e-10
+            },
+            {
+              "tensor": "memory.weight_ih",
+              "shape": [
+                1152,
+                384
+              ],
+              "different_elements": 120210,
+              "max_abs_difference": 6.705522537231445e-08,
+              "mean_abs_difference": 4.747595444348567e-10
+            },
+            {
+              "tensor": "memory.weight_hh",
+              "shape": [
+                1152,
+                384
+              ],
+              "different_elements": 121657,
+              "max_abs_difference": 9.313225746154785e-08,
+              "mean_abs_difference": 4.873844843376794e-10
+            },
+            {
+              "tensor": "memory.bias_ih",
+              "shape": [
+                1152
+              ],
+              "different_elements": 311,
+              "max_abs_difference": 1.1175870895385742e-08,
+              "mean_abs_difference": 4.650865371837022e-10
+            },
+            {
+              "tensor": "memory.bias_hh",
+              "shape": [
+                1152
+              ],
+              "different_elements": 321,
+              "max_abs_difference": 1.1175870895385742e-08,
+              "mean_abs_difference": 4.713961566772519e-10
+            },
+            {
+              "tensor": "action_encoder.0.weight",
+              "shape": [
+                384,
+                74
+              ],
+              "different_elements": 1559,
+              "max_abs_difference": 1.4901161193847656e-08,
+              "mean_abs_difference": 1.177170233162755e-10
+            },
+            {
+              "tensor": "action_encoder.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 63,
+              "max_abs_difference": 1.4901161193847656e-08,
+              "mean_abs_difference": 5.014347455774745e-10
+            },
+            {
+              "tensor": "action_encoder.1.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 224,
+              "max_abs_difference": 6.51925802230835e-09,
+              "mean_abs_difference": 4.802321503423931e-10
+            },
+            {
+              "tensor": "action_encoder.3.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 27589,
+              "max_abs_difference": 1.4901161193847656e-08,
+              "mean_abs_difference": 2.633057043522254e-10
+            },
+            {
+              "tensor": "action_encoder.3.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 182,
+              "max_abs_difference": 9.313225746154785e-09,
+              "mean_abs_difference": 1.2414223723074731e-09
+            },
+            {
+              "tensor": "policy_pair.0.weight",
+              "shape": [
+                384,
+                1152
+              ],
+              "different_elements": 243069,
+              "max_abs_difference": 2.5704503059387207e-07,
+              "mean_abs_difference": 5.538439275485733e-09
+            },
+            {
+              "tensor": "policy_pair.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 378,
+              "max_abs_difference": 9.033828973770142e-08,
+              "mean_abs_difference": 1.5970802754357766e-08
+            },
+            {
+              "tensor": "policy_pair.2.weight",
+              "shape": [
+                1,
+                384
+              ],
+              "different_elements": 188,
+              "max_abs_difference": 1.4901161193847656e-08,
+              "mean_abs_difference": 1.90387557571133e-09
+            },
+            {
+              "tensor": "policy_pair.2.bias",
+              "shape": [
+                1
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 4.116818308830261e-05,
+              "mean_abs_difference": 4.116818308830261e-05
+            },
+            {
+              "tensor": "risk_pair.0.weight",
+              "shape": [
+                192,
+                1152
+              ],
+              "different_elements": 10865,
+              "max_abs_difference": 3.725290298461914e-09,
+              "mean_abs_difference": 2.5579380097472897e-11
+            },
+            {
+              "tensor": "risk_pair.0.bias",
+              "shape": [
+                192
+              ],
+              "different_elements": 8,
+              "max_abs_difference": 1.862645149230957e-09,
+              "mean_abs_difference": 2.902803923158596e-11
+            },
+            {
+              "tensor": "risk_pair.2.weight",
+              "shape": [
+                1,
+                192
+              ],
+              "different_elements": 7,
+              "max_abs_difference": 9.313225746154785e-10,
+              "mean_abs_difference": 1.9402553637822468e-11
+            },
+            {
+              "tensor": "value_head.0.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 4037,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 1.9347526667188062e-11
+            },
+            {
+              "tensor": "value_head.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 6,
+              "max_abs_difference": 3.725290298461914e-09,
+              "mean_abs_difference": 1.265713459967325e-11
+            },
+            {
+              "tensor": "value_head.2.weight",
+              "shape": [
+                1,
+                384
+              ],
+              "different_elements": 10,
+              "max_abs_difference": 3.725290298461914e-09,
+              "mean_abs_difference": 2.5541642874789734e-11
+            },
+            {
+              "tensor": "value_head.2.bias",
+              "shape": [
+                1
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 4.656612873077393e-10,
+              "mean_abs_difference": 4.656612873077393e-10
+            }
+          ]
+        },
+        "candidates/update-0002-proposal.pt": {
+          "baseline_tensor_digest": "60f55649d420a9b589194ec95dc4c1d69b573464f6358b0c6bb28be048ef2e0c",
+          "diagnostic_tensor_digest": "7c9fa9395678f3eac2bd031befc75a06106f37f9aa79c3e8f9e73f3b05227d64",
+          "exact": false,
+          "different_tensor_count": 30,
+          "differences": [
+            {
+              "tensor": "kind_bias",
+              "shape": [
+                7
+              ],
+              "different_elements": 2,
+              "max_abs_difference": 2.3283064365386963e-09,
+              "mean_abs_difference": 5.987073693956648e-10
+            },
+            {
+              "tensor": "observation_encoder.0.weight",
+              "shape": [
+                384,
+                622
+              ],
+              "different_elements": 65289,
+              "max_abs_difference": 6.323680281639099e-07,
+              "mean_abs_difference": 5.540609386080916e-10
+            },
+            {
+              "tensor": "observation_encoder.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 188,
+              "max_abs_difference": 5.587935447692871e-09,
+              "mean_abs_difference": 8.724256872483238e-10
+            },
+            {
+              "tensor": "observation_encoder.1.weight",
+              "shape": [
+                384
+              ],
+              "different_elements": 6,
+              "max_abs_difference": 1.1920928955078125e-07,
+              "mean_abs_difference": 1.241763432820638e-09
+            },
+            {
+              "tensor": "observation_encoder.1.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 349,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 8.83249621589736e-10
+            },
+            {
+              "tensor": "observation_encoder.3.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 63430,
+              "max_abs_difference": 1.0547228157520294e-07,
+              "mean_abs_difference": 9.684488903331943e-10
+            },
+            {
+              "tensor": "observation_encoder.3.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 160,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 8.673547805907825e-10
+            },
+            {
+              "tensor": "observation_encoder.4.weight",
+              "shape": [
+                384
+              ],
+              "different_elements": 7,
+              "max_abs_difference": 1.1920928955078125e-07,
+              "mean_abs_difference": 1.862645149230957e-09
+            },
+            {
+              "tensor": "observation_encoder.4.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 286,
+              "max_abs_difference": 5.122274160385132e-09,
+              "mean_abs_difference": 8.009214032729991e-10
+            },
+            {
+              "tensor": "memory.weight_ih",
+              "shape": [
+                1152,
+                384
+              ],
+              "different_elements": 186048,
+              "max_abs_difference": 6.705522537231445e-08,
+              "mean_abs_difference": 1.0136825814026054e-09
+            },
+            {
+              "tensor": "memory.weight_hh",
+              "shape": [
+                1152,
+                384
+              ],
+              "different_elements": 189722,
+              "max_abs_difference": 9.313225746154785e-08,
+              "mean_abs_difference": 1.037541399776505e-09
+            },
+            {
+              "tensor": "memory.bias_ih",
+              "shape": [
+                1152
+              ],
+              "different_elements": 468,
+              "max_abs_difference": 1.862645149230957e-08,
+              "mean_abs_difference": 9.715171876854987e-10
+            },
+            {
+              "tensor": "memory.bias_hh",
+              "shape": [
+                1152
+              ],
+              "different_elements": 470,
+              "max_abs_difference": 1.1175870895385742e-08,
+              "mean_abs_difference": 9.504567009975693e-10
+            },
+            {
+              "tensor": "action_encoder.0.weight",
+              "shape": [
+                384,
+                74
+              ],
+              "different_elements": 3609,
+              "max_abs_difference": 6.705522537231445e-08,
+              "mean_abs_difference": 4.1892447468952113e-10
+            },
+            {
+              "tensor": "action_encoder.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 135,
+              "max_abs_difference": 2.2351741790771484e-08,
+              "mean_abs_difference": 1.5831271108860772e-09
+            },
+            {
+              "tensor": "action_encoder.1.weight",
+              "shape": [
+                384
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 5.960464477539063e-08,
+              "mean_abs_difference": 1.5522042910257974e-10
+            },
+            {
+              "tensor": "action_encoder.1.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 316,
+              "max_abs_difference": 1.210719347000122e-08,
+              "mean_abs_difference": 1.5892425153651857e-09
+            },
+            {
+              "tensor": "action_encoder.3.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 52645,
+              "max_abs_difference": 2.0489096641540527e-08,
+              "mean_abs_difference": 7.591739243423885e-10
+            },
+            {
+              "tensor": "action_encoder.3.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 288,
+              "max_abs_difference": 1.6763806343078613e-08,
+              "mean_abs_difference": 3.921004558075462e-09
+            },
+            {
+              "tensor": "policy_pair.0.weight",
+              "shape": [
+                384,
+                1152
+              ],
+              "different_elements": 311174,
+              "max_abs_difference": 3.1478703022003174e-07,
+              "mean_abs_difference": 1.855724464044913e-08
+            },
+            {
+              "tensor": "policy_pair.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 384,
+              "max_abs_difference": 2.4121254682540894e-07,
+              "mean_abs_difference": 5.4805354920972604e-08
+            },
+            {
+              "tensor": "policy_pair.2.weight",
+              "shape": [
+                1,
+                384
+              ],
+              "different_elements": 330,
+              "max_abs_difference": 2.2351741790771484e-08,
+              "mean_abs_difference": 6.138482907166083e-09
+            },
+            {
+              "tensor": "policy_pair.2.bias",
+              "shape": [
+                1
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 0.0001461617648601532,
+              "mean_abs_difference": 0.0001461617648601532
+            },
+            {
+              "tensor": "risk_pair.0.weight",
+              "shape": [
+                192,
+                1152
+              ],
+              "different_elements": 26003,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 8.200447317081912e-11
+            },
+            {
+              "tensor": "risk_pair.0.bias",
+              "shape": [
+                192
+              ],
+              "different_elements": 23,
+              "max_abs_difference": 1.862645149230957e-09,
+              "mean_abs_difference": 8.17787319344158e-11
+            },
+            {
+              "tensor": "risk_pair.2.weight",
+              "shape": [
+                1,
+                192
+              ],
+              "different_elements": 9,
+              "max_abs_difference": 9.313225746154785e-10,
+              "mean_abs_difference": 2.9103830456733704e-11
+            },
+            {
+              "tensor": "value_head.0.weight",
+              "shape": [
+                384,
+                384
+              ],
+              "different_elements": 7747,
+              "max_abs_difference": 7.450580596923828e-09,
+              "mean_abs_difference": 4.544114139754591e-11
+            },
+            {
+              "tensor": "value_head.0.bias",
+              "shape": [
+                384
+              ],
+              "different_elements": 15,
+              "max_abs_difference": 3.725290298461914e-09,
+              "mean_abs_difference": 2.3495279795800645e-11
+            },
+            {
+              "tensor": "value_head.2.weight",
+              "shape": [
+                1,
+                384
+              ],
+              "different_elements": 17,
+              "max_abs_difference": 3.725290298461914e-09,
+              "mean_abs_difference": 5.358439617945502e-11
+            },
+            {
+              "tensor": "value_head.2.bias",
+              "shape": [
+                1
+              ],
+              "different_elements": 1,
+              "max_abs_difference": 4.656612873077393e-10,
+              "mean_abs_difference": 4.656612873077393e-10
+            }
+          ]
+        }
+      },
+      "training_replay": {
+        "exact": true,
+        "baseline_hands": 128,
+        "diagnostic_hands": 128
+      },
+      "evaluation": {
+        "heuristic": {
+          "exact": true,
+          "baseline_rows": 64,
+          "diagnostic_rows": 64,
+          "mismatch_count": 0,
+          "first_mismatches": []
+        },
+        "route_mix": {
+          "exact": true,
+          "baseline_rows": 64,
+          "diagnostic_rows": 64,
+          "mismatch_count": 0,
+          "first_mismatches": []
+        },
+        "frozen_rc41": {
+          "exact": true,
+          "baseline_rows": 64,
+          "diagnostic_rows": 64,
+          "mismatch_count": 0,
+          "first_mismatches": []
+        }
+      },
+      "effective_checkpoint": {
+        "baseline": "baseline/candidates/update-0002-proposal.pt",
+        "diagnostic": "diagnostic/candidates/update-0002-proposal.pt",
+        "baseline_tensor_digest": "60f55649d420a9b589194ec95dc4c1d69b573464f6358b0c6bb28be048ef2e0c",
+        "diagnostic_tensor_digest": "7c9fa9395678f3eac2bd031befc75a06106f37f9aa79c3e8f9e73f3b05227d64",
+        "exact": false,
+        "different_tensor_count": 30,
+        "differences": [
+          {
+            "tensor": "kind_bias",
+            "shape": [
+              7
+            ],
+            "different_elements": 2,
+            "max_abs_difference": 2.3283064365386963e-09,
+            "mean_abs_difference": 5.987073693956648e-10
+          },
+          {
+            "tensor": "observation_encoder.0.weight",
+            "shape": [
+              384,
+              622
+            ],
+            "different_elements": 65289,
+            "max_abs_difference": 6.323680281639099e-07,
+            "mean_abs_difference": 5.540609386080916e-10
+          },
+          {
+            "tensor": "observation_encoder.0.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 188,
+            "max_abs_difference": 5.587935447692871e-09,
+            "mean_abs_difference": 8.724256872483238e-10
+          },
+          {
+            "tensor": "observation_encoder.1.weight",
+            "shape": [
+              384
+            ],
+            "different_elements": 6,
+            "max_abs_difference": 1.1920928955078125e-07,
+            "mean_abs_difference": 1.241763432820638e-09
+          },
+          {
+            "tensor": "observation_encoder.1.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 349,
+            "max_abs_difference": 7.450580596923828e-09,
+            "mean_abs_difference": 8.83249621589736e-10
+          },
+          {
+            "tensor": "observation_encoder.3.weight",
+            "shape": [
+              384,
+              384
+            ],
+            "different_elements": 63430,
+            "max_abs_difference": 1.0547228157520294e-07,
+            "mean_abs_difference": 9.684488903331943e-10
+          },
+          {
+            "tensor": "observation_encoder.3.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 160,
+            "max_abs_difference": 7.450580596923828e-09,
+            "mean_abs_difference": 8.673547805907825e-10
+          },
+          {
+            "tensor": "observation_encoder.4.weight",
+            "shape": [
+              384
+            ],
+            "different_elements": 7,
+            "max_abs_difference": 1.1920928955078125e-07,
+            "mean_abs_difference": 1.862645149230957e-09
+          },
+          {
+            "tensor": "observation_encoder.4.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 286,
+            "max_abs_difference": 5.122274160385132e-09,
+            "mean_abs_difference": 8.009214032729991e-10
+          },
+          {
+            "tensor": "memory.weight_ih",
+            "shape": [
+              1152,
+              384
+            ],
+            "different_elements": 186048,
+            "max_abs_difference": 6.705522537231445e-08,
+            "mean_abs_difference": 1.0136825814026054e-09
+          },
+          {
+            "tensor": "memory.weight_hh",
+            "shape": [
+              1152,
+              384
+            ],
+            "different_elements": 189722,
+            "max_abs_difference": 9.313225746154785e-08,
+            "mean_abs_difference": 1.037541399776505e-09
+          },
+          {
+            "tensor": "memory.bias_ih",
+            "shape": [
+              1152
+            ],
+            "different_elements": 468,
+            "max_abs_difference": 1.862645149230957e-08,
+            "mean_abs_difference": 9.715171876854987e-10
+          },
+          {
+            "tensor": "memory.bias_hh",
+            "shape": [
+              1152
+            ],
+            "different_elements": 470,
+            "max_abs_difference": 1.1175870895385742e-08,
+            "mean_abs_difference": 9.504567009975693e-10
+          },
+          {
+            "tensor": "action_encoder.0.weight",
+            "shape": [
+              384,
+              74
+            ],
+            "different_elements": 3609,
+            "max_abs_difference": 6.705522537231445e-08,
+            "mean_abs_difference": 4.1892447468952113e-10
+          },
+          {
+            "tensor": "action_encoder.0.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 135,
+            "max_abs_difference": 2.2351741790771484e-08,
+            "mean_abs_difference": 1.5831271108860772e-09
+          },
+          {
+            "tensor": "action_encoder.1.weight",
+            "shape": [
+              384
+            ],
+            "different_elements": 1,
+            "max_abs_difference": 5.960464477539063e-08,
+            "mean_abs_difference": 1.5522042910257974e-10
+          },
+          {
+            "tensor": "action_encoder.1.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 316,
+            "max_abs_difference": 1.210719347000122e-08,
+            "mean_abs_difference": 1.5892425153651857e-09
+          },
+          {
+            "tensor": "action_encoder.3.weight",
+            "shape": [
+              384,
+              384
+            ],
+            "different_elements": 52645,
+            "max_abs_difference": 2.0489096641540527e-08,
+            "mean_abs_difference": 7.591739243423885e-10
+          },
+          {
+            "tensor": "action_encoder.3.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 288,
+            "max_abs_difference": 1.6763806343078613e-08,
+            "mean_abs_difference": 3.921004558075462e-09
+          },
+          {
+            "tensor": "policy_pair.0.weight",
+            "shape": [
+              384,
+              1152
+            ],
+            "different_elements": 311174,
+            "max_abs_difference": 3.1478703022003174e-07,
+            "mean_abs_difference": 1.855724464044913e-08
+          },
+          {
+            "tensor": "policy_pair.0.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 384,
+            "max_abs_difference": 2.4121254682540894e-07,
+            "mean_abs_difference": 5.4805354920972604e-08
+          },
+          {
+            "tensor": "policy_pair.2.weight",
+            "shape": [
+              1,
+              384
+            ],
+            "different_elements": 330,
+            "max_abs_difference": 2.2351741790771484e-08,
+            "mean_abs_difference": 6.138482907166083e-09
+          },
+          {
+            "tensor": "policy_pair.2.bias",
+            "shape": [
+              1
+            ],
+            "different_elements": 1,
+            "max_abs_difference": 0.0001461617648601532,
+            "mean_abs_difference": 0.0001461617648601532
+          },
+          {
+            "tensor": "risk_pair.0.weight",
+            "shape": [
+              192,
+              1152
+            ],
+            "different_elements": 26003,
+            "max_abs_difference": 7.450580596923828e-09,
+            "mean_abs_difference": 8.200447317081912e-11
+          },
+          {
+            "tensor": "risk_pair.0.bias",
+            "shape": [
+              192
+            ],
+            "different_elements": 23,
+            "max_abs_difference": 1.862645149230957e-09,
+            "mean_abs_difference": 8.17787319344158e-11
+          },
+          {
+            "tensor": "risk_pair.2.weight",
+            "shape": [
+              1,
+              192
+            ],
+            "different_elements": 9,
+            "max_abs_difference": 9.313225746154785e-10,
+            "mean_abs_difference": 2.9103830456733704e-11
+          },
+          {
+            "tensor": "value_head.0.weight",
+            "shape": [
+              384,
+              384
+            ],
+            "different_elements": 7747,
+            "max_abs_difference": 7.450580596923828e-09,
+            "mean_abs_difference": 4.544114139754591e-11
+          },
+          {
+            "tensor": "value_head.0.bias",
+            "shape": [
+              384
+            ],
+            "different_elements": 15,
+            "max_abs_difference": 3.725290298461914e-09,
+            "mean_abs_difference": 2.3495279795800645e-11
+          },
+          {
+            "tensor": "value_head.2.weight",
+            "shape": [
+              1,
+              384
+            ],
+            "different_elements": 17,
+            "max_abs_difference": 3.725290298461914e-09,
+            "mean_abs_difference": 5.358439617945502e-11
+          },
+          {
+            "tensor": "value_head.2.bias",
+            "shape": [
+              1
+            ],
+            "different_elements": 1,
+            "max_abs_difference": 4.656612873077393e-10,
+            "mean_abs_difference": 4.656612873077393e-10
+          }
+        ]
+      }
+    }
+  ]
+}
+
+RESULT=/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_003_20261005T071431Z/diagnostic-control-analysis.json

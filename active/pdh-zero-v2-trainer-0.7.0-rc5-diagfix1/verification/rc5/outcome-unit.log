@@ -1,0 +1,8 @@
+test_candidate_win_has_its_own_pattern_and_income (tests.test_rc5_outcomes.Rc5OutcomeTests.test_candidate_win_has_its_own_pattern_and_income) ... ok
+test_income_mismatch_is_rejected (tests.test_rc5_outcomes.Rc5OutcomeTests.test_income_mismatch_is_rejected) ... ok
+test_opponent_win_is_not_a_candidate_combination (tests.test_rc5_outcomes.Rc5OutcomeTests.test_opponent_win_is_not_a_candidate_combination) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

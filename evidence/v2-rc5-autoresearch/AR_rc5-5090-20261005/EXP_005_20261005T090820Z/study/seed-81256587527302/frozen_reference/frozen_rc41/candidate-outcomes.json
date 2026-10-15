@@ -1,0 +1,70 @@
+{
+  "scope": "candidate_only_posthoc_not_causal_attribution_or_reward",
+  "hands": 4096,
+  "candidate_wins": 355,
+  "table_draws": 2684,
+  "winning_combinations": {
+    "SEVEN_PAIRS": 244,
+    "MIXED_ONE_SUIT": 14,
+    "MIXED_ONE_SUIT+SEVEN_PAIRS": 40,
+    "LUXURY_SEVEN_PAIRS": 7,
+    "SEVEN_PAIRS+TERMINALS_HONORS": 8,
+    "LUXURY_SEVEN_PAIRS+MIXED_ONE_SUIT": 8,
+    "MIXED_ONE_SUIT+SEA_BOTTOM+SEVEN_PAIRS": 3,
+    "SEA_BOTTOM+SEVEN_PAIRS": 18,
+    "MIXED_ONE_SUIT+PONG_PONG": 3,
+    "PURE_ONE_SUIT+SEVEN_PAIRS": 1,
+    "CLOSED_BONUS+PURE_ONE_SUIT": 1,
+    "CLOSED_BONUS+MIXED_ONE_SUIT": 4,
+    "MIXED_ONE_SUIT_TERMINALS+SEVEN_PAIRS": 1,
+    "PONG_PONG+PURE_ONE_SUIT": 1,
+    "MIXED_ONE_SUIT+ONE_STRAIGHT": 1,
+    "PURE_ONE_SUIT": 1
+  },
+  "winning_multipliers": {
+    "4": 244,
+    "3": 14,
+    "7": 58,
+    "8": 7,
+    "13": 8,
+    "11": 8,
+    "10": 4,
+    "6": 9,
+    "9": 2,
+    "16": 1
+  },
+  "candidate_income_by_method": {
+    "DISCARD_WIN": 2656,
+    "SELF_DRAW": 5070
+  },
+  "candidate_actions": {
+    "PASS": 241983,
+    "DISCARD": 81467,
+    "WIN": 355,
+    "PONG": 2249,
+    "ADDED_KONG": 19,
+    "CLOSED_KONG": 41
+  },
+  "candidate_win_horse_hits": {
+    "1": 126,
+    "2": 110,
+    "3": 33,
+    "0": 72,
+    "4": 12,
+    "5": 2
+  },
+  "initial_route_mean": {
+    "SEVEN_PAIRS": 0.22901785714286255,
+    "PONG_PONG": 0.15145263671874087,
+    "MIXED_ONE_SUIT": -0.33284893154339756,
+    "PURE_ONE_SUIT": -0.8565657553781031,
+    "TERMINALS_HONORS": -0.8093558271731639,
+    "THIRTEEN_ORPHANS": 0.35376164362980667,
+    "DRAGONS": 0.13411458333332885,
+    "WINDS": 0.1254069010416662
+  },
+  "replay_sha256": "b7ffc22524d7f7528775b004ce94e8029da6964dcc4051f4372f72aff70cc283",
+  "results_sha256": "57317f46151305d64bc61d0456cd9545090cc26e59864039aa55afda75167935",
+  "tail_replay_index": "worst_hands.json",
+  "modifies_training_or_gate": false
+}

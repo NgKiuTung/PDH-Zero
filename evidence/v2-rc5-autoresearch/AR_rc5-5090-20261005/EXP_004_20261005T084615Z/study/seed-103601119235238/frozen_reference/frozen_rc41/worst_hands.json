@@ -1,0 +1,42 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 65441083539326,
+      "candidate_seat": 1,
+      "score": -20,
+      "state_sha256": "efc40e93b537c6cd74e60e51d087a53147c4918d1627aa31ef63591452bdb883"
+    },
+    {
+      "wall_seed": 65441083539326,
+      "candidate_seat": 2,
+      "score": -20,
+      "state_sha256": "efc40e93b537c6cd74e60e51d087a53147c4918d1627aa31ef63591452bdb883"
+    },
+    {
+      "wall_seed": 65441083539326,
+      "candidate_seat": 3,
+      "score": -20,
+      "state_sha256": "efc40e93b537c6cd74e60e51d087a53147c4918d1627aa31ef63591452bdb883"
+    },
+    {
+      "wall_seed": 65441079539314,
+      "candidate_seat": 1,
+      "score": -12,
+      "state_sha256": "bcafc51285132adcdb8a7be4514eec2342e467fea61b4fa7072b71afe5bf71e9"
+    },
+    {
+      "wall_seed": 65441079539314,
+      "candidate_seat": 2,
+      "score": -12,
+      "state_sha256": "bcafc51285132adcdb8a7be4514eec2342e467fea61b4fa7072b71afe5bf71e9"
+    },
+    {
+      "wall_seed": 65441079539314,
+      "candidate_seat": 3,
+      "score": -12,
+      "state_sha256": "bcafc51285132adcdb8a7be4514eec2342e467fea61b4fa7072b71afe5bf71e9"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

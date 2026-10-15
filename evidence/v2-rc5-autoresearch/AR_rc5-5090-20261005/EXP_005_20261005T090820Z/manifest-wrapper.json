@@ -1,0 +1,59 @@
+{
+  "experiment_id": "EXP_005_20261005T090820Z",
+  "created_at_utc": "2026-10-05T09:08:23.777368+00:00",
+  "stage": "RC5_FORMAL_DEVELOPMENT_001",
+  "parent_smoke": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/EXP_004_20261005T084615Z",
+  "source": "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5-diagfix1",
+  "source_manifest_sha256": "ebdc5498477dc616188f1249f0737fe9efb8ee0c0732c2c94547e476218fea92",
+  "baseline": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd"
+  },
+  "dataset": {
+    "path": "/root/rivermind-data/pdh-zero/evidence/v2-rc5-autoresearch/AR_rc5-5090-20261005/inputs/derived/auxiliary-v2-repair-v1/auxiliary-v2.pt",
+    "sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0",
+    "role": "train_side_auxiliary_only"
+  },
+  "registry": {
+    "path": "/root/rivermind-data/pdh-zero/evidence/v2-refinement-rc5/.wall-exposures.sqlite3",
+    "sha256_before": "8758487ca12cd867198864b0724f5dc4865b0ea00dd6b17ed148dd5af4ea5ed8",
+    "historical_coverage": "partial"
+  },
+  "fixed_budget": {
+    "seeds": [
+      39257206560770,
+      134560289173622,
+      81256587527302
+    ],
+    "updates": 20,
+    "hands_per_update": 64,
+    "evaluation_hands": 4096,
+    "workers": 0,
+    "evaluation_environments": 64,
+    "fit_steps": 400,
+    "fit_batch": 64,
+    "learning_rate": 5e-05,
+    "minibatch_decisions": 2048,
+    "max_training_seconds": 1800,
+    "max_evaluation_seconds": 3600,
+    "device": "cuda",
+    "backend": "cpp",
+    "transport": "shared",
+    "opponents": [
+      "heuristic",
+      "route_mix",
+      "frozen_rc41"
+    ],
+    "smoke_only": false
+  },
+  "estimated_wall_clock_hours": "about 5 to 5.5 based on EXP_004",
+  "outer_safety_limit_hours": 7,
+  "selection_scope": "development_only_non_confirmatory",
+  "old_heldout_allowed": false,
+  "promotion_allowed": false,
+  "fresh_confirmation_allowed": false,
+  "rollback": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scientific_status": "DEVELOPMENT_ONLY",
+  "completed_seeds": 3,
+  "completed_arms": 9,
+  "opponent_conditions": [
+    "heuristic",
+    "route_mix",
+    "frozen_rc41"
+  ],
+  "elapsed_seconds": 16520.79300055327,
+  "deployment_promoted": false,
+  "target_5090_tested": false,
+  "rollback": {
+    "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+    "label": "d000000266137",
+    "action": "use_unchanged_original_checkpoint"
+  },
+  "diagnostic_controls": [
+    {
+      "actor_tensor_exact": true,
+      "mirrored_actor_updates_exact": true,
+      "training_trajectories_exact": true,
+      "all_opponent_trajectories_exact": true
+    },
+    {
+      "actor_tensor_exact": true,
+      "mirrored_actor_updates_exact": true,
+      "training_trajectories_exact": true,
+      "all_opponent_trajectories_exact": true
+    },
+    {
+      "actor_tensor_exact": true,
+      "mirrored_actor_updates_exact": true,
+      "training_trajectories_exact": true,
+      "all_opponent_trajectories_exact": true
+    }
+  ],
+  "dataset_sha256": "8754e41f38f43824aa98a4d397aef0a04c012f07bbd91819bc7787b94dd3fee0",
+  "registry_sha256": "83782102ec429b000f1642f9f7e2ccdcc9854d615a41e62679399bed95b420bc"
+}

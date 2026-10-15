@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "a1a36cea7d4ccdf542fc5b22526ba93aeab1edf53cefe0f90cab474b0798d5c2",
+  "tensor_sha256": "ef4160b5ed5518d61082576ac7ff453359c04db1c53b7df84969c4291905d672",
+  "mode": "diagnostic",
+  "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "metadata": {
+    "seed": 134560289173622,
+    "arm": "diagnostic",
+    "update": 11,
+    "role": "exact_baseline_actor_mirror_not_promoted",
+    "source_checkpoint_sha256": "25a7da2f32e360773007bf8454adab269f549937b1ea5e59210ec7c7f2e05c0e"
+  },
+  "exact_resume_supported": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "CRASH",
+  "stage": "RTX5090_CONTROLLED_CUDA_SMOKE",
+  "completed_at_utc": "2026-10-05T07:56:31.352363+00:00",
+  "error": "rc5.diagnostic_control_changed_policy",
+  "failure_class": "diagnostic_control_independent_cuda_ppo_tensor_drift",
+  "deployment_promoted": false,
+  "partial_evidence_retained": true,
+  "diagnosis": {
+    "initial_actor_exact": true,
+    "update_0001_actor_exact": false,
+    "update_0001_different_tensors": 29,
+    "update_0002_actor_exact": false,
+    "update_0002_different_tensors": 30,
+    "training_replay_exact": true,
+    "heuristic_trajectory_exact": true,
+    "route_mix_trajectory_exact": true,
+    "frozen_rc41_trajectory_exact": true
+  },
+  "interpretation": "Diagnostic instrumentation did not change observed train/evaluation trajectories. Independent CUDA PPO repetitions were not bit-exact.",
+  "rollback": {
+    "label": "d000000266137",
+    "sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd"
+  },
+  "next_action": "new_source_identity_required_before_new_smoke"
+}

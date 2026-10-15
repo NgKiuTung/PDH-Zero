@@ -1,0 +1,84 @@
+{
+  "source": "results.jsonl",
+  "keys": [
+    {
+      "wall_seed": 114333578195218,
+      "candidate_seat": 2,
+      "score": -44,
+      "state_sha256": "697e79125e4b9ed1dfef9fdddc0a695b067b84ce2fea2d84000d64ab5ebf6e2a"
+    },
+    {
+      "wall_seed": 114333568195188,
+      "candidate_seat": 1,
+      "score": -40,
+      "state_sha256": "c262664f73afcbc9d16a198a65295767ad4f6dd7e91e2a1ecd2840492cf8f241"
+    },
+    {
+      "wall_seed": 114333569195191,
+      "candidate_seat": 0,
+      "score": -32,
+      "state_sha256": "5ca05a521fc50435326042a15af1546d9eb1c2a6cd0222c17a97f1ab8e3acef4"
+    },
+    {
+      "wall_seed": 114333568195188,
+      "candidate_seat": 3,
+      "score": -30,
+      "state_sha256": "727c6c13d71c7fa5aed154f1b6a151c8d75cdeac2c1ca7dac61b0d0ecaacfdbf"
+    },
+    {
+      "wall_seed": 114333579195221,
+      "candidate_seat": 1,
+      "score": -28,
+      "state_sha256": "cb753f06512d487fcc7252ee8e49b2fd53ce1a49ed2d3c6995410830e53d436b"
+    },
+    {
+      "wall_seed": 114333579195221,
+      "candidate_seat": 2,
+      "score": -26,
+      "state_sha256": "097d35f0700333b7897506a096ca0c64ff182e3352300cf61a135780f7ae6ef8"
+    },
+    {
+      "wall_seed": 114333569195191,
+      "candidate_seat": 3,
+      "score": -24,
+      "state_sha256": "0aa2be05b0cc6b0f8b3917fc7c5128873ad1695e0f41b3d108a2e7ee1357e191"
+    },
+    {
+      "wall_seed": 114333580195224,
+      "candidate_seat": 2,
+      "score": -12,
+      "state_sha256": "23490347d81e24685ed8daa0be7cf1b7c40334a98c0035fe6fe7a51111bfbce1"
+    },
+    {
+      "wall_seed": 114333581195227,
+      "candidate_seat": 2,
+      "score": -12,
+      "state_sha256": "515da90e0bdbf182353e9dc4f9889712f93f4f5beaf90eab8e0b05c13cda4efc"
+    },
+    {
+      "wall_seed": 114333572195200,
+      "candidate_seat": 1,
+      "score": -8,
+      "state_sha256": "c156345ff4b39493f3d15acecb76ca3e903bbdf133904381bf140b77eec8f373"
+    },
+    {
+      "wall_seed": 114333575195209,
+      "candidate_seat": 3,
+      "score": -8,
+      "state_sha256": "42be5fae88bb9f5465514242fa3063f8db75bc38e0ac55f0cd816f9d6f7cb2e2"
+    },
+    {
+      "wall_seed": 114333576195212,
+      "candidate_seat": 2,
+      "score": -8,
+      "state_sha256": "bf707a49b4d26701118e29eec6fdf68089867d7a2b0287d3065e876b23a7b420"
+    },
+    {
+      "wall_seed": 114333574195206,
+      "candidate_seat": 3,
+      "score": -6,
+      "state_sha256": "fb847c6354607f5e158399b641e6d5b97025917f766a85bef8d5b250b49d45e3"
+    }
+  ],
+  "scope": "diagnostic_tail_index_not_an_independent_sample"
+}

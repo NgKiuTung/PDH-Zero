@@ -1,0 +1,23 @@
+{
+  "files": [
+    "src/pdh_v2/replay/audit.py",
+    "src/pdh_v2/rollout/parallel_env.py",
+    "src/pdh_v2/training/paired_evaluation.py",
+    "src/pdh_v2/training/paired_metrics.py",
+    "src/pdh_v2/training/refinement_artifacts.py",
+    "src/pdh_v2/training/refinement_control.py",
+    "src/pdh_v2/training/refinement_gate.py",
+    "src/pdh_v2/training/refinement_metrics.py",
+    "src/pdh_v2/training/refinement_runner.py",
+    "src/pdh_v2/training/risk_diagnostics.py",
+    "src/pdh_v2/training/sequence_batch.py",
+    "src/pdh_v2/training/stable_ppo.py"
+  ],
+  "covered_lines": 713,
+  "num_statements": 855,
+  "covered_branches": 159,
+  "num_branches": 252,
+  "line_percent": 83.39181286549707,
+  "combined_percent": 78.77145438121048,
+  "limitations": "Child worker branch tracing is not enabled; parent coverage does not measure those branches."
+}

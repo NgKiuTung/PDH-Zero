@@ -1,0 +1,10 @@
+test_auxiliary_gradient_cannot_reach_actor (test_rc5_model.Rc5ModelTests.test_auxiliary_gradient_cannot_reach_actor) ... ok
+test_diagnostic_logits_and_hidden_are_exact (test_rc5_model.Rc5ModelTests.test_diagnostic_logits_and_hidden_are_exact) ... ok
+test_initial_joint_is_exact_and_zero_residual_is_trainable (test_rc5_model.Rc5ModelTests.test_initial_joint_is_exact_and_zero_residual_is_trainable) ... ok
+test_modes_reject_unknown_value (test_rc5_model.Rc5ModelTests.test_modes_reject_unknown_value) ... ok
+test_roundtrip_state_is_exact (test_rc5_model.Rc5ModelTests.test_roundtrip_state_is_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.042s
+
+OK

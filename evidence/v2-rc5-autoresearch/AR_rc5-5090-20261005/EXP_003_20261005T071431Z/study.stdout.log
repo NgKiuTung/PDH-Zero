@@ -1,0 +1,14 @@
+{"event": "trial_finished", "seed": 26965088483608, "mode": "baseline", "status": "inconclusive"}
+Traceback (most recent call last):
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/tools/rc5.py", line 130, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/tools/rc5.py", line 105, in main
+    report = run_study(ROOT, args.baseline, args.dataset, args.registry, args.output, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/src/pdh_v2/table/study.py", line 139, in run_study
+    trials.extend(_seed_study(root, baseline, dataset, config, seed, output,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/rivermind-data/pdh-zero/active/pdh-zero-v2-trainer-0.7.0-rc5/src/pdh_v2/table/study.py", line 82, in _seed_study
+    raise RuntimeError('rc5.diagnostic_control_changed_policy')
+RuntimeError: rc5.diagnostic_control_changed_policy

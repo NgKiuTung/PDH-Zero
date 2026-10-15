@@ -1,0 +1,9 @@
+test_explicit_paired_reuse_is_allowed_but_split_change_is_not (test_rc5_exposure.Rc5ExposureTests.test_explicit_paired_reuse_is_allowed_but_split_change_is_not) ... ok
+test_historical_wall_cannot_enter_fresh_training (test_rc5_exposure.Rc5ExposureTests.test_historical_wall_cannot_enter_fresh_training) ... ok
+test_partial_gzip_does_not_mark_file_imported (test_rc5_exposure.Rc5ExposureTests.test_partial_gzip_does_not_mark_file_imported) ... ok
+test_renaming_heldout_cannot_change_its_role (test_rc5_exposure.Rc5ExposureTests.test_renaming_heldout_cannot_change_its_role) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK

@@ -1,0 +1,11 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.3.5",
+  "cuda_available": false,
+  "cpu_affinity": 5,
+  "cpu_max": "400000 100000",
+  "memory_max": "4294967296",
+  "user_weights_available": false,
+  "target_gpu_tested": false
+}

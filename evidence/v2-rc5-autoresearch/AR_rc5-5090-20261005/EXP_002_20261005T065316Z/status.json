@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "stage": "RTX5090_CUDA_INTEGRATION_PROBE_RETRY",
+  "completed_at_utc": "2026-10-05T07:05:47.686052+00:00",
+  "cuda_verified": true,
+  "training_performed": false,
+  "trajectory_equivalence": true,
+  "measured_profiles": [
+    {
+      "workers": 0,
+      "environments": 64,
+      "natural_hands": 192,
+      "elapsed_seconds": 22.758278331253678,
+      "hands_per_second": 8.436490546665327,
+      "peak_cuda_allocated_bytes": 61136896
+    },
+    {
+      "workers": 4,
+      "environments": 64,
+      "natural_hands": 192,
+      "elapsed_seconds": 38.49955841107294,
+      "hands_per_second": 4.987070187921389,
+      "peak_cuda_allocated_bytes": 61136896
+    }
+  ],
+  "recommended_workers_within_measured_profiles": 0,
+  "recommendation_scope": "only_two_measured_profiles_not_global_optimum",
+  "next_stage": "EXP_003_CONTROLLED_CUDA_SMOKE"
+}

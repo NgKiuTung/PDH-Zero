@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "4c3321b90f1cd9a2c610a8919f93c04e7744bf41fef0ed09db083f8cb526c087",
+  "tensor_sha256": "8b7a9e84caa0c1dbfc51532bae5a9570b1f66fb71d83b480afd6959242fe8c06",
+  "mode": "diagnostic",
+  "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "metadata": {
+    "seed": 103601119235238,
+    "arm": "diagnostic",
+    "update": 0,
+    "role": "initial_reproducibility_not_promoted"
+  },
+  "exact_resume_supported": false
+}

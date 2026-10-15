@@ -1,0 +1,16 @@
+{
+  "checkpoint_sha256": "ef3519f6a58f3a2a8eb06821cbf9323cbafb97bcafaf829d04f06cdb6b41e177",
+  "tensor_sha256": "6235da13b9f7f8f761cf2d3156e09f0a60a557a6bb319f77b3c0c7bd48bb0e02",
+  "mode": "baseline",
+  "baseline_sha256": "34e97857dc3ec6c243e7f69d07c6deea08900ebb487c10e2f63ae8a5827699dd",
+  "metadata": {
+    "seed": 134560289173622,
+    "arm": "baseline",
+    "update": 16,
+    "learner_decisions": 5118,
+    "update_accepted": true,
+    "post_update_kl": 0.001390136995263897,
+    "proposal_anchor_kl": 0.05707826659577718
+  },
+  "exact_resume_supported": false
+}

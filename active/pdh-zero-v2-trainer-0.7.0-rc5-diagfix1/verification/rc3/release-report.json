@@ -1,0 +1,19 @@
+{
+  "release": "0.6.0-rc3",
+  "local_checks": "PASS",
+  "tests": 298,
+  "cpu_pipeline_fixture": "width16; not user weights",
+  "cli_completed": true,
+  "cli_interrupt_worker_survivors": [],
+  "statement_coverage": 87.98339935861158,
+  "combined_coverage": 84.59607148131738,
+  "branch_coverage": 72.38095238095238,
+  "rule_source_unchanged": true,
+  "user_archive_inspected": false,
+  "user_warmup_tested": false,
+  "target_cuda_tested": false,
+  "ruff": "NOT_RUN_NOT_INSTALLED",
+  "mypy": "NOT_RUN_NOT_INSTALLED",
+  "formal_long_run_ready": false,
+  "cpu_performance_scope": "one 64-table deterministic run, not GPU training"
+}

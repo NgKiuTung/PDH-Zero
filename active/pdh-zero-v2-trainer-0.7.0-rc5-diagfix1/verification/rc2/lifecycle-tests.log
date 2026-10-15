@@ -1,0 +1,73 @@
+======================================================================
+ERROR: test_collected_policy_recomputes_same_history (tests.test_refinement.PPOGuardTests.test_collected_policy_recomputes_same_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 167, in test_collected_policy_recomputes_same_history
+    result,_,_,_=self.run_update()
+                 ~~~~~~~~~~~~~~~^^
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 162, in run_update
+    result=guarded_update(model,optimizer,anchor,self.data.episodes,torch.device('cpu'),
+                         StablePPOConfig(epochs=1,minibatch_decisions=512,target_kl=kl),31)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/stable_ppo.py", line 68, in guarded_update
+    old = sequence_values(model, group, device)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/sequence_batch.py", line 89, in sequence_values
+    _floats([t.old_log_prob for t in items]), floats([t.old_value for t in items]),
+                                              ^^^^^^
+NameError: name 'floats' is not defined. Did you mean: '_floats'?
+
+======================================================================
+ERROR: test_excessive_step_rolls_back_weights_and_optimizer (tests.test_refinement.PPOGuardTests.test_excessive_step_rolls_back_weights_and_optimizer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 172, in test_excessive_step_rolls_back_weights_and_optimizer
+    result,before,model,optimizer=self.run_update(.5,.00000001)
+                                  ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 162, in run_update
+    result=guarded_update(model,optimizer,anchor,self.data.episodes,torch.device('cpu'),
+                         StablePPOConfig(epochs=1,minibatch_decisions=512,target_kl=kl),31)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/stable_ppo.py", line 68, in guarded_update
+    old = sequence_values(model, group, device)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/sequence_batch.py", line 89, in sequence_values
+    _floats([t.old_log_prob for t in items]), floats([t.old_value for t in items]),
+                                              ^^^^^^
+NameError: name 'floats' is not defined. Did you mean: '_floats'?
+
+======================================================================
+ERROR: test_stale_policy_rejected_before_update (tests.test_refinement.PPOGuardTests.test_stale_policy_rejected_before_update)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 183, in test_stale_policy_rejected_before_update
+    guarded_update(model,torch.optim.AdamW(model.parameters()),anchor,episodes,
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   torch.device('cpu'),StablePPOConfig(),1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/stable_ppo.py", line 68, in guarded_update
+    old = sequence_values(model, group, device)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/sequence_batch.py", line 89, in sequence_values
+    _floats([t.old_log_prob for t in items]), floats([t.old_value for t in items]),
+                                              ^^^^^^
+NameError: name 'floats' is not defined. Did you mean: 'float'?
+
+======================================================================
+ERROR: test_controlled_cpu_pipeline (tests.test_refinement.RefinementTests.test_controlled_cpu_pipeline)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/tests/test_refinement.py", line 122, in test_controlled_cpu_pipeline
+    self.assertEqual(run_refinement(config,install_signals=False),0)
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/refinement_runner.py", line 198, in run_refinement
+    result = _run(config,backend_device,clock,manifest)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/refinement_runner.py", line 108, in _run
+    trained = guarded_update(model,optimizer,anchor,data.episodes,device,ppo_config,
+                             config.seed+update, check_stop=clock.check)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/stable_ppo.py", line 68, in guarded_update
+    old = sequence_values(model, group, device)
+  File "/workspace/develop-project/pdh-zero/pdh-zero-v2-trainer-0.6.0-rc2/src/pdh_v2/training/sequence_batch.py", line 89, in sequence_values
+    _floats([t.old_log_prob for t in items]), floats([t.old_value for t in items]),
+                                              ^^^^^^
+NameError: name 'floats' is not defined. Did you mean: '_floats'?
+
+----------------------------------------------------------------------
+Ran 24 tests in 15.678s
+
+FAILED (errors=4)

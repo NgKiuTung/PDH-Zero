@@ -1,0 +1,20 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"
+files = ["src/pdh_v2", "tools", "tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["src/pdh_v2"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
